@@ -1,6 +1,6 @@
 # `data_launchdarkly_environment`
 
-Refer to the Terraform Registory for docs: [`data_launchdarkly_environment`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/environment).
+Refer to the Terraform Registory for docs: [`data_launchdarkly_environment`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/environment).
 
 # `dataLaunchdarklyEnvironment` Submodule <a name="`dataLaunchdarklyEnvironment` Submodule" id="@cdktf/provider-launchdarkly.dataLaunchdarklyEnvironment"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_launchdarkly_environment`](htt
 
 ### DataLaunchdarklyEnvironment <a name="DataLaunchdarklyEnvironment" id="@cdktf/provider-launchdarkly.dataLaunchdarklyEnvironment.DataLaunchdarklyEnvironment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/environment launchdarkly_environment}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/environment launchdarkly_environment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklyEnvironment.DataLaunchdarklyEnvironment.Initializer"></a>
 
@@ -57,12 +57,12 @@ DataLaunchdarklyEnvironment.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyEnvironment.DataLaunchdarklyEnvironment.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyEnvironment.DataLaunchdarklyEnvironment.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyEnvironment.DataLaunchdarklyEnvironment.Initializer.parameter.key">key</a></code> | <code>java.lang.String</code> | A project-unique key for the new environment. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyEnvironment.DataLaunchdarklyEnvironment.Initializer.parameter.projectKey">projectKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/environment#project_key DataLaunchdarklyEnvironment#project_key}. |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyEnvironment.DataLaunchdarklyEnvironment.Initializer.parameter.projectKey">projectKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/environment#project_key DataLaunchdarklyEnvironment#project_key}. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyEnvironment.DataLaunchdarklyEnvironment.Initializer.parameter.approvalSettings">approvalSettings</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyEnvironment.DataLaunchdarklyEnvironmentApprovalSettings">DataLaunchdarklyEnvironmentApprovalSettings</a>></code> | approval_settings block. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyEnvironment.DataLaunchdarklyEnvironment.Initializer.parameter.confirmChanges">confirmChanges</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not to require confirmation for flag and segment changes in this environment. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyEnvironment.DataLaunchdarklyEnvironment.Initializer.parameter.defaultTrackEvents">defaultTrackEvents</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not to default to sending data export events for flags created in the environment. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyEnvironment.DataLaunchdarklyEnvironment.Initializer.parameter.defaultTtl">defaultTtl</a></code> | <code>java.lang.Number</code> | The TTL for the environment. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyEnvironment.DataLaunchdarklyEnvironment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/environment#id DataLaunchdarklyEnvironment#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyEnvironment.DataLaunchdarklyEnvironment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/environment#id DataLaunchdarklyEnvironment#id}. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyEnvironment.DataLaunchdarklyEnvironment.Initializer.parameter.requireComments">requireComments</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not to require comments for flag and segment changes in this environment. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyEnvironment.DataLaunchdarklyEnvironment.Initializer.parameter.secureMode">secureMode</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not to use secure mode. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyEnvironment.DataLaunchdarklyEnvironment.Initializer.parameter.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Tags associated with your resource. |
@@ -135,7 +135,7 @@ Must be unique amongst siblings in the same scope
 
 A project-unique key for the new environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/environment#key DataLaunchdarklyEnvironment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/environment#key DataLaunchdarklyEnvironment#key}
 
 ---
 
@@ -143,7 +143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/environment#project_key DataLaunchdarklyEnvironment#project_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/environment#project_key DataLaunchdarklyEnvironment#project_key}.
 
 ---
 
@@ -153,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 approval_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/environment#approval_settings DataLaunchdarklyEnvironment#approval_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/environment#approval_settings DataLaunchdarklyEnvironment#approval_settings}
 
 ---
 
@@ -163,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 Whether or not to require confirmation for flag and segment changes in this environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/environment#confirm_changes DataLaunchdarklyEnvironment#confirm_changes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/environment#confirm_changes DataLaunchdarklyEnvironment#confirm_changes}
 
 ---
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 Whether or not to default to sending data export events for flags created in the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/environment#default_track_events DataLaunchdarklyEnvironment#default_track_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/environment#default_track_events DataLaunchdarklyEnvironment#default_track_events}
 
 ---
 
@@ -185,7 +185,7 @@ The TTL for the environment.
 
 This must be between 0 and 60 minutes. The TTL setting only applies to environments using the PHP SDK
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/environment#default_ttl DataLaunchdarklyEnvironment#default_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/environment#default_ttl DataLaunchdarklyEnvironment#default_ttl}
 
 ---
 
@@ -193,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/environment#id DataLaunchdarklyEnvironment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/environment#id DataLaunchdarklyEnvironment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -206,7 +206,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Whether or not to require comments for flag and segment changes in this environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/environment#require_comments DataLaunchdarklyEnvironment#require_comments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/environment#require_comments DataLaunchdarklyEnvironment#require_comments}
 
 ---
 
@@ -218,7 +218,7 @@ Whether or not to use secure mode.
 
 Secure mode ensures a user of the client-side SDK cannot impersonate another user
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/environment#secure_mode DataLaunchdarklyEnvironment#secure_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/environment#secure_mode DataLaunchdarklyEnvironment#secure_mode}
 
 ---
 
@@ -228,7 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 Tags associated with your resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/environment#tags DataLaunchdarklyEnvironment#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/environment#tags DataLaunchdarklyEnvironment#tags}
 
 ---
 
@@ -1057,7 +1057,7 @@ Whether changes can be applied as long as minNumApprovals is met, regardless of 
 
 Defaults to true
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/environment#can_apply_declined_changes DataLaunchdarklyEnvironment#can_apply_declined_changes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/environment#can_apply_declined_changes DataLaunchdarklyEnvironment#can_apply_declined_changes}
 
 ---
 
@@ -1071,7 +1071,7 @@ public java.lang.Object getCanReviewOwnRequest();
 
 Whether requesters can approve or decline their own request. They may always comment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/environment#can_review_own_request DataLaunchdarklyEnvironment#can_review_own_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/environment#can_review_own_request DataLaunchdarklyEnvironment#can_review_own_request}
 
 ---
 
@@ -1085,7 +1085,7 @@ public java.lang.Number getMinNumApprovals();
 
 The number of approvals required before an approval request can be applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/environment#min_num_approvals DataLaunchdarklyEnvironment#min_num_approvals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/environment#min_num_approvals DataLaunchdarklyEnvironment#min_num_approvals}
 
 ---
 
@@ -1101,7 +1101,7 @@ Whether any changes to flags in this environment will require approval.
 
 You may only set required or requiredApprovalTags, not both.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/environment#required DataLaunchdarklyEnvironment#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/environment#required DataLaunchdarklyEnvironment#required}
 
 ---
 
@@ -1117,7 +1117,7 @@ An array of tags used to specify which flags with those tags require approval.
 
 You may only set requiredApprovalTags or required, not both.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/environment#required_approval_tags DataLaunchdarklyEnvironment#required_approval_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/environment#required_approval_tags DataLaunchdarklyEnvironment#required_approval_tags}
 
 ---
 
@@ -1170,12 +1170,12 @@ DataLaunchdarklyEnvironmentConfig.builder()
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyEnvironment.DataLaunchdarklyEnvironmentConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyEnvironment.DataLaunchdarklyEnvironmentConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyEnvironment.DataLaunchdarklyEnvironmentConfig.property.key">key</a></code> | <code>java.lang.String</code> | A project-unique key for the new environment. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyEnvironment.DataLaunchdarklyEnvironmentConfig.property.projectKey">projectKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/environment#project_key DataLaunchdarklyEnvironment#project_key}. |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyEnvironment.DataLaunchdarklyEnvironmentConfig.property.projectKey">projectKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/environment#project_key DataLaunchdarklyEnvironment#project_key}. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyEnvironment.DataLaunchdarklyEnvironmentConfig.property.approvalSettings">approvalSettings</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyEnvironment.DataLaunchdarklyEnvironmentApprovalSettings">DataLaunchdarklyEnvironmentApprovalSettings</a>></code> | approval_settings block. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyEnvironment.DataLaunchdarklyEnvironmentConfig.property.confirmChanges">confirmChanges</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not to require confirmation for flag and segment changes in this environment. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyEnvironment.DataLaunchdarklyEnvironmentConfig.property.defaultTrackEvents">defaultTrackEvents</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not to default to sending data export events for flags created in the environment. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyEnvironment.DataLaunchdarklyEnvironmentConfig.property.defaultTtl">defaultTtl</a></code> | <code>java.lang.Number</code> | The TTL for the environment. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyEnvironment.DataLaunchdarklyEnvironmentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/environment#id DataLaunchdarklyEnvironment#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyEnvironment.DataLaunchdarklyEnvironmentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/environment#id DataLaunchdarklyEnvironment#id}. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyEnvironment.DataLaunchdarklyEnvironmentConfig.property.requireComments">requireComments</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not to require comments for flag and segment changes in this environment. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyEnvironment.DataLaunchdarklyEnvironmentConfig.property.secureMode">secureMode</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not to use secure mode. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyEnvironment.DataLaunchdarklyEnvironmentConfig.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Tags associated with your resource. |
@@ -1262,7 +1262,7 @@ public java.lang.String getKey();
 
 A project-unique key for the new environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/environment#key DataLaunchdarklyEnvironment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/environment#key DataLaunchdarklyEnvironment#key}
 
 ---
 
@@ -1274,7 +1274,7 @@ public java.lang.String getProjectKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/environment#project_key DataLaunchdarklyEnvironment#project_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/environment#project_key DataLaunchdarklyEnvironment#project_key}.
 
 ---
 
@@ -1288,7 +1288,7 @@ public java.lang.Object getApprovalSettings();
 
 approval_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/environment#approval_settings DataLaunchdarklyEnvironment#approval_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/environment#approval_settings DataLaunchdarklyEnvironment#approval_settings}
 
 ---
 
@@ -1302,7 +1302,7 @@ public java.lang.Object getConfirmChanges();
 
 Whether or not to require confirmation for flag and segment changes in this environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/environment#confirm_changes DataLaunchdarklyEnvironment#confirm_changes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/environment#confirm_changes DataLaunchdarklyEnvironment#confirm_changes}
 
 ---
 
@@ -1316,7 +1316,7 @@ public java.lang.Object getDefaultTrackEvents();
 
 Whether or not to default to sending data export events for flags created in the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/environment#default_track_events DataLaunchdarklyEnvironment#default_track_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/environment#default_track_events DataLaunchdarklyEnvironment#default_track_events}
 
 ---
 
@@ -1332,7 +1332,7 @@ The TTL for the environment.
 
 This must be between 0 and 60 minutes. The TTL setting only applies to environments using the PHP SDK
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/environment#default_ttl DataLaunchdarklyEnvironment#default_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/environment#default_ttl DataLaunchdarklyEnvironment#default_ttl}
 
 ---
 
@@ -1344,7 +1344,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/environment#id DataLaunchdarklyEnvironment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/environment#id DataLaunchdarklyEnvironment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1361,7 +1361,7 @@ public java.lang.Object getRequireComments();
 
 Whether or not to require comments for flag and segment changes in this environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/environment#require_comments DataLaunchdarklyEnvironment#require_comments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/environment#require_comments DataLaunchdarklyEnvironment#require_comments}
 
 ---
 
@@ -1377,7 +1377,7 @@ Whether or not to use secure mode.
 
 Secure mode ensures a user of the client-side SDK cannot impersonate another user
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/environment#secure_mode DataLaunchdarklyEnvironment#secure_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/environment#secure_mode DataLaunchdarklyEnvironment#secure_mode}
 
 ---
 
@@ -1391,7 +1391,7 @@ public java.util.List<java.lang.String> getTags();
 
 Tags associated with your resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/environment#tags DataLaunchdarklyEnvironment#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/environment#tags DataLaunchdarklyEnvironment#tags}
 
 ---
 

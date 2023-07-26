@@ -1,3 +1,3 @@
 # `launchdarkly_audit_log_subscription`
 
-Refer to the Terraform Registory for docs: [`launchdarkly_audit_log_subscription`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/audit_log_subscription).
+Refer to the Terraform Registory for docs: [`launchdarkly_audit_log_subscription`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/audit_log_subscription).

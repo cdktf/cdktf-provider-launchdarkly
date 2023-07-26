@@ -1,6 +1,6 @@
 # `launchdarkly_custom_role`
 
-Refer to the Terraform Registory for docs: [`launchdarkly_custom_role`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/custom_role).
+Refer to the Terraform Registory for docs: [`launchdarkly_custom_role`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/custom_role).
 
 # `customRole` Submodule <a name="`customRole` Submodule" id="@cdktf/provider-launchdarkly.customRole"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`launchdarkly_custom_role`](https://
 
 ### CustomRole <a name="CustomRole" id="@cdktf/provider-launchdarkly.customRole.CustomRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/custom_role launchdarkly_custom_role}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/custom_role launchdarkly_custom_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.customRole.CustomRole.Initializer"></a>
 
@@ -50,7 +50,7 @@ customRole.CustomRole(
 | <code><a href="#@cdktf/provider-launchdarkly.customRole.CustomRole.Initializer.parameter.name">name</a></code> | <code>str</code> | A name for the custom role. |
 | <code><a href="#@cdktf/provider-launchdarkly.customRole.CustomRole.Initializer.parameter.basePermissions">base_permissions</a></code> | <code>str</code> | The base permission level - either reader or no_access. Defaults to reader. |
 | <code><a href="#@cdktf/provider-launchdarkly.customRole.CustomRole.Initializer.parameter.description">description</a></code> | <code>str</code> | Description of the custom role. |
-| <code><a href="#@cdktf/provider-launchdarkly.customRole.CustomRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/custom_role#id CustomRole#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.customRole.CustomRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/custom_role#id CustomRole#id}. |
 | <code><a href="#@cdktf/provider-launchdarkly.customRole.CustomRole.Initializer.parameter.policy">policy</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.customRole.CustomRolePolicy">CustomRolePolicy</a>]]</code> | policy block. |
 | <code><a href="#@cdktf/provider-launchdarkly.customRole.CustomRole.Initializer.parameter.policyStatements">policy_statements</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.customRole.CustomRolePolicyStatements">CustomRolePolicyStatements</a>]]</code> | policy_statements block. |
 
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 A unique key that will be used to reference the custom role in your code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/custom_role#key CustomRole#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/custom_role#key CustomRole#key}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 A name for the custom role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/custom_role#name CustomRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/custom_role#name CustomRole#name}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 The base permission level - either reader or no_access. Defaults to reader.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/custom_role#base_permissions CustomRole#base_permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/custom_role#base_permissions CustomRole#base_permissions}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 Description of the custom role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/custom_role#description CustomRole#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/custom_role#description CustomRole#description}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/custom_role#id CustomRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/custom_role#id CustomRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -173,7 +173,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/custom_role#policy CustomRole#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/custom_role#policy CustomRole#policy}
 
 ---
 
@@ -183,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 policy_statements block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/custom_role#policy_statements CustomRole#policy_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/custom_role#policy_statements CustomRole#policy_statements}
 
 ---
 
@@ -937,7 +937,7 @@ customRole.CustomRoleConfig(
 | <code><a href="#@cdktf/provider-launchdarkly.customRole.CustomRoleConfig.property.name">name</a></code> | <code>str</code> | A name for the custom role. |
 | <code><a href="#@cdktf/provider-launchdarkly.customRole.CustomRoleConfig.property.basePermissions">base_permissions</a></code> | <code>str</code> | The base permission level - either reader or no_access. Defaults to reader. |
 | <code><a href="#@cdktf/provider-launchdarkly.customRole.CustomRoleConfig.property.description">description</a></code> | <code>str</code> | Description of the custom role. |
-| <code><a href="#@cdktf/provider-launchdarkly.customRole.CustomRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/custom_role#id CustomRole#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.customRole.CustomRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/custom_role#id CustomRole#id}. |
 | <code><a href="#@cdktf/provider-launchdarkly.customRole.CustomRoleConfig.property.policy">policy</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.customRole.CustomRolePolicy">CustomRolePolicy</a>]]</code> | policy block. |
 | <code><a href="#@cdktf/provider-launchdarkly.customRole.CustomRoleConfig.property.policyStatements">policy_statements</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.customRole.CustomRolePolicyStatements">CustomRolePolicyStatements</a>]]</code> | policy_statements block. |
 
@@ -1023,7 +1023,7 @@ key: str
 
 A unique key that will be used to reference the custom role in your code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/custom_role#key CustomRole#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/custom_role#key CustomRole#key}
 
 ---
 
@@ -1037,7 +1037,7 @@ name: str
 
 A name for the custom role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/custom_role#name CustomRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/custom_role#name CustomRole#name}
 
 ---
 
@@ -1051,7 +1051,7 @@ base_permissions: str
 
 The base permission level - either reader or no_access. Defaults to reader.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/custom_role#base_permissions CustomRole#base_permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/custom_role#base_permissions CustomRole#base_permissions}
 
 ---
 
@@ -1065,7 +1065,7 @@ description: str
 
 Description of the custom role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/custom_role#description CustomRole#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/custom_role#description CustomRole#description}
 
 ---
 
@@ -1077,7 +1077,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/custom_role#id CustomRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/custom_role#id CustomRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1094,7 +1094,7 @@ policy: typing.Union[IResolvable, typing.List[CustomRolePolicy]]
 
 policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/custom_role#policy CustomRole#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/custom_role#policy CustomRole#policy}
 
 ---
 
@@ -1108,7 +1108,7 @@ policy_statements: typing.Union[IResolvable, typing.List[CustomRolePolicyStateme
 
 policy_statements block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/custom_role#policy_statements CustomRole#policy_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/custom_role#policy_statements CustomRole#policy_statements}
 
 ---
 
@@ -1130,9 +1130,9 @@ customRole.CustomRolePolicy(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-launchdarkly.customRole.CustomRolePolicy.property.actions">actions</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/custom_role#actions CustomRole#actions}. |
-| <code><a href="#@cdktf/provider-launchdarkly.customRole.CustomRolePolicy.property.effect">effect</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/custom_role#effect CustomRole#effect}. |
-| <code><a href="#@cdktf/provider-launchdarkly.customRole.CustomRolePolicy.property.resources">resources</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/custom_role#resources CustomRole#resources}. |
+| <code><a href="#@cdktf/provider-launchdarkly.customRole.CustomRolePolicy.property.actions">actions</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/custom_role#actions CustomRole#actions}. |
+| <code><a href="#@cdktf/provider-launchdarkly.customRole.CustomRolePolicy.property.effect">effect</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/custom_role#effect CustomRole#effect}. |
+| <code><a href="#@cdktf/provider-launchdarkly.customRole.CustomRolePolicy.property.resources">resources</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/custom_role#resources CustomRole#resources}. |
 
 ---
 
@@ -1144,7 +1144,7 @@ actions: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/custom_role#actions CustomRole#actions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/custom_role#actions CustomRole#actions}.
 
 ---
 
@@ -1156,7 +1156,7 @@ effect: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/custom_role#effect CustomRole#effect}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/custom_role#effect CustomRole#effect}.
 
 ---
 
@@ -1168,7 +1168,7 @@ resources: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/custom_role#resources CustomRole#resources}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/custom_role#resources CustomRole#resources}.
 
 ---
 
@@ -1192,7 +1192,7 @@ customRole.CustomRolePolicyStatements(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-launchdarkly.customRole.CustomRolePolicyStatements.property.effect">effect</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/custom_role#effect CustomRole#effect}. |
+| <code><a href="#@cdktf/provider-launchdarkly.customRole.CustomRolePolicyStatements.property.effect">effect</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/custom_role#effect CustomRole#effect}. |
 | <code><a href="#@cdktf/provider-launchdarkly.customRole.CustomRolePolicyStatements.property.actions">actions</a></code> | <code>typing.List[str]</code> | An action to perform on a resource. |
 | <code><a href="#@cdktf/provider-launchdarkly.customRole.CustomRolePolicyStatements.property.notActions">not_actions</a></code> | <code>typing.List[str]</code> | Targeted actions will be those actions NOT in this list. |
 | <code><a href="#@cdktf/provider-launchdarkly.customRole.CustomRolePolicyStatements.property.notResources">not_resources</a></code> | <code>typing.List[str]</code> | Targeted resources will be those resources NOT in this list. |
@@ -1208,7 +1208,7 @@ effect: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/custom_role#effect CustomRole#effect}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/custom_role#effect CustomRole#effect}.
 
 ---
 
@@ -1222,7 +1222,7 @@ actions: typing.List[str]
 
 An action to perform on a resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/custom_role#actions CustomRole#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/custom_role#actions CustomRole#actions}
 
 ---
 
@@ -1238,7 +1238,7 @@ Targeted actions will be those actions NOT in this list.
 
 The 'actions' field must be empty to use this field
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/custom_role#not_actions CustomRole#not_actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/custom_role#not_actions CustomRole#not_actions}
 
 ---
 
@@ -1254,7 +1254,7 @@ Targeted resources will be those resources NOT in this list.
 
 The 'resources' field must be empty to use this field
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/custom_role#not_resources CustomRole#not_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/custom_role#not_resources CustomRole#not_resources}
 
 ---
 
@@ -1268,7 +1268,7 @@ resources: typing.List[str]
 
 A list of LaunchDarkly resource specifiers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/custom_role#resources CustomRole#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/custom_role#resources CustomRole#resources}
 
 ---
 

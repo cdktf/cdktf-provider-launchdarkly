@@ -1,6 +1,6 @@
 # `data_launchdarkly_relay_proxy_configuration`
 
-Refer to the Terraform Registory for docs: [`data_launchdarkly_relay_proxy_configuration`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/relay_proxy_configuration).
+Refer to the Terraform Registory for docs: [`data_launchdarkly_relay_proxy_configuration`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/relay_proxy_configuration).
 
 # `dataLaunchdarklyRelayProxyConfiguration` Submodule <a name="`dataLaunchdarklyRelayProxyConfiguration` Submodule" id="@cdktf/provider-launchdarkly.dataLaunchdarklyRelayProxyConfiguration"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_launchdarkly_relay_proxy_confi
 
 ### DataLaunchdarklyRelayProxyConfiguration <a name="DataLaunchdarklyRelayProxyConfiguration" id="@cdktf/provider-launchdarkly.dataLaunchdarklyRelayProxyConfiguration.DataLaunchdarklyRelayProxyConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/relay_proxy_configuration launchdarkly_relay_proxy_configuration}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/relay_proxy_configuration launchdarkly_relay_proxy_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklyRelayProxyConfiguration.DataLaunchdarklyRelayProxyConfiguration.Initializer"></a>
 
@@ -690,7 +690,7 @@ Id *string
 
 The Relay Proxy configuration's unique 24 character ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/relay_proxy_configuration#id DataLaunchdarklyRelayProxyConfiguration#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/relay_proxy_configuration#id DataLaunchdarklyRelayProxyConfiguration#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -707,7 +707,7 @@ Policy interface{}
 
 policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/relay_proxy_configuration#policy DataLaunchdarklyRelayProxyConfiguration#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/relay_proxy_configuration#policy DataLaunchdarklyRelayProxyConfiguration#policy}
 
 ---
 
@@ -731,7 +731,7 @@ import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyRelayProxyConfiguration.DataLaunchdarklyRelayProxyConfigurationPolicy.property.effect">Effect</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/relay_proxy_configuration#effect DataLaunchdarklyRelayProxyConfiguration#effect}. |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyRelayProxyConfiguration.DataLaunchdarklyRelayProxyConfigurationPolicy.property.effect">Effect</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/relay_proxy_configuration#effect DataLaunchdarklyRelayProxyConfiguration#effect}. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyRelayProxyConfiguration.DataLaunchdarklyRelayProxyConfigurationPolicy.property.actions">Actions</a></code> | <code>*[]*string</code> | An action to perform on a resource. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyRelayProxyConfiguration.DataLaunchdarklyRelayProxyConfigurationPolicy.property.notActions">NotActions</a></code> | <code>*[]*string</code> | Targeted actions will be those actions NOT in this list. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyRelayProxyConfiguration.DataLaunchdarklyRelayProxyConfigurationPolicy.property.notResources">NotResources</a></code> | <code>*[]*string</code> | Targeted resources will be those resources NOT in this list. |
@@ -747,7 +747,7 @@ Effect *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/relay_proxy_configuration#effect DataLaunchdarklyRelayProxyConfiguration#effect}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/relay_proxy_configuration#effect DataLaunchdarklyRelayProxyConfiguration#effect}.
 
 ---
 
@@ -761,7 +761,7 @@ Actions *[]*string
 
 An action to perform on a resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/relay_proxy_configuration#actions DataLaunchdarklyRelayProxyConfiguration#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/relay_proxy_configuration#actions DataLaunchdarklyRelayProxyConfiguration#actions}
 
 ---
 
@@ -777,7 +777,7 @@ Targeted actions will be those actions NOT in this list.
 
 The 'actions' field must be empty to use this field
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/relay_proxy_configuration#not_actions DataLaunchdarklyRelayProxyConfiguration#not_actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/relay_proxy_configuration#not_actions DataLaunchdarklyRelayProxyConfiguration#not_actions}
 
 ---
 
@@ -793,7 +793,7 @@ Targeted resources will be those resources NOT in this list.
 
 The 'resources' field must be empty to use this field
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/relay_proxy_configuration#not_resources DataLaunchdarklyRelayProxyConfiguration#not_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/relay_proxy_configuration#not_resources DataLaunchdarklyRelayProxyConfiguration#not_resources}
 
 ---
 
@@ -807,7 +807,7 @@ Resources *[]*string
 
 A list of LaunchDarkly resource specifiers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/relay_proxy_configuration#resources DataLaunchdarklyRelayProxyConfiguration#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/relay_proxy_configuration#resources DataLaunchdarklyRelayProxyConfiguration#resources}
 
 ---
 

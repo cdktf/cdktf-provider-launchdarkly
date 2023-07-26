@@ -1,6 +1,6 @@
 # `launchdarkly_audit_log_subscription`
 
-Refer to the Terraform Registory for docs: [`launchdarkly_audit_log_subscription`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/audit_log_subscription).
+Refer to the Terraform Registory for docs: [`launchdarkly_audit_log_subscription`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/audit_log_subscription).
 
 # `auditLogSubscription` Submodule <a name="`auditLogSubscription` Submodule" id="@cdktf/provider-launchdarkly.auditLogSubscription"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`launchdarkly_audit_log_subscription
 
 ### AuditLogSubscription <a name="AuditLogSubscription" id="@cdktf/provider-launchdarkly.auditLogSubscription.AuditLogSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/audit_log_subscription launchdarkly_audit_log_subscription}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/audit_log_subscription launchdarkly_audit_log_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.auditLogSubscription.AuditLogSubscription.Initializer"></a>
 
@@ -712,12 +712,12 @@ const auditLogSubscriptionConfig: auditLogSubscription.AuditLogSubscriptionConfi
 | <code><a href="#@cdktf/provider-launchdarkly.auditLogSubscription.AuditLogSubscriptionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.auditLogSubscription.AuditLogSubscriptionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.auditLogSubscription.AuditLogSubscriptionConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.auditLogSubscription.AuditLogSubscriptionConfig.property.config">config</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/audit_log_subscription#config AuditLogSubscription#config}. |
-| <code><a href="#@cdktf/provider-launchdarkly.auditLogSubscription.AuditLogSubscriptionConfig.property.integrationKey">integrationKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/audit_log_subscription#integration_key AuditLogSubscription#integration_key}. |
-| <code><a href="#@cdktf/provider-launchdarkly.auditLogSubscription.AuditLogSubscriptionConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/audit_log_subscription#name AuditLogSubscription#name}. |
-| <code><a href="#@cdktf/provider-launchdarkly.auditLogSubscription.AuditLogSubscriptionConfig.property.on">on</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/audit_log_subscription#on AuditLogSubscription#on}. |
+| <code><a href="#@cdktf/provider-launchdarkly.auditLogSubscription.AuditLogSubscriptionConfig.property.config">config</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/audit_log_subscription#config AuditLogSubscription#config}. |
+| <code><a href="#@cdktf/provider-launchdarkly.auditLogSubscription.AuditLogSubscriptionConfig.property.integrationKey">integrationKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/audit_log_subscription#integration_key AuditLogSubscription#integration_key}. |
+| <code><a href="#@cdktf/provider-launchdarkly.auditLogSubscription.AuditLogSubscriptionConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/audit_log_subscription#name AuditLogSubscription#name}. |
+| <code><a href="#@cdktf/provider-launchdarkly.auditLogSubscription.AuditLogSubscriptionConfig.property.on">on</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/audit_log_subscription#on AuditLogSubscription#on}. |
 | <code><a href="#@cdktf/provider-launchdarkly.auditLogSubscription.AuditLogSubscriptionConfig.property.statements">statements</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-launchdarkly.auditLogSubscription.AuditLogSubscriptionStatements">AuditLogSubscriptionStatements</a>[]</code> | statements block. |
-| <code><a href="#@cdktf/provider-launchdarkly.auditLogSubscription.AuditLogSubscriptionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/audit_log_subscription#id AuditLogSubscription#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.auditLogSubscription.AuditLogSubscriptionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/audit_log_subscription#id AuditLogSubscription#id}. |
 | <code><a href="#@cdktf/provider-launchdarkly.auditLogSubscription.AuditLogSubscriptionConfig.property.tags">tags</a></code> | <code>string[]</code> | Tags associated with your resource. |
 
 ---
@@ -800,7 +800,7 @@ public readonly config: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/audit_log_subscription#config AuditLogSubscription#config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/audit_log_subscription#config AuditLogSubscription#config}.
 
 ---
 
@@ -812,7 +812,7 @@ public readonly integrationKey: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/audit_log_subscription#integration_key AuditLogSubscription#integration_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/audit_log_subscription#integration_key AuditLogSubscription#integration_key}.
 
 ---
 
@@ -824,7 +824,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/audit_log_subscription#name AuditLogSubscription#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/audit_log_subscription#name AuditLogSubscription#name}.
 
 ---
 
@@ -836,7 +836,7 @@ public readonly on: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/audit_log_subscription#on AuditLogSubscription#on}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/audit_log_subscription#on AuditLogSubscription#on}.
 
 ---
 
@@ -850,7 +850,7 @@ public readonly statements: IResolvable | AuditLogSubscriptionStatements[];
 
 statements block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/audit_log_subscription#statements AuditLogSubscription#statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/audit_log_subscription#statements AuditLogSubscription#statements}
 
 ---
 
@@ -862,7 +862,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/audit_log_subscription#id AuditLogSubscription#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/audit_log_subscription#id AuditLogSubscription#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -879,7 +879,7 @@ public readonly tags: string[];
 
 Tags associated with your resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/audit_log_subscription#tags AuditLogSubscription#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/audit_log_subscription#tags AuditLogSubscription#tags}
 
 ---
 
@@ -897,7 +897,7 @@ const auditLogSubscriptionStatements: auditLogSubscription.AuditLogSubscriptionS
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-launchdarkly.auditLogSubscription.AuditLogSubscriptionStatements.property.effect">effect</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/audit_log_subscription#effect AuditLogSubscription#effect}. |
+| <code><a href="#@cdktf/provider-launchdarkly.auditLogSubscription.AuditLogSubscriptionStatements.property.effect">effect</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/audit_log_subscription#effect AuditLogSubscription#effect}. |
 | <code><a href="#@cdktf/provider-launchdarkly.auditLogSubscription.AuditLogSubscriptionStatements.property.actions">actions</a></code> | <code>string[]</code> | An action to perform on a resource. |
 | <code><a href="#@cdktf/provider-launchdarkly.auditLogSubscription.AuditLogSubscriptionStatements.property.notActions">notActions</a></code> | <code>string[]</code> | Targeted actions will be those actions NOT in this list. |
 | <code><a href="#@cdktf/provider-launchdarkly.auditLogSubscription.AuditLogSubscriptionStatements.property.notResources">notResources</a></code> | <code>string[]</code> | Targeted resources will be those resources NOT in this list. |
@@ -913,7 +913,7 @@ public readonly effect: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/audit_log_subscription#effect AuditLogSubscription#effect}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/audit_log_subscription#effect AuditLogSubscription#effect}.
 
 ---
 
@@ -927,7 +927,7 @@ public readonly actions: string[];
 
 An action to perform on a resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/audit_log_subscription#actions AuditLogSubscription#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/audit_log_subscription#actions AuditLogSubscription#actions}
 
 ---
 
@@ -943,7 +943,7 @@ Targeted actions will be those actions NOT in this list.
 
 The 'actions' field must be empty to use this field
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/audit_log_subscription#not_actions AuditLogSubscription#not_actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/audit_log_subscription#not_actions AuditLogSubscription#not_actions}
 
 ---
 
@@ -959,7 +959,7 @@ Targeted resources will be those resources NOT in this list.
 
 The 'resources' field must be empty to use this field
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/audit_log_subscription#not_resources AuditLogSubscription#not_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/audit_log_subscription#not_resources AuditLogSubscription#not_resources}
 
 ---
 
@@ -973,7 +973,7 @@ public readonly resources: string[];
 
 A list of LaunchDarkly resource specifiers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/audit_log_subscription#resources AuditLogSubscription#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/audit_log_subscription#resources AuditLogSubscription#resources}
 
 ---
 

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/webhook
+// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/webhook
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +10,7 @@ export interface DataLaunchdarklyWebhookConfig extends cdktf.TerraformMetaArgume
   /**
   * The ID of the webhook
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/webhook#id DataLaunchdarklyWebhook#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/webhook#id DataLaunchdarklyWebhook#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,25 +19,25 @@ export interface DataLaunchdarklyWebhookConfig extends cdktf.TerraformMetaArgume
   /**
   * A human-readable name for your webhook
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/webhook#name DataLaunchdarklyWebhook#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/webhook#name DataLaunchdarklyWebhook#name}
   */
   readonly name?: string;
   /**
   * If sign is true, and the secret attribute is omitted, LaunchDarkly will automatically generate a secret for you
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/webhook#secret DataLaunchdarklyWebhook#secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/webhook#secret DataLaunchdarklyWebhook#secret}
   */
   readonly secret?: string;
   /**
   * Tags associated with your resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/webhook#tags DataLaunchdarklyWebhook#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/webhook#tags DataLaunchdarklyWebhook#tags}
   */
   readonly tags?: string[];
   /**
   * statements block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/webhook#statements DataLaunchdarklyWebhook#statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/webhook#statements DataLaunchdarklyWebhook#statements}
   */
   readonly statements?: DataLaunchdarklyWebhookStatements[] | cdktf.IResolvable;
 }
@@ -50,29 +45,29 @@ export interface DataLaunchdarklyWebhookStatements {
   /**
   * An action to perform on a resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/webhook#actions DataLaunchdarklyWebhook#actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/webhook#actions DataLaunchdarklyWebhook#actions}
   */
   readonly actions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/webhook#effect DataLaunchdarklyWebhook#effect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/webhook#effect DataLaunchdarklyWebhook#effect}
   */
   readonly effect: string;
   /**
   * Targeted actions will be those actions NOT in this list. The 'actions' field must be empty to use this field
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/webhook#not_actions DataLaunchdarklyWebhook#not_actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/webhook#not_actions DataLaunchdarklyWebhook#not_actions}
   */
   readonly notActions?: string[];
   /**
   * Targeted resources will be those resources NOT in this list. The 'resources' field must be empty to use this field
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/webhook#not_resources DataLaunchdarklyWebhook#not_resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/webhook#not_resources DataLaunchdarklyWebhook#not_resources}
   */
   readonly notResources?: string[];
   /**
   * A list of LaunchDarkly resource specifiers
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/webhook#resources DataLaunchdarklyWebhook#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/webhook#resources DataLaunchdarklyWebhook#resources}
   */
   readonly resources?: string[];
 }
@@ -258,7 +253,7 @@ export class DataLaunchdarklyWebhookStatementsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/webhook launchdarkly_webhook}
+* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/webhook launchdarkly_webhook}
 */
 export class DataLaunchdarklyWebhook extends cdktf.TerraformDataSource {
 
@@ -272,7 +267,7 @@ export class DataLaunchdarklyWebhook extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/data-sources/webhook launchdarkly_webhook} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/data-sources/webhook launchdarkly_webhook} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -283,7 +278,7 @@ export class DataLaunchdarklyWebhook extends cdktf.TerraformDataSource {
       terraformResourceType: 'launchdarkly_webhook',
       terraformGeneratorMetadata: {
         providerName: 'launchdarkly',
-        providerVersion: '2.13.2',
+        providerVersion: '2.13.3',
         providerVersionConstraint: '~> 2.13'
       },
       provider: config.provider,
