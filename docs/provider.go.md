@@ -1,0 +1,516 @@
+# `provider`
+
+Refer to the Terraform Registory for docs: [`launchdarkly`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs).
+
+# `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-launchdarkly.provider"></a>
+
+## Constructs <a name="Constructs" id="Constructs"></a>
+
+### LaunchdarklyProvider <a name="LaunchdarklyProvider" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider"></a>
+
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs launchdarkly}.
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/provider"
+
+provider.NewLaunchdarklyProvider(scope Construct, id *string, config LaunchdarklyProviderConfig) LaunchdarklyProvider
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProviderConfig">LaunchdarklyProviderConfig</a></code> | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.Initializer.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.Initializer.parameter.id"></a>
+
+- *Type:* *string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProviderConfig">LaunchdarklyProviderConfig</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.resetAccessToken">ResetAccessToken</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.resetAlias">ResetAlias</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.resetApiHost">ResetApiHost</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.resetOauthToken">ResetOauthToken</a></code> | *No description.* |
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Returns a string representation of this construct.
+
+##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.addOverride"></a>
+
+```go
+func AddOverride(path *string, value interface{})
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.addOverride.parameter.path"></a>
+
+- *Type:* *string
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.addOverride.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.overrideLogicalId"></a>
+
+```go
+func OverrideLogicalId(newLogicalId *string)
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* *string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.resetOverrideLogicalId"></a>
+
+```go
+func ResetOverrideLogicalId()
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.toMetadata"></a>
+
+```go
+func ToMetadata() interface{}
+```
+
+##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.toTerraform"></a>
+
+```go
+func ToTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `ResetAccessToken` <a name="ResetAccessToken" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.resetAccessToken"></a>
+
+```go
+func ResetAccessToken()
+```
+
+##### `ResetAlias` <a name="ResetAlias" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.resetAlias"></a>
+
+```go
+func ResetAlias()
+```
+
+##### `ResetApiHost` <a name="ResetApiHost" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.resetApiHost"></a>
+
+```go
+func ResetApiHost()
+```
+
+##### `ResetOauthToken` <a name="ResetOauthToken" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.resetOauthToken"></a>
+
+```go
+func ResetOauthToken()
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.isTerraformProvider">IsTerraformProvider</a></code> | *No description.* |
+
+---
+
+##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.isConstruct"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/provider"
+
+provider.LaunchdarklyProvider_IsConstruct(x interface{}) *bool
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.isConstruct.parameter.x"></a>
+
+- *Type:* interface{}
+
+Any object.
+
+---
+
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.isTerraformElement"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/provider"
+
+provider.LaunchdarklyProvider_IsTerraformElement(x interface{}) *bool
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.isTerraformElement.parameter.x"></a>
+
+- *Type:* interface{}
+
+---
+
+##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.isTerraformProvider"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/provider"
+
+provider.LaunchdarklyProvider_IsTerraformProvider(x interface{}) *bool
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.isTerraformProvider.parameter.x"></a>
+
+- *Type:* interface{}
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.metaAttributes">MetaAttributes</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.terraformProviderSource">TerraformProviderSource</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.alias">Alias</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.accessTokenInput">AccessTokenInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.aliasInput">AliasInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.apiHostInput">ApiHostInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.oauthTokenInput">OauthTokenInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.accessToken">AccessToken</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.apiHost">ApiHost</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.oauthToken">OauthToken</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.node"></a>
+
+```go
+func Node() Node
+```
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Node
+
+The tree node.
+
+---
+
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.cdktfStack"></a>
+
+```go
+func CdktfStack() TerraformStack
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.friendlyUniqueId"></a>
+
+```go
+func FriendlyUniqueId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `MetaAttributes`<sup>Required</sup> <a name="MetaAttributes" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.metaAttributes"></a>
+
+```go
+func MetaAttributes() *map[string]interface{}
+```
+
+- *Type:* *map[string]interface{}
+
+---
+
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.terraformResourceType"></a>
+
+```go
+func TerraformResourceType() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.terraformGeneratorMetadata"></a>
+
+```go
+func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `TerraformProviderSource`<sup>Optional</sup> <a name="TerraformProviderSource" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.terraformProviderSource"></a>
+
+```go
+func TerraformProviderSource() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Alias`<sup>Optional</sup> <a name="Alias" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.alias"></a>
+
+```go
+func Alias() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AccessTokenInput`<sup>Optional</sup> <a name="AccessTokenInput" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.accessTokenInput"></a>
+
+```go
+func AccessTokenInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AliasInput`<sup>Optional</sup> <a name="AliasInput" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.aliasInput"></a>
+
+```go
+func AliasInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ApiHostInput`<sup>Optional</sup> <a name="ApiHostInput" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.apiHostInput"></a>
+
+```go
+func ApiHostInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `OauthTokenInput`<sup>Optional</sup> <a name="OauthTokenInput" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.oauthTokenInput"></a>
+
+```go
+func OauthTokenInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AccessToken`<sup>Optional</sup> <a name="AccessToken" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.accessToken"></a>
+
+```go
+func AccessToken() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ApiHost`<sup>Optional</sup> <a name="ApiHost" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.apiHost"></a>
+
+```go
+func ApiHost() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `OauthToken`<sup>Optional</sup> <a name="OauthToken" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.oauthToken"></a>
+
+```go
+func OauthToken() *string
+```
+
+- *Type:* *string
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.tfResourceType"></a>
+
+```go
+func TfResourceType() *string
+```
+
+- *Type:* *string
+
+---
+
+## Structs <a name="Structs" id="Structs"></a>
+
+### LaunchdarklyProviderConfig <a name="LaunchdarklyProviderConfig" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProviderConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProviderConfig.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/provider"
+
+&provider.LaunchdarklyProviderConfig {
+	AccessToken: *string,
+	Alias: *string,
+	ApiHost: *string,
+	OauthToken: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProviderConfig.property.accessToken">AccessToken</a></code> | <code>*string</code> | The LaunchDarkly API key. |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProviderConfig.property.alias">Alias</a></code> | <code>*string</code> | Alias name. |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProviderConfig.property.apiHost">ApiHost</a></code> | <code>*string</code> | The LaunchDarkly host address, e.g. https://app.launchdarkly.com. |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProviderConfig.property.oauthToken">OauthToken</a></code> | <code>*string</code> | The LaunchDarkly OAuth token. |
+
+---
+
+##### `AccessToken`<sup>Optional</sup> <a name="AccessToken" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProviderConfig.property.accessToken"></a>
+
+```go
+AccessToken *string
+```
+
+- *Type:* *string
+
+The LaunchDarkly API key.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs#access_token LaunchdarklyProvider#access_token}
+
+---
+
+##### `Alias`<sup>Optional</sup> <a name="Alias" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProviderConfig.property.alias"></a>
+
+```go
+Alias *string
+```
+
+- *Type:* *string
+
+Alias name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs#alias LaunchdarklyProvider#alias}
+
+---
+
+##### `ApiHost`<sup>Optional</sup> <a name="ApiHost" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProviderConfig.property.apiHost"></a>
+
+```go
+ApiHost *string
+```
+
+- *Type:* *string
+
+The LaunchDarkly host address, e.g. https://app.launchdarkly.com.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs#api_host LaunchdarklyProvider#api_host}
+
+---
+
+##### `OauthToken`<sup>Optional</sup> <a name="OauthToken" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProviderConfig.property.oauthToken"></a>
+
+```go
+OauthToken *string
+```
+
+- *Type:* *string
+
+The LaunchDarkly OAuth token.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs#oauth_token LaunchdarklyProvider#oauth_token}
+
+---
+
+
+
