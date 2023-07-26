@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/relay_proxy_configuration
+// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/relay_proxy_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface RelayProxyConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/relay_proxy_configuration#id RelayProxyConfiguration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/relay_proxy_configuration#id RelayProxyConfiguration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +22,13 @@ export interface RelayProxyConfigurationConfig extends cdktf.TerraformMetaArgume
   /**
   * A human-friendly name for the Relay Proxy configuration
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/relay_proxy_configuration#name RelayProxyConfiguration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/relay_proxy_configuration#name RelayProxyConfiguration#name}
   */
   readonly name: string;
   /**
   * policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/relay_proxy_configuration#policy RelayProxyConfiguration#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/relay_proxy_configuration#policy RelayProxyConfiguration#policy}
   */
   readonly policy: RelayProxyConfigurationPolicy[] | cdktf.IResolvable;
 }
@@ -36,29 +36,29 @@ export interface RelayProxyConfigurationPolicy {
   /**
   * An action to perform on a resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/relay_proxy_configuration#actions RelayProxyConfiguration#actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/relay_proxy_configuration#actions RelayProxyConfiguration#actions}
   */
   readonly actions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/relay_proxy_configuration#effect RelayProxyConfiguration#effect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/relay_proxy_configuration#effect RelayProxyConfiguration#effect}
   */
   readonly effect: string;
   /**
   * Targeted actions will be those actions NOT in this list. The 'actions' field must be empty to use this field
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/relay_proxy_configuration#not_actions RelayProxyConfiguration#not_actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/relay_proxy_configuration#not_actions RelayProxyConfiguration#not_actions}
   */
   readonly notActions?: string[];
   /**
   * Targeted resources will be those resources NOT in this list. The 'resources' field must be empty to use this field
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/relay_proxy_configuration#not_resources RelayProxyConfiguration#not_resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/relay_proxy_configuration#not_resources RelayProxyConfiguration#not_resources}
   */
   readonly notResources?: string[];
   /**
   * A list of LaunchDarkly resource specifiers
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/relay_proxy_configuration#resources RelayProxyConfiguration#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/relay_proxy_configuration#resources RelayProxyConfiguration#resources}
   */
   readonly resources?: string[];
 }
@@ -244,7 +244,7 @@ export class RelayProxyConfigurationPolicyList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/relay_proxy_configuration launchdarkly_relay_proxy_configuration}
+* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/relay_proxy_configuration launchdarkly_relay_proxy_configuration}
 */
 export class RelayProxyConfiguration extends cdktf.TerraformResource {
 
@@ -258,7 +258,7 @@ export class RelayProxyConfiguration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.2/docs/resources/relay_proxy_configuration launchdarkly_relay_proxy_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/relay_proxy_configuration launchdarkly_relay_proxy_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -269,7 +269,7 @@ export class RelayProxyConfiguration extends cdktf.TerraformResource {
       terraformResourceType: 'launchdarkly_relay_proxy_configuration',
       terraformGeneratorMetadata: {
         providerName: 'launchdarkly',
-        providerVersion: '2.13.2',
+        providerVersion: '2.13.3',
         providerVersionConstraint: '~> 2.13'
       },
       provider: config.provider,
