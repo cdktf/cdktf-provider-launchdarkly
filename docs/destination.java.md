@@ -1,6 +1,6 @@
 # `launchdarkly_destination`
 
-Refer to the Terraform Registory for docs: [`launchdarkly_destination`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/destination).
+Refer to the Terraform Registory for docs: [`launchdarkly_destination`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/destination).
 
 # `destination` Submodule <a name="`destination` Submodule" id="@cdktf/provider-launchdarkly.destination"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`launchdarkly_destination`](https://
 
 ### Destination <a name="Destination" id="@cdktf/provider-launchdarkly.destination.Destination"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/destination launchdarkly_destination}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/destination launchdarkly_destination}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.destination.Destination.Initializer"></a>
 
@@ -55,7 +55,7 @@ Destination.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-launchdarkly.destination.Destination.Initializer.parameter.kind">kind</a></code> | <code>java.lang.String</code> | The data export destination type. Available choices are 'kinesis', 'google-pubsub', 'segment', 'azure-event-hubs', and 'mparticle'. |
 | <code><a href="#@cdktf/provider-launchdarkly.destination.Destination.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | A human-readable name for your data export destination. |
 | <code><a href="#@cdktf/provider-launchdarkly.destination.Destination.Initializer.parameter.projectKey">projectKey</a></code> | <code>java.lang.String</code> | The LaunchDarkly project key. |
-| <code><a href="#@cdktf/provider-launchdarkly.destination.Destination.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/destination#id Destination#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.destination.Destination.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/destination#id Destination#id}. |
 | <code><a href="#@cdktf/provider-launchdarkly.destination.Destination.Initializer.parameter.on">on</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the data export destination is on or not. |
 | <code><a href="#@cdktf/provider-launchdarkly.destination.Destination.Initializer.parameter.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Tags associated with your resource. |
 
@@ -127,7 +127,7 @@ Must be unique amongst siblings in the same scope
 
 The destination-specific configuration object corresponding to your data export kind - see documentation for required fields for each kind.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/destination#config Destination#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/destination#config Destination#config}
 
 ---
 
@@ -137,7 +137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 The LaunchDarkly environment key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/destination#env_key Destination#env_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/destination#env_key Destination#env_key}
 
 ---
 
@@ -147,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 The data export destination type. Available choices are 'kinesis', 'google-pubsub', 'segment', 'azure-event-hubs', and 'mparticle'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/destination#kind Destination#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/destination#kind Destination#kind}
 
 ---
 
@@ -157,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 A human-readable name for your data export destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/destination#name Destination#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/destination#name Destination#name}
 
 ---
 
@@ -167,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 The LaunchDarkly project key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/destination#project_key Destination#project_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/destination#project_key Destination#project_key}
 
 ---
 
@@ -175,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/destination#id Destination#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/destination#id Destination#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -188,7 +188,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Whether the data export destination is on or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/destination#on Destination#on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/destination#on Destination#on}
 
 ---
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 Tags associated with your resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/destination#tags Destination#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/destination#tags Destination#tags}
 
 ---
 
@@ -906,7 +906,7 @@ DestinationConfig.builder()
 | <code><a href="#@cdktf/provider-launchdarkly.destination.DestinationConfig.property.kind">kind</a></code> | <code>java.lang.String</code> | The data export destination type. Available choices are 'kinesis', 'google-pubsub', 'segment', 'azure-event-hubs', and 'mparticle'. |
 | <code><a href="#@cdktf/provider-launchdarkly.destination.DestinationConfig.property.name">name</a></code> | <code>java.lang.String</code> | A human-readable name for your data export destination. |
 | <code><a href="#@cdktf/provider-launchdarkly.destination.DestinationConfig.property.projectKey">projectKey</a></code> | <code>java.lang.String</code> | The LaunchDarkly project key. |
-| <code><a href="#@cdktf/provider-launchdarkly.destination.DestinationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/destination#id Destination#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.destination.DestinationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/destination#id Destination#id}. |
 | <code><a href="#@cdktf/provider-launchdarkly.destination.DestinationConfig.property.on">on</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the data export destination is on or not. |
 | <code><a href="#@cdktf/provider-launchdarkly.destination.DestinationConfig.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Tags associated with your resource. |
 
@@ -992,7 +992,7 @@ public java.util.Map<java.lang.String, java.lang.String> getConfig();
 
 The destination-specific configuration object corresponding to your data export kind - see documentation for required fields for each kind.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/destination#config Destination#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/destination#config Destination#config}
 
 ---
 
@@ -1006,7 +1006,7 @@ public java.lang.String getEnvKey();
 
 The LaunchDarkly environment key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/destination#env_key Destination#env_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/destination#env_key Destination#env_key}
 
 ---
 
@@ -1020,7 +1020,7 @@ public java.lang.String getKind();
 
 The data export destination type. Available choices are 'kinesis', 'google-pubsub', 'segment', 'azure-event-hubs', and 'mparticle'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/destination#kind Destination#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/destination#kind Destination#kind}
 
 ---
 
@@ -1034,7 +1034,7 @@ public java.lang.String getName();
 
 A human-readable name for your data export destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/destination#name Destination#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/destination#name Destination#name}
 
 ---
 
@@ -1048,7 +1048,7 @@ public java.lang.String getProjectKey();
 
 The LaunchDarkly project key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/destination#project_key Destination#project_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/destination#project_key Destination#project_key}
 
 ---
 
@@ -1060,7 +1060,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/destination#id Destination#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/destination#id Destination#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1077,7 +1077,7 @@ public java.lang.Object getOn();
 
 Whether the data export destination is on or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/destination#on Destination#on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/destination#on Destination#on}
 
 ---
 
@@ -1091,7 +1091,7 @@ public java.util.List<java.lang.String> getTags();
 
 Tags associated with your resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/destination#tags Destination#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/destination#tags Destination#tags}
 
 ---
 

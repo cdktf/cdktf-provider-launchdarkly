@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`launchdarkly`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs).
+Refer to the Terraform Registory for docs: [`launchdarkly`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-launchdarkly.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`launchdarkly`](https://registry.ter
 
 ### LaunchdarklyProvider <a name="LaunchdarklyProvider" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs launchdarkly}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs launchdarkly}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.Initializer"></a>
 
@@ -58,7 +58,7 @@ Must be unique amongst siblings in the same scope
 
 The LaunchDarkly API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs#access_token LaunchdarklyProvider#access_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs#access_token LaunchdarklyProvider#access_token}
 
 ---
 
@@ -68,7 +68,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs#alias LaunchdarklyProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs#alias LaunchdarklyProvider#alias}
 
 ---
 
@@ -78,7 +78,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 The LaunchDarkly host address, e.g. https://app.launchdarkly.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs#api_host LaunchdarklyProvider#api_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs#api_host LaunchdarklyProvider#api_host}
 
 ---
 
@@ -88,7 +88,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 The LaunchDarkly OAuth token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs#oauth_token LaunchdarklyProvider#oauth_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs#oauth_token LaunchdarklyProvider#oauth_token}
 
 ---
 
@@ -508,7 +508,7 @@ public java.lang.String getAccessToken();
 
 The LaunchDarkly API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs#access_token LaunchdarklyProvider#access_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs#access_token LaunchdarklyProvider#access_token}
 
 ---
 
@@ -522,7 +522,7 @@ public java.lang.String getAlias();
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs#alias LaunchdarklyProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs#alias LaunchdarklyProvider#alias}
 
 ---
 
@@ -536,7 +536,7 @@ public java.lang.String getApiHost();
 
 The LaunchDarkly host address, e.g. https://app.launchdarkly.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs#api_host LaunchdarklyProvider#api_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs#api_host LaunchdarklyProvider#api_host}
 
 ---
 
@@ -550,7 +550,7 @@ public java.lang.String getOauthToken();
 
 The LaunchDarkly OAuth token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs#oauth_token LaunchdarklyProvider#oauth_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs#oauth_token LaunchdarklyProvider#oauth_token}
 
 ---
 

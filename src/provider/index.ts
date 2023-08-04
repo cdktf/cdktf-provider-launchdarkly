@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs
+// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +10,31 @@ export interface LaunchdarklyProviderConfig {
   /**
   * The LaunchDarkly API key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs#access_token LaunchdarklyProvider#access_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs#access_token LaunchdarklyProvider#access_token}
   */
   readonly accessToken?: string;
   /**
   * The LaunchDarkly host address, e.g. https://app.launchdarkly.com
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs#api_host LaunchdarklyProvider#api_host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs#api_host LaunchdarklyProvider#api_host}
   */
   readonly apiHost?: string;
   /**
   * The LaunchDarkly OAuth token
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs#oauth_token LaunchdarklyProvider#oauth_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs#oauth_token LaunchdarklyProvider#oauth_token}
   */
   readonly oauthToken?: string;
   /**
   * Alias name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs#alias LaunchdarklyProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs#alias LaunchdarklyProvider#alias}
   */
   readonly alias?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs launchdarkly}
+* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs launchdarkly}
 */
 export class LaunchdarklyProvider extends cdktf.TerraformProvider {
 
@@ -53,7 +48,7 @@ export class LaunchdarklyProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs launchdarkly} Resource
+  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs launchdarkly} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -64,7 +59,7 @@ export class LaunchdarklyProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'launchdarkly',
       terraformGeneratorMetadata: {
         providerName: 'launchdarkly',
-        providerVersion: '2.13.3',
+        providerVersion: '2.13.4',
         providerVersionConstraint: '~> 2.13'
       },
       terraformProviderSource: 'launchdarkly/launchdarkly'
