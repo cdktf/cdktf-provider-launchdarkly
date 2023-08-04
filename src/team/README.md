@@ -1,3 +1,3 @@
 # `launchdarkly_team`
 
-Refer to the Terraform Registory for docs: [`launchdarkly_team`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/team).
+Refer to the Terraform Registory for docs: [`launchdarkly_team`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/team).

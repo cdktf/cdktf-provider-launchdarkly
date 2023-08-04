@@ -1,6 +1,6 @@
 # `launchdarkly_project`
 
-Refer to the Terraform Registory for docs: [`launchdarkly_project`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/project).
+Refer to the Terraform Registory for docs: [`launchdarkly_project`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/project).
 
 # `project` Submodule <a name="`project` Submodule" id="@cdktf/provider-launchdarkly.project"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`launchdarkly_project`](https://regi
 
 ### Project <a name="Project" id="@cdktf/provider-launchdarkly.project.Project"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/project launchdarkly_project}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/project launchdarkly_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.project.Project.Initializer"></a>
 
@@ -743,7 +743,7 @@ const projectConfig: project.ProjectConfig = { ... }
 | <code><a href="#@cdktf/provider-launchdarkly.project.ProjectConfig.property.key">key</a></code> | <code>string</code> | The project's unique key. |
 | <code><a href="#@cdktf/provider-launchdarkly.project.ProjectConfig.property.name">name</a></code> | <code>string</code> | A human-readable name for your project. |
 | <code><a href="#@cdktf/provider-launchdarkly.project.ProjectConfig.property.defaultClientSideAvailability">defaultClientSideAvailability</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-launchdarkly.project.ProjectDefaultClientSideAvailability">ProjectDefaultClientSideAvailability</a>[]</code> | default_client_side_availability block. |
-| <code><a href="#@cdktf/provider-launchdarkly.project.ProjectConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/project#id Project#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.project.ProjectConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/project#id Project#id}. |
 | <code><a href="#@cdktf/provider-launchdarkly.project.ProjectConfig.property.includeInSnippet">includeInSnippet</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether feature flags created under the project should be available to client-side SDKs by default. |
 | <code><a href="#@cdktf/provider-launchdarkly.project.ProjectConfig.property.tags">tags</a></code> | <code>string[]</code> | Tags associated with your resource. |
 
@@ -829,7 +829,7 @@ public readonly environments: IResolvable | ProjectEnvironments[];
 
 environments block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/project#environments Project#environments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/project#environments Project#environments}
 
 ---
 
@@ -843,7 +843,7 @@ public readonly key: string;
 
 The project's unique key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/project#key Project#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/project#key Project#key}
 
 ---
 
@@ -857,7 +857,7 @@ public readonly name: string;
 
 A human-readable name for your project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/project#name Project#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/project#name Project#name}
 
 ---
 
@@ -871,7 +871,7 @@ public readonly defaultClientSideAvailability: IResolvable | ProjectDefaultClien
 
 default_client_side_availability block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/project#default_client_side_availability Project#default_client_side_availability}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/project#default_client_side_availability Project#default_client_side_availability}
 
 ---
 
@@ -883,7 +883,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/project#id Project#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/project#id Project#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -900,7 +900,7 @@ public readonly includeInSnippet: boolean | IResolvable;
 
 Whether feature flags created under the project should be available to client-side SDKs by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/project#include_in_snippet Project#include_in_snippet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/project#include_in_snippet Project#include_in_snippet}
 
 ---
 
@@ -914,7 +914,7 @@ public readonly tags: string[];
 
 Tags associated with your resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/project#tags Project#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/project#tags Project#tags}
 
 ---
 
@@ -932,8 +932,8 @@ const projectDefaultClientSideAvailability: project.ProjectDefaultClientSideAvai
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-launchdarkly.project.ProjectDefaultClientSideAvailability.property.usingEnvironmentId">usingEnvironmentId</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/project#using_environment_id Project#using_environment_id}. |
-| <code><a href="#@cdktf/provider-launchdarkly.project.ProjectDefaultClientSideAvailability.property.usingMobileKey">usingMobileKey</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/project#using_mobile_key Project#using_mobile_key}. |
+| <code><a href="#@cdktf/provider-launchdarkly.project.ProjectDefaultClientSideAvailability.property.usingEnvironmentId">usingEnvironmentId</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/project#using_environment_id Project#using_environment_id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.project.ProjectDefaultClientSideAvailability.property.usingMobileKey">usingMobileKey</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/project#using_mobile_key Project#using_mobile_key}. |
 
 ---
 
@@ -945,7 +945,7 @@ public readonly usingEnvironmentId: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/project#using_environment_id Project#using_environment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/project#using_environment_id Project#using_environment_id}.
 
 ---
 
@@ -957,7 +957,7 @@ public readonly usingMobileKey: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/project#using_mobile_key Project#using_mobile_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/project#using_mobile_key Project#using_mobile_key}.
 
 ---
 
@@ -998,7 +998,7 @@ public readonly color: string;
 
 A color swatch (as an RGB hex value with no leading '#', e.g. C8C8C8).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/project#color Project#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/project#color Project#color}
 
 ---
 
@@ -1012,7 +1012,7 @@ public readonly key: string;
 
 A project-unique key for the new environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/project#key Project#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/project#key Project#key}
 
 ---
 
@@ -1026,7 +1026,7 @@ public readonly name: string;
 
 The name of the new environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/project#name Project#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/project#name Project#name}
 
 ---
 
@@ -1040,7 +1040,7 @@ public readonly approvalSettings: IResolvable | ProjectEnvironmentsApprovalSetti
 
 approval_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/project#approval_settings Project#approval_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/project#approval_settings Project#approval_settings}
 
 ---
 
@@ -1054,7 +1054,7 @@ public readonly confirmChanges: boolean | IResolvable;
 
 Whether or not to require confirmation for flag and segment changes in this environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/project#confirm_changes Project#confirm_changes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/project#confirm_changes Project#confirm_changes}
 
 ---
 
@@ -1068,7 +1068,7 @@ public readonly defaultTrackEvents: boolean | IResolvable;
 
 Whether or not to default to sending data export events for flags created in the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/project#default_track_events Project#default_track_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/project#default_track_events Project#default_track_events}
 
 ---
 
@@ -1084,7 +1084,7 @@ The TTL for the environment.
 
 This must be between 0 and 60 minutes. The TTL setting only applies to environments using the PHP SDK
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/project#default_ttl Project#default_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/project#default_ttl Project#default_ttl}
 
 ---
 
@@ -1098,7 +1098,7 @@ public readonly requireComments: boolean | IResolvable;
 
 Whether or not to require comments for flag and segment changes in this environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/project#require_comments Project#require_comments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/project#require_comments Project#require_comments}
 
 ---
 
@@ -1114,7 +1114,7 @@ Whether or not to use secure mode.
 
 Secure mode ensures a user of the client-side SDK cannot impersonate another user
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/project#secure_mode Project#secure_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/project#secure_mode Project#secure_mode}
 
 ---
 
@@ -1128,7 +1128,7 @@ public readonly tags: string[];
 
 Tags associated with your resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/project#tags Project#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/project#tags Project#tags}
 
 ---
 
@@ -1166,7 +1166,7 @@ Whether changes can be applied as long as minNumApprovals is met, regardless of 
 
 Defaults to true
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/project#can_apply_declined_changes Project#can_apply_declined_changes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/project#can_apply_declined_changes Project#can_apply_declined_changes}
 
 ---
 
@@ -1180,7 +1180,7 @@ public readonly canReviewOwnRequest: boolean | IResolvable;
 
 Whether requesters can approve or decline their own request. They may always comment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/project#can_review_own_request Project#can_review_own_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/project#can_review_own_request Project#can_review_own_request}
 
 ---
 
@@ -1194,7 +1194,7 @@ public readonly minNumApprovals: number;
 
 The number of approvals required before an approval request can be applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/project#min_num_approvals Project#min_num_approvals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/project#min_num_approvals Project#min_num_approvals}
 
 ---
 
@@ -1210,7 +1210,7 @@ Whether any changes to flags in this environment will require approval.
 
 You may only set required or requiredApprovalTags, not both.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/project#required Project#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/project#required Project#required}
 
 ---
 
@@ -1226,7 +1226,7 @@ An array of tags used to specify which flags with those tags require approval.
 
 You may only set requiredApprovalTags or required, not both.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.3/docs/resources/project#required_approval_tags Project#required_approval_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/project#required_approval_tags Project#required_approval_tags}
 
 ---
 
