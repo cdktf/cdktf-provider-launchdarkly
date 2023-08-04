@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/team_member
 // generated from terraform resource schema
 
