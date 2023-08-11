@@ -1,6 +1,6 @@
 # `launchdarkly_feature_flag_environment`
 
-Refer to the Terraform Registory for docs: [`launchdarkly_feature_flag_environment`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment).
+Refer to the Terraform Registory for docs: [`launchdarkly_feature_flag_environment`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment).
 
 # `featureFlagEnvironment` Submodule <a name="`featureFlagEnvironment` Submodule" id="@cdktf/provider-launchdarkly.featureFlagEnvironment"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`launchdarkly_feature_flag_environme
 
 ### FeatureFlagEnvironment <a name="FeatureFlagEnvironment" id="@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment launchdarkly_feature_flag_environment}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment launchdarkly_feature_flag_environment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironment.Initializer"></a>
 
@@ -50,17 +50,17 @@ featureFlagEnvironment.FeatureFlagEnvironment(
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironment.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironment.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironment.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironment.Initializer.parameter.envKey">env_key</a></code> | <code>str</code> | The LaunchDarkly environment key. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironment.Initializer.parameter.envKey">env_key</a></code> | <code>str</code> | The environment key. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironment.Initializer.parameter.fallthrough">fallthrough</a></code> | <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentFallthrough">FeatureFlagEnvironmentFallthrough</a></code> | fallthrough block. |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironment.Initializer.parameter.flagId">flag_id</a></code> | <code>str</code> | The global feature flag's unique id in the format `<project_key>/<flag_key>`. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironment.Initializer.parameter.flagId">flag_id</a></code> | <code>str</code> | The feature flag's unique `id` in the format `project_key/flag_key`. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironment.Initializer.parameter.offVariation">off_variation</a></code> | <code>typing.Union[int, float]</code> | The index of the variation to serve if targeting is disabled. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironment.Initializer.parameter.contextTargets">context_targets</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentContextTargets">FeatureFlagEnvironmentContextTargets</a>]]</code> | context_targets block. |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#id FeatureFlagEnvironment#id}. |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironment.Initializer.parameter.on">on</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether targeting is enabled. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#id FeatureFlagEnvironment#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironment.Initializer.parameter.on">on</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether targeting is enabled. Defaults to `false` if not set. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironment.Initializer.parameter.prerequisites">prerequisites</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentPrerequisites">FeatureFlagEnvironmentPrerequisites</a>]]</code> | prerequisites block. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironment.Initializer.parameter.rules">rules</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentRules">FeatureFlagEnvironmentRules</a>]]</code> | rules block. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironment.Initializer.parameter.targets">targets</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentTargets">FeatureFlagEnvironmentTargets</a>]]</code> | targets block. |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironment.Initializer.parameter.trackEvents">track_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to send event data back to LaunchDarkly. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironment.Initializer.parameter.trackEvents">track_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to send event data back to LaunchDarkly. Defaults to `false` if not set. |
 
 ---
 
@@ -128,9 +128,11 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-The LaunchDarkly environment key.
+The environment key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#env_key FeatureFlagEnvironment#env_key}
+A change in this field will force the destruction of the existing resource and the creation of a new one.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#env_key FeatureFlagEnvironment#env_key}
 
 ---
 
@@ -140,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 fallthrough block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#fallthrough FeatureFlagEnvironment#fallthrough}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#fallthrough FeatureFlagEnvironment#fallthrough}
 
 ---
 
@@ -148,9 +150,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 - *Type:* str
 
-The global feature flag's unique id in the format `<project_key>/<flag_key>`.
+The feature flag's unique `id` in the format `project_key/flag_key`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#flag_id FeatureFlagEnvironment#flag_id}
+A change in this field will force the destruction of the existing resource and the creation of a new one.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#flag_id FeatureFlagEnvironment#flag_id}
 
 ---
 
@@ -160,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 The index of the variation to serve if targeting is disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#off_variation FeatureFlagEnvironment#off_variation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#off_variation FeatureFlagEnvironment#off_variation}
 
 ---
 
@@ -170,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 context_targets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#context_targets FeatureFlagEnvironment#context_targets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#context_targets FeatureFlagEnvironment#context_targets}
 
 ---
 
@@ -178,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#id FeatureFlagEnvironment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#id FeatureFlagEnvironment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -189,9 +193,9 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Whether targeting is enabled.
+Whether targeting is enabled. Defaults to `false` if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#on FeatureFlagEnvironment#on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#on FeatureFlagEnvironment#on}
 
 ---
 
@@ -201,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 prerequisites block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#prerequisites FeatureFlagEnvironment#prerequisites}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#prerequisites FeatureFlagEnvironment#prerequisites}
 
 ---
 
@@ -211,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#rules FeatureFlagEnvironment#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#rules FeatureFlagEnvironment#rules}
 
 ---
 
@@ -221,7 +225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 targets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#targets FeatureFlagEnvironment#targets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#targets FeatureFlagEnvironment#targets}
 
 ---
 
@@ -229,9 +233,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Whether to send event data back to LaunchDarkly.
+Whether to send event data back to LaunchDarkly. Defaults to `false` if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#track_events FeatureFlagEnvironment#track_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#track_events FeatureFlagEnvironment#track_events}
 
 ---
 
@@ -510,7 +514,7 @@ def put_fallthrough(
 
 Group percentage rollout by a custom attribute. This argument is only valid if rollout_weights is also specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#bucket_by FeatureFlagEnvironment#bucket_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#bucket_by FeatureFlagEnvironment#bucket_by}
 
 ---
 
@@ -520,9 +524,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 The context kind associated with the specified rollout.
 
-This argument is only valid if rollout_weights is also specified. If omitted, defaults to 'user'
+This argument is only valid if rollout_weights is also specified. If omitted, defaults to `user`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#context_kind FeatureFlagEnvironment#context_kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#context_kind FeatureFlagEnvironment#context_kind}
 
 ---
 
@@ -530,7 +534,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 - *Type:* typing.List[typing.Union[int, float]]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#rollout_weights FeatureFlagEnvironment#rollout_weights}.
+List of integer percentage rollout weights (in thousandths of a percent) to apply to each variation if the rule clauses evaluates to `true`.
+
+The sum of the `rollout_weights` must equal 100000 and the number of rollout weights specified in the array must match the number of flag variations. You must specify either `variation` or `rollout_weights`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#rollout_weights FeatureFlagEnvironment#rollout_weights}
 
 ---
 
@@ -538,9 +546,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 - *Type:* typing.Union[int, float]
 
-The integer variation index to serve in case of fallthrough.
+The default integer variation index to serve if no `prerequisites`, `target`, or `rules` apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#variation FeatureFlagEnvironment#variation}
+You must specify either `variation` or `rollout_weights`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#variation FeatureFlagEnvironment#variation}
 
 ---
 
@@ -1169,17 +1179,17 @@ featureFlagEnvironment.FeatureFlagEnvironmentConfig(
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentConfig.property.envKey">env_key</a></code> | <code>str</code> | The LaunchDarkly environment key. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentConfig.property.envKey">env_key</a></code> | <code>str</code> | The environment key. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentConfig.property.fallthrough">fallthrough</a></code> | <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentFallthrough">FeatureFlagEnvironmentFallthrough</a></code> | fallthrough block. |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentConfig.property.flagId">flag_id</a></code> | <code>str</code> | The global feature flag's unique id in the format `<project_key>/<flag_key>`. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentConfig.property.flagId">flag_id</a></code> | <code>str</code> | The feature flag's unique `id` in the format `project_key/flag_key`. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentConfig.property.offVariation">off_variation</a></code> | <code>typing.Union[int, float]</code> | The index of the variation to serve if targeting is disabled. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentConfig.property.contextTargets">context_targets</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentContextTargets">FeatureFlagEnvironmentContextTargets</a>]]</code> | context_targets block. |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#id FeatureFlagEnvironment#id}. |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentConfig.property.on">on</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether targeting is enabled. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#id FeatureFlagEnvironment#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentConfig.property.on">on</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether targeting is enabled. Defaults to `false` if not set. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentConfig.property.prerequisites">prerequisites</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentPrerequisites">FeatureFlagEnvironmentPrerequisites</a>]]</code> | prerequisites block. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentConfig.property.rules">rules</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentRules">FeatureFlagEnvironmentRules</a>]]</code> | rules block. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentConfig.property.targets">targets</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentTargets">FeatureFlagEnvironmentTargets</a>]]</code> | targets block. |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentConfig.property.trackEvents">track_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to send event data back to LaunchDarkly. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentConfig.property.trackEvents">track_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to send event data back to LaunchDarkly. Defaults to `false` if not set. |
 
 ---
 
@@ -1261,9 +1271,11 @@ env_key: str
 
 - *Type:* str
 
-The LaunchDarkly environment key.
+The environment key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#env_key FeatureFlagEnvironment#env_key}
+A change in this field will force the destruction of the existing resource and the creation of a new one.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#env_key FeatureFlagEnvironment#env_key}
 
 ---
 
@@ -1277,7 +1289,7 @@ fallthrough: FeatureFlagEnvironmentFallthrough
 
 fallthrough block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#fallthrough FeatureFlagEnvironment#fallthrough}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#fallthrough FeatureFlagEnvironment#fallthrough}
 
 ---
 
@@ -1289,9 +1301,11 @@ flag_id: str
 
 - *Type:* str
 
-The global feature flag's unique id in the format `<project_key>/<flag_key>`.
+The feature flag's unique `id` in the format `project_key/flag_key`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#flag_id FeatureFlagEnvironment#flag_id}
+A change in this field will force the destruction of the existing resource and the creation of a new one.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#flag_id FeatureFlagEnvironment#flag_id}
 
 ---
 
@@ -1305,7 +1319,7 @@ off_variation: typing.Union[int, float]
 
 The index of the variation to serve if targeting is disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#off_variation FeatureFlagEnvironment#off_variation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#off_variation FeatureFlagEnvironment#off_variation}
 
 ---
 
@@ -1319,7 +1333,7 @@ context_targets: typing.Union[IResolvable, typing.List[FeatureFlagEnvironmentCon
 
 context_targets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#context_targets FeatureFlagEnvironment#context_targets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#context_targets FeatureFlagEnvironment#context_targets}
 
 ---
 
@@ -1331,7 +1345,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#id FeatureFlagEnvironment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#id FeatureFlagEnvironment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1346,9 +1360,9 @@ on: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Whether targeting is enabled.
+Whether targeting is enabled. Defaults to `false` if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#on FeatureFlagEnvironment#on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#on FeatureFlagEnvironment#on}
 
 ---
 
@@ -1362,7 +1376,7 @@ prerequisites: typing.Union[IResolvable, typing.List[FeatureFlagEnvironmentPrere
 
 prerequisites block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#prerequisites FeatureFlagEnvironment#prerequisites}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#prerequisites FeatureFlagEnvironment#prerequisites}
 
 ---
 
@@ -1376,7 +1390,7 @@ rules: typing.Union[IResolvable, typing.List[FeatureFlagEnvironmentRules]]
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#rules FeatureFlagEnvironment#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#rules FeatureFlagEnvironment#rules}
 
 ---
 
@@ -1390,7 +1404,7 @@ targets: typing.Union[IResolvable, typing.List[FeatureFlagEnvironmentTargets]]
 
 targets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#targets FeatureFlagEnvironment#targets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#targets FeatureFlagEnvironment#targets}
 
 ---
 
@@ -1402,9 +1416,9 @@ track_events: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Whether to send event data back to LaunchDarkly.
+Whether to send event data back to LaunchDarkly. Defaults to `false` if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#track_events FeatureFlagEnvironment#track_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#track_events FeatureFlagEnvironment#track_events}
 
 ---
 
@@ -1427,8 +1441,8 @@ featureFlagEnvironment.FeatureFlagEnvironmentContextTargets(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentContextTargets.property.contextKind">context_kind</a></code> | <code>str</code> | The context kind on which the flag should target in this environment. |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentContextTargets.property.values">values</a></code> | <code>typing.List[str]</code> | List of user strings to target. |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentContextTargets.property.variation">variation</a></code> | <code>typing.Union[int, float]</code> | Index of the variation to serve if a user_target is matched. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentContextTargets.property.values">values</a></code> | <code>typing.List[str]</code> | List of `user` strings to target. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentContextTargets.property.variation">variation</a></code> | <code>typing.Union[int, float]</code> | The index of the variation to serve if a user target value is matched. |
 
 ---
 
@@ -1442,9 +1456,9 @@ context_kind: str
 
 The context kind on which the flag should target in this environment.
 
-If the context_kind has not been previously specified at the project level, it will be automatically created on the project. User targets should be specified as targets attribute blocks.
+User (`user`) targets should be specified as `targets` attribute blocks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#context_kind FeatureFlagEnvironment#context_kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#context_kind FeatureFlagEnvironment#context_kind}
 
 ---
 
@@ -1456,9 +1470,9 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-List of user strings to target.
+List of `user` strings to target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#values FeatureFlagEnvironment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#values FeatureFlagEnvironment#values}
 
 ---
 
@@ -1470,9 +1484,9 @@ variation: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Index of the variation to serve if a user_target is matched.
+The index of the variation to serve if a user target value is matched.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#variation FeatureFlagEnvironment#variation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#variation FeatureFlagEnvironment#variation}
 
 ---
 
@@ -1497,8 +1511,8 @@ featureFlagEnvironment.FeatureFlagEnvironmentFallthrough(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentFallthrough.property.bucketBy">bucket_by</a></code> | <code>str</code> | Group percentage rollout by a custom attribute. This argument is only valid if rollout_weights is also specified. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentFallthrough.property.contextKind">context_kind</a></code> | <code>str</code> | The context kind associated with the specified rollout. |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentFallthrough.property.rolloutWeights">rollout_weights</a></code> | <code>typing.List[typing.Union[int, float]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#rollout_weights FeatureFlagEnvironment#rollout_weights}. |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentFallthrough.property.variation">variation</a></code> | <code>typing.Union[int, float]</code> | The integer variation index to serve in case of fallthrough. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentFallthrough.property.rolloutWeights">rollout_weights</a></code> | <code>typing.List[typing.Union[int, float]]</code> | List of integer percentage rollout weights (in thousandths of a percent) to apply to each variation if the rule clauses evaluates to `true`. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentFallthrough.property.variation">variation</a></code> | <code>typing.Union[int, float]</code> | The default integer variation index to serve if no `prerequisites`, `target`, or `rules` apply. |
 
 ---
 
@@ -1512,7 +1526,7 @@ bucket_by: str
 
 Group percentage rollout by a custom attribute. This argument is only valid if rollout_weights is also specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#bucket_by FeatureFlagEnvironment#bucket_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#bucket_by FeatureFlagEnvironment#bucket_by}
 
 ---
 
@@ -1526,9 +1540,9 @@ context_kind: str
 
 The context kind associated with the specified rollout.
 
-This argument is only valid if rollout_weights is also specified. If omitted, defaults to 'user'
+This argument is only valid if rollout_weights is also specified. If omitted, defaults to `user`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#context_kind FeatureFlagEnvironment#context_kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#context_kind FeatureFlagEnvironment#context_kind}
 
 ---
 
@@ -1540,7 +1554,11 @@ rollout_weights: typing.List[typing.Union[int, float]]
 
 - *Type:* typing.List[typing.Union[int, float]]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#rollout_weights FeatureFlagEnvironment#rollout_weights}.
+List of integer percentage rollout weights (in thousandths of a percent) to apply to each variation if the rule clauses evaluates to `true`.
+
+The sum of the `rollout_weights` must equal 100000 and the number of rollout weights specified in the array must match the number of flag variations. You must specify either `variation` or `rollout_weights`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#rollout_weights FeatureFlagEnvironment#rollout_weights}
 
 ---
 
@@ -1552,9 +1570,11 @@ variation: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-The integer variation index to serve in case of fallthrough.
+The default integer variation index to serve if no `prerequisites`, `target`, or `rules` apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#variation FeatureFlagEnvironment#variation}
+You must specify either `variation` or `rollout_weights`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#variation FeatureFlagEnvironment#variation}
 
 ---
 
@@ -1575,7 +1595,7 @@ featureFlagEnvironment.FeatureFlagEnvironmentPrerequisites(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentPrerequisites.property.flagKey">flag_key</a></code> | <code>str</code> | The prerequisite feature flag's key. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentPrerequisites.property.flagKey">flag_key</a></code> | <code>str</code> | The prerequisite feature flag's `key`. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentPrerequisites.property.variation">variation</a></code> | <code>typing.Union[int, float]</code> | The index of the prerequisite feature flag's variation to target. |
 
 ---
@@ -1588,9 +1608,9 @@ flag_key: str
 
 - *Type:* str
 
-The prerequisite feature flag's key.
+The prerequisite feature flag's `key`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#flag_key FeatureFlagEnvironment#flag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#flag_key FeatureFlagEnvironment#flag_key}
 
 ---
 
@@ -1604,7 +1624,7 @@ variation: typing.Union[int, float]
 
 The index of the prerequisite feature flag's variation to target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#variation FeatureFlagEnvironment#variation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#variation FeatureFlagEnvironment#variation}
 
 ---
 
@@ -1628,11 +1648,11 @@ featureFlagEnvironment.FeatureFlagEnvironmentRules(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentRules.property.bucketBy">bucket_by</a></code> | <code>str</code> | Group percentage rollout by a custom attribute. This argument is only valid if rollout_weights is also specified. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentRules.property.bucketBy">bucket_by</a></code> | <code>str</code> | Group percentage rollout by a custom attribute. This argument is only valid if `rollout_weights` is also specified. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentRules.property.clauses">clauses</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentRulesClauses">FeatureFlagEnvironmentRulesClauses</a>]]</code> | clauses block. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentRules.property.description">description</a></code> | <code>str</code> | A human-readable description of the targeting rule. |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentRules.property.rolloutWeights">rollout_weights</a></code> | <code>typing.List[typing.Union[int, float]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#rollout_weights FeatureFlagEnvironment#rollout_weights}. |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentRules.property.variation">variation</a></code> | <code>typing.Union[int, float]</code> | The integer variation index to serve if the rule clauses evaluate to true. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentRules.property.rolloutWeights">rollout_weights</a></code> | <code>typing.List[typing.Union[int, float]]</code> | List of integer percentage rollout weights (in thousandths of a percent) to apply to each variation if the rule clauses evaluates to `true`. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentRules.property.variation">variation</a></code> | <code>typing.Union[int, float]</code> | The integer variation index to serve if the rule clauses evaluate to `true`. |
 
 ---
 
@@ -1644,9 +1664,9 @@ bucket_by: str
 
 - *Type:* str
 
-Group percentage rollout by a custom attribute. This argument is only valid if rollout_weights is also specified.
+Group percentage rollout by a custom attribute. This argument is only valid if `rollout_weights` is also specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#bucket_by FeatureFlagEnvironment#bucket_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#bucket_by FeatureFlagEnvironment#bucket_by}
 
 ---
 
@@ -1660,7 +1680,7 @@ clauses: typing.Union[IResolvable, typing.List[FeatureFlagEnvironmentRulesClause
 
 clauses block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#clauses FeatureFlagEnvironment#clauses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#clauses FeatureFlagEnvironment#clauses}
 
 ---
 
@@ -1674,7 +1694,7 @@ description: str
 
 A human-readable description of the targeting rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#description FeatureFlagEnvironment#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#description FeatureFlagEnvironment#description}
 
 ---
 
@@ -1686,7 +1706,11 @@ rollout_weights: typing.List[typing.Union[int, float]]
 
 - *Type:* typing.List[typing.Union[int, float]]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#rollout_weights FeatureFlagEnvironment#rollout_weights}.
+List of integer percentage rollout weights (in thousandths of a percent) to apply to each variation if the rule clauses evaluates to `true`.
+
+The sum of the `rollout_weights` must equal 100000 and the number of rollout weights specified in the array must match the number of flag variations. You must specify either `variation` or `rollout_weights`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#rollout_weights FeatureFlagEnvironment#rollout_weights}
 
 ---
 
@@ -1698,11 +1722,11 @@ variation: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-The integer variation index to serve if the rule clauses evaluate to true.
+The integer variation index to serve if the rule clauses evaluate to `true`.
 
-This argument is only valid if clauses are also specified
+You must specify either `variation` or `rollout_weights`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#variation FeatureFlagEnvironment#variation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#variation FeatureFlagEnvironment#variation}
 
 ---
 
@@ -1730,7 +1754,7 @@ featureFlagEnvironment.FeatureFlagEnvironmentRulesClauses(
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentRulesClauses.property.attribute">attribute</a></code> | <code>str</code> | The user attribute to operate on. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentRulesClauses.property.op">op</a></code> | <code>str</code> | The operator associated with the rule clause. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentRulesClauses.property.values">values</a></code> | <code>typing.List[str]</code> | The list of values associated with the rule clause. |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentRulesClauses.property.contextKind">context_kind</a></code> | <code>str</code> | The context kind associated with this rule clause. If omitted, defaults to user. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentRulesClauses.property.contextKind">context_kind</a></code> | <code>str</code> | The context kind associated with this rule clause. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentRulesClauses.property.negate">negate</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to negate the rule clause. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentRulesClauses.property.valueType">value_type</a></code> | <code>str</code> | The type for each of the clause's values. |
 
@@ -1746,7 +1770,7 @@ attribute: str
 
 The user attribute to operate on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#attribute FeatureFlagEnvironment#attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#attribute FeatureFlagEnvironment#attribute}
 
 ---
 
@@ -1760,9 +1784,9 @@ op: str
 
 The operator associated with the rule clause.
 
-Available options are in, endsWith, startsWith, matches, contains, lessThan, lessThanOrEqual, greaterThanOrEqual, before, after, segmentMatch, semVerEqual, semVerLessThan, and semVerGreaterThan
+Available options are `in`, `endsWith`, `startsWith`, `matches`, `contains`, `lessThan`, `lessThanOrEqual`, `greaterThanOrEqual`, `before`, `after`, `segmentMatch`, `semVerEqual`, `semVerLessThan`, and `semVerGreaterThan`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#op FeatureFlagEnvironment#op}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#op FeatureFlagEnvironment#op}
 
 ---
 
@@ -1776,7 +1800,7 @@ values: typing.List[str]
 
 The list of values associated with the rule clause.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#values FeatureFlagEnvironment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#values FeatureFlagEnvironment#values}
 
 ---
 
@@ -1788,9 +1812,11 @@ context_kind: str
 
 - *Type:* str
 
-The context kind associated with this rule clause. If omitted, defaults to user.
+The context kind associated with this rule clause.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#context_kind FeatureFlagEnvironment#context_kind}
+This argument is only valid if `rollout_weights` is also specified. If omitted, defaults to `user`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#context_kind FeatureFlagEnvironment#context_kind}
 
 ---
 
@@ -1804,7 +1830,7 @@ negate: typing.Union[bool, IResolvable]
 
 Whether to negate the rule clause.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#negate FeatureFlagEnvironment#negate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#negate FeatureFlagEnvironment#negate}
 
 ---
 
@@ -1818,9 +1844,9 @@ value_type: str
 
 The type for each of the clause's values.
 
-Available types are boolean, string, and number. If omitted, value_type defaults to string
+Available types are `boolean`, `string`, and `number`. If omitted, `value_type` defaults to `string`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#value_type FeatureFlagEnvironment#value_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#value_type FeatureFlagEnvironment#value_type}
 
 ---
 
@@ -1841,8 +1867,8 @@ featureFlagEnvironment.FeatureFlagEnvironmentTargets(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentTargets.property.values">values</a></code> | <code>typing.List[str]</code> | List of user strings to target. |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentTargets.property.variation">variation</a></code> | <code>typing.Union[int, float]</code> | Index of the variation to serve if a user_target is matched. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentTargets.property.values">values</a></code> | <code>typing.List[str]</code> | List of `user` strings to target. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentTargets.property.variation">variation</a></code> | <code>typing.Union[int, float]</code> | The index of the variation to serve if a user target value is matched. |
 
 ---
 
@@ -1854,9 +1880,9 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-List of user strings to target.
+List of `user` strings to target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#values FeatureFlagEnvironment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#values FeatureFlagEnvironment#values}
 
 ---
 
@@ -1868,9 +1894,9 @@ variation: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Index of the variation to serve if a user_target is matched.
+The index of the variation to serve if a user target value is matched.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/feature_flag_environment#variation FeatureFlagEnvironment#variation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/feature_flag_environment#variation FeatureFlagEnvironment#variation}
 
 ---
 

@@ -1,6 +1,6 @@
 # `data_launchdarkly_segment`
 
-Refer to the Terraform Registory for docs: [`data_launchdarkly_segment`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment).
+Refer to the Terraform Registory for docs: [`data_launchdarkly_segment`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment).
 
 # `dataLaunchdarklySegment` Submodule <a name="`dataLaunchdarklySegment` Submodule" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_launchdarkly_segment`](https:/
 
 ### DataLaunchdarklySegment <a name="DataLaunchdarklySegment" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment launchdarkly_segment}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment launchdarkly_segment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.Initializer"></a>
 
@@ -34,8 +34,7 @@ dataLaunchdarklySegment.DataLaunchdarklySegment(
   id: str = None,
   included: typing.List[str] = None,
   included_contexts: typing.Union[IResolvable, typing.List[DataLaunchdarklySegmentIncludedContexts]] = None,
-  rules: typing.Union[IResolvable, typing.List[DataLaunchdarklySegmentRules]] = None,
-  tags: typing.List[str] = None
+  rules: typing.Union[IResolvable, typing.List[DataLaunchdarklySegmentRules]] = None
 )
 ```
 
@@ -56,11 +55,10 @@ dataLaunchdarklySegment.DataLaunchdarklySegment(
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.Initializer.parameter.description">description</a></code> | <code>str</code> | The description of the segment's purpose. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.Initializer.parameter.excluded">excluded</a></code> | <code>typing.List[str]</code> | List of user keys excluded from the segment. To target on other context kinds, use the excluded_contexts block attribute. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.Initializer.parameter.excludedContexts">excluded_contexts</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentExcludedContexts">DataLaunchdarklySegmentExcludedContexts</a>]]</code> | excluded_contexts block. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#id DataLaunchdarklySegment#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#id DataLaunchdarklySegment#id}. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.Initializer.parameter.included">included</a></code> | <code>typing.List[str]</code> | List of user keys included in the segment. To target on other context kinds, use the included_contexts block attribute. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.Initializer.parameter.includedContexts">included_contexts</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentIncludedContexts">DataLaunchdarklySegmentIncludedContexts</a>]]</code> | included_contexts block. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.Initializer.parameter.rules">rules</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRules">DataLaunchdarklySegmentRules</a>]]</code> | rules block. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.Initializer.parameter.tags">tags</a></code> | <code>typing.List[str]</code> | Tags associated with your resource. |
 
 ---
 
@@ -130,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 The segment's environment key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#env_key DataLaunchdarklySegment#env_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#env_key DataLaunchdarklySegment#env_key}
 
 ---
 
@@ -140,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 The unique key that references the segment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#key DataLaunchdarklySegment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#key DataLaunchdarklySegment#key}
 
 ---
 
@@ -150,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 The segment's project key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#project_key DataLaunchdarklySegment#project_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#project_key DataLaunchdarklySegment#project_key}
 
 ---
 
@@ -160,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 The description of the segment's purpose.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#description DataLaunchdarklySegment#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#description DataLaunchdarklySegment#description}
 
 ---
 
@@ -170,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 List of user keys excluded from the segment. To target on other context kinds, use the excluded_contexts block attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#excluded DataLaunchdarklySegment#excluded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#excluded DataLaunchdarklySegment#excluded}
 
 ---
 
@@ -180,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 excluded_contexts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#excluded_contexts DataLaunchdarklySegment#excluded_contexts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#excluded_contexts DataLaunchdarklySegment#excluded_contexts}
 
 ---
 
@@ -188,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#id DataLaunchdarklySegment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#id DataLaunchdarklySegment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -201,7 +199,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 List of user keys included in the segment. To target on other context kinds, use the included_contexts block attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#included DataLaunchdarklySegment#included}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#included DataLaunchdarklySegment#included}
 
 ---
 
@@ -211,7 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 included_contexts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#included_contexts DataLaunchdarklySegment#included_contexts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#included_contexts DataLaunchdarklySegment#included_contexts}
 
 ---
 
@@ -221,17 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#rules DataLaunchdarklySegment#rules}
-
----
-
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.Initializer.parameter.tags"></a>
-
-- *Type:* typing.List[str]
-
-Tags associated with your resource.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#tags DataLaunchdarklySegment#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#rules DataLaunchdarklySegment#rules}
 
 ---
 
@@ -265,7 +253,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.resetIncluded">reset_included</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.resetIncludedContexts">reset_included_contexts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.resetRules">reset_rules</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.resetTags">reset_tags</a></code> | *No description.* |
 
 ---
 
@@ -562,12 +549,6 @@ def reset_included_contexts() -> None
 def reset_rules() -> None
 ```
 
-##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.resetTags"></a>
-
-```python
-def reset_tags() -> None
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -665,6 +646,7 @@ dataLaunchdarklySegment.DataLaunchdarklySegment.is_terraform_data_source(
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.includedContexts">included_contexts</a></code> | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentIncludedContextsList">DataLaunchdarklySegmentIncludedContextsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.rules">rules</a></code> | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesList">DataLaunchdarklySegmentRulesList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.tags">tags</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.envKeyInput">env_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.excludedContextsInput">excluded_contexts_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentExcludedContexts">DataLaunchdarklySegmentExcludedContexts</a>]]</code> | *No description.* |
@@ -675,7 +657,6 @@ dataLaunchdarklySegment.DataLaunchdarklySegment.is_terraform_data_source(
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.projectKeyInput">project_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.rulesInput">rules_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRules">DataLaunchdarklySegmentRules</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.tagsInput">tags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.envKey">env_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.excluded">excluded</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -683,7 +664,6 @@ dataLaunchdarklySegment.DataLaunchdarklySegment.is_terraform_data_source(
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.included">included</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.projectKey">project_key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.tags">tags</a></code> | <code>typing.List[str]</code> | *No description.* |
 
 ---
 
@@ -859,6 +839,16 @@ rules: DataLaunchdarklySegmentRulesList
 
 ---
 
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.tags"></a>
+
+```python
+tags: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.descriptionInput"></a>
 
 ```python
@@ -959,16 +949,6 @@ rules_input: typing.Union[IResolvable, typing.List[DataLaunchdarklySegmentRules]
 
 ---
 
-##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.tagsInput"></a>
-
-```python
-tags_input: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
----
-
 ##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.description"></a>
 
 ```python
@@ -1039,16 +1019,6 @@ project_key: str
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.tags"></a>
-
-```python
-tags: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
----
-
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1093,8 +1063,7 @@ dataLaunchdarklySegment.DataLaunchdarklySegmentConfig(
   id: str = None,
   included: typing.List[str] = None,
   included_contexts: typing.Union[IResolvable, typing.List[DataLaunchdarklySegmentIncludedContexts]] = None,
-  rules: typing.Union[IResolvable, typing.List[DataLaunchdarklySegmentRules]] = None,
-  tags: typing.List[str] = None
+  rules: typing.Union[IResolvable, typing.List[DataLaunchdarklySegmentRules]] = None
 )
 ```
 
@@ -1115,11 +1084,10 @@ dataLaunchdarklySegment.DataLaunchdarklySegmentConfig(
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.description">description</a></code> | <code>str</code> | The description of the segment's purpose. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.excluded">excluded</a></code> | <code>typing.List[str]</code> | List of user keys excluded from the segment. To target on other context kinds, use the excluded_contexts block attribute. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.excludedContexts">excluded_contexts</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentExcludedContexts">DataLaunchdarklySegmentExcludedContexts</a>]]</code> | excluded_contexts block. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#id DataLaunchdarklySegment#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#id DataLaunchdarklySegment#id}. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.included">included</a></code> | <code>typing.List[str]</code> | List of user keys included in the segment. To target on other context kinds, use the included_contexts block attribute. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.includedContexts">included_contexts</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentIncludedContexts">DataLaunchdarklySegmentIncludedContexts</a>]]</code> | included_contexts block. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.rules">rules</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRules">DataLaunchdarklySegmentRules</a>]]</code> | rules block. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.tags">tags</a></code> | <code>typing.List[str]</code> | Tags associated with your resource. |
 
 ---
 
@@ -1203,7 +1171,7 @@ env_key: str
 
 The segment's environment key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#env_key DataLaunchdarklySegment#env_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#env_key DataLaunchdarklySegment#env_key}
 
 ---
 
@@ -1217,7 +1185,7 @@ key: str
 
 The unique key that references the segment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#key DataLaunchdarklySegment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#key DataLaunchdarklySegment#key}
 
 ---
 
@@ -1231,7 +1199,7 @@ project_key: str
 
 The segment's project key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#project_key DataLaunchdarklySegment#project_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#project_key DataLaunchdarklySegment#project_key}
 
 ---
 
@@ -1245,7 +1213,7 @@ description: str
 
 The description of the segment's purpose.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#description DataLaunchdarklySegment#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#description DataLaunchdarklySegment#description}
 
 ---
 
@@ -1259,7 +1227,7 @@ excluded: typing.List[str]
 
 List of user keys excluded from the segment. To target on other context kinds, use the excluded_contexts block attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#excluded DataLaunchdarklySegment#excluded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#excluded DataLaunchdarklySegment#excluded}
 
 ---
 
@@ -1273,7 +1241,7 @@ excluded_contexts: typing.Union[IResolvable, typing.List[DataLaunchdarklySegment
 
 excluded_contexts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#excluded_contexts DataLaunchdarklySegment#excluded_contexts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#excluded_contexts DataLaunchdarklySegment#excluded_contexts}
 
 ---
 
@@ -1285,7 +1253,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#id DataLaunchdarklySegment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#id DataLaunchdarklySegment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1302,7 +1270,7 @@ included: typing.List[str]
 
 List of user keys included in the segment. To target on other context kinds, use the included_contexts block attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#included DataLaunchdarklySegment#included}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#included DataLaunchdarklySegment#included}
 
 ---
 
@@ -1316,7 +1284,7 @@ included_contexts: typing.Union[IResolvable, typing.List[DataLaunchdarklySegment
 
 included_contexts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#included_contexts DataLaunchdarklySegment#included_contexts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#included_contexts DataLaunchdarklySegment#included_contexts}
 
 ---
 
@@ -1330,21 +1298,7 @@ rules: typing.Union[IResolvable, typing.List[DataLaunchdarklySegmentRules]]
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#rules DataLaunchdarklySegment#rules}
-
----
-
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.tags"></a>
-
-```python
-tags: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-Tags associated with your resource.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#tags DataLaunchdarklySegment#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#rules DataLaunchdarklySegment#rules}
 
 ---
 
@@ -1380,7 +1334,7 @@ context_kind: str
 
 The context kind associated with this segment target. To target on user contexts, use the included and excluded attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#context_kind DataLaunchdarklySegment#context_kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#context_kind DataLaunchdarklySegment#context_kind}
 
 ---
 
@@ -1394,7 +1348,7 @@ values: typing.List[str]
 
 List of target object keys included in or excluded from the segment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#values DataLaunchdarklySegment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#values DataLaunchdarklySegment#values}
 
 ---
 
@@ -1430,7 +1384,7 @@ context_kind: str
 
 The context kind associated with this segment target. To target on user contexts, use the included and excluded attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#context_kind DataLaunchdarklySegment#context_kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#context_kind DataLaunchdarklySegment#context_kind}
 
 ---
 
@@ -1444,7 +1398,7 @@ values: typing.List[str]
 
 List of target object keys included in or excluded from the segment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#values DataLaunchdarklySegment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#values DataLaunchdarklySegment#values}
 
 ---
 
@@ -1484,7 +1438,7 @@ bucket_by: str
 
 The attribute by which to group users together.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#bucket_by DataLaunchdarklySegment#bucket_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#bucket_by DataLaunchdarklySegment#bucket_by}
 
 ---
 
@@ -1498,7 +1452,7 @@ clauses: typing.Union[IResolvable, typing.List[DataLaunchdarklySegmentRulesClaus
 
 clauses block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#clauses DataLaunchdarklySegment#clauses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#clauses DataLaunchdarklySegment#clauses}
 
 ---
 
@@ -1514,7 +1468,7 @@ The context kind associated with this segment rule.
 
 This argument is only valid if weight is also specified. If omitted, defaults to 'user'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#rollout_context_kind DataLaunchdarklySegment#rollout_context_kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#rollout_context_kind DataLaunchdarklySegment#rollout_context_kind}
 
 ---
 
@@ -1528,7 +1482,7 @@ weight: typing.Union[int, float]
 
 The integer weight of the rule (between 1 and 100000).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#weight DataLaunchdarklySegment#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#weight DataLaunchdarklySegment#weight}
 
 ---
 
@@ -1556,7 +1510,7 @@ dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClauses(
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClauses.property.attribute">attribute</a></code> | <code>str</code> | The user attribute to operate on. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClauses.property.op">op</a></code> | <code>str</code> | The operator associated with the rule clause. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClauses.property.values">values</a></code> | <code>typing.List[str]</code> | The list of values associated with the rule clause. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClauses.property.contextKind">context_kind</a></code> | <code>str</code> | The context kind associated with this rule clause. If omitted, defaults to user. |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClauses.property.contextKind">context_kind</a></code> | <code>str</code> | The context kind associated with this rule clause. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClauses.property.negate">negate</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to negate the rule clause. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClauses.property.valueType">value_type</a></code> | <code>str</code> | The type for each of the clause's values. |
 
@@ -1572,7 +1526,7 @@ attribute: str
 
 The user attribute to operate on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#attribute DataLaunchdarklySegment#attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#attribute DataLaunchdarklySegment#attribute}
 
 ---
 
@@ -1586,9 +1540,9 @@ op: str
 
 The operator associated with the rule clause.
 
-Available options are in, endsWith, startsWith, matches, contains, lessThan, lessThanOrEqual, greaterThanOrEqual, before, after, segmentMatch, semVerEqual, semVerLessThan, and semVerGreaterThan
+Available options are `in`, `endsWith`, `startsWith`, `matches`, `contains`, `lessThan`, `lessThanOrEqual`, `greaterThanOrEqual`, `before`, `after`, `segmentMatch`, `semVerEqual`, `semVerLessThan`, and `semVerGreaterThan`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#op DataLaunchdarklySegment#op}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#op DataLaunchdarklySegment#op}
 
 ---
 
@@ -1602,7 +1556,7 @@ values: typing.List[str]
 
 The list of values associated with the rule clause.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#values DataLaunchdarklySegment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#values DataLaunchdarklySegment#values}
 
 ---
 
@@ -1614,9 +1568,11 @@ context_kind: str
 
 - *Type:* str
 
-The context kind associated with this rule clause. If omitted, defaults to user.
+The context kind associated with this rule clause.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#context_kind DataLaunchdarklySegment#context_kind}
+This argument is only valid if `rollout_weights` is also specified. If omitted, defaults to `user`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#context_kind DataLaunchdarklySegment#context_kind}
 
 ---
 
@@ -1630,7 +1586,7 @@ negate: typing.Union[bool, IResolvable]
 
 Whether to negate the rule clause.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#negate DataLaunchdarklySegment#negate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#negate DataLaunchdarklySegment#negate}
 
 ---
 
@@ -1644,9 +1600,9 @@ value_type: str
 
 The type for each of the clause's values.
 
-Available types are boolean, string, and number. If omitted, value_type defaults to string
+Available types are `boolean`, `string`, and `number`. If omitted, `value_type` defaults to `string`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/segment#value_type DataLaunchdarklySegment#value_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#value_type DataLaunchdarklySegment#value_type}
 
 ---
 

@@ -1,6 +1,6 @@
 # `launchdarkly_team_role_mapping`
 
-Refer to the Terraform Registory for docs: [`launchdarkly_team_role_mapping`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/team_role_mapping).
+Refer to the Terraform Registory for docs: [`launchdarkly_team_role_mapping`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/team_role_mapping).
 
 # `teamRoleMapping` Submodule <a name="`teamRoleMapping` Submodule" id="@cdktf/provider-launchdarkly.teamRoleMapping"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`launchdarkly_team_role_mapping`](ht
 
 ### TeamRoleMapping <a name="TeamRoleMapping" id="@cdktf/provider-launchdarkly.teamRoleMapping.TeamRoleMapping"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/team_role_mapping launchdarkly_team_role_mapping}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/team_role_mapping launchdarkly_team_role_mapping}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.teamRoleMapping.TeamRoleMapping.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 A set of custom role keys to assign to the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/team_role_mapping#custom_role_keys TeamRoleMapping#custom_role_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/team_role_mapping#custom_role_keys TeamRoleMapping#custom_role_keys}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 The LaunchDarkly team key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/team_role_mapping#team_key TeamRoleMapping#team_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/team_role_mapping#team_key TeamRoleMapping#team_key}
 
 ---
 
@@ -763,7 +763,7 @@ public java.util.List<java.lang.String> getCustomRoleKeys();
 
 A set of custom role keys to assign to the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/team_role_mapping#custom_role_keys TeamRoleMapping#custom_role_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/team_role_mapping#custom_role_keys TeamRoleMapping#custom_role_keys}
 
 ---
 
@@ -777,7 +777,7 @@ public java.lang.String getTeamKey();
 
 The LaunchDarkly team key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/resources/team_role_mapping#team_key TeamRoleMapping#team_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/team_role_mapping#team_key TeamRoleMapping#team_key}
 
 ---
 

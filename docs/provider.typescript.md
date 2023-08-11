@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`launchdarkly`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs).
+Refer to the Terraform Registory for docs: [`launchdarkly`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-launchdarkly.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`launchdarkly`](https://registry.ter
 
 ### LaunchdarklyProvider <a name="LaunchdarklyProvider" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs launchdarkly}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs launchdarkly}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.Initializer"></a>
 
@@ -444,10 +444,10 @@ const launchdarklyProviderConfig: provider.LaunchdarklyProviderConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProviderConfig.property.accessToken">accessToken</a></code> | <code>string</code> | The LaunchDarkly API key. |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProviderConfig.property.accessToken">accessToken</a></code> | <code>string</code> | The [personal access token](https://docs.launchdarkly.com/home/account-security/api-access-tokens#personal-tokens) or [service token](https://docs.launchdarkly.com/home/account-security/api-access-tokens#service-tokens) used to authenticate with LaunchDarkly. You can also set this with the `LAUNCHDARKLY_ACCESS_TOKEN` environment variable. You must provide either `access_token` or `oauth_token`. |
 | <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProviderConfig.property.alias">alias</a></code> | <code>string</code> | Alias name. |
-| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProviderConfig.property.apiHost">apiHost</a></code> | <code>string</code> | The LaunchDarkly host address, e.g. https://app.launchdarkly.com. |
-| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProviderConfig.property.oauthToken">oauthToken</a></code> | <code>string</code> | The LaunchDarkly OAuth token. |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProviderConfig.property.apiHost">apiHost</a></code> | <code>string</code> | The LaunchDarkly host address. If this argument is not specified, the default host address is `https://app.launchdarkly.com`. |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProviderConfig.property.oauthToken">oauthToken</a></code> | <code>string</code> | An OAuth V2 token you use to authenticate with LaunchDarkly. |
 
 ---
 
@@ -459,9 +459,9 @@ public readonly accessToken: string;
 
 - *Type:* string
 
-The LaunchDarkly API key.
+The [personal access token](https://docs.launchdarkly.com/home/account-security/api-access-tokens#personal-tokens) or [service token](https://docs.launchdarkly.com/home/account-security/api-access-tokens#service-tokens) used to authenticate with LaunchDarkly. You can also set this with the `LAUNCHDARKLY_ACCESS_TOKEN` environment variable. You must provide either `access_token` or `oauth_token`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs#access_token LaunchdarklyProvider#access_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs#access_token LaunchdarklyProvider#access_token}
 
 ---
 
@@ -475,7 +475,7 @@ public readonly alias: string;
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs#alias LaunchdarklyProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs#alias LaunchdarklyProvider#alias}
 
 ---
 
@@ -487,9 +487,9 @@ public readonly apiHost: string;
 
 - *Type:* string
 
-The LaunchDarkly host address, e.g. https://app.launchdarkly.com.
+The LaunchDarkly host address. If this argument is not specified, the default host address is `https://app.launchdarkly.com`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs#api_host LaunchdarklyProvider#api_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs#api_host LaunchdarklyProvider#api_host}
 
 ---
 
@@ -501,9 +501,11 @@ public readonly oauthToken: string;
 
 - *Type:* string
 
-The LaunchDarkly OAuth token.
+An OAuth V2 token you use to authenticate with LaunchDarkly.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs#oauth_token LaunchdarklyProvider#oauth_token}
+You can also set this with the `LAUNCHDARKLY_OAUTH_TOKEN` environment variable. You must provide either `access_token` or `oauth_token`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs#oauth_token LaunchdarklyProvider#oauth_token}
 
 ---
 

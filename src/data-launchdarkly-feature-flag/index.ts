@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag
+// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/feature_flag
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface DataLaunchdarklyFeatureFlagConfig extends cdktf.TerraformMetaAr
   /**
   * Whether to archive the flag
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag#archived DataLaunchdarklyFeatureFlag#archived}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/feature_flag#archived DataLaunchdarklyFeatureFlag#archived}
   */
   readonly archived?: boolean | cdktf.IResolvable;
   /**
   * A short description of what the flag will be used for
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag#description DataLaunchdarklyFeatureFlag#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/feature_flag#description DataLaunchdarklyFeatureFlag#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag#id DataLaunchdarklyFeatureFlag#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/feature_flag#id DataLaunchdarklyFeatureFlag#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,71 +29,65 @@ export interface DataLaunchdarklyFeatureFlagConfig extends cdktf.TerraformMetaAr
   /**
   * Whether or not this flag should be made available to the client-side JavaScript SDK
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag#include_in_snippet DataLaunchdarklyFeatureFlag#include_in_snippet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/feature_flag#include_in_snippet DataLaunchdarklyFeatureFlag#include_in_snippet}
   */
   readonly includeInSnippet?: boolean | cdktf.IResolvable;
   /**
   * A unique key that will be used to reference the flag in your code
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag#key DataLaunchdarklyFeatureFlag#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/feature_flag#key DataLaunchdarklyFeatureFlag#key}
   */
   readonly key: string;
   /**
   * The LaunchDarkly id of the user who will maintain the flag. If not set, the API will automatically apply the member associated with your Terraform API key or the most recently set maintainer
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag#maintainer_id DataLaunchdarklyFeatureFlag#maintainer_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/feature_flag#maintainer_id DataLaunchdarklyFeatureFlag#maintainer_id}
   */
   readonly maintainerId?: string;
   /**
   * The LaunchDarkly project key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag#project_key DataLaunchdarklyFeatureFlag#project_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/feature_flag#project_key DataLaunchdarklyFeatureFlag#project_key}
   */
   readonly projectKey: string;
   /**
-  * Tags associated with your resource
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag#tags DataLaunchdarklyFeatureFlag#tags}
-  */
-  readonly tags?: string[];
-  /**
   * Whether or not the flag is a temporary flag
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag#temporary DataLaunchdarklyFeatureFlag#temporary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/feature_flag#temporary DataLaunchdarklyFeatureFlag#temporary}
   */
   readonly temporary?: boolean | cdktf.IResolvable;
   /**
   * client_side_availability block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag#client_side_availability DataLaunchdarklyFeatureFlag#client_side_availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/feature_flag#client_side_availability DataLaunchdarklyFeatureFlag#client_side_availability}
   */
   readonly clientSideAvailability?: DataLaunchdarklyFeatureFlagClientSideAvailability[] | cdktf.IResolvable;
   /**
   * custom_properties block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag#custom_properties DataLaunchdarklyFeatureFlag#custom_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/feature_flag#custom_properties DataLaunchdarklyFeatureFlag#custom_properties}
   */
   readonly customProperties?: DataLaunchdarklyFeatureFlagCustomProperties[] | cdktf.IResolvable;
   /**
   * defaults block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag#defaults DataLaunchdarklyFeatureFlag#defaults}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/feature_flag#defaults DataLaunchdarklyFeatureFlag#defaults}
   */
   readonly defaults?: DataLaunchdarklyFeatureFlagDefaults;
   /**
   * variations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag#variations DataLaunchdarklyFeatureFlag#variations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/feature_flag#variations DataLaunchdarklyFeatureFlag#variations}
   */
   readonly variations?: DataLaunchdarklyFeatureFlagVariations[] | cdktf.IResolvable;
 }
 export interface DataLaunchdarklyFeatureFlagClientSideAvailability {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag#using_environment_id DataLaunchdarklyFeatureFlag#using_environment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/feature_flag#using_environment_id DataLaunchdarklyFeatureFlag#using_environment_id}
   */
   readonly usingEnvironmentId?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag#using_mobile_key DataLaunchdarklyFeatureFlag#using_mobile_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/feature_flag#using_mobile_key DataLaunchdarklyFeatureFlag#using_mobile_key}
   */
   readonly usingMobileKey?: boolean | cdktf.IResolvable;
 }
@@ -218,15 +207,15 @@ export class DataLaunchdarklyFeatureFlagClientSideAvailabilityList extends cdktf
 }
 export interface DataLaunchdarklyFeatureFlagCustomProperties {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag#key DataLaunchdarklyFeatureFlag#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/feature_flag#key DataLaunchdarklyFeatureFlag#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag#name DataLaunchdarklyFeatureFlag#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/feature_flag#name DataLaunchdarklyFeatureFlag#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag#value DataLaunchdarklyFeatureFlag#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/feature_flag#value DataLaunchdarklyFeatureFlag#value}
   */
   readonly value: string[];
 }
@@ -362,13 +351,13 @@ export interface DataLaunchdarklyFeatureFlagDefaults {
   /**
   * The index of the variation served when the flag is off for new environments
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag#off_variation DataLaunchdarklyFeatureFlag#off_variation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/feature_flag#off_variation DataLaunchdarklyFeatureFlag#off_variation}
   */
   readonly offVariation: number;
   /**
   * The index of the variation served when the flag is on for new environments
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag#on_variation DataLaunchdarklyFeatureFlag#on_variation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/feature_flag#on_variation DataLaunchdarklyFeatureFlag#on_variation}
   */
   readonly onVariation: number;
 }
@@ -452,19 +441,19 @@ export interface DataLaunchdarklyFeatureFlagVariations {
   /**
   * A description for the variation
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag#description DataLaunchdarklyFeatureFlag#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/feature_flag#description DataLaunchdarklyFeatureFlag#description}
   */
   readonly description?: string;
   /**
   * A name for the variation
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag#name DataLaunchdarklyFeatureFlag#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/feature_flag#name DataLaunchdarklyFeatureFlag#name}
   */
   readonly name?: string;
   /**
   * The value of the flag for this variation
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag#value DataLaunchdarklyFeatureFlag#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/feature_flag#value DataLaunchdarklyFeatureFlag#value}
   */
   readonly value: string;
 }
@@ -604,7 +593,7 @@ export class DataLaunchdarklyFeatureFlagVariationsList extends cdktf.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag launchdarkly_feature_flag}
+* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/feature_flag launchdarkly_feature_flag}
 */
 export class DataLaunchdarklyFeatureFlag extends cdktf.TerraformDataSource {
 
@@ -618,7 +607,7 @@ export class DataLaunchdarklyFeatureFlag extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/feature_flag launchdarkly_feature_flag} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/feature_flag launchdarkly_feature_flag} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -629,7 +618,7 @@ export class DataLaunchdarklyFeatureFlag extends cdktf.TerraformDataSource {
       terraformResourceType: 'launchdarkly_feature_flag',
       terraformGeneratorMetadata: {
         providerName: 'launchdarkly',
-        providerVersion: '2.13.4',
+        providerVersion: '2.14.0',
         providerVersionConstraint: '~> 2.13'
       },
       provider: config.provider,
@@ -647,7 +636,6 @@ export class DataLaunchdarklyFeatureFlag extends cdktf.TerraformDataSource {
     this._key = config.key;
     this._maintainerId = config.maintainerId;
     this._projectKey = config.projectKey;
-    this._tags = config.tags;
     this._temporary = config.temporary;
     this._clientSideAvailability.internalValue = config.clientSideAvailability;
     this._customProperties.internalValue = config.customProperties;
@@ -770,20 +758,9 @@ export class DataLaunchdarklyFeatureFlag extends cdktf.TerraformDataSource {
     return this._projectKey;
   }
 
-  // tags - computed: false, optional: true, required: false
-  private _tags?: string[]; 
+  // tags - computed: true, optional: false, required: false
   public get tags() {
     return cdktf.Fn.tolist(this.getListAttribute('tags'));
-  }
-  public set tags(value: string[]) {
-    this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags;
   }
 
   // temporary - computed: false, optional: true, required: false
@@ -884,7 +861,6 @@ export class DataLaunchdarklyFeatureFlag extends cdktf.TerraformDataSource {
       key: cdktf.stringToTerraform(this._key),
       maintainer_id: cdktf.stringToTerraform(this._maintainerId),
       project_key: cdktf.stringToTerraform(this._projectKey),
-      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
       temporary: cdktf.booleanToTerraform(this._temporary),
       client_side_availability: cdktf.listMapper(dataLaunchdarklyFeatureFlagClientSideAvailabilityToTerraform, true)(this._clientSideAvailability.internalValue),
       custom_properties: cdktf.listMapper(dataLaunchdarklyFeatureFlagCustomPropertiesToTerraform, true)(this._customProperties.internalValue),

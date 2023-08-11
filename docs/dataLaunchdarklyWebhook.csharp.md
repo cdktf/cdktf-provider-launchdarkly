@@ -1,6 +1,6 @@
 # `data_launchdarkly_webhook`
 
-Refer to the Terraform Registory for docs: [`data_launchdarkly_webhook`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/webhook).
+Refer to the Terraform Registory for docs: [`data_launchdarkly_webhook`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/webhook).
 
 # `dataLaunchdarklyWebhook` Submodule <a name="`dataLaunchdarklyWebhook` Submodule" id="@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_launchdarkly_webhook`](https:/
 
 ### DataLaunchdarklyWebhook <a name="DataLaunchdarklyWebhook" id="@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/webhook launchdarkly_webhook}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/webhook launchdarkly_webhook}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook.Initializer"></a>
 
@@ -70,11 +70,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook.putStatements">PutStatements</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook.resetName">ResetName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook.resetSecret">ResetSecret</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook.resetStatements">ResetStatements</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook.resetTags">ResetTags</a></code> | *No description.* |
 
 ---
 
@@ -262,18 +259,6 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 
 ---
 
-##### `PutStatements` <a name="PutStatements" id="@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook.putStatements"></a>
-
-```csharp
-private void PutStatements(object Value)
-```
-
-###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook.putStatements.parameter.value"></a>
-
-- *Type:* object
-
----
-
 ##### `ResetName` <a name="ResetName" id="@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook.resetName"></a>
 
 ```csharp
@@ -284,18 +269,6 @@ private void ResetName()
 
 ```csharp
 private void ResetSecret()
-```
-
-##### `ResetStatements` <a name="ResetStatements" id="@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook.resetStatements"></a>
-
-```csharp
-private void ResetStatements()
-```
-
-##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook.resetTags"></a>
-
-```csharp
-private void ResetTags()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -386,16 +359,14 @@ DataLaunchdarklyWebhook.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook.property.on">On</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook.property.statements">Statements</a></code> | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsList">DataLaunchdarklyWebhookStatementsList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook.property.tags">Tags</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook.property.url">Url</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook.property.secretInput">SecretInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook.property.statementsInput">StatementsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook.property.tagsInput">TagsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook.property.secret">Secret</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook.property.tags">Tags</a></code> | <code>string[]</code> | *No description.* |
 
 ---
 
@@ -541,6 +512,16 @@ public DataLaunchdarklyWebhookStatementsList Statements { get; }
 
 ---
 
+##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook.property.tags"></a>
+
+```csharp
+public string[] Tags { get; }
+```
+
+- *Type:* string[]
+
+---
+
 ##### `Url`<sup>Required</sup> <a name="Url" id="@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook.property.url"></a>
 
 ```csharp
@@ -581,26 +562,6 @@ public string SecretInput { get; }
 
 ---
 
-##### `StatementsInput`<sup>Optional</sup> <a name="StatementsInput" id="@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook.property.statementsInput"></a>
-
-```csharp
-public object StatementsInput { get; }
-```
-
-- *Type:* object
-
----
-
-##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook.property.tagsInput"></a>
-
-```csharp
-public string[] TagsInput { get; }
-```
-
-- *Type:* string[]
-
----
-
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook.property.id"></a>
 
 ```csharp
@@ -628,16 +589,6 @@ public string Secret { get; }
 ```
 
 - *Type:* string
-
----
-
-##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhook.property.tags"></a>
-
-```csharp
-public string[] Tags { get; }
-```
-
-- *Type:* string[]
 
 ---
 
@@ -678,9 +629,7 @@ new DataLaunchdarklyWebhookConfig {
     object[] Provisioners = null,
     string Id,
     string Name = null,
-    string Secret = null,
-    object Statements = null,
-    string[] Tags = null
+    string Secret = null
 };
 ```
 
@@ -698,8 +647,6 @@ new DataLaunchdarklyWebhookConfig {
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookConfig.property.id">Id</a></code> | <code>string</code> | The ID of the webhook. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookConfig.property.name">Name</a></code> | <code>string</code> | A human-readable name for your webhook. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookConfig.property.secret">Secret</a></code> | <code>string</code> | If sign is true, and the secret attribute is omitted, LaunchDarkly will automatically generate a secret for you. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookConfig.property.statements">Statements</a></code> | <code>object</code> | statements block. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookConfig.property.tags">Tags</a></code> | <code>string[]</code> | Tags associated with your resource. |
 
 ---
 
@@ -783,7 +730,7 @@ public string Id { get; set; }
 
 The ID of the webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/webhook#id DataLaunchdarklyWebhook#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/webhook#id DataLaunchdarklyWebhook#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -800,7 +747,7 @@ public string Name { get; set; }
 
 A human-readable name for your webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/webhook#name DataLaunchdarklyWebhook#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/webhook#name DataLaunchdarklyWebhook#name}
 
 ---
 
@@ -814,35 +761,7 @@ public string Secret { get; set; }
 
 If sign is true, and the secret attribute is omitted, LaunchDarkly will automatically generate a secret for you.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/webhook#secret DataLaunchdarklyWebhook#secret}
-
----
-
-##### `Statements`<sup>Optional</sup> <a name="Statements" id="@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookConfig.property.statements"></a>
-
-```csharp
-public object Statements { get; set; }
-```
-
-- *Type:* object
-
-statements block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/webhook#statements DataLaunchdarklyWebhook#statements}
-
----
-
-##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookConfig.property.tags"></a>
-
-```csharp
-public string[] Tags { get; set; }
-```
-
-- *Type:* string[]
-
-Tags associated with your resource.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/webhook#tags DataLaunchdarklyWebhook#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/webhook#secret DataLaunchdarklyWebhook#secret}
 
 ---
 
@@ -854,97 +773,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 using HashiCorp.Cdktf.Providers.Launchdarkly;
 
 new DataLaunchdarklyWebhookStatements {
-    string Effect,
-    string[] Actions = null,
-    string[] NotActions = null,
-    string[] NotResources = null,
-    string[] Resources = null
+
 };
 ```
 
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatements.property.effect">Effect</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/webhook#effect DataLaunchdarklyWebhook#effect}. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatements.property.actions">Actions</a></code> | <code>string[]</code> | An action to perform on a resource. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatements.property.notActions">NotActions</a></code> | <code>string[]</code> | Targeted actions will be those actions NOT in this list. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatements.property.notResources">NotResources</a></code> | <code>string[]</code> | Targeted resources will be those resources NOT in this list. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatements.property.resources">Resources</a></code> | <code>string[]</code> | A list of LaunchDarkly resource specifiers. |
-
----
-
-##### `Effect`<sup>Required</sup> <a name="Effect" id="@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatements.property.effect"></a>
-
-```csharp
-public string Effect { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/webhook#effect DataLaunchdarklyWebhook#effect}.
-
----
-
-##### `Actions`<sup>Optional</sup> <a name="Actions" id="@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatements.property.actions"></a>
-
-```csharp
-public string[] Actions { get; set; }
-```
-
-- *Type:* string[]
-
-An action to perform on a resource.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/webhook#actions DataLaunchdarklyWebhook#actions}
-
----
-
-##### `NotActions`<sup>Optional</sup> <a name="NotActions" id="@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatements.property.notActions"></a>
-
-```csharp
-public string[] NotActions { get; set; }
-```
-
-- *Type:* string[]
-
-Targeted actions will be those actions NOT in this list.
-
-The 'actions' field must be empty to use this field
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/webhook#not_actions DataLaunchdarklyWebhook#not_actions}
-
----
-
-##### `NotResources`<sup>Optional</sup> <a name="NotResources" id="@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatements.property.notResources"></a>
-
-```csharp
-public string[] NotResources { get; set; }
-```
-
-- *Type:* string[]
-
-Targeted resources will be those resources NOT in this list.
-
-The 'resources' field must be empty to use this field
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/webhook#not_resources DataLaunchdarklyWebhook#not_resources}
-
----
-
-##### `Resources`<sup>Optional</sup> <a name="Resources" id="@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatements.property.resources"></a>
-
-```csharp
-public string[] Resources { get; set; }
-```
-
-- *Type:* string[]
-
-A list of LaunchDarkly resource specifiers.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/webhook#resources DataLaunchdarklyWebhook#resources}
-
----
 
 ## Classes <a name="Classes" id="Classes"></a>
 
@@ -1052,7 +884,6 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
 
 ---
 
@@ -1077,16 +908,6 @@ public string Fqn { get; }
 ```
 
 - *Type:* string
-
----
-
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsList.property.internalValue"></a>
-
-```csharp
-public object InternalValue { get; }
-```
-
-- *Type:* object
 
 ---
 
@@ -1159,10 +980,6 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsOutputReference.resetActions">ResetActions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsOutputReference.resetNotActions">ResetNotActions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsOutputReference.resetNotResources">ResetNotResources</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsOutputReference.resetResources">ResetResources</a></code> | *No description.* |
 
 ---
 
@@ -1316,30 +1133,6 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetActions` <a name="ResetActions" id="@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsOutputReference.resetActions"></a>
-
-```csharp
-private void ResetActions()
-```
-
-##### `ResetNotActions` <a name="ResetNotActions" id="@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsOutputReference.resetNotActions"></a>
-
-```csharp
-private void ResetNotActions()
-```
-
-##### `ResetNotResources` <a name="ResetNotResources" id="@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsOutputReference.resetNotResources"></a>
-
-```csharp
-private void ResetNotResources()
-```
-
-##### `ResetResources` <a name="ResetResources" id="@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsOutputReference.resetResources"></a>
-
-```csharp
-private void ResetResources()
-```
-
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -1347,17 +1140,12 @@ private void ResetResources()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsOutputReference.property.actionsInput">ActionsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsOutputReference.property.effectInput">EffectInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsOutputReference.property.notActionsInput">NotActionsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsOutputReference.property.notResourcesInput">NotResourcesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsOutputReference.property.resourcesInput">ResourcesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsOutputReference.property.actions">Actions</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsOutputReference.property.effect">Effect</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsOutputReference.property.notActions">NotActions</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsOutputReference.property.notResources">NotResources</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsOutputReference.property.resources">Resources</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatements">DataLaunchdarklyWebhookStatements</a></code> | *No description.* |
 
 ---
 
@@ -1382,56 +1170,6 @@ public string Fqn { get; }
 ```
 
 - *Type:* string
-
----
-
-##### `ActionsInput`<sup>Optional</sup> <a name="ActionsInput" id="@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsOutputReference.property.actionsInput"></a>
-
-```csharp
-public string[] ActionsInput { get; }
-```
-
-- *Type:* string[]
-
----
-
-##### `EffectInput`<sup>Optional</sup> <a name="EffectInput" id="@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsOutputReference.property.effectInput"></a>
-
-```csharp
-public string EffectInput { get; }
-```
-
-- *Type:* string
-
----
-
-##### `NotActionsInput`<sup>Optional</sup> <a name="NotActionsInput" id="@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsOutputReference.property.notActionsInput"></a>
-
-```csharp
-public string[] NotActionsInput { get; }
-```
-
-- *Type:* string[]
-
----
-
-##### `NotResourcesInput`<sup>Optional</sup> <a name="NotResourcesInput" id="@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsOutputReference.property.notResourcesInput"></a>
-
-```csharp
-public string[] NotResourcesInput { get; }
-```
-
-- *Type:* string[]
-
----
-
-##### `ResourcesInput`<sup>Optional</sup> <a name="ResourcesInput" id="@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsOutputReference.property.resourcesInput"></a>
-
-```csharp
-public string[] ResourcesInput { get; }
-```
-
-- *Type:* string[]
 
 ---
 
@@ -1488,10 +1226,10 @@ public string[] Resources { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatementsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public DataLaunchdarklyWebhookStatements InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* <a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook.DataLaunchdarklyWebhookStatements">DataLaunchdarklyWebhookStatements</a>
 
 ---
 
