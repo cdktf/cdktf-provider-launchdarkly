@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/environment
+// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/environment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,115 +13,39 @@ import * as cdktf from 'cdktf';
 
 export interface DataLaunchdarklyEnvironmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Whether or not to require confirmation for flag and segment changes in this environment
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/environment#confirm_changes DataLaunchdarklyEnvironment#confirm_changes}
-  */
-  readonly confirmChanges?: boolean | cdktf.IResolvable;
-  /**
-  * Whether or not to default to sending data export events for flags created in the environment
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/environment#default_track_events DataLaunchdarklyEnvironment#default_track_events}
-  */
-  readonly defaultTrackEvents?: boolean | cdktf.IResolvable;
-  /**
-  * The TTL for the environment. This must be between 0 and 60 minutes. The TTL setting only applies to environments using the PHP SDK
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/environment#default_ttl DataLaunchdarklyEnvironment#default_ttl}
-  */
-  readonly defaultTtl?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/environment#id DataLaunchdarklyEnvironment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/environment#id DataLaunchdarklyEnvironment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * A project-unique key for the new environment
+  * The project-unique key for the environment. A change in this field will force the destruction of the existing resource and the creation of a new one.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/environment#key DataLaunchdarklyEnvironment#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/environment#key DataLaunchdarklyEnvironment#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/environment#project_key DataLaunchdarklyEnvironment#project_key}
+  * The environment's project key.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/environment#project_key DataLaunchdarklyEnvironment#project_key}
   */
   readonly projectKey: string;
-  /**
-  * Whether or not to require comments for flag and segment changes in this environment
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/environment#require_comments DataLaunchdarklyEnvironment#require_comments}
-  */
-  readonly requireComments?: boolean | cdktf.IResolvable;
-  /**
-  * Whether or not to use secure mode. Secure mode ensures a user of the client-side SDK cannot impersonate another user
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/environment#secure_mode DataLaunchdarklyEnvironment#secure_mode}
-  */
-  readonly secureMode?: boolean | cdktf.IResolvable;
-  /**
-  * Tags associated with your resource
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/environment#tags DataLaunchdarklyEnvironment#tags}
-  */
-  readonly tags?: string[];
-  /**
-  * approval_settings block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/environment#approval_settings DataLaunchdarklyEnvironment#approval_settings}
-  */
-  readonly approvalSettings?: DataLaunchdarklyEnvironmentApprovalSettings[] | cdktf.IResolvable;
 }
 export interface DataLaunchdarklyEnvironmentApprovalSettings {
-  /**
-  * Whether changes can be applied as long as minNumApprovals is met, regardless of whether any reviewers have declined a request. Defaults to true
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/environment#can_apply_declined_changes DataLaunchdarklyEnvironment#can_apply_declined_changes}
-  */
-  readonly canApplyDeclinedChanges?: boolean | cdktf.IResolvable;
-  /**
-  * Whether requesters can approve or decline their own request. They may always comment.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/environment#can_review_own_request DataLaunchdarklyEnvironment#can_review_own_request}
-  */
-  readonly canReviewOwnRequest?: boolean | cdktf.IResolvable;
-  /**
-  * The number of approvals required before an approval request can be applied.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/environment#min_num_approvals DataLaunchdarklyEnvironment#min_num_approvals}
-  */
-  readonly minNumApprovals?: number;
-  /**
-  * Whether any changes to flags in this environment will require approval. You may only set required or requiredApprovalTags, not both.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/environment#required DataLaunchdarklyEnvironment#required}
-  */
-  readonly required?: boolean | cdktf.IResolvable;
-  /**
-  * An array of tags used to specify which flags with those tags require approval. You may only set requiredApprovalTags or required, not both.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/environment#required_approval_tags DataLaunchdarklyEnvironment#required_approval_tags}
-  */
-  readonly requiredApprovalTags?: string[];
 }
 
-export function dataLaunchdarklyEnvironmentApprovalSettingsToTerraform(struct?: DataLaunchdarklyEnvironmentApprovalSettings | cdktf.IResolvable): any {
+export function dataLaunchdarklyEnvironmentApprovalSettingsToTerraform(struct?: DataLaunchdarklyEnvironmentApprovalSettings): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    can_apply_declined_changes: cdktf.booleanToTerraform(struct!.canApplyDeclinedChanges),
-    can_review_own_request: cdktf.booleanToTerraform(struct!.canReviewOwnRequest),
-    min_num_approvals: cdktf.numberToTerraform(struct!.minNumApprovals),
-    required: cdktf.booleanToTerraform(struct!.required),
-    required_approval_tags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.requiredApprovalTags),
   }
 }
 
 export class DataLaunchdarklyEnvironmentApprovalSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -133,143 +57,48 @@ export class DataLaunchdarklyEnvironmentApprovalSettingsOutputReference extends 
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataLaunchdarklyEnvironmentApprovalSettings | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataLaunchdarklyEnvironmentApprovalSettings | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._canApplyDeclinedChanges !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.canApplyDeclinedChanges = this._canApplyDeclinedChanges;
-    }
-    if (this._canReviewOwnRequest !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.canReviewOwnRequest = this._canReviewOwnRequest;
-    }
-    if (this._minNumApprovals !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.minNumApprovals = this._minNumApprovals;
-    }
-    if (this._required !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.required = this._required;
-    }
-    if (this._requiredApprovalTags !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.requiredApprovalTags = this._requiredApprovalTags;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataLaunchdarklyEnvironmentApprovalSettings | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataLaunchdarklyEnvironmentApprovalSettings | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._canApplyDeclinedChanges = undefined;
-      this._canReviewOwnRequest = undefined;
-      this._minNumApprovals = undefined;
-      this._required = undefined;
-      this._requiredApprovalTags = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._canApplyDeclinedChanges = value.canApplyDeclinedChanges;
-      this._canReviewOwnRequest = value.canReviewOwnRequest;
-      this._minNumApprovals = value.minNumApprovals;
-      this._required = value.required;
-      this._requiredApprovalTags = value.requiredApprovalTags;
     }
   }
 
-  // can_apply_declined_changes - computed: false, optional: true, required: false
-  private _canApplyDeclinedChanges?: boolean | cdktf.IResolvable; 
+  // can_apply_declined_changes - computed: true, optional: false, required: false
   public get canApplyDeclinedChanges() {
     return this.getBooleanAttribute('can_apply_declined_changes');
   }
-  public set canApplyDeclinedChanges(value: boolean | cdktf.IResolvable) {
-    this._canApplyDeclinedChanges = value;
-  }
-  public resetCanApplyDeclinedChanges() {
-    this._canApplyDeclinedChanges = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get canApplyDeclinedChangesInput() {
-    return this._canApplyDeclinedChanges;
-  }
 
-  // can_review_own_request - computed: false, optional: true, required: false
-  private _canReviewOwnRequest?: boolean | cdktf.IResolvable; 
+  // can_review_own_request - computed: true, optional: false, required: false
   public get canReviewOwnRequest() {
     return this.getBooleanAttribute('can_review_own_request');
   }
-  public set canReviewOwnRequest(value: boolean | cdktf.IResolvable) {
-    this._canReviewOwnRequest = value;
-  }
-  public resetCanReviewOwnRequest() {
-    this._canReviewOwnRequest = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get canReviewOwnRequestInput() {
-    return this._canReviewOwnRequest;
-  }
 
-  // min_num_approvals - computed: false, optional: true, required: false
-  private _minNumApprovals?: number; 
+  // min_num_approvals - computed: true, optional: false, required: false
   public get minNumApprovals() {
     return this.getNumberAttribute('min_num_approvals');
   }
-  public set minNumApprovals(value: number) {
-    this._minNumApprovals = value;
-  }
-  public resetMinNumApprovals() {
-    this._minNumApprovals = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get minNumApprovalsInput() {
-    return this._minNumApprovals;
-  }
 
-  // required - computed: false, optional: true, required: false
-  private _required?: boolean | cdktf.IResolvable; 
+  // required - computed: true, optional: false, required: false
   public get required() {
     return this.getBooleanAttribute('required');
   }
-  public set required(value: boolean | cdktf.IResolvable) {
-    this._required = value;
-  }
-  public resetRequired() {
-    this._required = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get requiredInput() {
-    return this._required;
-  }
 
-  // required_approval_tags - computed: false, optional: true, required: false
-  private _requiredApprovalTags?: string[]; 
+  // required_approval_tags - computed: true, optional: false, required: false
   public get requiredApprovalTags() {
     return this.getListAttribute('required_approval_tags');
-  }
-  public set requiredApprovalTags(value: string[]) {
-    this._requiredApprovalTags = value;
-  }
-  public resetRequiredApprovalTags() {
-    this._requiredApprovalTags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get requiredApprovalTagsInput() {
-    return this._requiredApprovalTags;
   }
 }
 
 export class DataLaunchdarklyEnvironmentApprovalSettingsList extends cdktf.ComplexList {
-  public internalValue? : DataLaunchdarklyEnvironmentApprovalSettings[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -289,7 +118,7 @@ export class DataLaunchdarklyEnvironmentApprovalSettingsList extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/environment launchdarkly_environment}
+* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/environment launchdarkly_environment}
 */
 export class DataLaunchdarklyEnvironment extends cdktf.TerraformDataSource {
 
@@ -303,7 +132,7 @@ export class DataLaunchdarklyEnvironment extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.13.4/docs/data-sources/environment launchdarkly_environment} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/environment launchdarkly_environment} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -314,7 +143,7 @@ export class DataLaunchdarklyEnvironment extends cdktf.TerraformDataSource {
       terraformResourceType: 'launchdarkly_environment',
       terraformGeneratorMetadata: {
         providerName: 'launchdarkly',
-        providerVersion: '2.13.4',
+        providerVersion: '2.14.0',
         providerVersionConstraint: '~> 2.13'
       },
       provider: config.provider,
@@ -325,16 +154,9 @@ export class DataLaunchdarklyEnvironment extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._confirmChanges = config.confirmChanges;
-    this._defaultTrackEvents = config.defaultTrackEvents;
-    this._defaultTtl = config.defaultTtl;
     this._id = config.id;
     this._key = config.key;
     this._projectKey = config.projectKey;
-    this._requireComments = config.requireComments;
-    this._secureMode = config.secureMode;
-    this._tags = config.tags;
-    this._approvalSettings.internalValue = config.approvalSettings;
   }
 
   // ==========
@@ -344,6 +166,12 @@ export class DataLaunchdarklyEnvironment extends cdktf.TerraformDataSource {
   // api_key - computed: true, optional: false, required: false
   public get apiKey() {
     return this.getStringAttribute('api_key');
+  }
+
+  // approval_settings - computed: true, optional: false, required: false
+  private _approvalSettings = new DataLaunchdarklyEnvironmentApprovalSettingsList(this, "approval_settings", false);
+  public get approvalSettings() {
+    return this._approvalSettings;
   }
 
   // client_side_id - computed: true, optional: false, required: false
@@ -356,52 +184,19 @@ export class DataLaunchdarklyEnvironment extends cdktf.TerraformDataSource {
     return this.getStringAttribute('color');
   }
 
-  // confirm_changes - computed: false, optional: true, required: false
-  private _confirmChanges?: boolean | cdktf.IResolvable; 
+  // confirm_changes - computed: true, optional: false, required: false
   public get confirmChanges() {
     return this.getBooleanAttribute('confirm_changes');
   }
-  public set confirmChanges(value: boolean | cdktf.IResolvable) {
-    this._confirmChanges = value;
-  }
-  public resetConfirmChanges() {
-    this._confirmChanges = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get confirmChangesInput() {
-    return this._confirmChanges;
-  }
 
-  // default_track_events - computed: false, optional: true, required: false
-  private _defaultTrackEvents?: boolean | cdktf.IResolvable; 
+  // default_track_events - computed: true, optional: false, required: false
   public get defaultTrackEvents() {
     return this.getBooleanAttribute('default_track_events');
   }
-  public set defaultTrackEvents(value: boolean | cdktf.IResolvable) {
-    this._defaultTrackEvents = value;
-  }
-  public resetDefaultTrackEvents() {
-    this._defaultTrackEvents = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get defaultTrackEventsInput() {
-    return this._defaultTrackEvents;
-  }
 
-  // default_ttl - computed: false, optional: true, required: false
-  private _defaultTtl?: number; 
+  // default_ttl - computed: true, optional: false, required: false
   public get defaultTtl() {
     return this.getNumberAttribute('default_ttl');
-  }
-  public set defaultTtl(value: number) {
-    this._defaultTtl = value;
-  }
-  public resetDefaultTtl() {
-    this._defaultTtl = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get defaultTtlInput() {
-    return this._defaultTtl;
   }
 
   // id - computed: true, optional: true, required: false
@@ -456,68 +251,19 @@ export class DataLaunchdarklyEnvironment extends cdktf.TerraformDataSource {
     return this._projectKey;
   }
 
-  // require_comments - computed: false, optional: true, required: false
-  private _requireComments?: boolean | cdktf.IResolvable; 
+  // require_comments - computed: true, optional: false, required: false
   public get requireComments() {
     return this.getBooleanAttribute('require_comments');
   }
-  public set requireComments(value: boolean | cdktf.IResolvable) {
-    this._requireComments = value;
-  }
-  public resetRequireComments() {
-    this._requireComments = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get requireCommentsInput() {
-    return this._requireComments;
-  }
 
-  // secure_mode - computed: false, optional: true, required: false
-  private _secureMode?: boolean | cdktf.IResolvable; 
+  // secure_mode - computed: true, optional: false, required: false
   public get secureMode() {
     return this.getBooleanAttribute('secure_mode');
   }
-  public set secureMode(value: boolean | cdktf.IResolvable) {
-    this._secureMode = value;
-  }
-  public resetSecureMode() {
-    this._secureMode = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get secureModeInput() {
-    return this._secureMode;
-  }
 
-  // tags - computed: false, optional: true, required: false
-  private _tags?: string[]; 
+  // tags - computed: true, optional: false, required: false
   public get tags() {
     return cdktf.Fn.tolist(this.getListAttribute('tags'));
-  }
-  public set tags(value: string[]) {
-    this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags;
-  }
-
-  // approval_settings - computed: false, optional: true, required: false
-  private _approvalSettings = new DataLaunchdarklyEnvironmentApprovalSettingsList(this, "approval_settings", false);
-  public get approvalSettings() {
-    return this._approvalSettings;
-  }
-  public putApprovalSettings(value: DataLaunchdarklyEnvironmentApprovalSettings[] | cdktf.IResolvable) {
-    this._approvalSettings.internalValue = value;
-  }
-  public resetApprovalSettings() {
-    this._approvalSettings.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get approvalSettingsInput() {
-    return this._approvalSettings.internalValue;
   }
 
   // =========
@@ -526,16 +272,9 @@ export class DataLaunchdarklyEnvironment extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      confirm_changes: cdktf.booleanToTerraform(this._confirmChanges),
-      default_track_events: cdktf.booleanToTerraform(this._defaultTrackEvents),
-      default_ttl: cdktf.numberToTerraform(this._defaultTtl),
       id: cdktf.stringToTerraform(this._id),
       key: cdktf.stringToTerraform(this._key),
       project_key: cdktf.stringToTerraform(this._projectKey),
-      require_comments: cdktf.booleanToTerraform(this._requireComments),
-      secure_mode: cdktf.booleanToTerraform(this._secureMode),
-      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
-      approval_settings: cdktf.listMapper(dataLaunchdarklyEnvironmentApprovalSettingsToTerraform, true)(this._approvalSettings.internalValue),
     };
   }
 }
