@@ -1,6 +1,6 @@
 # `data_launchdarkly_project`
 
-Refer to the Terraform Registory for docs: [`data_launchdarkly_project`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/project).
+Refer to the Terraform Registory for docs: [`data_launchdarkly_project`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/project).
 
 # `dataLaunchdarklyProject` Submodule <a name="`dataLaunchdarklyProject` Submodule" id="@cdktf/provider-launchdarkly.dataLaunchdarklyProject"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_launchdarkly_project`](https:/
 
 ### DataLaunchdarklyProject <a name="DataLaunchdarklyProject" id="@cdktf/provider-launchdarkly.dataLaunchdarklyProject.DataLaunchdarklyProject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/project launchdarkly_project}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/project launchdarkly_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklyProject.DataLaunchdarklyProject.Initializer"></a>
 
@@ -43,8 +43,8 @@ DataLaunchdarklyProject.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyProject.DataLaunchdarklyProject.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyProject.DataLaunchdarklyProject.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyProject.DataLaunchdarklyProject.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyProject.DataLaunchdarklyProject.Initializer.parameter.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/project#key DataLaunchdarklyProject#key}. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyProject.DataLaunchdarklyProject.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/project#id DataLaunchdarklyProject#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyProject.DataLaunchdarklyProject.Initializer.parameter.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/project#key DataLaunchdarklyProject#key}. |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyProject.DataLaunchdarklyProject.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/project#id DataLaunchdarklyProject#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/project#key DataLaunchdarklyProject#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/project#key DataLaunchdarklyProject#key}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/project#id DataLaunchdarklyProject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/project#id DataLaunchdarklyProject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -707,8 +707,8 @@ DataLaunchdarklyProjectConfig.builder()
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyProject.DataLaunchdarklyProjectConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyProject.DataLaunchdarklyProjectConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyProject.DataLaunchdarklyProjectConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyProject.DataLaunchdarklyProjectConfig.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/project#key DataLaunchdarklyProject#key}. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyProject.DataLaunchdarklyProjectConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/project#id DataLaunchdarklyProject#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyProject.DataLaunchdarklyProjectConfig.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/project#key DataLaunchdarklyProject#key}. |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyProject.DataLaunchdarklyProjectConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/project#id DataLaunchdarklyProject#id}. |
 
 ---
 
@@ -790,7 +790,7 @@ public java.lang.String getKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/project#key DataLaunchdarklyProject#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/project#key DataLaunchdarklyProject#key}.
 
 ---
 
@@ -802,7 +802,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/project#id DataLaunchdarklyProject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/project#id DataLaunchdarklyProject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`launchdarkly`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs).
+Refer to the Terraform Registory for docs: [`launchdarkly`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-launchdarkly.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`launchdarkly`](https://registry.ter
 
 ### LaunchdarklyProvider <a name="LaunchdarklyProvider" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs launchdarkly}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs launchdarkly}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.Initializer"></a>
 
@@ -21,6 +21,7 @@ provider.LaunchdarklyProvider(
   access_token: str = None,
   alias: str = None,
   api_host: str = None,
+  http_timeout: typing.Union[int, float] = None,
   oauth_token: str = None
 )
 ```
@@ -32,6 +33,7 @@ provider.LaunchdarklyProvider(
 | <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.Initializer.parameter.accessToken">access_token</a></code> | <code>str</code> | The [personal access token](https://docs.launchdarkly.com/home/account-security/api-access-tokens#personal-tokens) or [service token](https://docs.launchdarkly.com/home/account-security/api-access-tokens#service-tokens) used to authenticate with LaunchDarkly. You can also set this with the `LAUNCHDARKLY_ACCESS_TOKEN` environment variable. You must provide either `access_token` or `oauth_token`. |
 | <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.Initializer.parameter.alias">alias</a></code> | <code>str</code> | Alias name. |
 | <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.Initializer.parameter.apiHost">api_host</a></code> | <code>str</code> | The LaunchDarkly host address. If this argument is not specified, the default host address is `https://app.launchdarkly.com`. |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.Initializer.parameter.httpTimeout">http_timeout</a></code> | <code>typing.Union[int, float]</code> | The HTTP timeout (in seconds) when making API calls to LaunchDarkly. |
 | <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.Initializer.parameter.oauthToken">oauth_token</a></code> | <code>str</code> | An OAuth V2 token you use to authenticate with LaunchDarkly. |
 
 ---
@@ -60,7 +62,7 @@ Must be unique amongst siblings in the same scope
 
 The [personal access token](https://docs.launchdarkly.com/home/account-security/api-access-tokens#personal-tokens) or [service token](https://docs.launchdarkly.com/home/account-security/api-access-tokens#service-tokens) used to authenticate with LaunchDarkly. You can also set this with the `LAUNCHDARKLY_ACCESS_TOKEN` environment variable. You must provide either `access_token` or `oauth_token`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs#access_token LaunchdarklyProvider#access_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs#access_token LaunchdarklyProvider#access_token}
 
 ---
 
@@ -70,7 +72,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs#alias LaunchdarklyProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs#alias LaunchdarklyProvider#alias}
 
 ---
 
@@ -80,7 +82,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 The LaunchDarkly host address. If this argument is not specified, the default host address is `https://app.launchdarkly.com`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs#api_host LaunchdarklyProvider#api_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs#api_host LaunchdarklyProvider#api_host}
+
+---
+
+##### `http_timeout`<sup>Optional</sup> <a name="http_timeout" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.Initializer.parameter.httpTimeout"></a>
+
+- *Type:* typing.Union[int, float]
+
+The HTTP timeout (in seconds) when making API calls to LaunchDarkly.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs#http_timeout LaunchdarklyProvider#http_timeout}
 
 ---
 
@@ -92,7 +104,7 @@ An OAuth V2 token you use to authenticate with LaunchDarkly.
 
 You can also set this with the `LAUNCHDARKLY_OAUTH_TOKEN` environment variable. You must provide either `access_token` or `oauth_token`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs#oauth_token LaunchdarklyProvider#oauth_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs#oauth_token LaunchdarklyProvider#oauth_token}
 
 ---
 
@@ -109,6 +121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 | <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.resetAccessToken">reset_access_token</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.resetAlias">reset_alias</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.resetApiHost">reset_api_host</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.resetHttpTimeout">reset_http_timeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.resetOauthToken">reset_oauth_token</a></code> | *No description.* |
 
 ---
@@ -198,6 +211,12 @@ def reset_alias() -> None
 
 ```python
 def reset_api_host() -> None
+```
+
+##### `reset_http_timeout` <a name="reset_http_timeout" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.resetHttpTimeout"></a>
+
+```python
+def reset_http_timeout() -> None
 ```
 
 ##### `reset_oauth_token` <a name="reset_oauth_token" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.resetOauthToken"></a>
@@ -298,9 +317,11 @@ provider.LaunchdarklyProvider.is_terraform_provider(
 | <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.accessTokenInput">access_token_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.aliasInput">alias_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.apiHostInput">api_host_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.httpTimeoutInput">http_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.oauthTokenInput">oauth_token_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.accessToken">access_token</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.apiHost">api_host</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.httpTimeout">http_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.oauthToken">oauth_token</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -427,6 +448,16 @@ api_host_input: str
 
 ---
 
+##### `http_timeout_input`<sup>Optional</sup> <a name="http_timeout_input" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.httpTimeoutInput"></a>
+
+```python
+http_timeout_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `oauth_token_input`<sup>Optional</sup> <a name="oauth_token_input" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.oauthTokenInput"></a>
 
 ```python
@@ -454,6 +485,16 @@ api_host: str
 ```
 
 - *Type:* str
+
+---
+
+##### `http_timeout`<sup>Optional</sup> <a name="http_timeout" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.property.httpTimeout"></a>
+
+```python
+http_timeout: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
 
 ---
 
@@ -498,6 +539,7 @@ provider.LaunchdarklyProviderConfig(
   access_token: str = None,
   alias: str = None,
   api_host: str = None,
+  http_timeout: typing.Union[int, float] = None,
   oauth_token: str = None
 )
 ```
@@ -509,6 +551,7 @@ provider.LaunchdarklyProviderConfig(
 | <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProviderConfig.property.accessToken">access_token</a></code> | <code>str</code> | The [personal access token](https://docs.launchdarkly.com/home/account-security/api-access-tokens#personal-tokens) or [service token](https://docs.launchdarkly.com/home/account-security/api-access-tokens#service-tokens) used to authenticate with LaunchDarkly. You can also set this with the `LAUNCHDARKLY_ACCESS_TOKEN` environment variable. You must provide either `access_token` or `oauth_token`. |
 | <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProviderConfig.property.alias">alias</a></code> | <code>str</code> | Alias name. |
 | <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProviderConfig.property.apiHost">api_host</a></code> | <code>str</code> | The LaunchDarkly host address. If this argument is not specified, the default host address is `https://app.launchdarkly.com`. |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProviderConfig.property.httpTimeout">http_timeout</a></code> | <code>typing.Union[int, float]</code> | The HTTP timeout (in seconds) when making API calls to LaunchDarkly. |
 | <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProviderConfig.property.oauthToken">oauth_token</a></code> | <code>str</code> | An OAuth V2 token you use to authenticate with LaunchDarkly. |
 
 ---
@@ -523,7 +566,7 @@ access_token: str
 
 The [personal access token](https://docs.launchdarkly.com/home/account-security/api-access-tokens#personal-tokens) or [service token](https://docs.launchdarkly.com/home/account-security/api-access-tokens#service-tokens) used to authenticate with LaunchDarkly. You can also set this with the `LAUNCHDARKLY_ACCESS_TOKEN` environment variable. You must provide either `access_token` or `oauth_token`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs#access_token LaunchdarklyProvider#access_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs#access_token LaunchdarklyProvider#access_token}
 
 ---
 
@@ -537,7 +580,7 @@ alias: str
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs#alias LaunchdarklyProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs#alias LaunchdarklyProvider#alias}
 
 ---
 
@@ -551,7 +594,21 @@ api_host: str
 
 The LaunchDarkly host address. If this argument is not specified, the default host address is `https://app.launchdarkly.com`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs#api_host LaunchdarklyProvider#api_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs#api_host LaunchdarklyProvider#api_host}
+
+---
+
+##### `http_timeout`<sup>Optional</sup> <a name="http_timeout" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProviderConfig.property.httpTimeout"></a>
+
+```python
+http_timeout: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The HTTP timeout (in seconds) when making API calls to LaunchDarkly.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs#http_timeout LaunchdarklyProvider#http_timeout}
 
 ---
 
@@ -567,7 +624,7 @@ An OAuth V2 token you use to authenticate with LaunchDarkly.
 
 You can also set this with the `LAUNCHDARKLY_OAUTH_TOKEN` environment variable. You must provide either `access_token` or `oauth_token`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs#oauth_token LaunchdarklyProvider#oauth_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs#oauth_token LaunchdarklyProvider#oauth_token}
 
 ---
 
