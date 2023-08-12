@@ -1,6 +1,6 @@
 # `data_launchdarkly_segment`
 
-Refer to the Terraform Registory for docs: [`data_launchdarkly_segment`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment).
+Refer to the Terraform Registory for docs: [`data_launchdarkly_segment`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment).
 
 # `dataLaunchdarklySegment` Submodule <a name="`dataLaunchdarklySegment` Submodule" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_launchdarkly_segment`](https:/
 
 ### DataLaunchdarklySegment <a name="DataLaunchdarklySegment" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment launchdarkly_segment}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment launchdarkly_segment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.Initializer"></a>
 
@@ -874,7 +874,7 @@ new DataLaunchdarklySegmentConfig {
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.description">Description</a></code> | <code>string</code> | The description of the segment's purpose. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.excluded">Excluded</a></code> | <code>string[]</code> | List of user keys excluded from the segment. To target on other context kinds, use the excluded_contexts block attribute. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.excludedContexts">ExcludedContexts</a></code> | <code>object</code> | excluded_contexts block. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#id DataLaunchdarklySegment#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#id DataLaunchdarklySegment#id}. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.included">Included</a></code> | <code>string[]</code> | List of user keys included in the segment. To target on other context kinds, use the included_contexts block attribute. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.includedContexts">IncludedContexts</a></code> | <code>object</code> | included_contexts block. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.rules">Rules</a></code> | <code>object</code> | rules block. |
@@ -961,7 +961,7 @@ public string EnvKey { get; set; }
 
 The segment's environment key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#env_key DataLaunchdarklySegment#env_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#env_key DataLaunchdarklySegment#env_key}
 
 ---
 
@@ -975,7 +975,7 @@ public string Key { get; set; }
 
 The unique key that references the segment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#key DataLaunchdarklySegment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#key DataLaunchdarklySegment#key}
 
 ---
 
@@ -989,7 +989,7 @@ public string ProjectKey { get; set; }
 
 The segment's project key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#project_key DataLaunchdarklySegment#project_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#project_key DataLaunchdarklySegment#project_key}
 
 ---
 
@@ -1003,7 +1003,7 @@ public string Description { get; set; }
 
 The description of the segment's purpose.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#description DataLaunchdarklySegment#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#description DataLaunchdarklySegment#description}
 
 ---
 
@@ -1017,7 +1017,7 @@ public string[] Excluded { get; set; }
 
 List of user keys excluded from the segment. To target on other context kinds, use the excluded_contexts block attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#excluded DataLaunchdarklySegment#excluded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#excluded DataLaunchdarklySegment#excluded}
 
 ---
 
@@ -1031,7 +1031,7 @@ public object ExcludedContexts { get; set; }
 
 excluded_contexts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#excluded_contexts DataLaunchdarklySegment#excluded_contexts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#excluded_contexts DataLaunchdarklySegment#excluded_contexts}
 
 ---
 
@@ -1043,7 +1043,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#id DataLaunchdarklySegment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#id DataLaunchdarklySegment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1060,7 +1060,7 @@ public string[] Included { get; set; }
 
 List of user keys included in the segment. To target on other context kinds, use the included_contexts block attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#included DataLaunchdarklySegment#included}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#included DataLaunchdarklySegment#included}
 
 ---
 
@@ -1074,7 +1074,7 @@ public object IncludedContexts { get; set; }
 
 included_contexts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#included_contexts DataLaunchdarklySegment#included_contexts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#included_contexts DataLaunchdarklySegment#included_contexts}
 
 ---
 
@@ -1088,7 +1088,7 @@ public object Rules { get; set; }
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#rules DataLaunchdarklySegment#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#rules DataLaunchdarklySegment#rules}
 
 ---
 
@@ -1124,7 +1124,7 @@ public string ContextKind { get; set; }
 
 The context kind associated with this segment target. To target on user contexts, use the included and excluded attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#context_kind DataLaunchdarklySegment#context_kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#context_kind DataLaunchdarklySegment#context_kind}
 
 ---
 
@@ -1138,7 +1138,7 @@ public string[] Values { get; set; }
 
 List of target object keys included in or excluded from the segment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#values DataLaunchdarklySegment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#values DataLaunchdarklySegment#values}
 
 ---
 
@@ -1174,7 +1174,7 @@ public string ContextKind { get; set; }
 
 The context kind associated with this segment target. To target on user contexts, use the included and excluded attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#context_kind DataLaunchdarklySegment#context_kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#context_kind DataLaunchdarklySegment#context_kind}
 
 ---
 
@@ -1188,7 +1188,7 @@ public string[] Values { get; set; }
 
 List of target object keys included in or excluded from the segment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#values DataLaunchdarklySegment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#values DataLaunchdarklySegment#values}
 
 ---
 
@@ -1228,7 +1228,7 @@ public string BucketBy { get; set; }
 
 The attribute by which to group users together.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#bucket_by DataLaunchdarklySegment#bucket_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#bucket_by DataLaunchdarklySegment#bucket_by}
 
 ---
 
@@ -1242,7 +1242,7 @@ public object Clauses { get; set; }
 
 clauses block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#clauses DataLaunchdarklySegment#clauses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#clauses DataLaunchdarklySegment#clauses}
 
 ---
 
@@ -1258,7 +1258,7 @@ The context kind associated with this segment rule.
 
 This argument is only valid if weight is also specified. If omitted, defaults to 'user'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#rollout_context_kind DataLaunchdarklySegment#rollout_context_kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#rollout_context_kind DataLaunchdarklySegment#rollout_context_kind}
 
 ---
 
@@ -1272,7 +1272,7 @@ public double Weight { get; set; }
 
 The integer weight of the rule (between 1 and 100000).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#weight DataLaunchdarklySegment#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#weight DataLaunchdarklySegment#weight}
 
 ---
 
@@ -1316,7 +1316,7 @@ public string Attribute { get; set; }
 
 The user attribute to operate on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#attribute DataLaunchdarklySegment#attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#attribute DataLaunchdarklySegment#attribute}
 
 ---
 
@@ -1332,7 +1332,7 @@ The operator associated with the rule clause.
 
 Available options are `in`, `endsWith`, `startsWith`, `matches`, `contains`, `lessThan`, `lessThanOrEqual`, `greaterThanOrEqual`, `before`, `after`, `segmentMatch`, `semVerEqual`, `semVerLessThan`, and `semVerGreaterThan`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#op DataLaunchdarklySegment#op}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#op DataLaunchdarklySegment#op}
 
 ---
 
@@ -1346,7 +1346,7 @@ public string[] Values { get; set; }
 
 The list of values associated with the rule clause.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#values DataLaunchdarklySegment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#values DataLaunchdarklySegment#values}
 
 ---
 
@@ -1362,7 +1362,7 @@ The context kind associated with this rule clause.
 
 This argument is only valid if `rollout_weights` is also specified. If omitted, defaults to `user`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#context_kind DataLaunchdarklySegment#context_kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#context_kind DataLaunchdarklySegment#context_kind}
 
 ---
 
@@ -1376,7 +1376,7 @@ public object Negate { get; set; }
 
 Whether to negate the rule clause.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#negate DataLaunchdarklySegment#negate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#negate DataLaunchdarklySegment#negate}
 
 ---
 
@@ -1392,7 +1392,7 @@ The type for each of the clause's values.
 
 Available types are `boolean`, `string`, and `number`. If omitted, `value_type` defaults to `string`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/data-sources/segment#value_type DataLaunchdarklySegment#value_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/data-sources/segment#value_type DataLaunchdarklySegment#value_type}
 
 ---
 

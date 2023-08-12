@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs
+// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,37 @@ export interface LaunchdarklyProviderConfig {
   /**
   * The [personal access token](https://docs.launchdarkly.com/home/account-security/api-access-tokens#personal-tokens) or [service token](https://docs.launchdarkly.com/home/account-security/api-access-tokens#service-tokens) used to authenticate with LaunchDarkly. You can also set this with the `LAUNCHDARKLY_ACCESS_TOKEN` environment variable. You must provide either `access_token` or `oauth_token`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs#access_token LaunchdarklyProvider#access_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs#access_token LaunchdarklyProvider#access_token}
   */
   readonly accessToken?: string;
   /**
   * The LaunchDarkly host address. If this argument is not specified, the default host address is `https://app.launchdarkly.com`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs#api_host LaunchdarklyProvider#api_host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs#api_host LaunchdarklyProvider#api_host}
   */
   readonly apiHost?: string;
   /**
+  * The HTTP timeout (in seconds) when making API calls to LaunchDarkly.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs#http_timeout LaunchdarklyProvider#http_timeout}
+  */
+  readonly httpTimeout?: number;
+  /**
   * An OAuth V2 token you use to authenticate with LaunchDarkly. You can also set this with the `LAUNCHDARKLY_OAUTH_TOKEN` environment variable. You must provide either `access_token` or `oauth_token`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs#oauth_token LaunchdarklyProvider#oauth_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs#oauth_token LaunchdarklyProvider#oauth_token}
   */
   readonly oauthToken?: string;
   /**
   * Alias name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs#alias LaunchdarklyProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs#alias LaunchdarklyProvider#alias}
   */
   readonly alias?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs launchdarkly}
+* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs launchdarkly}
 */
 export class LaunchdarklyProvider extends cdktf.TerraformProvider {
 
@@ -53,7 +59,7 @@ export class LaunchdarklyProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs launchdarkly} Resource
+  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs launchdarkly} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -64,13 +70,14 @@ export class LaunchdarklyProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'launchdarkly',
       terraformGeneratorMetadata: {
         providerName: 'launchdarkly',
-        providerVersion: '2.14.0',
+        providerVersion: '2.15.0',
         providerVersionConstraint: '~> 2.13'
       },
       terraformProviderSource: 'launchdarkly/launchdarkly'
     });
     this._accessToken = config.accessToken;
     this._apiHost = config.apiHost;
+    this._httpTimeout = config.httpTimeout;
     this._oauthToken = config.oauthToken;
     this._alias = config.alias;
   }
@@ -109,6 +116,22 @@ export class LaunchdarklyProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get apiHostInput() {
     return this._apiHost;
+  }
+
+  // http_timeout - computed: false, optional: true, required: false
+  private _httpTimeout?: number; 
+  public get httpTimeout() {
+    return this._httpTimeout;
+  }
+  public set httpTimeout(value: number | undefined) {
+    this._httpTimeout = value;
+  }
+  public resetHttpTimeout() {
+    this._httpTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpTimeoutInput() {
+    return this._httpTimeout;
   }
 
   // oauth_token - computed: false, optional: true, required: false
@@ -151,6 +174,7 @@ export class LaunchdarklyProvider extends cdktf.TerraformProvider {
     return {
       access_token: cdktf.stringToTerraform(this._accessToken),
       api_host: cdktf.stringToTerraform(this._apiHost),
+      http_timeout: cdktf.numberToTerraform(this._httpTimeout),
       oauth_token: cdktf.stringToTerraform(this._oauthToken),
       alias: cdktf.stringToTerraform(this._alias),
     };

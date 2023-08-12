@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/team
+// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/team
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface TeamConfig extends cdktf.TerraformMetaArguments {
   /**
   * A list of custom role keys for the team
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/team#custom_role_keys Team#custom_role_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/team#custom_role_keys Team#custom_role_keys}
   */
   readonly customRoleKeys?: string[];
   /**
   * The team's description
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/team#description Team#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/team#description Team#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/team#id Team#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/team#id Team#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,31 +34,31 @@ export interface TeamConfig extends cdktf.TerraformMetaArguments {
   /**
   * The team's unique key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/team#key Team#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/team#key Team#key}
   */
   readonly key: string;
   /**
   * A list of team maintainer IDs as strings
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/team#maintainers Team#maintainers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/team#maintainers Team#maintainers}
   */
   readonly maintainers?: string[];
   /**
   * A list of team member IDs as strings
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/team#member_ids Team#member_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/team#member_ids Team#member_ids}
   */
   readonly memberIds?: string[];
   /**
   * The team's human-readable name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/team#name Team#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/team#name Team#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/team launchdarkly_team}
+* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/team launchdarkly_team}
 */
 export class Team extends cdktf.TerraformResource {
 
@@ -72,7 +72,7 @@ export class Team extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.14.0/docs/resources/team launchdarkly_team} Resource
+  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/team launchdarkly_team} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,7 @@ export class Team extends cdktf.TerraformResource {
       terraformResourceType: 'launchdarkly_team',
       terraformGeneratorMetadata: {
         providerName: 'launchdarkly',
-        providerVersion: '2.14.0',
+        providerVersion: '2.15.0',
         providerVersionConstraint: '~> 2.13'
       },
       provider: config.provider,
