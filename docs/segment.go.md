@@ -1,6 +1,6 @@
 # `launchdarkly_segment`
 
-Refer to the Terraform Registory for docs: [`launchdarkly_segment`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/segment).
+Refer to the Terraform Registory for docs: [`launchdarkly_segment`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/segment).
 
 # `segment` Submodule <a name="`segment` Submodule" id="@cdktf/provider-launchdarkly.segment"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`launchdarkly_segment`](https://regi
 
 ### Segment <a name="Segment" id="@cdktf/provider-launchdarkly.segment.Segment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/segment launchdarkly_segment}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/segment launchdarkly_segment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.segment.Segment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v2/segment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/segment"
 
 segment.NewSegment(scope Construct, id *string, config SegmentConfig) Segment
 ```
@@ -365,7 +365,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-launchdarkly.segment.Segment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v2/segment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/segment"
 
 segment.Segment_IsConstruct(x interface{}) *bool
 ```
@@ -397,7 +397,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-launchdarkly.segment.Segment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v2/segment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/segment"
 
 segment.Segment_IsTerraformElement(x interface{}) *bool
 ```
@@ -411,7 +411,7 @@ segment.Segment_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-launchdarkly.segment.Segment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v2/segment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/segment"
 
 segment.Segment_IsTerraformResource(x interface{}) *bool
 ```
@@ -885,7 +885,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.segment.SegmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v2/segment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/segment"
 
 &segment.SegmentConfig {
 	Connection: interface{},
@@ -928,7 +928,7 @@ import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v2/segment"
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.description">Description</a></code> | <code>*string</code> | The description of the segment's purpose. |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.excluded">Excluded</a></code> | <code>*[]*string</code> | List of user keys excluded from the segment. To target on other context kinds, use the excluded_contexts block attribute. |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.excludedContexts">ExcludedContexts</a></code> | <code>interface{}</code> | excluded_contexts block. |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/segment#id Segment#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/segment#id Segment#id}. |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.included">Included</a></code> | <code>*[]*string</code> | List of user keys included in the segment. To target on other context kinds, use the included_contexts block attribute. |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.includedContexts">IncludedContexts</a></code> | <code>interface{}</code> | included_contexts block. |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.rules">Rules</a></code> | <code>interface{}</code> | rules block. |
@@ -1016,7 +1016,7 @@ EnvKey *string
 
 The segment's environment key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/segment#env_key Segment#env_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/segment#env_key Segment#env_key}
 
 ---
 
@@ -1030,7 +1030,7 @@ Key *string
 
 The unique key that references the segment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/segment#key Segment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/segment#key Segment#key}
 
 ---
 
@@ -1044,7 +1044,7 @@ Name *string
 
 The human-friendly name for the segment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/segment#name Segment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/segment#name Segment#name}
 
 ---
 
@@ -1058,7 +1058,7 @@ ProjectKey *string
 
 The segment's project key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/segment#project_key Segment#project_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/segment#project_key Segment#project_key}
 
 ---
 
@@ -1072,7 +1072,7 @@ Description *string
 
 The description of the segment's purpose.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/segment#description Segment#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/segment#description Segment#description}
 
 ---
 
@@ -1086,7 +1086,7 @@ Excluded *[]*string
 
 List of user keys excluded from the segment. To target on other context kinds, use the excluded_contexts block attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/segment#excluded Segment#excluded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/segment#excluded Segment#excluded}
 
 ---
 
@@ -1100,7 +1100,7 @@ ExcludedContexts interface{}
 
 excluded_contexts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/segment#excluded_contexts Segment#excluded_contexts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/segment#excluded_contexts Segment#excluded_contexts}
 
 ---
 
@@ -1112,7 +1112,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/segment#id Segment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/segment#id Segment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1129,7 +1129,7 @@ Included *[]*string
 
 List of user keys included in the segment. To target on other context kinds, use the included_contexts block attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/segment#included Segment#included}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/segment#included Segment#included}
 
 ---
 
@@ -1143,7 +1143,7 @@ IncludedContexts interface{}
 
 included_contexts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/segment#included_contexts Segment#included_contexts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/segment#included_contexts Segment#included_contexts}
 
 ---
 
@@ -1157,7 +1157,7 @@ Rules interface{}
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/segment#rules Segment#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/segment#rules Segment#rules}
 
 ---
 
@@ -1171,7 +1171,7 @@ Tags *[]*string
 
 Tags associated with your resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/segment#tags Segment#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/segment#tags Segment#tags}
 
 ---
 
@@ -1180,7 +1180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.segment.SegmentExcludedContexts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v2/segment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/segment"
 
 &segment.SegmentExcludedContexts {
 	ContextKind: *string,
@@ -1207,7 +1207,7 @@ ContextKind *string
 
 The context kind associated with this segment target. To target on user contexts, use the included and excluded attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/segment#context_kind Segment#context_kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/segment#context_kind Segment#context_kind}
 
 ---
 
@@ -1221,7 +1221,7 @@ Values *[]*string
 
 List of target object keys included in or excluded from the segment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/segment#values Segment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/segment#values Segment#values}
 
 ---
 
@@ -1230,7 +1230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.segment.SegmentIncludedContexts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v2/segment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/segment"
 
 &segment.SegmentIncludedContexts {
 	ContextKind: *string,
@@ -1257,7 +1257,7 @@ ContextKind *string
 
 The context kind associated with this segment target. To target on user contexts, use the included and excluded attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/segment#context_kind Segment#context_kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/segment#context_kind Segment#context_kind}
 
 ---
 
@@ -1271,7 +1271,7 @@ Values *[]*string
 
 List of target object keys included in or excluded from the segment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/segment#values Segment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/segment#values Segment#values}
 
 ---
 
@@ -1280,7 +1280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.segment.SegmentRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v2/segment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/segment"
 
 &segment.SegmentRules {
 	BucketBy: *string,
@@ -1311,7 +1311,7 @@ BucketBy *string
 
 The attribute by which to group users together.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/segment#bucket_by Segment#bucket_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/segment#bucket_by Segment#bucket_by}
 
 ---
 
@@ -1325,7 +1325,7 @@ Clauses interface{}
 
 clauses block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/segment#clauses Segment#clauses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/segment#clauses Segment#clauses}
 
 ---
 
@@ -1341,7 +1341,7 @@ The context kind associated with this segment rule.
 
 This argument is only valid if weight is also specified. If omitted, defaults to 'user'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/segment#rollout_context_kind Segment#rollout_context_kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/segment#rollout_context_kind Segment#rollout_context_kind}
 
 ---
 
@@ -1355,7 +1355,7 @@ Weight *f64
 
 The integer weight of the rule (between 1 and 100000).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/segment#weight Segment#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/segment#weight Segment#weight}
 
 ---
 
@@ -1364,7 +1364,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.segment.SegmentRulesClauses.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v2/segment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/segment"
 
 &segment.SegmentRulesClauses {
 	Attribute: *string,
@@ -1399,7 +1399,7 @@ Attribute *string
 
 The user attribute to operate on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/segment#attribute Segment#attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/segment#attribute Segment#attribute}
 
 ---
 
@@ -1415,7 +1415,7 @@ The operator associated with the rule clause.
 
 Available options are `in`, `endsWith`, `startsWith`, `matches`, `contains`, `lessThan`, `lessThanOrEqual`, `greaterThanOrEqual`, `before`, `after`, `segmentMatch`, `semVerEqual`, `semVerLessThan`, and `semVerGreaterThan`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/segment#op Segment#op}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/segment#op Segment#op}
 
 ---
 
@@ -1429,7 +1429,7 @@ Values *[]*string
 
 The list of values associated with the rule clause.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/segment#values Segment#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/segment#values Segment#values}
 
 ---
 
@@ -1445,7 +1445,7 @@ The context kind associated with this rule clause.
 
 This argument is only valid if `rollout_weights` is also specified. If omitted, defaults to `user`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/segment#context_kind Segment#context_kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/segment#context_kind Segment#context_kind}
 
 ---
 
@@ -1459,7 +1459,7 @@ Negate interface{}
 
 Whether to negate the rule clause.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/segment#negate Segment#negate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/segment#negate Segment#negate}
 
 ---
 
@@ -1475,7 +1475,7 @@ The type for each of the clause's values.
 
 Available types are `boolean`, `string`, and `number`. If omitted, `value_type` defaults to `string`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.0/docs/resources/segment#value_type Segment#value_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/resources/segment#value_type Segment#value_type}
 
 ---
 
@@ -1486,7 +1486,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.segment.SegmentExcludedContextsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v2/segment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/segment"
 
 segment.NewSegmentExcludedContextsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SegmentExcludedContextsList
 ```
@@ -1629,7 +1629,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.segment.SegmentExcludedContextsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v2/segment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/segment"
 
 segment.NewSegmentExcludedContextsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SegmentExcludedContextsOutputReference
 ```
@@ -1940,7 +1940,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.segment.SegmentIncludedContextsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v2/segment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/segment"
 
 segment.NewSegmentIncludedContextsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SegmentIncludedContextsList
 ```
@@ -2083,7 +2083,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.segment.SegmentIncludedContextsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v2/segment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/segment"
 
 segment.NewSegmentIncludedContextsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SegmentIncludedContextsOutputReference
 ```
@@ -2394,7 +2394,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.segment.SegmentRulesClausesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v2/segment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/segment"
 
 segment.NewSegmentRulesClausesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SegmentRulesClausesList
 ```
@@ -2537,7 +2537,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.segment.SegmentRulesClausesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v2/segment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/segment"
 
 segment.NewSegmentRulesClausesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SegmentRulesClausesOutputReference
 ```
@@ -2957,7 +2957,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.segment.SegmentRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v2/segment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/segment"
 
 segment.NewSegmentRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SegmentRulesList
 ```
@@ -3100,7 +3100,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.segment.SegmentRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v2/segment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/segment"
 
 segment.NewSegmentRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SegmentRulesOutputReference
 ```
