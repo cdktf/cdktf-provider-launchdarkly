@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/data-sources/environment
+// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/environment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataLaunchdarklyEnvironmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/data-sources/environment#id DataLaunchdarklyEnvironment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/environment#id DataLaunchdarklyEnvironment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +22,13 @@ export interface DataLaunchdarklyEnvironmentConfig extends cdktf.TerraformMetaAr
   /**
   * The project-unique key for the environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/data-sources/environment#key DataLaunchdarklyEnvironment#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/environment#key DataLaunchdarklyEnvironment#key}
   */
   readonly key: string;
   /**
   * The environment's project key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/data-sources/environment#project_key DataLaunchdarklyEnvironment#project_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/environment#project_key DataLaunchdarklyEnvironment#project_key}
   */
   readonly projectKey: string;
 }
@@ -118,7 +118,7 @@ export class DataLaunchdarklyEnvironmentApprovalSettingsList extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/data-sources/environment launchdarkly_environment}
+* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/environment launchdarkly_environment}
 */
 export class DataLaunchdarklyEnvironment extends cdktf.TerraformDataSource {
 
@@ -132,7 +132,7 @@ export class DataLaunchdarklyEnvironment extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/data-sources/environment launchdarkly_environment} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/environment launchdarkly_environment} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -143,7 +143,7 @@ export class DataLaunchdarklyEnvironment extends cdktf.TerraformDataSource {
       terraformResourceType: 'launchdarkly_environment',
       terraformGeneratorMetadata: {
         providerName: 'launchdarkly',
-        providerVersion: '2.15.1',
+        providerVersion: '2.15.2',
         providerVersionConstraint: '~> 2.13'
       },
       provider: config.provider,
