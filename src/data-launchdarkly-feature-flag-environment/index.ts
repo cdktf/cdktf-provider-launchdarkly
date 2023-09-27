@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/data-sources/feature_flag_environment
+// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/feature_flag_environment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface DataLaunchdarklyFeatureFlagEnvironmentConfig extends cdktf.Terr
   /**
   * The environment key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/data-sources/feature_flag_environment#env_key DataLaunchdarklyFeatureFlagEnvironment#env_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/feature_flag_environment#env_key DataLaunchdarklyFeatureFlagEnvironment#env_key}
   */
   readonly envKey: string;
   /**
   * The feature flag's unique `id` in the format `project_key/flag_key`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/data-sources/feature_flag_environment#flag_id DataLaunchdarklyFeatureFlagEnvironment#flag_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/feature_flag_environment#flag_id DataLaunchdarklyFeatureFlagEnvironment#flag_id}
   */
   readonly flagId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/data-sources/feature_flag_environment#id DataLaunchdarklyFeatureFlagEnvironment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/feature_flag_environment#id DataLaunchdarklyFeatureFlagEnvironment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -499,7 +494,7 @@ export class DataLaunchdarklyFeatureFlagEnvironmentTargetsList extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/data-sources/feature_flag_environment launchdarkly_feature_flag_environment}
+* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/feature_flag_environment launchdarkly_feature_flag_environment}
 */
 export class DataLaunchdarklyFeatureFlagEnvironment extends cdktf.TerraformDataSource {
 
@@ -513,7 +508,7 @@ export class DataLaunchdarklyFeatureFlagEnvironment extends cdktf.TerraformDataS
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.1/docs/data-sources/feature_flag_environment launchdarkly_feature_flag_environment} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/feature_flag_environment launchdarkly_feature_flag_environment} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -524,7 +519,7 @@ export class DataLaunchdarklyFeatureFlagEnvironment extends cdktf.TerraformDataS
       terraformResourceType: 'launchdarkly_feature_flag_environment',
       terraformGeneratorMetadata: {
         providerName: 'launchdarkly',
-        providerVersion: '2.15.1',
+        providerVersion: '2.15.2',
         providerVersionConstraint: '~> 2.13'
       },
       provider: config.provider,
