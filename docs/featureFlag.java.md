@@ -1791,7 +1791,7 @@ If you wish to define an empty string variation, you must still define the value
 
 ```terraform
 variations {
-value = ""
+  value = ""
 }
 ```
 
