@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token
 // generated from terraform resource schema
 
@@ -71,7 +66,7 @@ export interface AccessTokenConfig extends cdktf.TerraformMetaArguments {
 export interface AccessTokenInlineRoles {
   /**
   * The list of action specifiers defining the actions to which the statement applies.
-Either `actions` or `not_actions` must be specified. For a list of available actions read [Actions reference](https://docs.launchdarkly.com/home/account-security/custom-roles/actions#actions-reference).
+  * Either `actions` or `not_actions` must be specified. For a list of available actions read [Actions reference](https://docs.launchdarkly.com/home/account-security/custom-roles/actions#actions-reference).
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token#actions AccessToken#actions}
   */
@@ -284,7 +279,7 @@ export class AccessTokenInlineRolesList extends cdktf.ComplexList {
 export interface AccessTokenPolicyStatements {
   /**
   * The list of action specifiers defining the actions to which the statement applies.
-Either `actions` or `not_actions` must be specified. For a list of available actions read [Actions reference](https://docs.launchdarkly.com/home/account-security/custom-roles/actions#actions-reference).
+  * Either `actions` or `not_actions` must be specified. For a list of available actions read [Actions reference](https://docs.launchdarkly.com/home/account-security/custom-roles/actions#actions-reference).
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token#actions AccessToken#actions}
   */
