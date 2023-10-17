@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchd
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/provider"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/provider"
 
 provider.NewLaunchdarklyProvider(scope Construct, id *string, config LaunchdarklyProviderConfig) LaunchdarklyProvider
 ```
@@ -176,7 +176,7 @@ func ResetOauthToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/provider"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/provider"
 
 provider.LaunchdarklyProvider_IsConstruct(x interface{}) *bool
 ```
@@ -208,7 +208,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/provider"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/provider"
 
 provider.LaunchdarklyProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -222,7 +222,7 @@ provider.LaunchdarklyProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/provider"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/provider"
 
 provider.LaunchdarklyProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -236,7 +236,7 @@ provider.LaunchdarklyProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/provider"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/provider"
 
 provider.LaunchdarklyProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -509,7 +509,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/provider"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/provider"
 
 &provider.LaunchdarklyProviderConfig {
 	AccessToken: *string,
