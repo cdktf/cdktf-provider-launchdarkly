@@ -505,6 +505,20 @@ export class AccessToken extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "launchdarkly_access_token";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a AccessToken resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the AccessToken to import
+  * @param importFromId The id of the existing AccessToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the AccessToken to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "launchdarkly_access_token", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

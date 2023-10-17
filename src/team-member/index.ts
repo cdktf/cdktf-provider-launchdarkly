@@ -61,6 +61,20 @@ export class TeamMember extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "launchdarkly_team_member";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a TeamMember resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the TeamMember to import
+  * @param importFromId The id of the existing TeamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/team_member#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the TeamMember to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "launchdarkly_team_member", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========
