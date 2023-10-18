@@ -1,6 +1,6 @@
 # `data_launchdarkly_feature_flag`
 
-Refer to the Terraform Registory for docs: [`data_launchdarkly_feature_flag`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/feature_flag).
+Refer to the Terraform Registory for docs: [`data_launchdarkly_feature_flag`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/feature_flag).
 
 # `dataLaunchdarklyFeatureFlag` Submodule <a name="`dataLaunchdarklyFeatureFlag` Submodule" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_launchdarkly_feature_flag`](ht
 
 ### DataLaunchdarklyFeatureFlag <a name="DataLaunchdarklyFeatureFlag" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/feature_flag launchdarkly_feature_flag}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/feature_flag launchdarkly_feature_flag}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyfeatureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklyfeatureflag"
 
 datalaunchdarklyfeatureflag.NewDataLaunchdarklyFeatureFlag(scope Construct, id *string, config DataLaunchdarklyFeatureFlagConfig) DataLaunchdarklyFeatureFlag
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyfeatureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklyfeatureflag"
 
 datalaunchdarklyfeatureflag.DataLaunchdarklyFeatureFlag_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyfeatureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklyfeatureflag"
 
 datalaunchdarklyfeatureflag.DataLaunchdarklyFeatureFlag_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ datalaunchdarklyfeatureflag.DataLaunchdarklyFeatureFlag_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyfeatureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklyfeatureflag"
 
 datalaunchdarklyfeatureflag.DataLaunchdarklyFeatureFlag_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ datalaunchdarklyfeatureflag.DataLaunchdarklyFeatureFlag_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyfeatureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklyfeatureflag"
 
 datalaunchdarklyfeatureflag.DataLaunchdarklyFeatureFlag_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataLaunchdarklyFeatureFla
 
 The id of the existing DataLaunchdarklyFeatureFlag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/feature_flag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/feature_flag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -743,7 +743,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagClientSideAvailability.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyfeatureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklyfeatureflag"
 
 &datalaunchdarklyfeatureflag.DataLaunchdarklyFeatureFlagClientSideAvailability {
 
@@ -756,7 +756,7 @@ import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaun
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyfeatureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklyfeatureflag"
 
 &datalaunchdarklyfeatureflag.DataLaunchdarklyFeatureFlagConfig {
 	Connection: interface{},
@@ -785,7 +785,7 @@ import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaun
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagConfig.property.key">Key</a></code> | <code>*string</code> | The unique feature flag key that references the flag in your application code. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagConfig.property.projectKey">ProjectKey</a></code> | <code>*string</code> | The feature flag's project key. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/feature_flag#id DataLaunchdarklyFeatureFlag#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/feature_flag#id DataLaunchdarklyFeatureFlag#id}. |
 
 ---
 
@@ -869,7 +869,7 @@ Key *string
 
 The unique feature flag key that references the flag in your application code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/feature_flag#key DataLaunchdarklyFeatureFlag#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/feature_flag#key DataLaunchdarklyFeatureFlag#key}
 
 ---
 
@@ -883,7 +883,7 @@ ProjectKey *string
 
 The feature flag's project key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/feature_flag#project_key DataLaunchdarklyFeatureFlag#project_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/feature_flag#project_key DataLaunchdarklyFeatureFlag#project_key}
 
 ---
 
@@ -895,7 +895,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/feature_flag#id DataLaunchdarklyFeatureFlag#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/feature_flag#id DataLaunchdarklyFeatureFlag#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -907,7 +907,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagCustomProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyfeatureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklyfeatureflag"
 
 &datalaunchdarklyfeatureflag.DataLaunchdarklyFeatureFlagCustomProperties {
 
@@ -920,7 +920,7 @@ import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaun
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagDefaults.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyfeatureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklyfeatureflag"
 
 &datalaunchdarklyfeatureflag.DataLaunchdarklyFeatureFlagDefaults {
 
@@ -933,7 +933,7 @@ import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaun
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagVariations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyfeatureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklyfeatureflag"
 
 &datalaunchdarklyfeatureflag.DataLaunchdarklyFeatureFlagVariations {
 
@@ -948,7 +948,7 @@ import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaun
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagClientSideAvailabilityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyfeatureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklyfeatureflag"
 
 datalaunchdarklyfeatureflag.NewDataLaunchdarklyFeatureFlagClientSideAvailabilityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLaunchdarklyFeatureFlagClientSideAvailabilityList
 ```
@@ -1080,7 +1080,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyfeatureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklyfeatureflag"
 
 datalaunchdarklyfeatureflag.NewDataLaunchdarklyFeatureFlagClientSideAvailabilityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLaunchdarklyFeatureFlagClientSideAvailabilityOutputReference
 ```
@@ -1369,7 +1369,7 @@ func InternalValue() DataLaunchdarklyFeatureFlagClientSideAvailability
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagCustomPropertiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyfeatureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklyfeatureflag"
 
 datalaunchdarklyfeatureflag.NewDataLaunchdarklyFeatureFlagCustomPropertiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLaunchdarklyFeatureFlagCustomPropertiesList
 ```
@@ -1501,7 +1501,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyfeatureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklyfeatureflag"
 
 datalaunchdarklyfeatureflag.NewDataLaunchdarklyFeatureFlagCustomPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLaunchdarklyFeatureFlagCustomPropertiesOutputReference
 ```
@@ -1801,7 +1801,7 @@ func InternalValue() DataLaunchdarklyFeatureFlagCustomProperties
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagDefaultsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyfeatureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklyfeatureflag"
 
 datalaunchdarklyfeatureflag.NewDataLaunchdarklyFeatureFlagDefaultsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLaunchdarklyFeatureFlagDefaultsList
 ```
@@ -1933,7 +1933,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagDefaultsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyfeatureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklyfeatureflag"
 
 datalaunchdarklyfeatureflag.NewDataLaunchdarklyFeatureFlagDefaultsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLaunchdarklyFeatureFlagDefaultsOutputReference
 ```
@@ -2222,7 +2222,7 @@ func InternalValue() DataLaunchdarklyFeatureFlagDefaults
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagVariationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyfeatureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklyfeatureflag"
 
 datalaunchdarklyfeatureflag.NewDataLaunchdarklyFeatureFlagVariationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLaunchdarklyFeatureFlagVariationsList
 ```
@@ -2354,7 +2354,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagVariationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyfeatureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklyfeatureflag"
 
 datalaunchdarklyfeatureflag.NewDataLaunchdarklyFeatureFlagVariationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLaunchdarklyFeatureFlagVariationsOutputReference
 ```

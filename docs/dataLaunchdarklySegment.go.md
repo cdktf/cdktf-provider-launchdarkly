@@ -1,6 +1,6 @@
 # `data_launchdarkly_segment`
 
-Refer to the Terraform Registory for docs: [`data_launchdarkly_segment`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/segment).
+Refer to the Terraform Registory for docs: [`data_launchdarkly_segment`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/segment).
 
 # `dataLaunchdarklySegment` Submodule <a name="`dataLaunchdarklySegment` Submodule" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_launchdarkly_segment`](https:/
 
 ### DataLaunchdarklySegment <a name="DataLaunchdarklySegment" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/segment launchdarkly_segment}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/segment launchdarkly_segment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 datalaunchdarklysegment.NewDataLaunchdarklySegment(scope Construct, id *string, config DataLaunchdarklySegmentConfig) DataLaunchdarklySegment
 ```
@@ -70,16 +70,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.putExcludedContexts">PutExcludedContexts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.putIncludedContexts">PutIncludedContexts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.putRules">PutRules</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.resetDescription">ResetDescription</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.resetExcluded">ResetExcluded</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.resetExcludedContexts">ResetExcludedContexts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.resetIncluded">ResetIncluded</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.resetIncludedContexts">ResetIncludedContexts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.resetRules">ResetRules</a></code> | *No description.* |
 
 ---
 
@@ -267,82 +258,10 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
-##### `PutExcludedContexts` <a name="PutExcludedContexts" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.putExcludedContexts"></a>
-
-```go
-func PutExcludedContexts(value interface{})
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.putExcludedContexts.parameter.value"></a>
-
-- *Type:* interface{}
-
----
-
-##### `PutIncludedContexts` <a name="PutIncludedContexts" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.putIncludedContexts"></a>
-
-```go
-func PutIncludedContexts(value interface{})
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.putIncludedContexts.parameter.value"></a>
-
-- *Type:* interface{}
-
----
-
-##### `PutRules` <a name="PutRules" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.putRules"></a>
-
-```go
-func PutRules(value interface{})
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.putRules.parameter.value"></a>
-
-- *Type:* interface{}
-
----
-
-##### `ResetDescription` <a name="ResetDescription" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.resetDescription"></a>
-
-```go
-func ResetDescription()
-```
-
-##### `ResetExcluded` <a name="ResetExcluded" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.resetExcluded"></a>
-
-```go
-func ResetExcluded()
-```
-
-##### `ResetExcludedContexts` <a name="ResetExcludedContexts" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.resetExcludedContexts"></a>
-
-```go
-func ResetExcludedContexts()
-```
-
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.resetId"></a>
 
 ```go
 func ResetId()
-```
-
-##### `ResetIncluded` <a name="ResetIncluded" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.resetIncluded"></a>
-
-```go
-func ResetIncluded()
-```
-
-##### `ResetIncludedContexts` <a name="ResetIncludedContexts" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.resetIncludedContexts"></a>
-
-```go
-func ResetIncludedContexts()
-```
-
-##### `ResetRules` <a name="ResetRules" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.resetRules"></a>
-
-```go
-func ResetRules()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -359,7 +278,7 @@ func ResetRules()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 datalaunchdarklysegment.DataLaunchdarklySegment_IsConstruct(x interface{}) *bool
 ```
@@ -391,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 datalaunchdarklysegment.DataLaunchdarklySegment_IsTerraformElement(x interface{}) *bool
 ```
@@ -405,7 +324,7 @@ datalaunchdarklysegment.DataLaunchdarklySegment_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 datalaunchdarklysegment.DataLaunchdarklySegment_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -419,7 +338,7 @@ datalaunchdarklysegment.DataLaunchdarklySegment_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 datalaunchdarklysegment.DataLaunchdarklySegment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -448,7 +367,7 @@ The construct id used in the generated config for the DataLaunchdarklySegment to
 
 The id of the existing DataLaunchdarklySegment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/segment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/segment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -477,26 +396,22 @@ Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchd
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.creationDate">CreationDate</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.description">Description</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.excluded">Excluded</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.excludedContexts">ExcludedContexts</a></code> | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentExcludedContextsList">DataLaunchdarklySegmentExcludedContextsList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.included">Included</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.includedContexts">IncludedContexts</a></code> | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentIncludedContextsList">DataLaunchdarklySegmentIncludedContextsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.rules">Rules</a></code> | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesList">DataLaunchdarklySegmentRulesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.tags">Tags</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.unbounded">Unbounded</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.unboundedContextKind">UnboundedContextKind</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.envKeyInput">EnvKeyInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.excludedContextsInput">ExcludedContextsInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.excludedInput">ExcludedInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.includedContextsInput">IncludedContextsInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.includedInput">IncludedInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.keyInput">KeyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.projectKeyInput">ProjectKeyInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.rulesInput">RulesInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.envKey">EnvKey</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.excluded">Excluded</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.included">Included</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.key">Key</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.projectKey">ProjectKey</a></code> | <code>*string</code> | *No description.* |
 
@@ -634,6 +549,26 @@ func CreationDate() *f64
 
 ---
 
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.description"></a>
+
+```go
+func Description() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Excluded`<sup>Required</sup> <a name="Excluded" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.excluded"></a>
+
+```go
+func Excluded() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `ExcludedContexts`<sup>Required</sup> <a name="ExcludedContexts" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.excludedContexts"></a>
 
 ```go
@@ -641,6 +576,16 @@ func ExcludedContexts() DataLaunchdarklySegmentExcludedContextsList
 ```
 
 - *Type:* <a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentExcludedContextsList">DataLaunchdarklySegmentExcludedContextsList</a>
+
+---
+
+##### `Included`<sup>Required</sup> <a name="Included" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.included"></a>
+
+```go
+func Included() *[]*string
+```
+
+- *Type:* *[]*string
 
 ---
 
@@ -684,10 +629,20 @@ func Tags() *[]*string
 
 ---
 
-##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.descriptionInput"></a>
+##### `Unbounded`<sup>Required</sup> <a name="Unbounded" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.unbounded"></a>
 
 ```go
-func DescriptionInput() *string
+func Unbounded() IResolvable
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable
+
+---
+
+##### `UnboundedContextKind`<sup>Required</sup> <a name="UnboundedContextKind" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.unboundedContextKind"></a>
+
+```go
+func UnboundedContextKind() *string
 ```
 
 - *Type:* *string
@@ -704,26 +659,6 @@ func EnvKeyInput() *string
 
 ---
 
-##### `ExcludedContextsInput`<sup>Optional</sup> <a name="ExcludedContextsInput" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.excludedContextsInput"></a>
-
-```go
-func ExcludedContextsInput() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-##### `ExcludedInput`<sup>Optional</sup> <a name="ExcludedInput" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.excludedInput"></a>
-
-```go
-func ExcludedInput() *[]*string
-```
-
-- *Type:* *[]*string
-
----
-
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.idInput"></a>
 
 ```go
@@ -731,26 +666,6 @@ func IdInput() *string
 ```
 
 - *Type:* *string
-
----
-
-##### `IncludedContextsInput`<sup>Optional</sup> <a name="IncludedContextsInput" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.includedContextsInput"></a>
-
-```go
-func IncludedContextsInput() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-##### `IncludedInput`<sup>Optional</sup> <a name="IncludedInput" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.includedInput"></a>
-
-```go
-func IncludedInput() *[]*string
-```
-
-- *Type:* *[]*string
 
 ---
 
@@ -774,26 +689,6 @@ func ProjectKeyInput() *string
 
 ---
 
-##### `RulesInput`<sup>Optional</sup> <a name="RulesInput" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.rulesInput"></a>
-
-```go
-func RulesInput() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.description"></a>
-
-```go
-func Description() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `EnvKey`<sup>Required</sup> <a name="EnvKey" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.envKey"></a>
 
 ```go
@@ -804,16 +699,6 @@ func EnvKey() *string
 
 ---
 
-##### `Excluded`<sup>Required</sup> <a name="Excluded" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.excluded"></a>
-
-```go
-func Excluded() *[]*string
-```
-
-- *Type:* *[]*string
-
----
-
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.id"></a>
 
 ```go
@@ -821,16 +706,6 @@ func Id() *string
 ```
 
 - *Type:* *string
-
----
-
-##### `Included`<sup>Required</sup> <a name="Included" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.property.included"></a>
-
-```go
-func Included() *[]*string
-```
-
-- *Type:* *[]*string
 
 ---
 
@@ -879,7 +754,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 &datalaunchdarklysegment.DataLaunchdarklySegmentConfig {
 	Connection: interface{},
@@ -892,13 +767,7 @@ import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaun
 	EnvKey: *string,
 	Key: *string,
 	ProjectKey: *string,
-	Description: *string,
-	Excluded: *[]*string,
-	ExcludedContexts: interface{},
 	Id: *string,
-	Included: *[]*string,
-	IncludedContexts: interface{},
-	Rules: interface{},
 }
 ```
 
@@ -916,13 +785,7 @@ import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaun
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.envKey">EnvKey</a></code> | <code>*string</code> | The segment's environment key. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.key">Key</a></code> | <code>*string</code> | The unique key that references the segment. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.projectKey">ProjectKey</a></code> | <code>*string</code> | The segment's project key. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.description">Description</a></code> | <code>*string</code> | The description of the segment's purpose. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.excluded">Excluded</a></code> | <code>*[]*string</code> | List of user keys excluded from the segment. To target on other context kinds, use the excluded_contexts block attribute. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.excludedContexts">ExcludedContexts</a></code> | <code>interface{}</code> | excluded_contexts block. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/segment#id DataLaunchdarklySegment#id}. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.included">Included</a></code> | <code>*[]*string</code> | List of user keys included in the segment. To target on other context kinds, use the included_contexts block attribute. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.includedContexts">IncludedContexts</a></code> | <code>interface{}</code> | included_contexts block. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.rules">Rules</a></code> | <code>interface{}</code> | rules block. |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/segment#id DataLaunchdarklySegment#id}. |
 
 ---
 
@@ -1006,7 +869,7 @@ EnvKey *string
 
 The segment's environment key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/segment#env_key DataLaunchdarklySegment#env_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/segment#env_key DataLaunchdarklySegment#env_key}
 
 ---
 
@@ -1020,7 +883,7 @@ Key *string
 
 The unique key that references the segment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/segment#key DataLaunchdarklySegment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/segment#key DataLaunchdarklySegment#key}
 
 ---
 
@@ -1034,49 +897,7 @@ ProjectKey *string
 
 The segment's project key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/segment#project_key DataLaunchdarklySegment#project_key}
-
----
-
-##### `Description`<sup>Optional</sup> <a name="Description" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.description"></a>
-
-```go
-Description *string
-```
-
-- *Type:* *string
-
-The description of the segment's purpose.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/segment#description DataLaunchdarklySegment#description}
-
----
-
-##### `Excluded`<sup>Optional</sup> <a name="Excluded" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.excluded"></a>
-
-```go
-Excluded *[]*string
-```
-
-- *Type:* *[]*string
-
-List of user keys excluded from the segment. To target on other context kinds, use the excluded_contexts block attribute.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/segment#excluded DataLaunchdarklySegment#excluded}
-
----
-
-##### `ExcludedContexts`<sup>Optional</sup> <a name="ExcludedContexts" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.excludedContexts"></a>
-
-```go
-ExcludedContexts interface{}
-```
-
-- *Type:* interface{}
-
-excluded_contexts block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/segment#excluded_contexts DataLaunchdarklySegment#excluded_contexts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/segment#project_key DataLaunchdarklySegment#project_key}
 
 ---
 
@@ -1088,52 +909,10 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/segment#id DataLaunchdarklySegment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/segment#id DataLaunchdarklySegment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `Included`<sup>Optional</sup> <a name="Included" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.included"></a>
-
-```go
-Included *[]*string
-```
-
-- *Type:* *[]*string
-
-List of user keys included in the segment. To target on other context kinds, use the included_contexts block attribute.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/segment#included DataLaunchdarklySegment#included}
-
----
-
-##### `IncludedContexts`<sup>Optional</sup> <a name="IncludedContexts" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.includedContexts"></a>
-
-```go
-IncludedContexts interface{}
-```
-
-- *Type:* interface{}
-
-included_contexts block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/segment#included_contexts DataLaunchdarklySegment#included_contexts}
-
----
-
-##### `Rules`<sup>Optional</sup> <a name="Rules" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.property.rules"></a>
-
-```go
-Rules interface{}
-```
-
-- *Type:* interface{}
-
-rules block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/segment#rules DataLaunchdarklySegment#rules}
 
 ---
 
@@ -1142,304 +921,52 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentExcludedContexts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 &datalaunchdarklysegment.DataLaunchdarklySegmentExcludedContexts {
-	ContextKind: *string,
-	Values: *[]*string,
+
 }
 ```
 
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentExcludedContexts.property.contextKind">ContextKind</a></code> | <code>*string</code> | The context kind associated with this segment target. To target on user contexts, use the included and excluded attributes. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentExcludedContexts.property.values">Values</a></code> | <code>*[]*string</code> | List of target object keys included in or excluded from the segment. |
-
----
-
-##### `ContextKind`<sup>Required</sup> <a name="ContextKind" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentExcludedContexts.property.contextKind"></a>
-
-```go
-ContextKind *string
-```
-
-- *Type:* *string
-
-The context kind associated with this segment target. To target on user contexts, use the included and excluded attributes.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/segment#context_kind DataLaunchdarklySegment#context_kind}
-
----
-
-##### `Values`<sup>Required</sup> <a name="Values" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentExcludedContexts.property.values"></a>
-
-```go
-Values *[]*string
-```
-
-- *Type:* *[]*string
-
-List of target object keys included in or excluded from the segment.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/segment#values DataLaunchdarklySegment#values}
-
----
 
 ### DataLaunchdarklySegmentIncludedContexts <a name="DataLaunchdarklySegmentIncludedContexts" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentIncludedContexts"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentIncludedContexts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 &datalaunchdarklysegment.DataLaunchdarklySegmentIncludedContexts {
-	ContextKind: *string,
-	Values: *[]*string,
+
 }
 ```
 
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentIncludedContexts.property.contextKind">ContextKind</a></code> | <code>*string</code> | The context kind associated with this segment target. To target on user contexts, use the included and excluded attributes. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentIncludedContexts.property.values">Values</a></code> | <code>*[]*string</code> | List of target object keys included in or excluded from the segment. |
-
----
-
-##### `ContextKind`<sup>Required</sup> <a name="ContextKind" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentIncludedContexts.property.contextKind"></a>
-
-```go
-ContextKind *string
-```
-
-- *Type:* *string
-
-The context kind associated with this segment target. To target on user contexts, use the included and excluded attributes.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/segment#context_kind DataLaunchdarklySegment#context_kind}
-
----
-
-##### `Values`<sup>Required</sup> <a name="Values" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentIncludedContexts.property.values"></a>
-
-```go
-Values *[]*string
-```
-
-- *Type:* *[]*string
-
-List of target object keys included in or excluded from the segment.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/segment#values DataLaunchdarklySegment#values}
-
----
 
 ### DataLaunchdarklySegmentRules <a name="DataLaunchdarklySegmentRules" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRules"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 &datalaunchdarklysegment.DataLaunchdarklySegmentRules {
-	BucketBy: *string,
-	Clauses: interface{},
-	RolloutContextKind: *string,
-	Weight: *f64,
+
 }
 ```
 
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRules.property.bucketBy">BucketBy</a></code> | <code>*string</code> | The attribute by which to group users together. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRules.property.clauses">Clauses</a></code> | <code>interface{}</code> | clauses block. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRules.property.rolloutContextKind">RolloutContextKind</a></code> | <code>*string</code> | The context kind associated with this segment rule. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRules.property.weight">Weight</a></code> | <code>*f64</code> | The integer weight of the rule (between 1 and 100000). |
-
----
-
-##### `BucketBy`<sup>Optional</sup> <a name="BucketBy" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRules.property.bucketBy"></a>
-
-```go
-BucketBy *string
-```
-
-- *Type:* *string
-
-The attribute by which to group users together.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/segment#bucket_by DataLaunchdarklySegment#bucket_by}
-
----
-
-##### `Clauses`<sup>Optional</sup> <a name="Clauses" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRules.property.clauses"></a>
-
-```go
-Clauses interface{}
-```
-
-- *Type:* interface{}
-
-clauses block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/segment#clauses DataLaunchdarklySegment#clauses}
-
----
-
-##### `RolloutContextKind`<sup>Optional</sup> <a name="RolloutContextKind" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRules.property.rolloutContextKind"></a>
-
-```go
-RolloutContextKind *string
-```
-
-- *Type:* *string
-
-The context kind associated with this segment rule.
-
-This argument is only valid if weight is also specified. If omitted, defaults to 'user'
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/segment#rollout_context_kind DataLaunchdarklySegment#rollout_context_kind}
-
----
-
-##### `Weight`<sup>Optional</sup> <a name="Weight" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRules.property.weight"></a>
-
-```go
-Weight *f64
-```
-
-- *Type:* *f64
-
-The integer weight of the rule (between 1 and 100000).
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/segment#weight DataLaunchdarklySegment#weight}
-
----
 
 ### DataLaunchdarklySegmentRulesClauses <a name="DataLaunchdarklySegmentRulesClauses" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClauses"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClauses.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 &datalaunchdarklysegment.DataLaunchdarklySegmentRulesClauses {
-	Attribute: *string,
-	Op: *string,
-	Values: *[]*string,
-	ContextKind: *string,
-	Negate: interface{},
-	ValueType: *string,
+
 }
 ```
 
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClauses.property.attribute">Attribute</a></code> | <code>*string</code> | The user attribute to operate on. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClauses.property.op">Op</a></code> | <code>*string</code> | The operator associated with the rule clause. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClauses.property.values">Values</a></code> | <code>*[]*string</code> | The list of values associated with the rule clause. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClauses.property.contextKind">ContextKind</a></code> | <code>*string</code> | The context kind associated with this rule clause. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClauses.property.negate">Negate</a></code> | <code>interface{}</code> | Whether to negate the rule clause. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClauses.property.valueType">ValueType</a></code> | <code>*string</code> | The type for each of the clause's values. |
-
----
-
-##### `Attribute`<sup>Required</sup> <a name="Attribute" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClauses.property.attribute"></a>
-
-```go
-Attribute *string
-```
-
-- *Type:* *string
-
-The user attribute to operate on.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/segment#attribute DataLaunchdarklySegment#attribute}
-
----
-
-##### `Op`<sup>Required</sup> <a name="Op" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClauses.property.op"></a>
-
-```go
-Op *string
-```
-
-- *Type:* *string
-
-The operator associated with the rule clause.
-
-Available options are `in`, `endsWith`, `startsWith`, `matches`, `contains`, `lessThan`, `lessThanOrEqual`, `greaterThanOrEqual`, `before`, `after`, `segmentMatch`, `semVerEqual`, `semVerLessThan`, and `semVerGreaterThan`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/segment#op DataLaunchdarklySegment#op}
-
----
-
-##### `Values`<sup>Required</sup> <a name="Values" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClauses.property.values"></a>
-
-```go
-Values *[]*string
-```
-
-- *Type:* *[]*string
-
-The list of values associated with the rule clause.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/segment#values DataLaunchdarklySegment#values}
-
----
-
-##### `ContextKind`<sup>Optional</sup> <a name="ContextKind" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClauses.property.contextKind"></a>
-
-```go
-ContextKind *string
-```
-
-- *Type:* *string
-
-The context kind associated with this rule clause.
-
-This argument is only valid if `rollout_weights` is also specified. If omitted, defaults to `user`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/segment#context_kind DataLaunchdarklySegment#context_kind}
-
----
-
-##### `Negate`<sup>Optional</sup> <a name="Negate" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClauses.property.negate"></a>
-
-```go
-Negate interface{}
-```
-
-- *Type:* interface{}
-
-Whether to negate the rule clause.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/segment#negate DataLaunchdarklySegment#negate}
-
----
-
-##### `ValueType`<sup>Optional</sup> <a name="ValueType" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClauses.property.valueType"></a>
-
-```go
-ValueType *string
-```
-
-- *Type:* *string
-
-The type for each of the clause's values.
-
-Available types are `boolean`, `string`, and `number`. If omitted, `value_type` defaults to `string`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/segment#value_type DataLaunchdarklySegment#value_type}
-
----
 
 ## Classes <a name="Classes" id="Classes"></a>
 
@@ -1448,7 +975,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentExcludedContextsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 datalaunchdarklysegment.NewDataLaunchdarklySegmentExcludedContextsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLaunchdarklySegmentExcludedContextsList
 ```
@@ -1547,7 +1074,6 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentExcludedContextsList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentExcludedContextsList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentExcludedContextsList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
@@ -1575,23 +1101,13 @@ func Fqn() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentExcludedContextsList.property.internalValue"></a>
-
-```go
-func InternalValue() interface{}
-```
-
-- *Type:* interface{}
-
----
-
 
 ### DataLaunchdarklySegmentExcludedContextsOutputReference <a name="DataLaunchdarklySegmentExcludedContextsOutputReference" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentExcludedContextsOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentExcludedContextsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 datalaunchdarklysegment.NewDataLaunchdarklySegmentExcludedContextsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLaunchdarklySegmentExcludedContextsOutputReference
 ```
@@ -1814,11 +1330,9 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentExcludedContextsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentExcludedContextsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentExcludedContextsOutputReference.property.contextKindInput">ContextKindInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentExcludedContextsOutputReference.property.valuesInput">ValuesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentExcludedContextsOutputReference.property.contextKind">ContextKind</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentExcludedContextsOutputReference.property.values">Values</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentExcludedContextsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentExcludedContextsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentExcludedContexts">DataLaunchdarklySegmentExcludedContexts</a></code> | *No description.* |
 
 ---
 
@@ -1846,26 +1360,6 @@ func Fqn() *string
 
 ---
 
-##### `ContextKindInput`<sup>Optional</sup> <a name="ContextKindInput" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentExcludedContextsOutputReference.property.contextKindInput"></a>
-
-```go
-func ContextKindInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `ValuesInput`<sup>Optional</sup> <a name="ValuesInput" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentExcludedContextsOutputReference.property.valuesInput"></a>
-
-```go
-func ValuesInput() *[]*string
-```
-
-- *Type:* *[]*string
-
----
-
 ##### `ContextKind`<sup>Required</sup> <a name="ContextKind" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentExcludedContextsOutputReference.property.contextKind"></a>
 
 ```go
@@ -1889,10 +1383,10 @@ func Values() *[]*string
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentExcludedContextsOutputReference.property.internalValue"></a>
 
 ```go
-func InternalValue() interface{}
+func InternalValue() DataLaunchdarklySegmentExcludedContexts
 ```
 
-- *Type:* interface{}
+- *Type:* <a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentExcludedContexts">DataLaunchdarklySegmentExcludedContexts</a>
 
 ---
 
@@ -1902,7 +1396,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentIncludedContextsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 datalaunchdarklysegment.NewDataLaunchdarklySegmentIncludedContextsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLaunchdarklySegmentIncludedContextsList
 ```
@@ -2001,7 +1495,6 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentIncludedContextsList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentIncludedContextsList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentIncludedContextsList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
@@ -2029,23 +1522,13 @@ func Fqn() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentIncludedContextsList.property.internalValue"></a>
-
-```go
-func InternalValue() interface{}
-```
-
-- *Type:* interface{}
-
----
-
 
 ### DataLaunchdarklySegmentIncludedContextsOutputReference <a name="DataLaunchdarklySegmentIncludedContextsOutputReference" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentIncludedContextsOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentIncludedContextsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 datalaunchdarklysegment.NewDataLaunchdarklySegmentIncludedContextsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLaunchdarklySegmentIncludedContextsOutputReference
 ```
@@ -2268,11 +1751,9 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentIncludedContextsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentIncludedContextsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentIncludedContextsOutputReference.property.contextKindInput">ContextKindInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentIncludedContextsOutputReference.property.valuesInput">ValuesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentIncludedContextsOutputReference.property.contextKind">ContextKind</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentIncludedContextsOutputReference.property.values">Values</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentIncludedContextsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentIncludedContextsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentIncludedContexts">DataLaunchdarklySegmentIncludedContexts</a></code> | *No description.* |
 
 ---
 
@@ -2300,26 +1781,6 @@ func Fqn() *string
 
 ---
 
-##### `ContextKindInput`<sup>Optional</sup> <a name="ContextKindInput" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentIncludedContextsOutputReference.property.contextKindInput"></a>
-
-```go
-func ContextKindInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `ValuesInput`<sup>Optional</sup> <a name="ValuesInput" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentIncludedContextsOutputReference.property.valuesInput"></a>
-
-```go
-func ValuesInput() *[]*string
-```
-
-- *Type:* *[]*string
-
----
-
 ##### `ContextKind`<sup>Required</sup> <a name="ContextKind" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentIncludedContextsOutputReference.property.contextKind"></a>
 
 ```go
@@ -2343,10 +1804,10 @@ func Values() *[]*string
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentIncludedContextsOutputReference.property.internalValue"></a>
 
 ```go
-func InternalValue() interface{}
+func InternalValue() DataLaunchdarklySegmentIncludedContexts
 ```
 
-- *Type:* interface{}
+- *Type:* <a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentIncludedContexts">DataLaunchdarklySegmentIncludedContexts</a>
 
 ---
 
@@ -2356,7 +1817,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 datalaunchdarklysegment.NewDataLaunchdarklySegmentRulesClausesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLaunchdarklySegmentRulesClausesList
 ```
@@ -2455,7 +1916,6 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
@@ -2483,23 +1943,13 @@ func Fqn() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesList.property.internalValue"></a>
-
-```go
-func InternalValue() interface{}
-```
-
-- *Type:* interface{}
-
----
-
 
 ### DataLaunchdarklySegmentRulesClausesOutputReference <a name="DataLaunchdarklySegmentRulesClausesOutputReference" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 datalaunchdarklysegment.NewDataLaunchdarklySegmentRulesClausesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLaunchdarklySegmentRulesClausesOutputReference
 ```
@@ -2562,9 +2012,6 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.resetContextKind">ResetContextKind</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.resetNegate">ResetNegate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.resetValueType">ResetValueType</a></code> | *No description.* |
 
 ---
 
@@ -2718,24 +2165,6 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetContextKind` <a name="ResetContextKind" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.resetContextKind"></a>
-
-```go
-func ResetContextKind()
-```
-
-##### `ResetNegate` <a name="ResetNegate" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.resetNegate"></a>
-
-```go
-func ResetNegate()
-```
-
-##### `ResetValueType` <a name="ResetValueType" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.resetValueType"></a>
-
-```go
-func ResetValueType()
-```
-
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -2743,19 +2172,13 @@ func ResetValueType()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.property.attributeInput">AttributeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.property.contextKindInput">ContextKindInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.property.negateInput">NegateInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.property.opInput">OpInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.property.valuesInput">ValuesInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.property.valueTypeInput">ValueTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.property.attribute">Attribute</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.property.contextKind">ContextKind</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.property.negate">Negate</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.property.negate">Negate</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.property.op">Op</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.property.values">Values</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.property.valueType">ValueType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClauses">DataLaunchdarklySegmentRulesClauses</a></code> | *No description.* |
 
 ---
 
@@ -2777,66 +2200,6 @@ If this returns an empty array the stack will not be attached.
 
 ```go
 func Fqn() *string
-```
-
-- *Type:* *string
-
----
-
-##### `AttributeInput`<sup>Optional</sup> <a name="AttributeInput" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.property.attributeInput"></a>
-
-```go
-func AttributeInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `ContextKindInput`<sup>Optional</sup> <a name="ContextKindInput" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.property.contextKindInput"></a>
-
-```go
-func ContextKindInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `NegateInput`<sup>Optional</sup> <a name="NegateInput" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.property.negateInput"></a>
-
-```go
-func NegateInput() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-##### `OpInput`<sup>Optional</sup> <a name="OpInput" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.property.opInput"></a>
-
-```go
-func OpInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `ValuesInput`<sup>Optional</sup> <a name="ValuesInput" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.property.valuesInput"></a>
-
-```go
-func ValuesInput() *[]*string
-```
-
-- *Type:* *[]*string
-
----
-
-##### `ValueTypeInput`<sup>Optional</sup> <a name="ValueTypeInput" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.property.valueTypeInput"></a>
-
-```go
-func ValueTypeInput() *string
 ```
 
 - *Type:* *string
@@ -2866,10 +2229,10 @@ func ContextKind() *string
 ##### `Negate`<sup>Required</sup> <a name="Negate" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.property.negate"></a>
 
 ```go
-func Negate() interface{}
+func Negate() IResolvable
 ```
 
-- *Type:* interface{}
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable
 
 ---
 
@@ -2906,10 +2269,10 @@ func ValueType() *string
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.property.internalValue"></a>
 
 ```go
-func InternalValue() interface{}
+func InternalValue() DataLaunchdarklySegmentRulesClauses
 ```
 
-- *Type:* interface{}
+- *Type:* <a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClauses">DataLaunchdarklySegmentRulesClauses</a>
 
 ---
 
@@ -2919,7 +2282,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 datalaunchdarklysegment.NewDataLaunchdarklySegmentRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLaunchdarklySegmentRulesList
 ```
@@ -3018,7 +2381,6 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
@@ -3046,23 +2408,13 @@ func Fqn() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesList.property.internalValue"></a>
-
-```go
-func InternalValue() interface{}
-```
-
-- *Type:* interface{}
-
----
-
 
 ### DataLaunchdarklySegmentRulesOutputReference <a name="DataLaunchdarklySegmentRulesOutputReference" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 datalaunchdarklysegment.NewDataLaunchdarklySegmentRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLaunchdarklySegmentRulesOutputReference
 ```
@@ -3125,11 +2477,6 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.putClauses">PutClauses</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.resetBucketBy">ResetBucketBy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.resetClauses">ResetClauses</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.resetRolloutContextKind">ResetRolloutContextKind</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.resetWeight">ResetWeight</a></code> | *No description.* |
 
 ---
 
@@ -3283,42 +2630,6 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `PutClauses` <a name="PutClauses" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.putClauses"></a>
-
-```go
-func PutClauses(value interface{})
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.putClauses.parameter.value"></a>
-
-- *Type:* interface{}
-
----
-
-##### `ResetBucketBy` <a name="ResetBucketBy" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.resetBucketBy"></a>
-
-```go
-func ResetBucketBy()
-```
-
-##### `ResetClauses` <a name="ResetClauses" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.resetClauses"></a>
-
-```go
-func ResetClauses()
-```
-
-##### `ResetRolloutContextKind` <a name="ResetRolloutContextKind" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.resetRolloutContextKind"></a>
-
-```go
-func ResetRolloutContextKind()
-```
-
-##### `ResetWeight` <a name="ResetWeight" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.resetWeight"></a>
-
-```go
-func ResetWeight()
-```
-
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -3326,15 +2637,11 @@ func ResetWeight()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.property.clauses">Clauses</a></code> | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesList">DataLaunchdarklySegmentRulesClausesList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.property.bucketByInput">BucketByInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.property.clausesInput">ClausesInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.property.rolloutContextKindInput">RolloutContextKindInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.property.weightInput">WeightInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.property.bucketBy">BucketBy</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.property.clauses">Clauses</a></code> | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesList">DataLaunchdarklySegmentRulesClausesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.property.rolloutContextKind">RolloutContextKind</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.property.weight">Weight</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRules">DataLaunchdarklySegmentRules</a></code> | *No description.* |
 
 ---
 
@@ -3362,56 +2669,6 @@ func Fqn() *string
 
 ---
 
-##### `Clauses`<sup>Required</sup> <a name="Clauses" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.property.clauses"></a>
-
-```go
-func Clauses() DataLaunchdarklySegmentRulesClausesList
-```
-
-- *Type:* <a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesList">DataLaunchdarklySegmentRulesClausesList</a>
-
----
-
-##### `BucketByInput`<sup>Optional</sup> <a name="BucketByInput" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.property.bucketByInput"></a>
-
-```go
-func BucketByInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `ClausesInput`<sup>Optional</sup> <a name="ClausesInput" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.property.clausesInput"></a>
-
-```go
-func ClausesInput() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-##### `RolloutContextKindInput`<sup>Optional</sup> <a name="RolloutContextKindInput" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.property.rolloutContextKindInput"></a>
-
-```go
-func RolloutContextKindInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `WeightInput`<sup>Optional</sup> <a name="WeightInput" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.property.weightInput"></a>
-
-```go
-func WeightInput() *f64
-```
-
-- *Type:* *f64
-
----
-
 ##### `BucketBy`<sup>Required</sup> <a name="BucketBy" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.property.bucketBy"></a>
 
 ```go
@@ -3419,6 +2676,16 @@ func BucketBy() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `Clauses`<sup>Required</sup> <a name="Clauses" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.property.clauses"></a>
+
+```go
+func Clauses() DataLaunchdarklySegmentRulesClausesList
+```
+
+- *Type:* <a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesList">DataLaunchdarklySegmentRulesClausesList</a>
 
 ---
 
@@ -3445,10 +2712,10 @@ func Weight() *f64
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.property.internalValue"></a>
 
 ```go
-func InternalValue() interface{}
+func InternalValue() DataLaunchdarklySegmentRules
 ```
 
-- *Type:* interface{}
+- *Type:* <a href="#@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRules">DataLaunchdarklySegmentRules</a>
 
 ---
 
