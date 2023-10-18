@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/segment
+// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,90 +8,102 @@ import * as cdktf from 'cdktf';
 
 export interface SegmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The description of the segment's purpose
+  * The description of the segment's purpose.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/segment#description Segment#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment#description Segment#description}
   */
   readonly description?: string;
   /**
-  * The segment's environment key.
+  * The segment's environment key. A change in this field will force the destruction of the existing resource and the creation of a new one.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/segment#env_key Segment#env_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment#env_key Segment#env_key}
   */
   readonly envKey: string;
   /**
-  * List of user keys excluded from the segment. To target on other context kinds, use the excluded_contexts block attribute
+  * List of user keys excluded from the segment. To target on other context kinds, use the excluded_contexts block attribute. This attribute is not valid when `unbounded` is set to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/segment#excluded Segment#excluded}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment#excluded Segment#excluded}
   */
   readonly excluded?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/segment#id Segment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment#id Segment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * List of user keys included in the segment. To target on other context kinds, use the included_contexts block attribute
+  * List of user keys included in the segment. To target on other context kinds, use the included_contexts block attribute. This attribute is not valid when `unbounded` is set to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/segment#included Segment#included}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment#included Segment#included}
   */
   readonly included?: string[];
   /**
-  * The unique key that references the segment.
+  * The unique key that references the segment. A change in this field will force the destruction of the existing resource and the creation of a new one.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/segment#key Segment#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment#key Segment#key}
   */
   readonly key: string;
   /**
   * The human-friendly name for the segment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/segment#name Segment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment#name Segment#name}
   */
   readonly name: string;
   /**
-  * The segment's project key.
+  * The segment's project key. A change in this field will force the destruction of the existing resource and the creation of a new one.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/segment#project_key Segment#project_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment#project_key Segment#project_key}
   */
   readonly projectKey: string;
   /**
   * Tags associated with your resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/segment#tags Segment#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment#tags Segment#tags}
   */
   readonly tags?: string[];
   /**
+  * Whether to create a standard segment (`false`) or a Big Segment (`true`). Standard segments include rule-based and smaller list-based segments. Big Segments include larger list-based segments and synced segments. Only use a Big Segment if you need to add more than 15,000 individual targets. It is not possible to manage the list of targeted contexts for Big Segments with Terraform.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment#unbounded Segment#unbounded}
+  */
+  readonly unbounded?: boolean | cdktf.IResolvable;
+  /**
+  * For Big Segments, the targeted context kind. If this attribute is not specified it will default to `user`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment#unbounded_context_kind Segment#unbounded_context_kind}
+  */
+  readonly unboundedContextKind?: string;
+  /**
   * excluded_contexts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/segment#excluded_contexts Segment#excluded_contexts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment#excluded_contexts Segment#excluded_contexts}
   */
   readonly excludedContexts?: SegmentExcludedContexts[] | cdktf.IResolvable;
   /**
   * included_contexts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/segment#included_contexts Segment#included_contexts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment#included_contexts Segment#included_contexts}
   */
   readonly includedContexts?: SegmentIncludedContexts[] | cdktf.IResolvable;
   /**
   * rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/segment#rules Segment#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment#rules Segment#rules}
   */
   readonly rules?: SegmentRules[] | cdktf.IResolvable;
 }
 export interface SegmentExcludedContexts {
   /**
-  * The context kind associated with this segment target. To target on user contexts, use the included and excluded attributes
+  * The context kind associated with this segment target. To target on user contexts, use the included and excluded attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/segment#context_kind Segment#context_kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment#context_kind Segment#context_kind}
   */
   readonly contextKind: string;
   /**
-  * List of target object keys included in or excluded from the segment
+  * List of target object keys included in or excluded from the segment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/segment#values Segment#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment#values Segment#values}
   */
   readonly values: string[];
 }
@@ -210,15 +217,15 @@ export class SegmentExcludedContextsList extends cdktf.ComplexList {
 }
 export interface SegmentIncludedContexts {
   /**
-  * The context kind associated with this segment target. To target on user contexts, use the included and excluded attributes
+  * The context kind associated with this segment target. To target on user contexts, use the included and excluded attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/segment#context_kind Segment#context_kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment#context_kind Segment#context_kind}
   */
   readonly contextKind: string;
   /**
-  * List of target object keys included in or excluded from the segment
+  * List of target object keys included in or excluded from the segment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/segment#values Segment#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment#values Segment#values}
   */
   readonly values: string[];
 }
@@ -334,37 +341,37 @@ export interface SegmentRulesClauses {
   /**
   * The user attribute to operate on
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/segment#attribute Segment#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment#attribute Segment#attribute}
   */
   readonly attribute: string;
   /**
   * The context kind associated with this rule clause. This argument is only valid if `rollout_weights` is also specified. If omitted, defaults to `user`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/segment#context_kind Segment#context_kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment#context_kind Segment#context_kind}
   */
   readonly contextKind?: string;
   /**
   * Whether to negate the rule clause.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/segment#negate Segment#negate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment#negate Segment#negate}
   */
   readonly negate?: boolean | cdktf.IResolvable;
   /**
   * The operator associated with the rule clause. Available options are `in`, `endsWith`, `startsWith`, `matches`, `contains`, `lessThan`, `lessThanOrEqual`, `greaterThanOrEqual`, `before`, `after`, `segmentMatch`, `semVerEqual`, `semVerLessThan`, and `semVerGreaterThan`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/segment#op Segment#op}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment#op Segment#op}
   */
   readonly op: string;
   /**
   * The type for each of the clause's values. Available types are `boolean`, `string`, and `number`. If omitted, `value_type` defaults to `string`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/segment#value_type Segment#value_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment#value_type Segment#value_type}
   */
   readonly valueType?: string;
   /**
   * The list of values associated with the rule clause.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/segment#values Segment#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment#values Segment#values}
   */
   readonly values: string[];
 }
@@ -569,25 +576,25 @@ export interface SegmentRules {
   /**
   * The attribute by which to group users together.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/segment#bucket_by Segment#bucket_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment#bucket_by Segment#bucket_by}
   */
   readonly bucketBy?: string;
   /**
   * The context kind associated with this segment rule. This argument is only valid if weight is also specified. If omitted, defaults to 'user'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/segment#rollout_context_kind Segment#rollout_context_kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment#rollout_context_kind Segment#rollout_context_kind}
   */
   readonly rolloutContextKind?: string;
   /**
   * The integer weight of the rule (between 1 and 100000).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/segment#weight Segment#weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment#weight Segment#weight}
   */
   readonly weight?: number;
   /**
   * clauses block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/segment#clauses Segment#clauses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment#clauses Segment#clauses}
   */
   readonly clauses?: SegmentRulesClauses[] | cdktf.IResolvable;
 }
@@ -753,7 +760,7 @@ export class SegmentRulesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/segment launchdarkly_segment}
+* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment launchdarkly_segment}
 */
 export class Segment extends cdktf.TerraformResource {
 
@@ -769,7 +776,7 @@ export class Segment extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Segment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Segment to import
-  * @param importFromId The id of the existing Segment that should be imported. Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/segment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Segment that should be imported. Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Segment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -781,7 +788,7 @@ export class Segment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/segment launchdarkly_segment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/segment launchdarkly_segment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -792,7 +799,7 @@ export class Segment extends cdktf.TerraformResource {
       terraformResourceType: 'launchdarkly_segment',
       terraformGeneratorMetadata: {
         providerName: 'launchdarkly',
-        providerVersion: '2.15.2',
+        providerVersion: '2.16.0',
         providerVersionConstraint: '~> 2.13'
       },
       provider: config.provider,
@@ -812,6 +819,8 @@ export class Segment extends cdktf.TerraformResource {
     this._name = config.name;
     this._projectKey = config.projectKey;
     this._tags = config.tags;
+    this._unbounded = config.unbounded;
+    this._unboundedContextKind = config.unboundedContextKind;
     this._excludedContexts.internalValue = config.excludedContexts;
     this._includedContexts.internalValue = config.includedContexts;
     this._rules.internalValue = config.rules;
@@ -958,6 +967,38 @@ export class Segment extends cdktf.TerraformResource {
     return this._tags;
   }
 
+  // unbounded - computed: false, optional: true, required: false
+  private _unbounded?: boolean | cdktf.IResolvable; 
+  public get unbounded() {
+    return this.getBooleanAttribute('unbounded');
+  }
+  public set unbounded(value: boolean | cdktf.IResolvable) {
+    this._unbounded = value;
+  }
+  public resetUnbounded() {
+    this._unbounded = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get unboundedInput() {
+    return this._unbounded;
+  }
+
+  // unbounded_context_kind - computed: true, optional: true, required: false
+  private _unboundedContextKind?: string; 
+  public get unboundedContextKind() {
+    return this.getStringAttribute('unbounded_context_kind');
+  }
+  public set unboundedContextKind(value: string) {
+    this._unboundedContextKind = value;
+  }
+  public resetUnboundedContextKind() {
+    this._unboundedContextKind = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get unboundedContextKindInput() {
+    return this._unboundedContextKind;
+  }
+
   // excluded_contexts - computed: false, optional: true, required: false
   private _excludedContexts = new SegmentExcludedContextsList(this, "excluded_contexts", false);
   public get excludedContexts() {
@@ -1021,6 +1062,8 @@ export class Segment extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       project_key: cdktf.stringToTerraform(this._projectKey),
       tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
+      unbounded: cdktf.booleanToTerraform(this._unbounded),
+      unbounded_context_kind: cdktf.stringToTerraform(this._unboundedContextKind),
       excluded_contexts: cdktf.listMapper(segmentExcludedContextsToTerraform, true)(this._excludedContexts.internalValue),
       included_contexts: cdktf.listMapper(segmentIncludedContextsToTerraform, true)(this._includedContexts.internalValue),
       rules: cdktf.listMapper(segmentRulesToTerraform, true)(this._rules.internalValue),

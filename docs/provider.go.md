@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`launchdarkly`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs).
+Refer to the Terraform Registory for docs: [`launchdarkly`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-launchdarkly.provider"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`launchdarkly`](https://registry.ter
 
 ### LaunchdarklyProvider <a name="LaunchdarklyProvider" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs launchdarkly}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs launchdarkly}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/provider"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/provider"
 
 provider.NewLaunchdarklyProvider(scope Construct, id *string, config LaunchdarklyProviderConfig) LaunchdarklyProvider
 ```
@@ -176,7 +176,7 @@ func ResetOauthToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/provider"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/provider"
 
 provider.LaunchdarklyProvider_IsConstruct(x interface{}) *bool
 ```
@@ -208,7 +208,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/provider"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/provider"
 
 provider.LaunchdarklyProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -222,7 +222,7 @@ provider.LaunchdarklyProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/provider"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/provider"
 
 provider.LaunchdarklyProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -236,7 +236,7 @@ provider.LaunchdarklyProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/provider"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/provider"
 
 provider.LaunchdarklyProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -265,7 +265,7 @@ The construct id used in the generated config for the LaunchdarklyProvider to im
 
 The id of the existing LaunchdarklyProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -509,7 +509,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/provider"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/provider"
 
 &provider.LaunchdarklyProviderConfig {
 	AccessToken: *string,
@@ -542,7 +542,7 @@ AccessToken *string
 
 The [personal access token](https://docs.launchdarkly.com/home/account-security/api-access-tokens#personal-tokens) or [service token](https://docs.launchdarkly.com/home/account-security/api-access-tokens#service-tokens) used to authenticate with LaunchDarkly. You can also set this with the `LAUNCHDARKLY_ACCESS_TOKEN` environment variable. You must provide either `access_token` or `oauth_token`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs#access_token LaunchdarklyProvider#access_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs#access_token LaunchdarklyProvider#access_token}
 
 ---
 
@@ -556,7 +556,7 @@ Alias *string
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs#alias LaunchdarklyProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs#alias LaunchdarklyProvider#alias}
 
 ---
 
@@ -570,7 +570,7 @@ ApiHost *string
 
 The LaunchDarkly host address. If this argument is not specified, the default host address is `https://app.launchdarkly.com`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs#api_host LaunchdarklyProvider#api_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs#api_host LaunchdarklyProvider#api_host}
 
 ---
 
@@ -584,7 +584,7 @@ HttpTimeout *f64
 
 The HTTP timeout (in seconds) when making API calls to LaunchDarkly.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs#http_timeout LaunchdarklyProvider#http_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs#http_timeout LaunchdarklyProvider#http_timeout}
 
 ---
 
@@ -600,7 +600,7 @@ An OAuth V2 token you use to authenticate with LaunchDarkly.
 
 You can also set this with the `LAUNCHDARKLY_OAUTH_TOKEN` environment variable. You must provide either `access_token` or `oauth_token`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs#oauth_token LaunchdarklyProvider#oauth_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs#oauth_token LaunchdarklyProvider#oauth_token}
 
 ---
 

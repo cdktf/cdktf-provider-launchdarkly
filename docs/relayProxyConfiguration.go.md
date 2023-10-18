@@ -1,6 +1,6 @@
 # `launchdarkly_relay_proxy_configuration`
 
-Refer to the Terraform Registory for docs: [`launchdarkly_relay_proxy_configuration`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/relay_proxy_configuration).
+Refer to the Terraform Registory for docs: [`launchdarkly_relay_proxy_configuration`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/relay_proxy_configuration).
 
 # `relayProxyConfiguration` Submodule <a name="`relayProxyConfiguration` Submodule" id="@cdktf/provider-launchdarkly.relayProxyConfiguration"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`launchdarkly_relay_proxy_configurat
 
 ### RelayProxyConfiguration <a name="RelayProxyConfiguration" id="@cdktf/provider-launchdarkly.relayProxyConfiguration.RelayProxyConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/relay_proxy_configuration launchdarkly_relay_proxy_configuration}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/relay_proxy_configuration launchdarkly_relay_proxy_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.relayProxyConfiguration.RelayProxyConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/relayproxyconfiguration"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/relayproxyconfiguration"
 
 relayproxyconfiguration.NewRelayProxyConfiguration(scope Construct, id *string, config RelayProxyConfigurationConfig) RelayProxyConfiguration
 ```
@@ -352,7 +352,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-launchdarkly.relayProxyConfiguration.RelayProxyConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/relayproxyconfiguration"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/relayproxyconfiguration"
 
 relayproxyconfiguration.RelayProxyConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -384,7 +384,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-launchdarkly.relayProxyConfiguration.RelayProxyConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/relayproxyconfiguration"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/relayproxyconfiguration"
 
 relayproxyconfiguration.RelayProxyConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ relayproxyconfiguration.RelayProxyConfiguration_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-launchdarkly.relayProxyConfiguration.RelayProxyConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/relayproxyconfiguration"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/relayproxyconfiguration"
 
 relayproxyconfiguration.RelayProxyConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ relayproxyconfiguration.RelayProxyConfiguration_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-launchdarkly.relayProxyConfiguration.RelayProxyConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/relayproxyconfiguration"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/relayproxyconfiguration"
 
 relayproxyconfiguration.RelayProxyConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -441,7 +441,7 @@ The construct id used in the generated config for the RelayProxyConfiguration to
 
 The id of the existing RelayProxyConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/relay_proxy_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/relay_proxy_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -729,7 +729,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.relayProxyConfiguration.RelayProxyConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/relayproxyconfiguration"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/relayproxyconfiguration"
 
 &relayproxyconfiguration.RelayProxyConfigurationConfig {
 	Connection: interface{},
@@ -758,7 +758,7 @@ import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/relaypro
 | <code><a href="#@cdktf/provider-launchdarkly.relayProxyConfiguration.RelayProxyConfigurationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.relayProxyConfiguration.RelayProxyConfigurationConfig.property.name">Name</a></code> | <code>*string</code> | A human-friendly name for the Relay Proxy configuration. |
 | <code><a href="#@cdktf/provider-launchdarkly.relayProxyConfiguration.RelayProxyConfigurationConfig.property.policy">Policy</a></code> | <code>interface{}</code> | policy block. |
-| <code><a href="#@cdktf/provider-launchdarkly.relayProxyConfiguration.RelayProxyConfigurationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/relay_proxy_configuration#id RelayProxyConfiguration#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.relayProxyConfiguration.RelayProxyConfigurationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/relay_proxy_configuration#id RelayProxyConfiguration#id}. |
 
 ---
 
@@ -842,7 +842,7 @@ Name *string
 
 A human-friendly name for the Relay Proxy configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/relay_proxy_configuration#name RelayProxyConfiguration#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/relay_proxy_configuration#name RelayProxyConfiguration#name}
 
 ---
 
@@ -856,7 +856,7 @@ Policy interface{}
 
 policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/relay_proxy_configuration#policy RelayProxyConfiguration#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/relay_proxy_configuration#policy RelayProxyConfiguration#policy}
 
 ---
 
@@ -868,7 +868,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/relay_proxy_configuration#id RelayProxyConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/relay_proxy_configuration#id RelayProxyConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -880,7 +880,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.relayProxyConfiguration.RelayProxyConfigurationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/relayproxyconfiguration"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/relayproxyconfiguration"
 
 &relayproxyconfiguration.RelayProxyConfigurationPolicy {
 	Effect: *string,
@@ -915,7 +915,7 @@ Either `allow` or `deny`.
 
 This argument defines whether the statement allows or denies access to the named resources and actions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/relay_proxy_configuration#effect RelayProxyConfiguration#effect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/relay_proxy_configuration#effect RelayProxyConfiguration#effect}
 
 ---
 
@@ -931,7 +931,7 @@ The list of action specifiers defining the actions to which the statement applie
 
 Either `actions` or `not_actions` must be specified. For a list of available actions read [Actions reference](https://docs.launchdarkly.com/home/account-security/custom-roles/actions#actions-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/relay_proxy_configuration#actions RelayProxyConfiguration#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/relay_proxy_configuration#actions RelayProxyConfiguration#actions}
 
 ---
 
@@ -945,7 +945,7 @@ NotActions *[]*string
 
 The list of action specifiers defining the actions to which the statement does not apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/relay_proxy_configuration#not_actions RelayProxyConfiguration#not_actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/relay_proxy_configuration#not_actions RelayProxyConfiguration#not_actions}
 
 ---
 
@@ -959,7 +959,7 @@ NotResources *[]*string
 
 The list of resource specifiers defining the resources to which the statement does not apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/relay_proxy_configuration#not_resources RelayProxyConfiguration#not_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/relay_proxy_configuration#not_resources RelayProxyConfiguration#not_resources}
 
 ---
 
@@ -973,7 +973,7 @@ Resources *[]*string
 
 The list of resource specifiers defining the resources to which the statement applies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/relay_proxy_configuration#resources RelayProxyConfiguration#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/relay_proxy_configuration#resources RelayProxyConfiguration#resources}
 
 ---
 
@@ -984,7 +984,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.relayProxyConfiguration.RelayProxyConfigurationPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/relayproxyconfiguration"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/relayproxyconfiguration"
 
 relayproxyconfiguration.NewRelayProxyConfigurationPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RelayProxyConfigurationPolicyList
 ```
@@ -1127,7 +1127,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.relayProxyConfiguration.RelayProxyConfigurationPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/relayproxyconfiguration"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/relayproxyconfiguration"
 
 relayproxyconfiguration.NewRelayProxyConfigurationPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RelayProxyConfigurationPolicyOutputReference
 ```
