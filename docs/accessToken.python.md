@@ -1,6 +1,6 @@
 # `launchdarkly_access_token`
 
-Refer to the Terraform Registory for docs: [`launchdarkly_access_token`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token).
+Refer to the Terraform Registory for docs: [`launchdarkly_access_token`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/access_token).
 
 # `accessToken` Submodule <a name="`accessToken` Submodule" id="@cdktf/provider-launchdarkly.accessToken"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`launchdarkly_access_token`](https:/
 
 ### AccessToken <a name="AccessToken" id="@cdktf/provider-launchdarkly.accessToken.AccessToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token launchdarkly_access_token}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/access_token launchdarkly_access_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer"></a>
 
@@ -51,7 +51,7 @@ accessToken.AccessToken(
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.customRoles">custom_roles</a></code> | <code>typing.List[str]</code> | A list of custom role IDs to use as access limits for the access token. |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.defaultApiVersion">default_api_version</a></code> | <code>typing.Union[int, float]</code> | The default API version for this token. |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.expire">expire</a></code> | <code>typing.Union[int, float]</code> | An expiration time for the current token secret, expressed as a Unix epoch time. |
-| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token#id AccessToken#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/access_token#id AccessToken#id}. |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.inlineRoles">inline_roles</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRoles">AccessTokenInlineRoles</a>]]</code> | inline_roles block. |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.name">name</a></code> | <code>str</code> | A human-friendly name for the access token. |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.policyStatements">policy_statements</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatements">AccessTokenPolicyStatements</a>]]</code> | policy_statements block. |
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 A list of custom role IDs to use as access limits for the access token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token#custom_roles AccessToken#custom_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/access_token#custom_roles AccessToken#custom_roles}
 
 ---
 
@@ -138,7 +138,7 @@ The default API version for this token.
 
 Defaults to the latest API version. A change in this field will force the destruction of the existing token in state and the creation of a new one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token#default_api_version AccessToken#default_api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/access_token#default_api_version AccessToken#default_api_version}
 
 ---
 
@@ -150,7 +150,7 @@ An expiration time for the current token secret, expressed as a Unix epoch time.
 
 Replace the computed token secret with a new value. The expired secret will no longer be able to authorize usage of the LaunchDarkly API. This field argument is **deprecated**. Please update your config to remove `expire` to maintain compatibility with future versions
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token#expire AccessToken#expire}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/access_token#expire AccessToken#expire}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token#id AccessToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/access_token#id AccessToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -171,7 +171,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 inline_roles block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token#inline_roles AccessToken#inline_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/access_token#inline_roles AccessToken#inline_roles}
 
 ---
 
@@ -181,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 A human-friendly name for the access token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token#name AccessToken#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/access_token#name AccessToken#name}
 
 ---
 
@@ -191,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 policy_statements block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token#policy_statements AccessToken#policy_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/access_token#policy_statements AccessToken#policy_statements}
 
 ---
 
@@ -201,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 A built-in LaunchDarkly role. Can be `reader`, `writer`, or `admin`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token#role AccessToken#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/access_token#role AccessToken#role}
 
 ---
 
@@ -211,7 +211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 Whether the token will be a [service token](https://docs.launchdarkly.com/home/account-security/api-access-tokens#service-tokens). A change in this field will force the destruction of the existing token and the creation of a new one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token#service_token AccessToken#service_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/access_token#service_token AccessToken#service_token}
 
 ---
 
@@ -723,7 +723,7 @@ The construct id used in the generated config for the AccessToken to import.
 
 The id of the existing AccessToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/access_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1168,7 +1168,7 @@ accessToken.AccessTokenConfig(
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.customRoles">custom_roles</a></code> | <code>typing.List[str]</code> | A list of custom role IDs to use as access limits for the access token. |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.defaultApiVersion">default_api_version</a></code> | <code>typing.Union[int, float]</code> | The default API version for this token. |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.expire">expire</a></code> | <code>typing.Union[int, float]</code> | An expiration time for the current token secret, expressed as a Unix epoch time. |
-| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token#id AccessToken#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/access_token#id AccessToken#id}. |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.inlineRoles">inline_roles</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRoles">AccessTokenInlineRoles</a>]]</code> | inline_roles block. |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.name">name</a></code> | <code>str</code> | A human-friendly name for the access token. |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.policyStatements">policy_statements</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatements">AccessTokenPolicyStatements</a>]]</code> | policy_statements block. |
@@ -1257,7 +1257,7 @@ custom_roles: typing.List[str]
 
 A list of custom role IDs to use as access limits for the access token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token#custom_roles AccessToken#custom_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/access_token#custom_roles AccessToken#custom_roles}
 
 ---
 
@@ -1273,7 +1273,7 @@ The default API version for this token.
 
 Defaults to the latest API version. A change in this field will force the destruction of the existing token in state and the creation of a new one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token#default_api_version AccessToken#default_api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/access_token#default_api_version AccessToken#default_api_version}
 
 ---
 
@@ -1289,7 +1289,7 @@ An expiration time for the current token secret, expressed as a Unix epoch time.
 
 Replace the computed token secret with a new value. The expired secret will no longer be able to authorize usage of the LaunchDarkly API. This field argument is **deprecated**. Please update your config to remove `expire` to maintain compatibility with future versions
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token#expire AccessToken#expire}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/access_token#expire AccessToken#expire}
 
 ---
 
@@ -1301,7 +1301,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token#id AccessToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/access_token#id AccessToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1318,7 +1318,7 @@ inline_roles: typing.Union[IResolvable, typing.List[AccessTokenInlineRoles]]
 
 inline_roles block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token#inline_roles AccessToken#inline_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/access_token#inline_roles AccessToken#inline_roles}
 
 ---
 
@@ -1332,7 +1332,7 @@ name: str
 
 A human-friendly name for the access token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token#name AccessToken#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/access_token#name AccessToken#name}
 
 ---
 
@@ -1346,7 +1346,7 @@ policy_statements: typing.Union[IResolvable, typing.List[AccessTokenPolicyStatem
 
 policy_statements block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token#policy_statements AccessToken#policy_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/access_token#policy_statements AccessToken#policy_statements}
 
 ---
 
@@ -1360,7 +1360,7 @@ role: str
 
 A built-in LaunchDarkly role. Can be `reader`, `writer`, or `admin`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token#role AccessToken#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/access_token#role AccessToken#role}
 
 ---
 
@@ -1374,7 +1374,7 @@ service_token: typing.Union[bool, IResolvable]
 
 Whether the token will be a [service token](https://docs.launchdarkly.com/home/account-security/api-access-tokens#service-tokens). A change in this field will force the destruction of the existing token and the creation of a new one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token#service_token AccessToken#service_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/access_token#service_token AccessToken#service_token}
 
 ---
 
@@ -1418,7 +1418,7 @@ Either `allow` or `deny`.
 
 This argument defines whether the statement allows or denies access to the named resources and actions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token#effect AccessToken#effect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/access_token#effect AccessToken#effect}
 
 ---
 
@@ -1434,7 +1434,7 @@ The list of action specifiers defining the actions to which the statement applie
 
 Either `actions` or `not_actions` must be specified. For a list of available actions read [Actions reference](https://docs.launchdarkly.com/home/account-security/custom-roles/actions#actions-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token#actions AccessToken#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/access_token#actions AccessToken#actions}
 
 ---
 
@@ -1448,7 +1448,7 @@ not_actions: typing.List[str]
 
 The list of action specifiers defining the actions to which the statement does not apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token#not_actions AccessToken#not_actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/access_token#not_actions AccessToken#not_actions}
 
 ---
 
@@ -1462,7 +1462,7 @@ not_resources: typing.List[str]
 
 The list of resource specifiers defining the resources to which the statement does not apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token#not_resources AccessToken#not_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/access_token#not_resources AccessToken#not_resources}
 
 ---
 
@@ -1476,7 +1476,7 @@ resources: typing.List[str]
 
 The list of resource specifiers defining the resources to which the statement applies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token#resources AccessToken#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/access_token#resources AccessToken#resources}
 
 ---
 
@@ -1520,7 +1520,7 @@ Either `allow` or `deny`.
 
 This argument defines whether the statement allows or denies access to the named resources and actions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token#effect AccessToken#effect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/access_token#effect AccessToken#effect}
 
 ---
 
@@ -1536,7 +1536,7 @@ The list of action specifiers defining the actions to which the statement applie
 
 Either `actions` or `not_actions` must be specified. For a list of available actions read [Actions reference](https://docs.launchdarkly.com/home/account-security/custom-roles/actions#actions-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token#actions AccessToken#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/access_token#actions AccessToken#actions}
 
 ---
 
@@ -1550,7 +1550,7 @@ not_actions: typing.List[str]
 
 The list of action specifiers defining the actions to which the statement does not apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token#not_actions AccessToken#not_actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/access_token#not_actions AccessToken#not_actions}
 
 ---
 
@@ -1564,7 +1564,7 @@ not_resources: typing.List[str]
 
 The list of resource specifiers defining the resources to which the statement does not apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token#not_resources AccessToken#not_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/access_token#not_resources AccessToken#not_resources}
 
 ---
 
@@ -1578,7 +1578,7 @@ resources: typing.List[str]
 
 The list of resource specifiers defining the resources to which the statement applies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/access_token#resources AccessToken#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/access_token#resources AccessToken#resources}
 
 ---
 
