@@ -1,6 +1,6 @@
 # `launchdarkly_flag_trigger`
 
-Refer to the Terraform Registory for docs: [`launchdarkly_flag_trigger`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/flag_trigger).
+Refer to the Terraform Registory for docs: [`launchdarkly_flag_trigger`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/flag_trigger).
 
 # `flagTrigger` Submodule <a name="`flagTrigger` Submodule" id="@cdktf/provider-launchdarkly.flagTrigger"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`launchdarkly_flag_trigger`](https:/
 
 ### FlagTrigger <a name="FlagTrigger" id="@cdktf/provider-launchdarkly.flagTrigger.FlagTrigger"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/flag_trigger launchdarkly_flag_trigger}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/flag_trigger launchdarkly_flag_trigger}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.flagTrigger.FlagTrigger.Initializer"></a>
 
@@ -441,7 +441,7 @@ The construct id used in the generated config for the FlagTrigger to import.
 
 The id of the existing FlagTrigger that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/flag_trigger#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/flag_trigger#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -854,7 +854,7 @@ new FlagTriggerConfig {
 | <code><a href="#@cdktf/provider-launchdarkly.flagTrigger.FlagTriggerConfig.property.instructions">Instructions</a></code> | <code><a href="#@cdktf/provider-launchdarkly.flagTrigger.FlagTriggerInstructions">FlagTriggerInstructions</a></code> | instructions block. |
 | <code><a href="#@cdktf/provider-launchdarkly.flagTrigger.FlagTriggerConfig.property.integrationKey">IntegrationKey</a></code> | <code>string</code> | The unique identifier of the integration you intend to set your trigger up with. |
 | <code><a href="#@cdktf/provider-launchdarkly.flagTrigger.FlagTriggerConfig.property.projectKey">ProjectKey</a></code> | <code>string</code> | The LaunchDarkly project key. |
-| <code><a href="#@cdktf/provider-launchdarkly.flagTrigger.FlagTriggerConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/flag_trigger#id FlagTrigger#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.flagTrigger.FlagTriggerConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/flag_trigger#id FlagTrigger#id}. |
 
 ---
 
@@ -938,7 +938,7 @@ public object Enabled { get; set; }
 
 Whether the trigger is currently active or not. This property defaults to true upon creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/flag_trigger#enabled FlagTrigger#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/flag_trigger#enabled FlagTrigger#enabled}
 
 ---
 
@@ -952,7 +952,7 @@ public string EnvKey { get; set; }
 
 The LaunchDarkly environment key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/flag_trigger#env_key FlagTrigger#env_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/flag_trigger#env_key FlagTrigger#env_key}
 
 ---
 
@@ -966,7 +966,7 @@ public string FlagKey { get; set; }
 
 The key of the feature flag the trigger acts upon.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/flag_trigger#flag_key FlagTrigger#flag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/flag_trigger#flag_key FlagTrigger#flag_key}
 
 ---
 
@@ -980,7 +980,7 @@ public FlagTriggerInstructions Instructions { get; set; }
 
 instructions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/flag_trigger#instructions FlagTrigger#instructions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/flag_trigger#instructions FlagTrigger#instructions}
 
 ---
 
@@ -996,7 +996,7 @@ The unique identifier of the integration you intend to set your trigger up with.
 
 "generic-trigger" should be used for integrations not explicitly supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/flag_trigger#integration_key FlagTrigger#integration_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/flag_trigger#integration_key FlagTrigger#integration_key}
 
 ---
 
@@ -1010,7 +1010,7 @@ public string ProjectKey { get; set; }
 
 The LaunchDarkly project key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/flag_trigger#project_key FlagTrigger#project_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/flag_trigger#project_key FlagTrigger#project_key}
 
 ---
 
@@ -1022,7 +1022,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/flag_trigger#id FlagTrigger#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/flag_trigger#id FlagTrigger#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1059,7 +1059,7 @@ public string Kind { get; set; }
 
 The action to perform when triggering. Currently supported flag actions are "turnFlagOn" and "turnFlagOff".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/resources/flag_trigger#kind FlagTrigger#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/flag_trigger#kind FlagTrigger#kind}
 
 ---
 

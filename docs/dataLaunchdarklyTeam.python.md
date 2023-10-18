@@ -1,6 +1,6 @@
 # `data_launchdarkly_team`
 
-Refer to the Terraform Registory for docs: [`data_launchdarkly_team`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/team).
+Refer to the Terraform Registory for docs: [`data_launchdarkly_team`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/team).
 
 # `dataLaunchdarklyTeam` Submodule <a name="`dataLaunchdarklyTeam` Submodule" id="@cdktf/provider-launchdarkly.dataLaunchdarklyTeam"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_launchdarkly_team`](https://re
 
 ### DataLaunchdarklyTeam <a name="DataLaunchdarklyTeam" id="@cdktf/provider-launchdarkly.dataLaunchdarklyTeam.DataLaunchdarklyTeam"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/team launchdarkly_team}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/team launchdarkly_team}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklyTeam.DataLaunchdarklyTeam.Initializer"></a>
 
@@ -47,7 +47,7 @@ dataLaunchdarklyTeam.DataLaunchdarklyTeam(
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyTeam.DataLaunchdarklyTeam.Initializer.parameter.key">key</a></code> | <code>str</code> | The team's unique key. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyTeam.DataLaunchdarklyTeam.Initializer.parameter.customRoleKeys">custom_role_keys</a></code> | <code>typing.List[str]</code> | A list of keys for custom roles the team has. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyTeam.DataLaunchdarklyTeam.Initializer.parameter.description">description</a></code> | <code>str</code> | The team's description. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyTeam.DataLaunchdarklyTeam.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/team#id DataLaunchdarklyTeam#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyTeam.DataLaunchdarklyTeam.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/team#id DataLaunchdarklyTeam#id}. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyTeam.DataLaunchdarklyTeam.Initializer.parameter.name">name</a></code> | <code>str</code> | The team's human-readable name. |
 
 ---
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The team's unique key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/team#key DataLaunchdarklyTeam#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/team#key DataLaunchdarklyTeam#key}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 A list of keys for custom roles the team has.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/team#custom_role_keys DataLaunchdarklyTeam#custom_role_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/team#custom_role_keys DataLaunchdarklyTeam#custom_role_keys}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 The team's description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/team#description DataLaunchdarklyTeam#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/team#description DataLaunchdarklyTeam#description}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/team#id DataLaunchdarklyTeam#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/team#id DataLaunchdarklyTeam#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,7 +159,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The team's human-readable name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/team#name DataLaunchdarklyTeam#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/team#name DataLaunchdarklyTeam#name}
 
 ---
 
@@ -537,7 +537,7 @@ The construct id used in the generated config for the DataLaunchdarklyTeam to im
 
 The id of the existing DataLaunchdarklyTeam that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/team#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/team#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -879,7 +879,7 @@ dataLaunchdarklyTeam.DataLaunchdarklyTeamConfig(
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyTeam.DataLaunchdarklyTeamConfig.property.key">key</a></code> | <code>str</code> | The team's unique key. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyTeam.DataLaunchdarklyTeamConfig.property.customRoleKeys">custom_role_keys</a></code> | <code>typing.List[str]</code> | A list of keys for custom roles the team has. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyTeam.DataLaunchdarklyTeamConfig.property.description">description</a></code> | <code>str</code> | The team's description. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyTeam.DataLaunchdarklyTeamConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/team#id DataLaunchdarklyTeam#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyTeam.DataLaunchdarklyTeamConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/team#id DataLaunchdarklyTeam#id}. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyTeam.DataLaunchdarklyTeamConfig.property.name">name</a></code> | <code>str</code> | The team's human-readable name. |
 
 ---
@@ -964,7 +964,7 @@ key: str
 
 The team's unique key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/team#key DataLaunchdarklyTeam#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/team#key DataLaunchdarklyTeam#key}
 
 ---
 
@@ -978,7 +978,7 @@ custom_role_keys: typing.List[str]
 
 A list of keys for custom roles the team has.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/team#custom_role_keys DataLaunchdarklyTeam#custom_role_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/team#custom_role_keys DataLaunchdarklyTeam#custom_role_keys}
 
 ---
 
@@ -992,7 +992,7 @@ description: str
 
 The team's description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/team#description DataLaunchdarklyTeam#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/team#description DataLaunchdarklyTeam#description}
 
 ---
 
@@ -1004,7 +1004,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/team#id DataLaunchdarklyTeam#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/team#id DataLaunchdarklyTeam#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1021,7 +1021,7 @@ name: str
 
 The team's human-readable name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.15.2/docs/data-sources/team#name DataLaunchdarklyTeam#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/team#name DataLaunchdarklyTeam#name}
 
 ---
 
