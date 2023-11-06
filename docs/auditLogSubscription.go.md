@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchd
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.auditLogSubscription.AuditLogSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/auditlogsubscription"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/auditlogsubscription"
 
 auditlogsubscription.NewAuditLogSubscription(scope Construct, id *string, config AuditLogSubscriptionConfig) AuditLogSubscription
 ```
@@ -359,7 +359,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-launchdarkly.auditLogSubscription.AuditLogSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/auditlogsubscription"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/auditlogsubscription"
 
 auditlogsubscription.AuditLogSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-launchdarkly.auditLogSubscription.AuditLogSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/auditlogsubscription"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/auditlogsubscription"
 
 auditlogsubscription.AuditLogSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ auditlogsubscription.AuditLogSubscription_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-launchdarkly.auditLogSubscription.AuditLogSubscription.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/auditlogsubscription"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/auditlogsubscription"
 
 auditlogsubscription.AuditLogSubscription_IsTerraformResource(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ auditlogsubscription.AuditLogSubscription_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-launchdarkly.auditLogSubscription.AuditLogSubscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/auditlogsubscription"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/auditlogsubscription"
 
 auditlogsubscription.AuditLogSubscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -802,7 +802,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.auditLogSubscription.AuditLogSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/auditlogsubscription"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/auditlogsubscription"
 
 &auditlogsubscription.AuditLogSubscriptionConfig {
 	Connection: interface{},
@@ -1021,7 +1021,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.auditLogSubscription.AuditLogSubscriptionStatements.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/auditlogsubscription"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/auditlogsubscription"
 
 &auditlogsubscription.AuditLogSubscriptionStatements {
 	Effect: *string,
@@ -1125,7 +1125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.auditLogSubscription.AuditLogSubscriptionStatementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/auditlogsubscription"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/auditlogsubscription"
 
 auditlogsubscription.NewAuditLogSubscriptionStatementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AuditLogSubscriptionStatementsList
 ```
@@ -1268,7 +1268,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.auditLogSubscription.AuditLogSubscriptionStatementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/auditlogsubscription"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/auditlogsubscription"
 
 auditlogsubscription.NewAuditLogSubscriptionStatementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AuditLogSubscriptionStatementsOutputReference
 ```
