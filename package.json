@@ -59,7 +59,7 @@
     "node-fetch": "cjs",
     "projen": "^0.77.2",
     "standard-version": "^9",
-    "typescript": "^5.2.2"
+    "typescript": "^5.3.2"
   },
   "peerDependencies": {
     "cdktf": "^0.19.0",
