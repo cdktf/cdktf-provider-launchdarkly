@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchd
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.teamMember.TeamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/teammember"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/teammember"
 
 teammember.NewTeamMember(scope Construct, id *string, config TeamMemberConfig) TeamMember
 ```
@@ -363,7 +363,7 @@ func ResetRole()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-launchdarkly.teamMember.TeamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/teammember"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/teammember"
 
 teammember.TeamMember_IsConstruct(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-launchdarkly.teamMember.TeamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/teammember"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/teammember"
 
 teammember.TeamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -409,7 +409,7 @@ teammember.TeamMember_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-launchdarkly.teamMember.TeamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/teammember"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/teammember"
 
 teammember.TeamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -423,7 +423,7 @@ teammember.TeamMember_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-launchdarkly.teamMember.TeamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/teammember"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/teammember"
 
 teammember.TeamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -784,7 +784,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/teammember"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/teammember"
 
 &teammember.TeamMemberConfig {
 	Connection: interface{},
