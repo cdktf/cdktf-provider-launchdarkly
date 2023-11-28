@@ -1,7 +1,3 @@
-# `launchdarkly_destination`
-
-Refer to the Terraform Registory for docs: [`launchdarkly_destination`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/destination).
-
 # `destination` Submodule <a name="`destination` Submodule" id="@cdktf/provider-launchdarkly.destination"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

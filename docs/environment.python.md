@@ -1,7 +1,3 @@
-# `launchdarkly_environment`
-
-Refer to the Terraform Registory for docs: [`launchdarkly_environment`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/environment).
-
 # `environment` Submodule <a name="`environment` Submodule" id="@cdktf/provider-launchdarkly.environment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `launchdarkly_flag_trigger`
-
-Refer to the Terraform Registory for docs: [`launchdarkly_flag_trigger`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/flag_trigger).
-
 # `flagTrigger` Submodule <a name="`flagTrigger` Submodule" id="@cdktf/provider-launchdarkly.flagTrigger"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

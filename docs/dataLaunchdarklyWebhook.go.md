@@ -1,7 +1,3 @@
-# `data_launchdarkly_webhook`
-
-Refer to the Terraform Registory for docs: [`data_launchdarkly_webhook`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/webhook).
-
 # `dataLaunchdarklyWebhook` Submodule <a name="`dataLaunchdarklyWebhook` Submodule" id="@cdktf/provider-launchdarkly.dataLaunchdarklyWebhook"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
