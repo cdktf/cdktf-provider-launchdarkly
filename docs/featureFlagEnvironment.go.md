@@ -1,7 +1,3 @@
-# `launchdarkly_feature_flag_environment`
-
-Refer to the Terraform Registory for docs: [`launchdarkly_feature_flag_environment`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/feature_flag_environment).
-
 # `featureFlagEnvironment` Submodule <a name="`featureFlagEnvironment` Submodule" id="@cdktf/provider-launchdarkly.featureFlagEnvironment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchd
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/featureflagenvironment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflagenvironment"
 
 featureflagenvironment.NewFeatureFlagEnvironment(scope Construct, id *string, config FeatureFlagEnvironmentConfig) FeatureFlagEnvironment
 ```
@@ -446,7 +442,7 @@ func ResetTrackEvents()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/featureflagenvironment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflagenvironment"
 
 featureflagenvironment.FeatureFlagEnvironment_IsConstruct(x interface{}) *bool
 ```
@@ -478,7 +474,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/featureflagenvironment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflagenvironment"
 
 featureflagenvironment.FeatureFlagEnvironment_IsTerraformElement(x interface{}) *bool
 ```
@@ -492,7 +488,7 @@ featureflagenvironment.FeatureFlagEnvironment_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/featureflagenvironment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflagenvironment"
 
 featureflagenvironment.FeatureFlagEnvironment_IsTerraformResource(x interface{}) *bool
 ```
@@ -506,7 +502,7 @@ featureflagenvironment.FeatureFlagEnvironment_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/featureflagenvironment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflagenvironment"
 
 featureflagenvironment.FeatureFlagEnvironment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -977,7 +973,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/featureflagenvironment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflagenvironment"
 
 &featureflagenvironment.FeatureFlagEnvironmentConfig {
 	Connection: interface{},
@@ -988,7 +984,7 @@ import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/featuref
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	EnvKey: *string,
-	Fallthrough: github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3.featureFlagEnvironment.FeatureFlagEnvironmentFallthrough,
+	Fallthrough: github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentFallthrough,
 	FlagId: *string,
 	OffVariation: *f64,
 	ContextTargets: interface{},
@@ -1260,7 +1256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentContextTargets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/featureflagenvironment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflagenvironment"
 
 &featureflagenvironment.FeatureFlagEnvironmentContextTargets {
 	ContextKind: *string,
@@ -1328,7 +1324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentFallthrough.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/featureflagenvironment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflagenvironment"
 
 &featureflagenvironment.FeatureFlagEnvironmentFallthrough {
 	BucketBy: *string,
@@ -1416,7 +1412,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentPrerequisites.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/featureflagenvironment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflagenvironment"
 
 &featureflagenvironment.FeatureFlagEnvironmentPrerequisites {
 	FlagKey: *string,
@@ -1466,7 +1462,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/featureflagenvironment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflagenvironment"
 
 &featureflagenvironment.FeatureFlagEnvironmentRules {
 	BucketBy: *string,
@@ -1568,7 +1564,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentRulesClauses.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/featureflagenvironment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflagenvironment"
 
 &featureflagenvironment.FeatureFlagEnvironmentRulesClauses {
 	Attribute: *string,
@@ -1688,7 +1684,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentTargets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/featureflagenvironment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflagenvironment"
 
 &featureflagenvironment.FeatureFlagEnvironmentTargets {
 	Values: *[]*string,
@@ -1740,7 +1736,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentContextTargetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/featureflagenvironment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflagenvironment"
 
 featureflagenvironment.NewFeatureFlagEnvironmentContextTargetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FeatureFlagEnvironmentContextTargetsList
 ```
@@ -1883,7 +1879,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentContextTargetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/featureflagenvironment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflagenvironment"
 
 featureflagenvironment.NewFeatureFlagEnvironmentContextTargetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FeatureFlagEnvironmentContextTargetsOutputReference
 ```
@@ -2216,7 +2212,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentFallthroughOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/featureflagenvironment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflagenvironment"
 
 featureflagenvironment.NewFeatureFlagEnvironmentFallthroughOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureFlagEnvironmentFallthroughOutputReference
 ```
@@ -2581,7 +2577,7 @@ func InternalValue() FeatureFlagEnvironmentFallthrough
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentPrerequisitesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/featureflagenvironment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflagenvironment"
 
 featureflagenvironment.NewFeatureFlagEnvironmentPrerequisitesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FeatureFlagEnvironmentPrerequisitesList
 ```
@@ -2724,7 +2720,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentPrerequisitesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/featureflagenvironment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflagenvironment"
 
 featureflagenvironment.NewFeatureFlagEnvironmentPrerequisitesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FeatureFlagEnvironmentPrerequisitesOutputReference
 ```
@@ -3035,7 +3031,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentRulesClausesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/featureflagenvironment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflagenvironment"
 
 featureflagenvironment.NewFeatureFlagEnvironmentRulesClausesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FeatureFlagEnvironmentRulesClausesList
 ```
@@ -3178,7 +3174,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentRulesClausesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/featureflagenvironment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflagenvironment"
 
 featureflagenvironment.NewFeatureFlagEnvironmentRulesClausesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FeatureFlagEnvironmentRulesClausesOutputReference
 ```
@@ -3598,7 +3594,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/featureflagenvironment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflagenvironment"
 
 featureflagenvironment.NewFeatureFlagEnvironmentRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FeatureFlagEnvironmentRulesList
 ```
@@ -3741,7 +3737,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/featureflagenvironment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflagenvironment"
 
 featureflagenvironment.NewFeatureFlagEnvironmentRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FeatureFlagEnvironmentRulesOutputReference
 ```
@@ -4166,7 +4162,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentTargetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/featureflagenvironment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflagenvironment"
 
 featureflagenvironment.NewFeatureFlagEnvironmentTargetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FeatureFlagEnvironmentTargetsList
 ```
@@ -4309,7 +4305,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.featureFlagEnvironment.FeatureFlagEnvironmentTargetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/featureflagenvironment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflagenvironment"
 
 featureflagenvironment.NewFeatureFlagEnvironmentTargetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FeatureFlagEnvironmentTargetsOutputReference
 ```

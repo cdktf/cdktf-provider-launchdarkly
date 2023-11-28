@@ -1,7 +1,3 @@
-# `data_launchdarkly_team_member`
-
-Refer to the Terraform Registory for docs: [`data_launchdarkly_team_member`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/team_member).
-
 # `dataLaunchdarklyTeamMember` Submodule <a name="`dataLaunchdarklyTeamMember` Submodule" id="@cdktf/provider-launchdarkly.dataLaunchdarklyTeamMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

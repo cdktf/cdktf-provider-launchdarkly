@@ -1,7 +1,3 @@
-# `data_launchdarkly_feature_flag`
-
-Refer to the Terraform Registory for docs: [`data_launchdarkly_feature_flag`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/feature_flag).
-
 # `dataLaunchdarklyFeatureFlag` Submodule <a name="`dataLaunchdarklyFeatureFlag` Submodule" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

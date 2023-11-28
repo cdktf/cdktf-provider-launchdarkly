@@ -1,7 +1,3 @@
-# `launchdarkly_destination`
-
-Refer to the Terraform Registory for docs: [`launchdarkly_destination`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/destination).
-
 # `destination` Submodule <a name="`destination` Submodule" id="@cdktf/provider-launchdarkly.destination"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchd
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.destination.Destination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/destination"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/destination"
 
 destination.NewDestination(scope Construct, id *string, config DestinationConfig) Destination
 ```
@@ -353,7 +349,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-launchdarkly.destination.Destination.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/destination"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/destination"
 
 destination.Destination_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-launchdarkly.destination.Destination.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/destination"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/destination"
 
 destination.Destination_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ destination.Destination_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-launchdarkly.destination.Destination.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/destination"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/destination"
 
 destination.Destination_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ destination.Destination_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-launchdarkly.destination.Destination.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/destination"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/destination"
 
 destination.Destination_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -818,7 +814,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.destination.DestinationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/destination"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/destination"
 
 &destination.DestinationConfig {
 	Connection: interface{},

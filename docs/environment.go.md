@@ -1,7 +1,3 @@
-# `launchdarkly_environment`
-
-Refer to the Terraform Registory for docs: [`launchdarkly_environment`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/environment).
-
 # `environment` Submodule <a name="`environment` Submodule" id="@cdktf/provider-launchdarkly.environment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchd
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.environment.Environment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/environment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/environment"
 
 environment.NewEnvironment(scope Construct, id *string, config EnvironmentConfig) Environment
 ```
@@ -401,7 +397,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-launchdarkly.environment.Environment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/environment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/environment"
 
 environment.Environment_IsConstruct(x interface{}) *bool
 ```
@@ -433,7 +429,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-launchdarkly.environment.Environment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/environment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/environment"
 
 environment.Environment_IsTerraformElement(x interface{}) *bool
 ```
@@ -447,7 +443,7 @@ environment.Environment_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-launchdarkly.environment.Environment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/environment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/environment"
 
 environment.Environment_IsTerraformResource(x interface{}) *bool
 ```
@@ -461,7 +457,7 @@ environment.Environment_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-launchdarkly.environment.Environment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/environment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/environment"
 
 environment.Environment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -987,7 +983,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/environment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/environment"
 
 &environment.EnvironmentApprovalSettings {
 	CanApplyDeclinedChanges: interface{},
@@ -1093,7 +1089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.environment.EnvironmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/environment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/environment"
 
 &environment.EnvironmentConfig {
 	Connection: interface{},
@@ -1402,7 +1398,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/environment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/environment"
 
 environment.NewEnvironmentApprovalSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EnvironmentApprovalSettingsList
 ```
@@ -1545,7 +1541,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/environment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/environment"
 
 environment.NewEnvironmentApprovalSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EnvironmentApprovalSettingsOutputReference
 ```

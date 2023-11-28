@@ -1,7 +1,3 @@
-# `launchdarkly_relay_proxy_configuration`
-
-Refer to the Terraform Registory for docs: [`launchdarkly_relay_proxy_configuration`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/relay_proxy_configuration).
-
 # `relayProxyConfiguration` Submodule <a name="`relayProxyConfiguration` Submodule" id="@cdktf/provider-launchdarkly.relayProxyConfiguration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchd
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.relayProxyConfiguration.RelayProxyConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/relayproxyconfiguration"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/relayproxyconfiguration"
 
 relayproxyconfiguration.NewRelayProxyConfiguration(scope Construct, id *string, config RelayProxyConfigurationConfig) RelayProxyConfiguration
 ```
@@ -352,7 +348,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-launchdarkly.relayProxyConfiguration.RelayProxyConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/relayproxyconfiguration"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/relayproxyconfiguration"
 
 relayproxyconfiguration.RelayProxyConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -384,7 +380,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-launchdarkly.relayProxyConfiguration.RelayProxyConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/relayproxyconfiguration"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/relayproxyconfiguration"
 
 relayproxyconfiguration.RelayProxyConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -398,7 +394,7 @@ relayproxyconfiguration.RelayProxyConfiguration_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-launchdarkly.relayProxyConfiguration.RelayProxyConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/relayproxyconfiguration"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/relayproxyconfiguration"
 
 relayproxyconfiguration.RelayProxyConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -412,7 +408,7 @@ relayproxyconfiguration.RelayProxyConfiguration_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-launchdarkly.relayProxyConfiguration.RelayProxyConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/relayproxyconfiguration"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/relayproxyconfiguration"
 
 relayproxyconfiguration.RelayProxyConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -729,7 +725,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.relayProxyConfiguration.RelayProxyConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/relayproxyconfiguration"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/relayproxyconfiguration"
 
 &relayproxyconfiguration.RelayProxyConfigurationConfig {
 	Connection: interface{},
@@ -880,7 +876,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.relayProxyConfiguration.RelayProxyConfigurationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/relayproxyconfiguration"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/relayproxyconfiguration"
 
 &relayproxyconfiguration.RelayProxyConfigurationPolicy {
 	Effect: *string,
@@ -984,7 +980,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.relayProxyConfiguration.RelayProxyConfigurationPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/relayproxyconfiguration"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/relayproxyconfiguration"
 
 relayproxyconfiguration.NewRelayProxyConfigurationPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RelayProxyConfigurationPolicyList
 ```
@@ -1127,7 +1123,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.relayProxyConfiguration.RelayProxyConfigurationPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/relayproxyconfiguration"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/relayproxyconfiguration"
 
 relayproxyconfiguration.NewRelayProxyConfigurationPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RelayProxyConfigurationPolicyOutputReference
 ```

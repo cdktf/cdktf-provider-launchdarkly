@@ -1,7 +1,3 @@
-# `data_launchdarkly_audit_log_subscription`
-
-Refer to the Terraform Registory for docs: [`data_launchdarkly_audit_log_subscription`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/data-sources/audit_log_subscription).
-
 # `dataLaunchdarklyAuditLogSubscription` Submodule <a name="`dataLaunchdarklyAuditLogSubscription` Submodule" id="@cdktf/provider-launchdarkly.dataLaunchdarklyAuditLogSubscription"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

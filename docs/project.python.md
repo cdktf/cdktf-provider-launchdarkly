@@ -1,7 +1,3 @@
-# `launchdarkly_project`
-
-Refer to the Terraform Registory for docs: [`launchdarkly_project`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/project).
-
 # `project` Submodule <a name="`project` Submodule" id="@cdktf/provider-launchdarkly.project"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
