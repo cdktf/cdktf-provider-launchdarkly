@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchd
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.customRole.CustomRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/customrole"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/customrole"
 
 customrole.NewCustomRole(scope Construct, id *string, config CustomRoleConfig) CustomRole
 ```
@@ -432,7 +432,7 @@ func ResetPolicyStatements()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-launchdarkly.customRole.CustomRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/customrole"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/customrole"
 
 customrole.CustomRole_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-launchdarkly.customRole.CustomRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/customrole"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/customrole"
 
 customrole.CustomRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ customrole.CustomRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-launchdarkly.customRole.CustomRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/customrole"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/customrole"
 
 customrole.CustomRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ customrole.CustomRole_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-launchdarkly.customRole.CustomRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/customrole"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/customrole"
 
 customrole.CustomRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -875,7 +875,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.customRole.CustomRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/customrole"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/customrole"
 
 &customrole.CustomRoleConfig {
 	Connection: interface{},
@@ -1090,7 +1090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.customRole.CustomRolePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/customrole"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/customrole"
 
 &customrole.CustomRolePolicy {
 	Actions: *[]*string,
@@ -1150,7 +1150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.customRole.CustomRolePolicyStatements.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/customrole"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/customrole"
 
 &customrole.CustomRolePolicyStatements {
 	Effect: *string,
@@ -1254,7 +1254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.customRole.CustomRolePolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/customrole"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/customrole"
 
 customrole.NewCustomRolePolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CustomRolePolicyList
 ```
@@ -1397,7 +1397,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.customRole.CustomRolePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/customrole"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/customrole"
 
 customrole.NewCustomRolePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CustomRolePolicyOutputReference
 ```
@@ -1730,7 +1730,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.customRole.CustomRolePolicyStatementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/customrole"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/customrole"
 
 customrole.NewCustomRolePolicyStatementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CustomRolePolicyStatementsList
 ```
@@ -1873,7 +1873,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.customRole.CustomRolePolicyStatementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/customrole"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/customrole"
 
 customrole.NewCustomRolePolicyStatementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CustomRolePolicyStatementsOutputReference
 ```
