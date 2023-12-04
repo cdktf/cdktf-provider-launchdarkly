@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchd
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.project.Project.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/project"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/project"
 
 project.NewProject(scope Construct, id *string, config ProjectConfig) Project
 ```
@@ -425,7 +425,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-launchdarkly.project.Project.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/project"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/project"
 
 project.Project_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-launchdarkly.project.Project.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/project"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/project"
 
 project.Project_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ project.Project_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-launchdarkly.project.Project.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/project"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/project"
 
 project.Project_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ project.Project_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-launchdarkly.project.Project.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/project"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/project"
 
 project.Project_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -868,7 +868,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.project.ProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/project"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/project"
 
 &project.ProjectConfig {
 	Connection: interface{},
@@ -1083,7 +1083,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.project.ProjectDefaultClientSideAvailability.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/project"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/project"
 
 &project.ProjectDefaultClientSideAvailability {
 	UsingEnvironmentId: interface{},
@@ -1129,7 +1129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.project.ProjectEnvironments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/project"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/project"
 
 &project.ProjectEnvironments {
 	Color: *string,
@@ -1319,7 +1319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/project"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/project"
 
 &project.ProjectEnvironmentsApprovalSettings {
 	CanApplyDeclinedChanges: interface{},
@@ -1427,7 +1427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.project.ProjectDefaultClientSideAvailabilityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/project"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/project"
 
 project.NewProjectDefaultClientSideAvailabilityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProjectDefaultClientSideAvailabilityList
 ```
@@ -1570,7 +1570,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.project.ProjectDefaultClientSideAvailabilityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/project"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/project"
 
 project.NewProjectDefaultClientSideAvailabilityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProjectDefaultClientSideAvailabilityOutputReference
 ```
@@ -1881,7 +1881,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/project"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/project"
 
 project.NewProjectEnvironmentsApprovalSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProjectEnvironmentsApprovalSettingsList
 ```
@@ -2024,7 +2024,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/project"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/project"
 
 project.NewProjectEnvironmentsApprovalSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProjectEnvironmentsApprovalSettingsOutputReference
 ```
@@ -2436,7 +2436,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.project.ProjectEnvironmentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/project"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/project"
 
 project.NewProjectEnvironmentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProjectEnvironmentsList
 ```
@@ -2579,7 +2579,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.project.ProjectEnvironmentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/project"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/project"
 
 project.NewProjectEnvironmentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProjectEnvironmentsOutputReference
 ```
