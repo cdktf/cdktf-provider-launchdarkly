@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/webhook
 // generated from terraform resource schema
 

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchd
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.webhook.Webhook.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/webhook"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/webhook"
 
 webhook.NewWebhook(scope Construct, id *string, config WebhookConfig) Webhook
 ```
@@ -426,7 +426,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-launchdarkly.webhook.Webhook.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/webhook"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/webhook"
 
 webhook.Webhook_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-launchdarkly.webhook.Webhook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/webhook"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/webhook"
 
 webhook.Webhook_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ webhook.Webhook_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-launchdarkly.webhook.Webhook.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/webhook"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/webhook"
 
 webhook.Webhook_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ webhook.Webhook_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-launchdarkly.webhook.Webhook.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/webhook"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/webhook"
 
 webhook.Webhook_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -869,7 +869,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.webhook.WebhookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/webhook"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/webhook"
 
 &webhook.WebhookConfig {
 	Connection: interface{},
@@ -1084,7 +1084,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.webhook.WebhookStatements.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/webhook"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/webhook"
 
 &webhook.WebhookStatements {
 	Effect: *string,
@@ -1188,7 +1188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.webhook.WebhookStatementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/webhook"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/webhook"
 
 webhook.NewWebhookStatementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WebhookStatementsList
 ```
@@ -1331,7 +1331,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.webhook.WebhookStatementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/webhook"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/webhook"
 
 webhook.NewWebhookStatementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WebhookStatementsOutputReference
 ```
