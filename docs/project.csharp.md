@@ -4,7 +4,7 @@
 
 ### Project <a name="Project" id="@cdktf/provider-launchdarkly.project.Project"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/project launchdarkly_project}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/project launchdarkly_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.project.Project.Initializer"></a>
 
@@ -514,7 +514,7 @@ The construct id used in the generated config for the Project to import.
 
 The id of the existing Project that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -903,7 +903,7 @@ new ProjectConfig {
 | <code><a href="#@cdktf/provider-launchdarkly.project.ProjectConfig.property.key">Key</a></code> | <code>string</code> | The project's unique key. |
 | <code><a href="#@cdktf/provider-launchdarkly.project.ProjectConfig.property.name">Name</a></code> | <code>string</code> | A human-readable name for your project. |
 | <code><a href="#@cdktf/provider-launchdarkly.project.ProjectConfig.property.defaultClientSideAvailability">DefaultClientSideAvailability</a></code> | <code>object</code> | default_client_side_availability block. |
-| <code><a href="#@cdktf/provider-launchdarkly.project.ProjectConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/project#id Project#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.project.ProjectConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/project#id Project#id}. |
 | <code><a href="#@cdktf/provider-launchdarkly.project.ProjectConfig.property.includeInSnippet">IncludeInSnippet</a></code> | <code>object</code> | Whether feature flags created under the project should be available to client-side SDKs by default. |
 | <code><a href="#@cdktf/provider-launchdarkly.project.ProjectConfig.property.tags">Tags</a></code> | <code>string[]</code> | Tags associated with your resource. |
 
@@ -989,7 +989,7 @@ public object Environments { get; set; }
 
 environments block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/project#environments Project#environments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/project#environments Project#environments}
 
 ---
 
@@ -1003,7 +1003,7 @@ public string Key { get; set; }
 
 The project's unique key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/project#key Project#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/project#key Project#key}
 
 ---
 
@@ -1017,7 +1017,7 @@ public string Name { get; set; }
 
 A human-readable name for your project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/project#name Project#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/project#name Project#name}
 
 ---
 
@@ -1031,7 +1031,7 @@ public object DefaultClientSideAvailability { get; set; }
 
 default_client_side_availability block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/project#default_client_side_availability Project#default_client_side_availability}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/project#default_client_side_availability Project#default_client_side_availability}
 
 ---
 
@@ -1043,7 +1043,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/project#id Project#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/project#id Project#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1060,7 +1060,7 @@ public object IncludeInSnippet { get; set; }
 
 Whether feature flags created under the project should be available to client-side SDKs by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/project#include_in_snippet Project#include_in_snippet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/project#include_in_snippet Project#include_in_snippet}
 
 ---
 
@@ -1074,7 +1074,7 @@ public string[] Tags { get; set; }
 
 Tags associated with your resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/project#tags Project#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/project#tags Project#tags}
 
 ---
 
@@ -1095,8 +1095,8 @@ new ProjectDefaultClientSideAvailability {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-launchdarkly.project.ProjectDefaultClientSideAvailability.property.usingEnvironmentId">UsingEnvironmentId</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/project#using_environment_id Project#using_environment_id}. |
-| <code><a href="#@cdktf/provider-launchdarkly.project.ProjectDefaultClientSideAvailability.property.usingMobileKey">UsingMobileKey</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/project#using_mobile_key Project#using_mobile_key}. |
+| <code><a href="#@cdktf/provider-launchdarkly.project.ProjectDefaultClientSideAvailability.property.usingEnvironmentId">UsingEnvironmentId</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/project#using_environment_id Project#using_environment_id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.project.ProjectDefaultClientSideAvailability.property.usingMobileKey">UsingMobileKey</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/project#using_mobile_key Project#using_mobile_key}. |
 
 ---
 
@@ -1108,7 +1108,7 @@ public object UsingEnvironmentId { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/project#using_environment_id Project#using_environment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/project#using_environment_id Project#using_environment_id}.
 
 ---
 
@@ -1120,7 +1120,7 @@ public object UsingMobileKey { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/project#using_mobile_key Project#using_mobile_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/project#using_mobile_key Project#using_mobile_key}.
 
 ---
 
@@ -1172,7 +1172,7 @@ public string Color { get; set; }
 
 The color swatch as an RGB hex value with no leading `#`. For example: `000000`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/project#color Project#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/project#color Project#color}
 
 ---
 
@@ -1188,7 +1188,7 @@ The project-unique key for the environment.
 
 A change in this field will force the destruction of the existing resource and the creation of a new one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/project#key Project#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/project#key Project#key}
 
 ---
 
@@ -1202,7 +1202,7 @@ public string Name { get; set; }
 
 The name of the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/project#name Project#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/project#name Project#name}
 
 ---
 
@@ -1216,7 +1216,7 @@ public object ApprovalSettings { get; set; }
 
 approval_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/project#approval_settings Project#approval_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/project#approval_settings Project#approval_settings}
 
 ---
 
@@ -1232,7 +1232,7 @@ Set to `true` if this environment requires confirmation for flag and segment cha
 
 This field will default to `false` when not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/project#confirm_changes Project#confirm_changes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/project#confirm_changes Project#confirm_changes}
 
 ---
 
@@ -1248,7 +1248,7 @@ Set to `true` to enable data export for every flag created in this environment a
 
 This field will default to `false` when not set. To learn more, read [Data Export](https://docs.launchdarkly.com/home/data-export).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/project#default_track_events Project#default_track_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/project#default_track_events Project#default_track_events}
 
 ---
 
@@ -1264,7 +1264,7 @@ The TTL for the environment.
 
 This must be between 0 and 60 minutes. The TTL setting only applies to environments using the PHP SDK. This field will default to `0` when not set. To learn more, read [TTL settings](https://docs.launchdarkly.com/home/organize/environments#ttl-settings).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/project#default_ttl Project#default_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/project#default_ttl Project#default_ttl}
 
 ---
 
@@ -1280,7 +1280,7 @@ Set to `true` if this environment requires comments for flag and segment changes
 
 This field will default to `false` when not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/project#require_comments Project#require_comments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/project#require_comments Project#require_comments}
 
 ---
 
@@ -1296,7 +1296,7 @@ Set to `true` to ensure a user of the client-side SDK cannot impersonate another
 
 This field will default to `false` when not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/project#secure_mode Project#secure_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/project#secure_mode Project#secure_mode}
 
 ---
 
@@ -1310,7 +1310,7 @@ public string[] Tags { get; set; }
 
 Tags associated with your resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/project#tags Project#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/project#tags Project#tags}
 
 ---
 
@@ -1326,7 +1326,9 @@ new ProjectEnvironmentsApprovalSettings {
     object CanReviewOwnRequest = null,
     double MinNumApprovals = null,
     object Required = null,
-    string[] RequiredApprovalTags = null
+    string[] RequiredApprovalTags = null,
+    System.Collections.Generic.IDictionary<string, string> ServiceConfig = null,
+    string ServiceKind = null
 };
 ```
 
@@ -1339,6 +1341,8 @@ new ProjectEnvironmentsApprovalSettings {
 | <code><a href="#@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettings.property.minNumApprovals">MinNumApprovals</a></code> | <code>double</code> | The number of approvals required before an approval request can be applied. |
 | <code><a href="#@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettings.property.required">Required</a></code> | <code>object</code> | Set to `true` for changes to flags in this environment to require approval. |
 | <code><a href="#@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettings.property.requiredApprovalTags">RequiredApprovalTags</a></code> | <code>string[]</code> | An array of tags used to specify which flags with those tags require approval. |
+| <code><a href="#@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettings.property.serviceConfig">ServiceConfig</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | The configuration for the service associated with this approval. |
+| <code><a href="#@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettings.property.serviceKind">ServiceKind</a></code> | <code>string</code> | The kind of service associated with this approval. |
 
 ---
 
@@ -1354,7 +1358,7 @@ Set to `true` if changes can be applied as long as the `min_num_approvals` is me
 
 Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/project#can_apply_declined_changes Project#can_apply_declined_changes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/project#can_apply_declined_changes Project#can_apply_declined_changes}
 
 ---
 
@@ -1368,7 +1372,7 @@ public object CanReviewOwnRequest { get; set; }
 
 Set to `true` if requesters can approve or decline their own request. They may always comment. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/project#can_review_own_request Project#can_review_own_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/project#can_review_own_request Project#can_review_own_request}
 
 ---
 
@@ -1384,7 +1388,7 @@ The number of approvals required before an approval request can be applied.
 
 This number must be between 1 and 5. Defaults to 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/project#min_num_approvals Project#min_num_approvals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/project#min_num_approvals Project#min_num_approvals}
 
 ---
 
@@ -1400,7 +1404,7 @@ Set to `true` for changes to flags in this environment to require approval.
 
 You may only set `required` to true if `required_approval_tags` is not set and vice versa. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/project#required Project#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/project#required Project#required}
 
 ---
 
@@ -1416,7 +1420,44 @@ An array of tags used to specify which flags with those tags require approval.
 
 You may only set `required_approval_tags` if `required` is not set to `true` and vice versa.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.16.0/docs/resources/project#required_approval_tags Project#required_approval_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/project#required_approval_tags Project#required_approval_tags}
+
+---
+
+##### `ServiceConfig`<sup>Optional</sup> <a name="ServiceConfig" id="@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettings.property.serviceConfig"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> ServiceConfig { get; set; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
+
+The configuration for the service associated with this approval.
+
+This is specific to each approval service. For a `service_kind` of `servicenow`, the following fields apply:
+
+```
+ - `template` (String) The sys_id of the Standard Change Request Template in ServiceNow that LaunchDarkly will use when creating the change request.
+ - `detail_column` (String) The name of the ServiceNow Change Request column LaunchDarkly uses to populate detailed approval request information.
+```
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/project#service_config Project#service_config}
+
+---
+
+##### `ServiceKind`<sup>Optional</sup> <a name="ServiceKind" id="@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettings.property.serviceKind"></a>
+
+```csharp
+public string ServiceKind { get; set; }
+```
+
+- *Type:* string
+
+The kind of service associated with this approval.
+
+This determines which platform is used for requesting approval. Valid values are `servicenow`, `launchdarkly`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/project#service_kind Project#service_kind}
 
 ---
 
@@ -2092,6 +2133,8 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettingsOutputReference.resetMinNumApprovals">ResetMinNumApprovals</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettingsOutputReference.resetRequired">ResetRequired</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettingsOutputReference.resetRequiredApprovalTags">ResetRequiredApprovalTags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettingsOutputReference.resetServiceConfig">ResetServiceConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettingsOutputReference.resetServiceKind">ResetServiceKind</a></code> | *No description.* |
 
 ---
 
@@ -2275,6 +2318,18 @@ private void ResetRequired()
 private void ResetRequiredApprovalTags()
 ```
 
+##### `ResetServiceConfig` <a name="ResetServiceConfig" id="@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettingsOutputReference.resetServiceConfig"></a>
+
+```csharp
+private void ResetServiceConfig()
+```
+
+##### `ResetServiceKind` <a name="ResetServiceKind" id="@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettingsOutputReference.resetServiceKind"></a>
+
+```csharp
+private void ResetServiceKind()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -2287,11 +2342,15 @@ private void ResetRequiredApprovalTags()
 | <code><a href="#@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettingsOutputReference.property.minNumApprovalsInput">MinNumApprovalsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettingsOutputReference.property.requiredApprovalTagsInput">RequiredApprovalTagsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettingsOutputReference.property.requiredInput">RequiredInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettingsOutputReference.property.serviceConfigInput">ServiceConfigInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettingsOutputReference.property.serviceKindInput">ServiceKindInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettingsOutputReference.property.canApplyDeclinedChanges">CanApplyDeclinedChanges</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettingsOutputReference.property.canReviewOwnRequest">CanReviewOwnRequest</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettingsOutputReference.property.minNumApprovals">MinNumApprovals</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettingsOutputReference.property.required">Required</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettingsOutputReference.property.requiredApprovalTags">RequiredApprovalTags</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettingsOutputReference.property.serviceConfig">ServiceConfig</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettingsOutputReference.property.serviceKind">ServiceKind</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettingsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
 
 ---
@@ -2370,6 +2429,26 @@ public object RequiredInput { get; }
 
 ---
 
+##### `ServiceConfigInput`<sup>Optional</sup> <a name="ServiceConfigInput" id="@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettingsOutputReference.property.serviceConfigInput"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> ServiceConfigInput { get; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
+
+---
+
+##### `ServiceKindInput`<sup>Optional</sup> <a name="ServiceKindInput" id="@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettingsOutputReference.property.serviceKindInput"></a>
+
+```csharp
+public string ServiceKindInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `CanApplyDeclinedChanges`<sup>Required</sup> <a name="CanApplyDeclinedChanges" id="@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettingsOutputReference.property.canApplyDeclinedChanges"></a>
 
 ```csharp
@@ -2417,6 +2496,26 @@ public string[] RequiredApprovalTags { get; }
 ```
 
 - *Type:* string[]
+
+---
+
+##### `ServiceConfig`<sup>Required</sup> <a name="ServiceConfig" id="@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettingsOutputReference.property.serviceConfig"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> ServiceConfig { get; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
+
+---
+
+##### `ServiceKind`<sup>Required</sup> <a name="ServiceKind" id="@cdktf/provider-launchdarkly.project.ProjectEnvironmentsApprovalSettingsOutputReference.property.serviceKind"></a>
+
+```csharp
+public string ServiceKind { get; }
+```
+
+- *Type:* string
 
 ---
 
