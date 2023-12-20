@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchd
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklyRelayProxyConfiguration.DataLaunchdarklyRelayProxyConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklyrelayproxyconfiguration"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyrelayproxyconfiguration"
 
 datalaunchdarklyrelayproxyconfiguration.NewDataLaunchdarklyRelayProxyConfiguration(scope Construct, id *string, config DataLaunchdarklyRelayProxyConfigurationConfig) DataLaunchdarklyRelayProxyConfiguration
 ```
@@ -267,7 +267,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-launchdarkly.dataLaunchdarklyRelayProxyConfiguration.DataLaunchdarklyRelayProxyConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklyrelayproxyconfiguration"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyrelayproxyconfiguration"
 
 datalaunchdarklyrelayproxyconfiguration.DataLaunchdarklyRelayProxyConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -299,7 +299,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-launchdarkly.dataLaunchdarklyRelayProxyConfiguration.DataLaunchdarklyRelayProxyConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklyrelayproxyconfiguration"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyrelayproxyconfiguration"
 
 datalaunchdarklyrelayproxyconfiguration.DataLaunchdarklyRelayProxyConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -313,7 +313,7 @@ datalaunchdarklyrelayproxyconfiguration.DataLaunchdarklyRelayProxyConfiguration_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-launchdarkly.dataLaunchdarklyRelayProxyConfiguration.DataLaunchdarklyRelayProxyConfiguration.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklyrelayproxyconfiguration"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyrelayproxyconfiguration"
 
 datalaunchdarklyrelayproxyconfiguration.DataLaunchdarklyRelayProxyConfiguration_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ datalaunchdarklyrelayproxyconfiguration.DataLaunchdarklyRelayProxyConfiguration_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-launchdarkly.dataLaunchdarklyRelayProxyConfiguration.DataLaunchdarklyRelayProxyConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklyrelayproxyconfiguration"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyrelayproxyconfiguration"
 
 datalaunchdarklyrelayproxyconfiguration.DataLaunchdarklyRelayProxyConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -589,7 +589,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.dataLaunchdarklyRelayProxyConfiguration.DataLaunchdarklyRelayProxyConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklyrelayproxyconfiguration"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyrelayproxyconfiguration"
 
 &datalaunchdarklyrelayproxyconfiguration.DataLaunchdarklyRelayProxyConfigurationConfig {
 	Connection: interface{},
@@ -710,7 +710,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.dataLaunchdarklyRelayProxyConfiguration.DataLaunchdarklyRelayProxyConfigurationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklyrelayproxyconfiguration"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyrelayproxyconfiguration"
 
 &datalaunchdarklyrelayproxyconfiguration.DataLaunchdarklyRelayProxyConfigurationPolicy {
 
@@ -725,7 +725,7 @@ import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchd
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklyRelayProxyConfiguration.DataLaunchdarklyRelayProxyConfigurationPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklyrelayproxyconfiguration"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyrelayproxyconfiguration"
 
 datalaunchdarklyrelayproxyconfiguration.NewDataLaunchdarklyRelayProxyConfigurationPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLaunchdarklyRelayProxyConfigurationPolicyList
 ```
@@ -857,7 +857,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklyRelayProxyConfiguration.DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklyrelayproxyconfiguration"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyrelayproxyconfiguration"
 
 datalaunchdarklyrelayproxyconfiguration.NewDataLaunchdarklyRelayProxyConfigurationPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLaunchdarklyRelayProxyConfigurationPolicyOutputReference
 ```
