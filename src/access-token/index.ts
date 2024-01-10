@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/access_token
 // generated from terraform resource schema
 
@@ -114,6 +109,49 @@ export function accessTokenInlineRolesToTerraform(struct?: AccessTokenInlineRole
     not_resources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notResources),
     resources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resources),
   }
+}
+
+
+export function accessTokenInlineRolesToHclTerraform(struct?: AccessTokenInlineRoles | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    actions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.actions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    effect: {
+      value: cdktf.stringToHclTerraform(struct!.effect),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    not_actions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.notActions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    not_resources: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.notResources),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    resources: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resources),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AccessTokenInlineRolesOutputReference extends cdktf.ComplexObject {
@@ -327,6 +365,49 @@ export function accessTokenPolicyStatementsToTerraform(struct?: AccessTokenPolic
     not_resources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notResources),
     resources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resources),
   }
+}
+
+
+export function accessTokenPolicyStatementsToHclTerraform(struct?: AccessTokenPolicyStatements | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    actions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.actions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    effect: {
+      value: cdktf.stringToHclTerraform(struct!.effect),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    not_actions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.notActions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    not_resources: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.notResources),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    resources: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resources),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AccessTokenPolicyStatementsOutputReference extends cdktf.ComplexObject {
@@ -726,5 +807,67 @@ export class AccessToken extends cdktf.TerraformResource {
       inline_roles: cdktf.listMapper(accessTokenInlineRolesToTerraform, true)(this._inlineRoles.internalValue),
       policy_statements: cdktf.listMapper(accessTokenPolicyStatementsToTerraform, true)(this._policyStatements.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      custom_roles: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._customRoles),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      default_api_version: {
+        value: cdktf.numberToHclTerraform(this._defaultApiVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      expire: {
+        value: cdktf.numberToHclTerraform(this._expire),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role: {
+        value: cdktf.stringToHclTerraform(this._role),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_token: {
+        value: cdktf.booleanToHclTerraform(this._serviceToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      inline_roles: {
+        value: cdktf.listMapperHcl(accessTokenInlineRolesToHclTerraform, true)(this._inlineRoles.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AccessTokenInlineRolesList",
+      },
+      policy_statements: {
+        value: cdktf.listMapperHcl(accessTokenPolicyStatementsToHclTerraform, true)(this._policyStatements.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AccessTokenPolicyStatementsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

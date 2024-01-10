@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/data-sources/feature_flag_environment
 // generated from terraform resource schema
 
@@ -42,6 +37,17 @@ export function dataLaunchdarklyFeatureFlagEnvironmentContextTargetsToTerraform(
   }
   return {
   }
+}
+
+
+export function dataLaunchdarklyFeatureFlagEnvironmentContextTargetsToHclTerraform(struct?: DataLaunchdarklyFeatureFlagEnvironmentContextTargets): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataLaunchdarklyFeatureFlagEnvironmentContextTargetsOutputReference extends cdktf.ComplexObject {
@@ -116,6 +122,17 @@ export function dataLaunchdarklyFeatureFlagEnvironmentFallthroughToTerraform(str
   }
   return {
   }
+}
+
+
+export function dataLaunchdarklyFeatureFlagEnvironmentFallthroughToHclTerraform(struct?: DataLaunchdarklyFeatureFlagEnvironmentFallthrough): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataLaunchdarklyFeatureFlagEnvironmentFallthroughOutputReference extends cdktf.ComplexObject {
@@ -197,6 +214,17 @@ export function dataLaunchdarklyFeatureFlagEnvironmentPrerequisitesToTerraform(s
   }
 }
 
+
+export function dataLaunchdarklyFeatureFlagEnvironmentPrerequisitesToHclTerraform(struct?: DataLaunchdarklyFeatureFlagEnvironmentPrerequisites): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataLaunchdarklyFeatureFlagEnvironmentPrerequisitesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -264,6 +292,17 @@ export function dataLaunchdarklyFeatureFlagEnvironmentRulesClausesToTerraform(st
   }
   return {
   }
+}
+
+
+export function dataLaunchdarklyFeatureFlagEnvironmentRulesClausesToHclTerraform(struct?: DataLaunchdarklyFeatureFlagEnvironmentRulesClauses): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataLaunchdarklyFeatureFlagEnvironmentRulesClausesOutputReference extends cdktf.ComplexObject {
@@ -355,6 +394,17 @@ export function dataLaunchdarklyFeatureFlagEnvironmentRulesToTerraform(struct?: 
   }
 }
 
+
+export function dataLaunchdarklyFeatureFlagEnvironmentRulesToHclTerraform(struct?: DataLaunchdarklyFeatureFlagEnvironmentRules): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataLaunchdarklyFeatureFlagEnvironmentRulesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -438,6 +488,17 @@ export function dataLaunchdarklyFeatureFlagEnvironmentTargetsToTerraform(struct?
   }
   return {
   }
+}
+
+
+export function dataLaunchdarklyFeatureFlagEnvironmentTargetsToHclTerraform(struct?: DataLaunchdarklyFeatureFlagEnvironmentTargets): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataLaunchdarklyFeatureFlagEnvironmentTargetsOutputReference extends cdktf.ComplexObject {
@@ -655,5 +716,31 @@ export class DataLaunchdarklyFeatureFlagEnvironment extends cdktf.TerraformDataS
       flag_id: cdktf.stringToTerraform(this._flagId),
       id: cdktf.stringToTerraform(this._id),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      env_key: {
+        value: cdktf.stringToHclTerraform(this._envKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      flag_id: {
+        value: cdktf.stringToHclTerraform(this._flagId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

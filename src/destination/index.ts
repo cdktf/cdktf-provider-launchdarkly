@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/destination
 // generated from terraform resource schema
 
@@ -256,5 +251,61 @@ export class Destination extends cdktf.TerraformResource {
       project_key: cdktf.stringToTerraform(this._projectKey),
       tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      config: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._config),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      env_key: {
+        value: cdktf.stringToHclTerraform(this._envKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kind: {
+        value: cdktf.stringToHclTerraform(this._kind),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      on: {
+        value: cdktf.booleanToHclTerraform(this._on),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      project_key: {
+        value: cdktf.stringToHclTerraform(this._projectKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

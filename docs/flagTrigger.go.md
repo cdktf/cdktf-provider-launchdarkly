@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchd
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.flagTrigger.FlagTrigger.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/flagtrigger"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/flagtrigger"
 
 flagtrigger.NewFlagTrigger(scope Construct, id *string, config FlagTriggerConfig) FlagTrigger
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-launchdarkly.flagTrigger.FlagTrigger.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.flagTrigger.FlagTrigger.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-launchdarkly.flagTrigger.FlagTrigger.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-launchdarkly.flagTrigger.FlagTrigger.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.flagTrigger.FlagTrigger.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.flagTrigger.FlagTrigger.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-launchdarkly.flagTrigger.FlagTrigger.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -126,6 +127,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-launchdarkly.flagTrigger.FlagTrigger.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-launchdarkly.flagTrigger.FlagTrigger.toMetadata"></a>
 
@@ -391,7 +398,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-launchdarkly.flagTrigger.FlagTrigger.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/flagtrigger"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/flagtrigger"
 
 flagtrigger.FlagTrigger_IsConstruct(x interface{}) *bool
 ```
@@ -423,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-launchdarkly.flagTrigger.FlagTrigger.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/flagtrigger"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/flagtrigger"
 
 flagtrigger.FlagTrigger_IsTerraformElement(x interface{}) *bool
 ```
@@ -437,7 +444,7 @@ flagtrigger.FlagTrigger_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-launchdarkly.flagTrigger.FlagTrigger.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/flagtrigger"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/flagtrigger"
 
 flagtrigger.FlagTrigger_IsTerraformResource(x interface{}) *bool
 ```
@@ -451,7 +458,7 @@ flagtrigger.FlagTrigger_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-launchdarkly.flagTrigger.FlagTrigger.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/flagtrigger"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/flagtrigger"
 
 flagtrigger.FlagTrigger_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -856,7 +863,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.flagTrigger.FlagTriggerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/flagtrigger"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/flagtrigger"
 
 &flagtrigger.FlagTriggerConfig {
 	Connection: interface{},
@@ -869,7 +876,7 @@ import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/flagtrig
 	Enabled: interface{},
 	EnvKey: *string,
 	FlagKey: *string,
-	Instructions: github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3.flagTrigger.FlagTriggerInstructions,
+	Instructions: github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly.flagTrigger.FlagTriggerInstructions,
 	IntegrationKey: *string,
 	ProjectKey: *string,
 	Id: *string,
@@ -1073,7 +1080,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.flagTrigger.FlagTriggerInstructions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/flagtrigger"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/flagtrigger"
 
 &flagtrigger.FlagTriggerInstructions {
 	Kind: *string,
@@ -1109,7 +1116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.flagTrigger.FlagTriggerInstructionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/flagtrigger"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/flagtrigger"
 
 flagtrigger.NewFlagTriggerInstructionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FlagTriggerInstructionsOutputReference
 ```

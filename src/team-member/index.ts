@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/team_member
 // generated from terraform resource schema
 
@@ -220,5 +215,49 @@ export class TeamMember extends cdktf.TerraformResource {
       last_name: cdktf.stringToTerraform(this._lastName),
       role: cdktf.stringToTerraform(this._role),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      custom_roles: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._customRoles),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      email: {
+        value: cdktf.stringToHclTerraform(this._email),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      first_name: {
+        value: cdktf.stringToHclTerraform(this._firstName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      last_name: {
+        value: cdktf.stringToHclTerraform(this._lastName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role: {
+        value: cdktf.stringToHclTerraform(this._role),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

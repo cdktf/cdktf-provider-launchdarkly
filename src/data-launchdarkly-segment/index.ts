@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/data-sources/segment
 // generated from terraform resource schema
 
@@ -48,6 +43,17 @@ export function dataLaunchdarklySegmentExcludedContextsToTerraform(struct?: Data
   }
   return {
   }
+}
+
+
+export function dataLaunchdarklySegmentExcludedContextsToHclTerraform(struct?: DataLaunchdarklySegmentExcludedContexts): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataLaunchdarklySegmentExcludedContextsOutputReference extends cdktf.ComplexObject {
@@ -119,6 +125,17 @@ export function dataLaunchdarklySegmentIncludedContextsToTerraform(struct?: Data
   }
 }
 
+
+export function dataLaunchdarklySegmentIncludedContextsToHclTerraform(struct?: DataLaunchdarklySegmentIncludedContexts): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataLaunchdarklySegmentIncludedContextsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -186,6 +203,17 @@ export function dataLaunchdarklySegmentRulesClausesToTerraform(struct?: DataLaun
   }
   return {
   }
+}
+
+
+export function dataLaunchdarklySegmentRulesClausesToHclTerraform(struct?: DataLaunchdarklySegmentRulesClauses): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataLaunchdarklySegmentRulesClausesOutputReference extends cdktf.ComplexObject {
@@ -275,6 +303,17 @@ export function dataLaunchdarklySegmentRulesToTerraform(struct?: DataLaunchdarkl
   }
   return {
   }
+}
+
+
+export function dataLaunchdarklySegmentRulesToHclTerraform(struct?: DataLaunchdarklySegmentRules): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataLaunchdarklySegmentRulesOutputReference extends cdktf.ComplexObject {
@@ -531,5 +570,37 @@ export class DataLaunchdarklySegment extends cdktf.TerraformDataSource {
       key: cdktf.stringToTerraform(this._key),
       project_key: cdktf.stringToTerraform(this._projectKey),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      env_key: {
+        value: cdktf.stringToHclTerraform(this._envKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key: {
+        value: cdktf.stringToHclTerraform(this._key),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_key: {
+        value: cdktf.stringToHclTerraform(this._projectKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

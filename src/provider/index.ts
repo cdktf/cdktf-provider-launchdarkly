@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs
 // generated from terraform resource schema
 
@@ -192,5 +187,43 @@ export class LaunchdarklyProvider extends cdktf.TerraformProvider {
       oauth_token: cdktf.stringToTerraform(this._oauthToken),
       alias: cdktf.stringToTerraform(this._alias),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access_token: {
+        value: cdktf.stringToHclTerraform(this._accessToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      api_host: {
+        value: cdktf.stringToHclTerraform(this._apiHost),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      http_timeout: {
+        value: cdktf.numberToHclTerraform(this._httpTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      oauth_token: {
+        value: cdktf.stringToHclTerraform(this._oauthToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      alias: {
+        value: cdktf.stringToHclTerraform(this._alias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

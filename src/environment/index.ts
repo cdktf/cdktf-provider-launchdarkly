@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/environment
 // generated from terraform resource schema
 
@@ -148,6 +143,61 @@ export function environmentApprovalSettingsToTerraform(struct?: EnvironmentAppro
     service_config: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.serviceConfig),
     service_kind: cdktf.stringToTerraform(struct!.serviceKind),
   }
+}
+
+
+export function environmentApprovalSettingsToHclTerraform(struct?: EnvironmentApprovalSettings | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    can_apply_declined_changes: {
+      value: cdktf.booleanToHclTerraform(struct!.canApplyDeclinedChanges),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    can_review_own_request: {
+      value: cdktf.booleanToHclTerraform(struct!.canReviewOwnRequest),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    min_num_approvals: {
+      value: cdktf.numberToHclTerraform(struct!.minNumApprovals),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    required: {
+      value: cdktf.booleanToHclTerraform(struct!.required),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    required_approval_tags: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.requiredApprovalTags),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    service_config: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.serviceConfig),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    service_kind: {
+      value: cdktf.stringToHclTerraform(struct!.serviceKind),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class EnvironmentApprovalSettingsOutputReference extends cdktf.ComplexObject {
@@ -646,5 +696,85 @@ export class Environment extends cdktf.TerraformResource {
       tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
       approval_settings: cdktf.listMapper(environmentApprovalSettingsToTerraform, true)(this._approvalSettings.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      color: {
+        value: cdktf.stringToHclTerraform(this._color),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      confirm_changes: {
+        value: cdktf.booleanToHclTerraform(this._confirmChanges),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      default_track_events: {
+        value: cdktf.booleanToHclTerraform(this._defaultTrackEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      default_ttl: {
+        value: cdktf.numberToHclTerraform(this._defaultTtl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key: {
+        value: cdktf.stringToHclTerraform(this._key),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_key: {
+        value: cdktf.stringToHclTerraform(this._projectKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      require_comments: {
+        value: cdktf.booleanToHclTerraform(this._requireComments),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      secure_mode: {
+        value: cdktf.booleanToHclTerraform(this._secureMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tags: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      approval_settings: {
+        value: cdktf.listMapperHcl(environmentApprovalSettingsToHclTerraform, true)(this._approvalSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "EnvironmentApprovalSettingsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

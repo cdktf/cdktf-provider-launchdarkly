@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag_environment
 // generated from terraform resource schema
 
@@ -111,6 +106,37 @@ export function featureFlagEnvironmentContextTargetsToTerraform(struct?: Feature
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
     variation: cdktf.numberToTerraform(struct!.variation),
   }
+}
+
+
+export function featureFlagEnvironmentContextTargetsToHclTerraform(struct?: FeatureFlagEnvironmentContextTargets | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    context_kind: {
+      value: cdktf.stringToHclTerraform(struct!.contextKind),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    variation: {
+      value: cdktf.numberToHclTerraform(struct!.variation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FeatureFlagEnvironmentContextTargetsOutputReference extends cdktf.ComplexObject {
@@ -268,6 +294,43 @@ export function featureFlagEnvironmentFallthroughToTerraform(struct?: FeatureFla
   }
 }
 
+
+export function featureFlagEnvironmentFallthroughToHclTerraform(struct?: FeatureFlagEnvironmentFallthroughOutputReference | FeatureFlagEnvironmentFallthrough): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket_by: {
+      value: cdktf.stringToHclTerraform(struct!.bucketBy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    context_kind: {
+      value: cdktf.stringToHclTerraform(struct!.contextKind),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rollout_weights: {
+      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.rolloutWeights),
+      isBlock: false,
+      type: "list",
+      storageClassType: "numberList",
+    },
+    variation: {
+      value: cdktf.numberToHclTerraform(struct!.variation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class FeatureFlagEnvironmentFallthroughOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -406,6 +469,31 @@ export function featureFlagEnvironmentPrerequisitesToTerraform(struct?: FeatureF
     flag_key: cdktf.stringToTerraform(struct!.flagKey),
     variation: cdktf.numberToTerraform(struct!.variation),
   }
+}
+
+
+export function featureFlagEnvironmentPrerequisitesToHclTerraform(struct?: FeatureFlagEnvironmentPrerequisites | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    flag_key: {
+      value: cdktf.stringToHclTerraform(struct!.flagKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    variation: {
+      value: cdktf.numberToHclTerraform(struct!.variation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FeatureFlagEnvironmentPrerequisitesOutputReference extends cdktf.ComplexObject {
@@ -556,6 +644,55 @@ export function featureFlagEnvironmentRulesClausesToTerraform(struct?: FeatureFl
     value_type: cdktf.stringToTerraform(struct!.valueType),
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
+}
+
+
+export function featureFlagEnvironmentRulesClausesToHclTerraform(struct?: FeatureFlagEnvironmentRulesClauses | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    attribute: {
+      value: cdktf.stringToHclTerraform(struct!.attribute),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    context_kind: {
+      value: cdktf.stringToHclTerraform(struct!.contextKind),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    negate: {
+      value: cdktf.booleanToHclTerraform(struct!.negate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    op: {
+      value: cdktf.stringToHclTerraform(struct!.op),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value_type: {
+      value: cdktf.stringToHclTerraform(struct!.valueType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FeatureFlagEnvironmentRulesClausesOutputReference extends cdktf.ComplexObject {
@@ -786,6 +923,49 @@ export function featureFlagEnvironmentRulesToTerraform(struct?: FeatureFlagEnvir
   }
 }
 
+
+export function featureFlagEnvironmentRulesToHclTerraform(struct?: FeatureFlagEnvironmentRules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket_by: {
+      value: cdktf.stringToHclTerraform(struct!.bucketBy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rollout_weights: {
+      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.rolloutWeights),
+      isBlock: false,
+      type: "list",
+      storageClassType: "numberList",
+    },
+    variation: {
+      value: cdktf.numberToHclTerraform(struct!.variation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    clauses: {
+      value: cdktf.listMapperHcl(featureFlagEnvironmentRulesClausesToHclTerraform, true)(struct!.clauses),
+      isBlock: true,
+      type: "list",
+      storageClassType: "FeatureFlagEnvironmentRulesClausesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class FeatureFlagEnvironmentRulesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -978,6 +1158,31 @@ export function featureFlagEnvironmentTargetsToTerraform(struct?: FeatureFlagEnv
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
     variation: cdktf.numberToTerraform(struct!.variation),
   }
+}
+
+
+export function featureFlagEnvironmentTargetsToHclTerraform(struct?: FeatureFlagEnvironmentTargets | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    variation: {
+      value: cdktf.numberToHclTerraform(struct!.variation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FeatureFlagEnvironmentTargetsOutputReference extends cdktf.ComplexObject {
@@ -1327,5 +1532,79 @@ export class FeatureFlagEnvironment extends cdktf.TerraformResource {
       rules: cdktf.listMapper(featureFlagEnvironmentRulesToTerraform, true)(this._rules.internalValue),
       targets: cdktf.listMapper(featureFlagEnvironmentTargetsToTerraform, true)(this._targets.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      env_key: {
+        value: cdktf.stringToHclTerraform(this._envKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      flag_id: {
+        value: cdktf.stringToHclTerraform(this._flagId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      off_variation: {
+        value: cdktf.numberToHclTerraform(this._offVariation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      on: {
+        value: cdktf.booleanToHclTerraform(this._on),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      track_events: {
+        value: cdktf.booleanToHclTerraform(this._trackEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      context_targets: {
+        value: cdktf.listMapperHcl(featureFlagEnvironmentContextTargetsToHclTerraform, true)(this._contextTargets.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "FeatureFlagEnvironmentContextTargetsList",
+      },
+      fallthrough: {
+        value: featureFlagEnvironmentFallthroughToHclTerraform(this._fallthrough.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "FeatureFlagEnvironmentFallthroughList",
+      },
+      prerequisites: {
+        value: cdktf.listMapperHcl(featureFlagEnvironmentPrerequisitesToHclTerraform, true)(this._prerequisites.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "FeatureFlagEnvironmentPrerequisitesList",
+      },
+      rules: {
+        value: cdktf.listMapperHcl(featureFlagEnvironmentRulesToHclTerraform, true)(this._rules.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "FeatureFlagEnvironmentRulesList",
+      },
+      targets: {
+        value: cdktf.listMapperHcl(featureFlagEnvironmentTargetsToHclTerraform, true)(this._targets.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "FeatureFlagEnvironmentTargetsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

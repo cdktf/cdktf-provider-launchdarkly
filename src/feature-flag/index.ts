@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag
 // generated from terraform resource schema
 
@@ -128,6 +123,31 @@ export function featureFlagClientSideAvailabilityToTerraform(struct?: FeatureFla
     using_environment_id: cdktf.booleanToTerraform(struct!.usingEnvironmentId),
     using_mobile_key: cdktf.booleanToTerraform(struct!.usingMobileKey),
   }
+}
+
+
+export function featureFlagClientSideAvailabilityToHclTerraform(struct?: FeatureFlagClientSideAvailability | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    using_environment_id: {
+      value: cdktf.booleanToHclTerraform(struct!.usingEnvironmentId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    using_mobile_key: {
+      value: cdktf.booleanToHclTerraform(struct!.usingMobileKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FeatureFlagClientSideAvailabilityOutputReference extends cdktf.ComplexObject {
@@ -263,6 +283,37 @@ export function featureFlagCustomPropertiesToTerraform(struct?: FeatureFlagCusto
     name: cdktf.stringToTerraform(struct!.name),
     value: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.value),
   }
+}
+
+
+export function featureFlagCustomPropertiesToHclTerraform(struct?: FeatureFlagCustomProperties | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.value),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FeatureFlagCustomPropertiesOutputReference extends cdktf.ComplexObject {
@@ -406,6 +457,31 @@ export function featureFlagDefaultsToTerraform(struct?: FeatureFlagDefaultsOutpu
   }
 }
 
+
+export function featureFlagDefaultsToHclTerraform(struct?: FeatureFlagDefaultsOutputReference | FeatureFlagDefaults): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    off_variation: {
+      value: cdktf.numberToHclTerraform(struct!.offVariation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    on_variation: {
+      value: cdktf.numberToHclTerraform(struct!.onVariation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class FeatureFlagDefaultsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -509,6 +585,37 @@ export function featureFlagVariationsToTerraform(struct?: FeatureFlagVariations 
     name: cdktf.stringToTerraform(struct!.name),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function featureFlagVariationsToHclTerraform(struct?: FeatureFlagVariations | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FeatureFlagVariationsOutputReference extends cdktf.ComplexObject {
@@ -955,5 +1062,103 @@ export class FeatureFlag extends cdktf.TerraformResource {
       defaults: featureFlagDefaultsToTerraform(this._defaults.internalValue),
       variations: cdktf.listMapper(featureFlagVariationsToTerraform, true)(this._variations.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      archived: {
+        value: cdktf.booleanToHclTerraform(this._archived),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      include_in_snippet: {
+        value: cdktf.booleanToHclTerraform(this._includeInSnippet),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      key: {
+        value: cdktf.stringToHclTerraform(this._key),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      maintainer_id: {
+        value: cdktf.stringToHclTerraform(this._maintainerId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_key: {
+        value: cdktf.stringToHclTerraform(this._projectKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      temporary: {
+        value: cdktf.booleanToHclTerraform(this._temporary),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      variation_type: {
+        value: cdktf.stringToHclTerraform(this._variationType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_side_availability: {
+        value: cdktf.listMapperHcl(featureFlagClientSideAvailabilityToHclTerraform, true)(this._clientSideAvailability.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "FeatureFlagClientSideAvailabilityList",
+      },
+      custom_properties: {
+        value: cdktf.listMapperHcl(featureFlagCustomPropertiesToHclTerraform, true)(this._customProperties.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "FeatureFlagCustomPropertiesList",
+      },
+      defaults: {
+        value: featureFlagDefaultsToHclTerraform(this._defaults.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "FeatureFlagDefaultsList",
+      },
+      variations: {
+        value: cdktf.listMapperHcl(featureFlagVariationsToHclTerraform, true)(this._variations.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "FeatureFlagVariationsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
