@@ -124,6 +124,31 @@ export function segmentExcludedContextsToTerraform(struct?: SegmentExcludedConte
   }
 }
 
+
+export function segmentExcludedContextsToHclTerraform(struct?: SegmentExcludedContexts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    context_kind: {
+      value: cdktf.stringToHclTerraform(struct!.contextKind),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SegmentExcludedContextsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -244,6 +269,31 @@ export function segmentIncludedContextsToTerraform(struct?: SegmentIncludedConte
     context_kind: cdktf.stringToTerraform(struct!.contextKind),
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
+}
+
+
+export function segmentIncludedContextsToHclTerraform(struct?: SegmentIncludedContexts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    context_kind: {
+      value: cdktf.stringToHclTerraform(struct!.contextKind),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SegmentIncludedContextsOutputReference extends cdktf.ComplexObject {
@@ -394,6 +444,55 @@ export function segmentRulesClausesToTerraform(struct?: SegmentRulesClauses | cd
     value_type: cdktf.stringToTerraform(struct!.valueType),
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
+}
+
+
+export function segmentRulesClausesToHclTerraform(struct?: SegmentRulesClauses | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    attribute: {
+      value: cdktf.stringToHclTerraform(struct!.attribute),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    context_kind: {
+      value: cdktf.stringToHclTerraform(struct!.contextKind),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    negate: {
+      value: cdktf.booleanToHclTerraform(struct!.negate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    op: {
+      value: cdktf.stringToHclTerraform(struct!.op),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value_type: {
+      value: cdktf.stringToHclTerraform(struct!.valueType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SegmentRulesClausesOutputReference extends cdktf.ComplexObject {
@@ -615,6 +714,43 @@ export function segmentRulesToTerraform(struct?: SegmentRules | cdktf.IResolvabl
     weight: cdktf.numberToTerraform(struct!.weight),
     clauses: cdktf.listMapper(segmentRulesClausesToTerraform, true)(struct!.clauses),
   }
+}
+
+
+export function segmentRulesToHclTerraform(struct?: SegmentRules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket_by: {
+      value: cdktf.stringToHclTerraform(struct!.bucketBy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rollout_context_kind: {
+      value: cdktf.stringToHclTerraform(struct!.rolloutContextKind),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    weight: {
+      value: cdktf.numberToHclTerraform(struct!.weight),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    clauses: {
+      value: cdktf.listMapperHcl(segmentRulesClausesToHclTerraform, true)(struct!.clauses),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SegmentRulesClausesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SegmentRulesOutputReference extends cdktf.ComplexObject {
@@ -1073,5 +1209,97 @@ export class Segment extends cdktf.TerraformResource {
       included_contexts: cdktf.listMapper(segmentIncludedContextsToTerraform, true)(this._includedContexts.internalValue),
       rules: cdktf.listMapper(segmentRulesToTerraform, true)(this._rules.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      env_key: {
+        value: cdktf.stringToHclTerraform(this._envKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      excluded: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._excluded),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      included: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._included),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      key: {
+        value: cdktf.stringToHclTerraform(this._key),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_key: {
+        value: cdktf.stringToHclTerraform(this._projectKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      unbounded: {
+        value: cdktf.booleanToHclTerraform(this._unbounded),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      unbounded_context_kind: {
+        value: cdktf.stringToHclTerraform(this._unboundedContextKind),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      excluded_contexts: {
+        value: cdktf.listMapperHcl(segmentExcludedContextsToHclTerraform, true)(this._excludedContexts.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SegmentExcludedContextsList",
+      },
+      included_contexts: {
+        value: cdktf.listMapperHcl(segmentIncludedContextsToHclTerraform, true)(this._includedContexts.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SegmentIncludedContextsList",
+      },
+      rules: {
+        value: cdktf.listMapperHcl(segmentRulesToHclTerraform, true)(this._rules.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SegmentRulesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

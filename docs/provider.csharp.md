@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.resetAccessToken">ResetAccessToken</a></code> | *No description.* |
@@ -113,6 +114,12 @@ private void ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.toHclTerraform"></a>
+
+```csharp
+private object ToHclTerraform()
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-launchdarkly.provider.LaunchdarklyProvider.toMetadata"></a>
 

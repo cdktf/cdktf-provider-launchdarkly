@@ -126,4 +126,24 @@ export class TeamRoleMapping extends cdktf.TerraformResource {
       team_key: cdktf.stringToTerraform(this._teamKey),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      custom_role_keys: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._customRoleKeys),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      team_key: {
+        value: cdktf.stringToHclTerraform(this._teamKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

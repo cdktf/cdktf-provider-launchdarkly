@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchd
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFlagTrigger.DataLaunchdarklyFlagTrigger.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyflagtrigger"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklyflagtrigger"
 
 datalaunchdarklyflagtrigger.NewDataLaunchdarklyFlagTrigger(scope Construct, id *string, config DataLaunchdarklyFlagTriggerConfig) DataLaunchdarklyFlagTrigger
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFlagTrigger.DataLaunchdarklyFlagTrigger.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFlagTrigger.DataLaunchdarklyFlagTrigger.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFlagTrigger.DataLaunchdarklyFlagTrigger.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFlagTrigger.DataLaunchdarklyFlagTrigger.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFlagTrigger.DataLaunchdarklyFlagTrigger.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFlagTrigger.DataLaunchdarklyFlagTrigger.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFlagTrigger.DataLaunchdarklyFlagTrigger.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -122,6 +123,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFlagTrigger.DataLaunchdarklyFlagTrigger.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFlagTrigger.DataLaunchdarklyFlagTrigger.toMetadata"></a>
 
@@ -301,7 +310,7 @@ func ResetIntegrationKey()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFlagTrigger.DataLaunchdarklyFlagTrigger.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyflagtrigger"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklyflagtrigger"
 
 datalaunchdarklyflagtrigger.DataLaunchdarklyFlagTrigger_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +342,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFlagTrigger.DataLaunchdarklyFlagTrigger.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyflagtrigger"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklyflagtrigger"
 
 datalaunchdarklyflagtrigger.DataLaunchdarklyFlagTrigger_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +356,7 @@ datalaunchdarklyflagtrigger.DataLaunchdarklyFlagTrigger_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFlagTrigger.DataLaunchdarklyFlagTrigger.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyflagtrigger"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklyflagtrigger"
 
 datalaunchdarklyflagtrigger.DataLaunchdarklyFlagTrigger_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -361,7 +370,7 @@ datalaunchdarklyflagtrigger.DataLaunchdarklyFlagTrigger_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFlagTrigger.DataLaunchdarklyFlagTrigger.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyflagtrigger"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklyflagtrigger"
 
 datalaunchdarklyflagtrigger.DataLaunchdarklyFlagTrigger_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -744,7 +753,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFlagTrigger.DataLaunchdarklyFlagTriggerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyflagtrigger"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklyflagtrigger"
 
 &datalaunchdarklyflagtrigger.DataLaunchdarklyFlagTriggerConfig {
 	Connection: interface{},
@@ -759,7 +768,7 @@ import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaun
 	Id: *string,
 	ProjectKey: *string,
 	Enabled: interface{},
-	Instructions: github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3.dataLaunchdarklyFlagTrigger.DataLaunchdarklyFlagTriggerInstructions,
+	Instructions: github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4.dataLaunchdarklyFlagTrigger.DataLaunchdarklyFlagTriggerInstructions,
 	IntegrationKey: *string,
 }
 ```
@@ -965,7 +974,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFlagTrigger.DataLaunchdarklyFlagTriggerInstructions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyflagtrigger"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklyflagtrigger"
 
 &datalaunchdarklyflagtrigger.DataLaunchdarklyFlagTriggerInstructions {
 	Kind: *string,
@@ -1001,7 +1010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFlagTrigger.DataLaunchdarklyFlagTriggerInstructionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v3/datalaunchdarklyflagtrigger"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklyflagtrigger"
 
 datalaunchdarklyflagtrigger.NewDataLaunchdarklyFlagTriggerInstructionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLaunchdarklyFlagTriggerInstructionsOutputReference
 ```

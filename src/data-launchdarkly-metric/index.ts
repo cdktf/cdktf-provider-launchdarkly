@@ -144,6 +144,43 @@ export function dataLaunchdarklyMetricUrlsToTerraform(struct?: DataLaunchdarklyM
   }
 }
 
+
+export function dataLaunchdarklyMetricUrlsToHclTerraform(struct?: DataLaunchdarklyMetricUrls | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    kind: {
+      value: cdktf.stringToHclTerraform(struct!.kind),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pattern: {
+      value: cdktf.stringToHclTerraform(struct!.pattern),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    substring: {
+      value: cdktf.stringToHclTerraform(struct!.substring),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    url: {
+      value: cdktf.stringToHclTerraform(struct!.url),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataLaunchdarklyMetricUrlsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -621,5 +658,103 @@ export class DataLaunchdarklyMetric extends cdktf.TerraformDataSource {
       unit: cdktf.stringToTerraform(this._unit),
       urls: cdktf.listMapper(dataLaunchdarklyMetricUrlsToTerraform, true)(this._urls.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      event_key: {
+        value: cdktf.stringToHclTerraform(this._eventKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      is_active: {
+        value: cdktf.booleanToHclTerraform(this._isActive),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      is_numeric: {
+        value: cdktf.booleanToHclTerraform(this._isNumeric),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      key: {
+        value: cdktf.stringToHclTerraform(this._key),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kind: {
+        value: cdktf.stringToHclTerraform(this._kind),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      maintainer_id: {
+        value: cdktf.stringToHclTerraform(this._maintainerId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_key: {
+        value: cdktf.stringToHclTerraform(this._projectKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      randomization_units: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._randomizationUnits),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      selector: {
+        value: cdktf.stringToHclTerraform(this._selector),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      success_criteria: {
+        value: cdktf.stringToHclTerraform(this._successCriteria),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      unit: {
+        value: cdktf.stringToHclTerraform(this._unit),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      urls: {
+        value: cdktf.listMapperHcl(dataLaunchdarklyMetricUrlsToHclTerraform, true)(this._urls.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataLaunchdarklyMetricUrlsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

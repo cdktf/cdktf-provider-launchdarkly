@@ -242,4 +242,54 @@ export class Team extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      custom_role_keys: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._customRoleKeys),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key: {
+        value: cdktf.stringToHclTerraform(this._key),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      maintainers: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._maintainers),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      member_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._memberIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

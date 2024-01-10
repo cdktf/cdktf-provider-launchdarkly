@@ -78,6 +78,31 @@ export function projectDefaultClientSideAvailabilityToTerraform(struct?: Project
   }
 }
 
+
+export function projectDefaultClientSideAvailabilityToHclTerraform(struct?: ProjectDefaultClientSideAvailability | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    using_environment_id: {
+      value: cdktf.booleanToHclTerraform(struct!.usingEnvironmentId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    using_mobile_key: {
+      value: cdktf.booleanToHclTerraform(struct!.usingMobileKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ProjectDefaultClientSideAvailabilityOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -236,6 +261,61 @@ export function projectEnvironmentsApprovalSettingsToTerraform(struct?: ProjectE
     service_config: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.serviceConfig),
     service_kind: cdktf.stringToTerraform(struct!.serviceKind),
   }
+}
+
+
+export function projectEnvironmentsApprovalSettingsToHclTerraform(struct?: ProjectEnvironmentsApprovalSettings | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    can_apply_declined_changes: {
+      value: cdktf.booleanToHclTerraform(struct!.canApplyDeclinedChanges),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    can_review_own_request: {
+      value: cdktf.booleanToHclTerraform(struct!.canReviewOwnRequest),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    min_num_approvals: {
+      value: cdktf.numberToHclTerraform(struct!.minNumApprovals),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    required: {
+      value: cdktf.booleanToHclTerraform(struct!.required),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    required_approval_tags: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.requiredApprovalTags),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    service_config: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.serviceConfig),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    service_kind: {
+      value: cdktf.stringToHclTerraform(struct!.serviceKind),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ProjectEnvironmentsApprovalSettingsOutputReference extends cdktf.ComplexObject {
@@ -530,6 +610,79 @@ export function projectEnvironmentsToTerraform(struct?: ProjectEnvironments | cd
     tags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tags),
     approval_settings: cdktf.listMapper(projectEnvironmentsApprovalSettingsToTerraform, true)(struct!.approvalSettings),
   }
+}
+
+
+export function projectEnvironmentsToHclTerraform(struct?: ProjectEnvironments | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    color: {
+      value: cdktf.stringToHclTerraform(struct!.color),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    confirm_changes: {
+      value: cdktf.booleanToHclTerraform(struct!.confirmChanges),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    default_track_events: {
+      value: cdktf.booleanToHclTerraform(struct!.defaultTrackEvents),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    default_ttl: {
+      value: cdktf.numberToHclTerraform(struct!.defaultTtl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    require_comments: {
+      value: cdktf.booleanToHclTerraform(struct!.requireComments),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    secure_mode: {
+      value: cdktf.booleanToHclTerraform(struct!.secureMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    tags: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.tags),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    approval_settings: {
+      value: cdktf.listMapperHcl(projectEnvironmentsApprovalSettingsToHclTerraform, true)(struct!.approvalSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ProjectEnvironmentsApprovalSettingsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ProjectEnvironmentsOutputReference extends cdktf.ComplexObject {
@@ -998,5 +1151,55 @@ export class Project extends cdktf.TerraformResource {
       default_client_side_availability: cdktf.listMapper(projectDefaultClientSideAvailabilityToTerraform, true)(this._defaultClientSideAvailability.internalValue),
       environments: cdktf.listMapper(projectEnvironmentsToTerraform, true)(this._environments.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      include_in_snippet: {
+        value: cdktf.booleanToHclTerraform(this._includeInSnippet),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      key: {
+        value: cdktf.stringToHclTerraform(this._key),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      default_client_side_availability: {
+        value: cdktf.listMapperHcl(projectDefaultClientSideAvailabilityToHclTerraform, true)(this._defaultClientSideAvailability.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ProjectDefaultClientSideAvailabilityList",
+      },
+      environments: {
+        value: cdktf.listMapperHcl(projectEnvironmentsToHclTerraform, true)(this._environments.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ProjectEnvironmentsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
