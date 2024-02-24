@@ -4,7 +4,7 @@
 
 ### DataLaunchdarklyFeatureFlag <a name="DataLaunchdarklyFeatureFlag" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/data-sources/feature_flag launchdarkly_feature_flag}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/data-sources/feature_flag launchdarkly_feature_flag}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.Initializer"></a>
 
@@ -23,7 +23,9 @@ dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   key: str,
   project_key: str,
-  id: str = None
+  id: str = None,
+  maintainer_id: str = None,
+  maintainer_team_key: str = None
 )
 ```
 
@@ -40,7 +42,9 @@ dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag(
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.Initializer.parameter.key">key</a></code> | <code>str</code> | The unique feature flag key that references the flag in your application code. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.Initializer.parameter.projectKey">project_key</a></code> | <code>str</code> | The feature flag's project key. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/data-sources/feature_flag#id DataLaunchdarklyFeatureFlag#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/data-sources/feature_flag#id DataLaunchdarklyFeatureFlag#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.Initializer.parameter.maintainerId">maintainer_id</a></code> | <code>str</code> | The feature flag maintainer's 24 character alphanumeric team member ID. |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.Initializer.parameter.maintainerTeamKey">maintainer_team_key</a></code> | <code>str</code> | The key of the associated team that maintains this feature flag. `maintainer_id` cannot be set if `maintainer_team_key` is set. |
 
 ---
 
@@ -110,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The unique feature flag key that references the flag in your application code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/data-sources/feature_flag#key DataLaunchdarklyFeatureFlag#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/data-sources/feature_flag#key DataLaunchdarklyFeatureFlag#key}
 
 ---
 
@@ -120,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 The feature flag's project key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/data-sources/feature_flag#project_key DataLaunchdarklyFeatureFlag#project_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/data-sources/feature_flag#project_key DataLaunchdarklyFeatureFlag#project_key}
 
 ---
 
@@ -128,10 +132,32 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/data-sources/feature_flag#id DataLaunchdarklyFeatureFlag#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/data-sources/feature_flag#id DataLaunchdarklyFeatureFlag#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `maintainer_id`<sup>Optional</sup> <a name="maintainer_id" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.Initializer.parameter.maintainerId"></a>
+
+- *Type:* str
+
+The feature flag maintainer's 24 character alphanumeric team member ID.
+
+`maintainer_team_key` cannot be set if `maintainer_id` is set. If neither is set, it will automatically be or stay set to the member ID associated with the API key used by your LaunchDarkly Terraform provider or the most recently-set maintainer.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/data-sources/feature_flag#maintainer_id DataLaunchdarklyFeatureFlag#maintainer_id}
+
+---
+
+##### `maintainer_team_key`<sup>Optional</sup> <a name="maintainer_team_key" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.Initializer.parameter.maintainerTeamKey"></a>
+
+- *Type:* str
+
+The key of the associated team that maintains this feature flag. `maintainer_id` cannot be set if `maintainer_team_key` is set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/data-sources/feature_flag#maintainer_team_key DataLaunchdarklyFeatureFlag#maintainer_team_key}
 
 ---
 
@@ -157,6 +183,8 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.resetMaintainerId">reset_maintainer_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.resetMaintainerTeamKey">reset_maintainer_team_key</a></code> | *No description.* |
 
 ---
 
@@ -383,6 +411,18 @@ def interpolation_for_attribute(
 def reset_id() -> None
 ```
 
+##### `reset_maintainer_id` <a name="reset_maintainer_id" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.resetMaintainerId"></a>
+
+```python
+def reset_maintainer_id() -> None
+```
+
+##### `reset_maintainer_team_key` <a name="reset_maintainer_team_key" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.resetMaintainerTeamKey"></a>
+
+```python
+def reset_maintainer_team_key() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -497,7 +537,7 @@ The construct id used in the generated config for the DataLaunchdarklyFeatureFla
 
 The id of the existing DataLaunchdarklyFeatureFlag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/data-sources/feature_flag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/data-sources/feature_flag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -531,7 +571,6 @@ Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchd
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.property.defaults">defaults</a></code> | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagDefaultsList">DataLaunchdarklyFeatureFlagDefaultsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.property.includeInSnippet">include_in_snippet</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.property.maintainerId">maintainer_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.property.tags">tags</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.property.temporary">temporary</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
@@ -539,9 +578,13 @@ Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchd
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.property.variationType">variation_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.property.maintainerIdInput">maintainer_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.property.maintainerTeamKeyInput">maintainer_team_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.property.projectKeyInput">project_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.property.maintainerId">maintainer_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.property.maintainerTeamKey">maintainer_team_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.property.projectKey">project_key</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -728,16 +771,6 @@ include_in_snippet: IResolvable
 
 ---
 
-##### `maintainer_id`<sup>Required</sup> <a name="maintainer_id" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.property.maintainerId"></a>
-
-```python
-maintainer_id: str
-```
-
-- *Type:* str
-
----
-
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.property.name"></a>
 
 ```python
@@ -808,6 +841,26 @@ key_input: str
 
 ---
 
+##### `maintainer_id_input`<sup>Optional</sup> <a name="maintainer_id_input" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.property.maintainerIdInput"></a>
+
+```python
+maintainer_id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `maintainer_team_key_input`<sup>Optional</sup> <a name="maintainer_team_key_input" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.property.maintainerTeamKeyInput"></a>
+
+```python
+maintainer_team_key_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `project_key_input`<sup>Optional</sup> <a name="project_key_input" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.property.projectKeyInput"></a>
 
 ```python
@@ -832,6 +885,26 @@ id: str
 
 ```python
 key: str
+```
+
+- *Type:* str
+
+---
+
+##### `maintainer_id`<sup>Required</sup> <a name="maintainer_id" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.property.maintainerId"></a>
+
+```python
+maintainer_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `maintainer_team_key`<sup>Required</sup> <a name="maintainer_team_key" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlag.property.maintainerTeamKey"></a>
+
+```python
+maintainer_team_key: str
 ```
 
 - *Type:* str
@@ -896,7 +969,9 @@ dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   key: str,
   project_key: str,
-  id: str = None
+  id: str = None,
+  maintainer_id: str = None,
+  maintainer_team_key: str = None
 )
 ```
 
@@ -913,7 +988,9 @@ dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagConfig(
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagConfig.property.key">key</a></code> | <code>str</code> | The unique feature flag key that references the flag in your application code. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagConfig.property.projectKey">project_key</a></code> | <code>str</code> | The feature flag's project key. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/data-sources/feature_flag#id DataLaunchdarklyFeatureFlag#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/data-sources/feature_flag#id DataLaunchdarklyFeatureFlag#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagConfig.property.maintainerId">maintainer_id</a></code> | <code>str</code> | The feature flag maintainer's 24 character alphanumeric team member ID. |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagConfig.property.maintainerTeamKey">maintainer_team_key</a></code> | <code>str</code> | The key of the associated team that maintains this feature flag. `maintainer_id` cannot be set if `maintainer_team_key` is set. |
 
 ---
 
@@ -997,7 +1074,7 @@ key: str
 
 The unique feature flag key that references the flag in your application code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/data-sources/feature_flag#key DataLaunchdarklyFeatureFlag#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/data-sources/feature_flag#key DataLaunchdarklyFeatureFlag#key}
 
 ---
 
@@ -1011,7 +1088,7 @@ project_key: str
 
 The feature flag's project key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/data-sources/feature_flag#project_key DataLaunchdarklyFeatureFlag#project_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/data-sources/feature_flag#project_key DataLaunchdarklyFeatureFlag#project_key}
 
 ---
 
@@ -1023,10 +1100,40 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/data-sources/feature_flag#id DataLaunchdarklyFeatureFlag#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/data-sources/feature_flag#id DataLaunchdarklyFeatureFlag#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `maintainer_id`<sup>Optional</sup> <a name="maintainer_id" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagConfig.property.maintainerId"></a>
+
+```python
+maintainer_id: str
+```
+
+- *Type:* str
+
+The feature flag maintainer's 24 character alphanumeric team member ID.
+
+`maintainer_team_key` cannot be set if `maintainer_id` is set. If neither is set, it will automatically be or stay set to the member ID associated with the API key used by your LaunchDarkly Terraform provider or the most recently-set maintainer.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/data-sources/feature_flag#maintainer_id DataLaunchdarklyFeatureFlag#maintainer_id}
+
+---
+
+##### `maintainer_team_key`<sup>Optional</sup> <a name="maintainer_team_key" id="@cdktf/provider-launchdarkly.dataLaunchdarklyFeatureFlag.DataLaunchdarklyFeatureFlagConfig.property.maintainerTeamKey"></a>
+
+```python
+maintainer_team_key: str
+```
+
+- *Type:* str
+
+The key of the associated team that maintains this feature flag. `maintainer_id` cannot be set if `maintainer_team_key` is set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/data-sources/feature_flag#maintainer_team_key DataLaunchdarklyFeatureFlag#maintainer_team_key}
 
 ---
 

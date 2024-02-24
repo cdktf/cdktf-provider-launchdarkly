@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/data-sources/feature_flag
+// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/data-sources/feature_flag
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataLaunchdarklyFeatureFlagConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/data-sources/feature_flag#id DataLaunchdarklyFeatureFlag#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/data-sources/feature_flag#id DataLaunchdarklyFeatureFlag#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +22,25 @@ export interface DataLaunchdarklyFeatureFlagConfig extends cdktf.TerraformMetaAr
   /**
   * The unique feature flag key that references the flag in your application code.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/data-sources/feature_flag#key DataLaunchdarklyFeatureFlag#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/data-sources/feature_flag#key DataLaunchdarklyFeatureFlag#key}
   */
   readonly key: string;
   /**
+  * The feature flag maintainer's 24 character alphanumeric team member ID. `maintainer_team_key` cannot be set if `maintainer_id` is set. If neither is set, it will automatically be or stay set to the member ID associated with the API key used by your LaunchDarkly Terraform provider or the most recently-set maintainer.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/data-sources/feature_flag#maintainer_id DataLaunchdarklyFeatureFlag#maintainer_id}
+  */
+  readonly maintainerId?: string;
+  /**
+  * The key of the associated team that maintains this feature flag. `maintainer_id` cannot be set if `maintainer_team_key` is set
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/data-sources/feature_flag#maintainer_team_key DataLaunchdarklyFeatureFlag#maintainer_team_key}
+  */
+  readonly maintainerTeamKey?: string;
+  /**
   * The feature flag's project key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/data-sources/feature_flag#project_key DataLaunchdarklyFeatureFlag#project_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/data-sources/feature_flag#project_key DataLaunchdarklyFeatureFlag#project_key}
   */
   readonly projectKey: string;
 }
@@ -364,7 +376,7 @@ export class DataLaunchdarklyFeatureFlagVariationsList extends cdktf.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/data-sources/feature_flag launchdarkly_feature_flag}
+* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/data-sources/feature_flag launchdarkly_feature_flag}
 */
 export class DataLaunchdarklyFeatureFlag extends cdktf.TerraformDataSource {
 
@@ -380,7 +392,7 @@ export class DataLaunchdarklyFeatureFlag extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataLaunchdarklyFeatureFlag resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataLaunchdarklyFeatureFlag to import
-  * @param importFromId The id of the existing DataLaunchdarklyFeatureFlag that should be imported. Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/data-sources/feature_flag#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataLaunchdarklyFeatureFlag that should be imported. Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/data-sources/feature_flag#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataLaunchdarklyFeatureFlag to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -392,7 +404,7 @@ export class DataLaunchdarklyFeatureFlag extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/data-sources/feature_flag launchdarkly_feature_flag} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/data-sources/feature_flag launchdarkly_feature_flag} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -403,7 +415,7 @@ export class DataLaunchdarklyFeatureFlag extends cdktf.TerraformDataSource {
       terraformResourceType: 'launchdarkly_feature_flag',
       terraformGeneratorMetadata: {
         providerName: 'launchdarkly',
-        providerVersion: '2.17.0',
+        providerVersion: '2.18.0',
         providerVersionConstraint: '~> 2.13'
       },
       provider: config.provider,
@@ -416,6 +428,8 @@ export class DataLaunchdarklyFeatureFlag extends cdktf.TerraformDataSource {
     });
     this._id = config.id;
     this._key = config.key;
+    this._maintainerId = config.maintainerId;
+    this._maintainerTeamKey = config.maintainerTeamKey;
     this._projectKey = config.projectKey;
   }
 
@@ -485,9 +499,36 @@ export class DataLaunchdarklyFeatureFlag extends cdktf.TerraformDataSource {
     return this._key;
   }
 
-  // maintainer_id - computed: true, optional: false, required: false
+  // maintainer_id - computed: true, optional: true, required: false
+  private _maintainerId?: string; 
   public get maintainerId() {
     return this.getStringAttribute('maintainer_id');
+  }
+  public set maintainerId(value: string) {
+    this._maintainerId = value;
+  }
+  public resetMaintainerId() {
+    this._maintainerId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maintainerIdInput() {
+    return this._maintainerId;
+  }
+
+  // maintainer_team_key - computed: true, optional: true, required: false
+  private _maintainerTeamKey?: string; 
+  public get maintainerTeamKey() {
+    return this.getStringAttribute('maintainer_team_key');
+  }
+  public set maintainerTeamKey(value: string) {
+    this._maintainerTeamKey = value;
+  }
+  public resetMaintainerTeamKey() {
+    this._maintainerTeamKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maintainerTeamKeyInput() {
+    return this._maintainerTeamKey;
   }
 
   // name - computed: true, optional: false, required: false
@@ -537,6 +578,8 @@ export class DataLaunchdarklyFeatureFlag extends cdktf.TerraformDataSource {
     return {
       id: cdktf.stringToTerraform(this._id),
       key: cdktf.stringToTerraform(this._key),
+      maintainer_id: cdktf.stringToTerraform(this._maintainerId),
+      maintainer_team_key: cdktf.stringToTerraform(this._maintainerTeamKey),
       project_key: cdktf.stringToTerraform(this._projectKey),
     };
   }
@@ -551,6 +594,18 @@ export class DataLaunchdarklyFeatureFlag extends cdktf.TerraformDataSource {
       },
       key: {
         value: cdktf.stringToHclTerraform(this._key),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      maintainer_id: {
+        value: cdktf.stringToHclTerraform(this._maintainerId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      maintainer_team_key: {
+        value: cdktf.stringToHclTerraform(this._maintainerTeamKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

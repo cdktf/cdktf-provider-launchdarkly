@@ -4,7 +4,7 @@
 
 ### FeatureFlag <a name="FeatureFlag" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag launchdarkly_feature_flag}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag launchdarkly_feature_flag}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer"></a>
 
@@ -33,6 +33,7 @@ featureFlag.FeatureFlag(
   id: str = None,
   include_in_snippet: typing.Union[bool, IResolvable] = None,
   maintainer_id: str = None,
+  maintainer_team_key: str = None,
   tags: typing.List[str] = None,
   temporary: typing.Union[bool, IResolvable] = None,
   variations: typing.Union[IResolvable, typing.List[FeatureFlagVariations]] = None
@@ -59,9 +60,10 @@ featureFlag.FeatureFlag(
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.customProperties">custom_properties</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomProperties">FeatureFlagCustomProperties</a>]]</code> | custom_properties block. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.defaults">defaults</a></code> | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagDefaults">FeatureFlagDefaults</a></code> | defaults block. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.description">description</a></code> | <code>str</code> | The feature flag's description. |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#id FeatureFlag#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#id FeatureFlag#id}. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.includeInSnippet">include_in_snippet</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether this flag should be made available to the client-side JavaScript SDK using the client-side Id. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.maintainerId">maintainer_id</a></code> | <code>str</code> | The feature flag maintainer's 24 character alphanumeric team member ID. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.maintainerTeamKey">maintainer_team_key</a></code> | <code>str</code> | The key of the associated team that maintains this feature flag. `maintainer_id` cannot be set if `maintainer_team_key` is set. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.tags">tags</a></code> | <code>typing.List[str]</code> | Tags associated with your resource. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.temporary">temporary</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether the flag is a temporary flag. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.variations">variations</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariations">FeatureFlagVariations</a>]]</code> | variations block. |
@@ -136,7 +138,7 @@ The unique feature flag key that references the flag in your application code.
 
 A change in this field will force the destruction of the existing resource and the creation of a new one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#key FeatureFlag#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#key FeatureFlag#key}
 
 ---
 
@@ -146,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 The human-readable name of the feature flag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#name FeatureFlag#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#name FeatureFlag#name}
 
 ---
 
@@ -158,7 +160,7 @@ The feature flag's project key.
 
 A change in this field will force the destruction of the existing resource and the creation of a new one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#project_key FeatureFlag#project_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#project_key FeatureFlag#project_key}
 
 ---
 
@@ -168,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 The feature flag's variation type: `boolean`, `string`, `number` or `json`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#variation_type FeatureFlag#variation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#variation_type FeatureFlag#variation_type}
 
 ---
 
@@ -180,7 +182,7 @@ Specifies whether the flag is archived or not.
 
 Note that you cannot create a new flag that is archived, but can update a flag to be archived.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#archived FeatureFlag#archived}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#archived FeatureFlag#archived}
 
 ---
 
@@ -190,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 client_side_availability block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#client_side_availability FeatureFlag#client_side_availability}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#client_side_availability FeatureFlag#client_side_availability}
 
 ---
 
@@ -200,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 custom_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#custom_properties FeatureFlag#custom_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#custom_properties FeatureFlag#custom_properties}
 
 ---
 
@@ -210,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 defaults block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#defaults FeatureFlag#defaults}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#defaults FeatureFlag#defaults}
 
 ---
 
@@ -220,7 +222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 The feature flag's description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#description FeatureFlag#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#description FeatureFlag#description}
 
 ---
 
@@ -228,7 +230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#id FeatureFlag#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#id FeatureFlag#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -243,7 +245,7 @@ Specifies whether this flag should be made available to the client-side JavaScri
 
 This value gets its default from your project configuration if not set. `include_in_snippet` is now deprecated. Please migrate to `client_side_availability.using_environment_id` to maintain future compatibility.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#include_in_snippet FeatureFlag#include_in_snippet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#include_in_snippet FeatureFlag#include_in_snippet}
 
 ---
 
@@ -253,9 +255,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 The feature flag maintainer's 24 character alphanumeric team member ID.
 
-If not set, it will automatically be or stay set to the member ID associated with the API key used by your LaunchDarkly Terraform provider or the most recently-set maintainer.
+`maintainer_team_key` cannot be set if `maintainer_id` is set. If neither is set, it will automatically be or stay set to the member ID associated with the API key used by your LaunchDarkly Terraform provider or the most recently-set maintainer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#maintainer_id FeatureFlag#maintainer_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#maintainer_id FeatureFlag#maintainer_id}
+
+---
+
+##### `maintainer_team_key`<sup>Optional</sup> <a name="maintainer_team_key" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.maintainerTeamKey"></a>
+
+- *Type:* str
+
+The key of the associated team that maintains this feature flag. `maintainer_id` cannot be set if `maintainer_team_key` is set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#maintainer_team_key FeatureFlag#maintainer_team_key}
 
 ---
 
@@ -265,7 +277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 Tags associated with your resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#tags FeatureFlag#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#tags FeatureFlag#tags}
 
 ---
 
@@ -275,7 +287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 Specifies whether the flag is a temporary flag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#temporary FeatureFlag#temporary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#temporary FeatureFlag#temporary}
 
 ---
 
@@ -285,7 +297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 variations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#variations FeatureFlag#variations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#variations FeatureFlag#variations}
 
 ---
 
@@ -328,6 +340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.resetIncludeInSnippet">reset_include_in_snippet</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.resetMaintainerId">reset_maintainer_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.resetMaintainerTeamKey">reset_maintainer_team_key</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.resetTags">reset_tags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.resetTemporary">reset_temporary</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.resetVariations">reset_variations</a></code> | *No description.* |
@@ -702,7 +715,7 @@ def put_defaults(
 
 The index of the variation the flag will default to in all new environments when off.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#off_variation FeatureFlag#off_variation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#off_variation FeatureFlag#off_variation}
 
 ---
 
@@ -712,7 +725,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 The index of the variation the flag will default to in all new environments when on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#on_variation FeatureFlag#on_variation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#on_variation FeatureFlag#on_variation}
 
 ---
 
@@ -776,6 +789,12 @@ def reset_include_in_snippet() -> None
 
 ```python
 def reset_maintainer_id() -> None
+```
+
+##### `reset_maintainer_team_key` <a name="reset_maintainer_team_key" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.resetMaintainerTeamKey"></a>
+
+```python
+def reset_maintainer_team_key() -> None
 ```
 
 ##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.resetTags"></a>
@@ -910,7 +929,7 @@ The construct id used in the generated config for the FeatureFlag to import.
 
 The id of the existing FeatureFlag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -953,6 +972,7 @@ Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchd
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.includeInSnippetInput">include_in_snippet_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.maintainerIdInput">maintainer_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.maintainerTeamKeyInput">maintainer_team_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.projectKeyInput">project_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.tagsInput">tags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -965,6 +985,7 @@ Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchd
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.includeInSnippet">include_in_snippet</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.maintainerId">maintainer_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.maintainerTeamKey">maintainer_team_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.projectKey">project_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.tags">tags</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -1245,6 +1266,16 @@ maintainer_id_input: str
 
 ---
 
+##### `maintainer_team_key_input`<sup>Optional</sup> <a name="maintainer_team_key_input" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.maintainerTeamKeyInput"></a>
+
+```python
+maintainer_team_key_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.nameInput"></a>
 
 ```python
@@ -1365,6 +1396,16 @@ maintainer_id: str
 
 ---
 
+##### `maintainer_team_key`<sup>Required</sup> <a name="maintainer_team_key" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.maintainerTeamKey"></a>
+
+```python
+maintainer_team_key: str
+```
+
+- *Type:* str
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.name"></a>
 
 ```python
@@ -1467,7 +1508,7 @@ using_environment_id: typing.Union[bool, IResolvable]
 
 Whether this flag is available to SDKs using the client-side ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#using_environment_id FeatureFlag#using_environment_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#using_environment_id FeatureFlag#using_environment_id}
 
 ---
 
@@ -1481,7 +1522,7 @@ using_mobile_key: typing.Union[bool, IResolvable]
 
 Whether this flag is available to SDKs using a mobile key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#using_mobile_key FeatureFlag#using_mobile_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#using_mobile_key FeatureFlag#using_mobile_key}
 
 ---
 
@@ -1512,6 +1553,7 @@ featureFlag.FeatureFlagConfig(
   id: str = None,
   include_in_snippet: typing.Union[bool, IResolvable] = None,
   maintainer_id: str = None,
+  maintainer_team_key: str = None,
   tags: typing.List[str] = None,
   temporary: typing.Union[bool, IResolvable] = None,
   variations: typing.Union[IResolvable, typing.List[FeatureFlagVariations]] = None
@@ -1538,9 +1580,10 @@ featureFlag.FeatureFlagConfig(
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.customProperties">custom_properties</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomProperties">FeatureFlagCustomProperties</a>]]</code> | custom_properties block. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.defaults">defaults</a></code> | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagDefaults">FeatureFlagDefaults</a></code> | defaults block. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.description">description</a></code> | <code>str</code> | The feature flag's description. |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#id FeatureFlag#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#id FeatureFlag#id}. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.includeInSnippet">include_in_snippet</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether this flag should be made available to the client-side JavaScript SDK using the client-side Id. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.maintainerId">maintainer_id</a></code> | <code>str</code> | The feature flag maintainer's 24 character alphanumeric team member ID. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.maintainerTeamKey">maintainer_team_key</a></code> | <code>str</code> | The key of the associated team that maintains this feature flag. `maintainer_id` cannot be set if `maintainer_team_key` is set. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.tags">tags</a></code> | <code>typing.List[str]</code> | Tags associated with your resource. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.temporary">temporary</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether the flag is a temporary flag. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.variations">variations</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariations">FeatureFlagVariations</a>]]</code> | variations block. |
@@ -1629,7 +1672,7 @@ The unique feature flag key that references the flag in your application code.
 
 A change in this field will force the destruction of the existing resource and the creation of a new one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#key FeatureFlag#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#key FeatureFlag#key}
 
 ---
 
@@ -1643,7 +1686,7 @@ name: str
 
 The human-readable name of the feature flag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#name FeatureFlag#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#name FeatureFlag#name}
 
 ---
 
@@ -1659,7 +1702,7 @@ The feature flag's project key.
 
 A change in this field will force the destruction of the existing resource and the creation of a new one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#project_key FeatureFlag#project_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#project_key FeatureFlag#project_key}
 
 ---
 
@@ -1673,7 +1716,7 @@ variation_type: str
 
 The feature flag's variation type: `boolean`, `string`, `number` or `json`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#variation_type FeatureFlag#variation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#variation_type FeatureFlag#variation_type}
 
 ---
 
@@ -1689,7 +1732,7 @@ Specifies whether the flag is archived or not.
 
 Note that you cannot create a new flag that is archived, but can update a flag to be archived.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#archived FeatureFlag#archived}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#archived FeatureFlag#archived}
 
 ---
 
@@ -1703,7 +1746,7 @@ client_side_availability: typing.Union[IResolvable, typing.List[FeatureFlagClien
 
 client_side_availability block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#client_side_availability FeatureFlag#client_side_availability}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#client_side_availability FeatureFlag#client_side_availability}
 
 ---
 
@@ -1717,7 +1760,7 @@ custom_properties: typing.Union[IResolvable, typing.List[FeatureFlagCustomProper
 
 custom_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#custom_properties FeatureFlag#custom_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#custom_properties FeatureFlag#custom_properties}
 
 ---
 
@@ -1731,7 +1774,7 @@ defaults: FeatureFlagDefaults
 
 defaults block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#defaults FeatureFlag#defaults}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#defaults FeatureFlag#defaults}
 
 ---
 
@@ -1745,7 +1788,7 @@ description: str
 
 The feature flag's description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#description FeatureFlag#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#description FeatureFlag#description}
 
 ---
 
@@ -1757,7 +1800,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#id FeatureFlag#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#id FeatureFlag#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1776,7 +1819,7 @@ Specifies whether this flag should be made available to the client-side JavaScri
 
 This value gets its default from your project configuration if not set. `include_in_snippet` is now deprecated. Please migrate to `client_side_availability.using_environment_id` to maintain future compatibility.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#include_in_snippet FeatureFlag#include_in_snippet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#include_in_snippet FeatureFlag#include_in_snippet}
 
 ---
 
@@ -1790,9 +1833,23 @@ maintainer_id: str
 
 The feature flag maintainer's 24 character alphanumeric team member ID.
 
-If not set, it will automatically be or stay set to the member ID associated with the API key used by your LaunchDarkly Terraform provider or the most recently-set maintainer.
+`maintainer_team_key` cannot be set if `maintainer_id` is set. If neither is set, it will automatically be or stay set to the member ID associated with the API key used by your LaunchDarkly Terraform provider or the most recently-set maintainer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#maintainer_id FeatureFlag#maintainer_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#maintainer_id FeatureFlag#maintainer_id}
+
+---
+
+##### `maintainer_team_key`<sup>Optional</sup> <a name="maintainer_team_key" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.maintainerTeamKey"></a>
+
+```python
+maintainer_team_key: str
+```
+
+- *Type:* str
+
+The key of the associated team that maintains this feature flag. `maintainer_id` cannot be set if `maintainer_team_key` is set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#maintainer_team_key FeatureFlag#maintainer_team_key}
 
 ---
 
@@ -1806,7 +1863,7 @@ tags: typing.List[str]
 
 Tags associated with your resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#tags FeatureFlag#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#tags FeatureFlag#tags}
 
 ---
 
@@ -1820,7 +1877,7 @@ temporary: typing.Union[bool, IResolvable]
 
 Specifies whether the flag is a temporary flag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#temporary FeatureFlag#temporary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#temporary FeatureFlag#temporary}
 
 ---
 
@@ -1834,7 +1891,7 @@ variations: typing.Union[IResolvable, typing.List[FeatureFlagVariations]]
 
 variations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#variations FeatureFlag#variations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#variations FeatureFlag#variations}
 
 ---
 
@@ -1872,7 +1929,7 @@ key: str
 
 The unique custom property key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#key FeatureFlag#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#key FeatureFlag#key}
 
 ---
 
@@ -1886,7 +1943,7 @@ name: str
 
 The name of the custom property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#name FeatureFlag#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#name FeatureFlag#name}
 
 ---
 
@@ -1900,7 +1957,7 @@ value: typing.List[str]
 
 The list of custom property value strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#value FeatureFlag#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#value FeatureFlag#value}
 
 ---
 
@@ -1936,7 +1993,7 @@ off_variation: typing.Union[int, float]
 
 The index of the variation the flag will default to in all new environments when off.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#off_variation FeatureFlag#off_variation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#off_variation FeatureFlag#off_variation}
 
 ---
 
@@ -1950,7 +2007,7 @@ on_variation: typing.Union[int, float]
 
 The index of the variation the flag will default to in all new environments when on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#on_variation FeatureFlag#on_variation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#on_variation FeatureFlag#on_variation}
 
 ---
 
@@ -1998,7 +2055,7 @@ variations {
 }
 ```
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#value FeatureFlag#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#value FeatureFlag#value}
 
 ---
 
@@ -2012,7 +2069,7 @@ description: str
 
 The variation's description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#description FeatureFlag#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#description FeatureFlag#description}
 
 ---
 
@@ -2026,7 +2083,7 @@ name: str
 
 The name of the variation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.17.0/docs/resources/feature_flag#name FeatureFlag#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/feature_flag#name FeatureFlag#name}
 
 ---
 
