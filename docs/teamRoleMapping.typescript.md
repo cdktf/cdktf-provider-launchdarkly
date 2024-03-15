@@ -4,7 +4,7 @@
 
 ### TeamRoleMapping <a name="TeamRoleMapping" id="@cdktf/provider-launchdarkly.teamRoleMapping.TeamRoleMapping"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/team_role_mapping launchdarkly_team_role_mapping}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.1/docs/resources/team_role_mapping launchdarkly_team_role_mapping}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.teamRoleMapping.TeamRoleMapping.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the TeamRoleMapping to import.
 
 The id of the existing TeamRoleMapping that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/team_role_mapping#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.1/docs/resources/team_role_mapping#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -823,7 +823,7 @@ public readonly customRoleKeys: string[];
 
 A set of custom role keys to assign to the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/team_role_mapping#custom_role_keys TeamRoleMapping#custom_role_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.1/docs/resources/team_role_mapping#custom_role_keys TeamRoleMapping#custom_role_keys}
 
 ---
 
@@ -837,7 +837,7 @@ public readonly teamKey: string;
 
 The LaunchDarkly team key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.0/docs/resources/team_role_mapping#team_key TeamRoleMapping#team_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.1/docs/resources/team_role_mapping#team_key TeamRoleMapping#team_key}
 
 ---
 
