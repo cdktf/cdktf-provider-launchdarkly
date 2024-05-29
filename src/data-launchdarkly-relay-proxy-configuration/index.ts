@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.3/docs/data-sources/relay_proxy_configuration
+// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/relay_proxy_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +10,7 @@ export interface DataLaunchdarklyRelayProxyConfigurationConfig extends cdktf.Ter
   /**
   * The Relay Proxy configuration's unique 24 character ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.3/docs/data-sources/relay_proxy_configuration#id DataLaunchdarklyRelayProxyConfiguration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/relay_proxy_configuration#id DataLaunchdarklyRelayProxyConfiguration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -119,7 +114,7 @@ export class DataLaunchdarklyRelayProxyConfigurationPolicyList extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.3/docs/data-sources/relay_proxy_configuration launchdarkly_relay_proxy_configuration}
+* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/relay_proxy_configuration launchdarkly_relay_proxy_configuration}
 */
 export class DataLaunchdarklyRelayProxyConfiguration extends cdktf.TerraformDataSource {
 
@@ -135,7 +130,7 @@ export class DataLaunchdarklyRelayProxyConfiguration extends cdktf.TerraformData
   * Generates CDKTF code for importing a DataLaunchdarklyRelayProxyConfiguration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataLaunchdarklyRelayProxyConfiguration to import
-  * @param importFromId The id of the existing DataLaunchdarklyRelayProxyConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.3/docs/data-sources/relay_proxy_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataLaunchdarklyRelayProxyConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/relay_proxy_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataLaunchdarklyRelayProxyConfiguration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -147,7 +142,7 @@ export class DataLaunchdarklyRelayProxyConfiguration extends cdktf.TerraformData
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.3/docs/data-sources/relay_proxy_configuration launchdarkly_relay_proxy_configuration} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/relay_proxy_configuration launchdarkly_relay_proxy_configuration} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -158,7 +153,7 @@ export class DataLaunchdarklyRelayProxyConfiguration extends cdktf.TerraformData
       terraformResourceType: 'launchdarkly_relay_proxy_configuration',
       terraformGeneratorMetadata: {
         providerName: 'launchdarkly',
-        providerVersion: '2.18.3',
+        providerVersion: '2.18.4',
         providerVersionConstraint: '~> 2.13'
       },
       provider: config.provider,
