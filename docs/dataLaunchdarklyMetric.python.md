@@ -4,7 +4,7 @@
 
 ### DataLaunchdarklyMetric <a name="DataLaunchdarklyMetric" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric launchdarkly_metric}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/metric launchdarkly_metric}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer"></a>
 
@@ -23,19 +23,7 @@ dataLaunchdarklyMetric.DataLaunchdarklyMetric(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   key: str,
   project_key: str,
-  description: str = None,
-  event_key: str = None,
-  id: str = None,
-  is_active: typing.Union[bool, IResolvable] = None,
-  is_numeric: typing.Union[bool, IResolvable] = None,
-  kind: str = None,
-  maintainer_id: str = None,
-  name: str = None,
-  randomization_units: typing.List[str] = None,
-  selector: str = None,
-  success_criteria: str = None,
-  unit: str = None,
-  urls: typing.Union[IResolvable, typing.List[DataLaunchdarklyMetricUrls]] = None
+  id: str = None
 )
 ```
 
@@ -50,21 +38,9 @@ dataLaunchdarklyMetric.DataLaunchdarklyMetric(
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer.parameter.key">key</a></code> | <code>str</code> | A unique key that will be used to reference the metric in your code. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer.parameter.projectKey">project_key</a></code> | <code>str</code> | The LaunchDarkly project key. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer.parameter.description">description</a></code> | <code>str</code> | A short description of what the metric will be used for. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer.parameter.eventKey">event_key</a></code> | <code>str</code> | The event key for your metric (if custom metric). |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#id DataLaunchdarklyMetric#id}. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer.parameter.isActive">is_active</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the metric is active. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer.parameter.isNumeric">is_numeric</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the metric is numeric. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer.parameter.kind">kind</a></code> | <code>str</code> | The metric type -available choices are 'pageview', 'click', and 'custom'. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer.parameter.maintainerId">maintainer_id</a></code> | <code>str</code> | The LaunchDarkly ID of the user who will maintain the metric. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer.parameter.name">name</a></code> | <code>str</code> | A human-readable name for your metric. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer.parameter.randomizationUnits">randomization_units</a></code> | <code>typing.List[str]</code> | A set of one or more context kinds that this metric can measure events from. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer.parameter.selector">selector</a></code> | <code>str</code> | The CSS selector for your metric (if click metric). |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer.parameter.successCriteria">success_criteria</a></code> | <code>str</code> | The success criteria for your metric (if numeric metric). |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer.parameter.unit">unit</a></code> | <code>str</code> | The unit for your metric (if numeric metric). |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer.parameter.urls">urls</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrls">DataLaunchdarklyMetricUrls</a>]]</code> | urls block. |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer.parameter.key">key</a></code> | <code>str</code> | The unique key that references the metric. |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer.parameter.projectKey">project_key</a></code> | <code>str</code> | The metrics's project key. |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/metric#id DataLaunchdarklyMetric#id}. |
 
 ---
 
@@ -132,9 +108,11 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-A unique key that will be used to reference the metric in your code.
+The unique key that references the metric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#key DataLaunchdarklyMetric#key}
+A change in this field will force the destruction of the existing resource and the creation of a new one.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/metric#key DataLaunchdarklyMetric#key}
 
 ---
 
@@ -142,29 +120,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 - *Type:* str
 
-The LaunchDarkly project key.
+The metrics's project key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#project_key DataLaunchdarklyMetric#project_key}
+A change in this field will force the destruction of the existing resource and the creation of a new one.
 
----
-
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer.parameter.description"></a>
-
-- *Type:* str
-
-A short description of what the metric will be used for.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#description DataLaunchdarklyMetric#description}
-
----
-
-##### `event_key`<sup>Optional</sup> <a name="event_key" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer.parameter.eventKey"></a>
-
-- *Type:* str
-
-The event key for your metric (if custom metric).
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#event_key DataLaunchdarklyMetric#event_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/metric#project_key DataLaunchdarklyMetric#project_key}
 
 ---
 
@@ -172,112 +132,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#id DataLaunchdarklyMetric#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/metric#id DataLaunchdarklyMetric#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `is_active`<sup>Optional</sup> <a name="is_active" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer.parameter.isActive"></a>
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Whether the metric is active.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#is_active DataLaunchdarklyMetric#is_active}
-
----
-
-##### `is_numeric`<sup>Optional</sup> <a name="is_numeric" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer.parameter.isNumeric"></a>
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Whether the metric is numeric.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#is_numeric DataLaunchdarklyMetric#is_numeric}
-
----
-
-##### `kind`<sup>Optional</sup> <a name="kind" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer.parameter.kind"></a>
-
-- *Type:* str
-
-The metric type -available choices are 'pageview', 'click', and 'custom'.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#kind DataLaunchdarklyMetric#kind}
-
----
-
-##### `maintainer_id`<sup>Optional</sup> <a name="maintainer_id" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer.parameter.maintainerId"></a>
-
-- *Type:* str
-
-The LaunchDarkly ID of the user who will maintain the metric.
-
-If not set, the API will automatically apply the member associated with your Terraform API key or the most recently-set maintainer
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#maintainer_id DataLaunchdarklyMetric#maintainer_id}
-
----
-
-##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer.parameter.name"></a>
-
-- *Type:* str
-
-A human-readable name for your metric.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#name DataLaunchdarklyMetric#name}
-
----
-
-##### `randomization_units`<sup>Optional</sup> <a name="randomization_units" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer.parameter.randomizationUnits"></a>
-
-- *Type:* typing.List[str]
-
-A set of one or more context kinds that this metric can measure events from.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#randomization_units DataLaunchdarklyMetric#randomization_units}
-
----
-
-##### `selector`<sup>Optional</sup> <a name="selector" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer.parameter.selector"></a>
-
-- *Type:* str
-
-The CSS selector for your metric (if click metric).
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#selector DataLaunchdarklyMetric#selector}
-
----
-
-##### `success_criteria`<sup>Optional</sup> <a name="success_criteria" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer.parameter.successCriteria"></a>
-
-- *Type:* str
-
-The success criteria for your metric (if numeric metric).
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#success_criteria DataLaunchdarklyMetric#success_criteria}
-
----
-
-##### `unit`<sup>Optional</sup> <a name="unit" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer.parameter.unit"></a>
-
-- *Type:* str
-
-The unit for your metric (if numeric metric).
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#unit DataLaunchdarklyMetric#unit}
-
----
-
-##### `urls`<sup>Optional</sup> <a name="urls" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer.parameter.urls"></a>
-
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrls">DataLaunchdarklyMetricUrls</a>]]
-
-urls block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#urls DataLaunchdarklyMetric#urls}
 
 ---
 
@@ -302,20 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.putUrls">put_urls</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.resetDescription">reset_description</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.resetEventKey">reset_event_key</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.resetIsActive">reset_is_active</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.resetIsNumeric">reset_is_numeric</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.resetKind">reset_kind</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.resetMaintainerId">reset_maintainer_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.resetName">reset_name</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.resetRandomizationUnits">reset_randomization_units</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.resetSelector">reset_selector</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.resetSuccessCriteria">reset_success_criteria</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.resetUnit">reset_unit</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.resetUrls">reset_urls</a></code> | *No description.* |
 
 ---
 
@@ -536,96 +381,10 @@ def interpolation_for_attribute(
 
 ---
 
-##### `put_urls` <a name="put_urls" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.putUrls"></a>
-
-```python
-def put_urls(
-  value: typing.Union[IResolvable, typing.List[DataLaunchdarklyMetricUrls]]
-) -> None
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.putUrls.parameter.value"></a>
-
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrls">DataLaunchdarklyMetricUrls</a>]]
-
----
-
-##### `reset_description` <a name="reset_description" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.resetDescription"></a>
-
-```python
-def reset_description() -> None
-```
-
-##### `reset_event_key` <a name="reset_event_key" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.resetEventKey"></a>
-
-```python
-def reset_event_key() -> None
-```
-
 ##### `reset_id` <a name="reset_id" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.resetId"></a>
 
 ```python
 def reset_id() -> None
-```
-
-##### `reset_is_active` <a name="reset_is_active" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.resetIsActive"></a>
-
-```python
-def reset_is_active() -> None
-```
-
-##### `reset_is_numeric` <a name="reset_is_numeric" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.resetIsNumeric"></a>
-
-```python
-def reset_is_numeric() -> None
-```
-
-##### `reset_kind` <a name="reset_kind" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.resetKind"></a>
-
-```python
-def reset_kind() -> None
-```
-
-##### `reset_maintainer_id` <a name="reset_maintainer_id" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.resetMaintainerId"></a>
-
-```python
-def reset_maintainer_id() -> None
-```
-
-##### `reset_name` <a name="reset_name" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.resetName"></a>
-
-```python
-def reset_name() -> None
-```
-
-##### `reset_randomization_units` <a name="reset_randomization_units" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.resetRandomizationUnits"></a>
-
-```python
-def reset_randomization_units() -> None
-```
-
-##### `reset_selector` <a name="reset_selector" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.resetSelector"></a>
-
-```python
-def reset_selector() -> None
-```
-
-##### `reset_success_criteria` <a name="reset_success_criteria" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.resetSuccessCriteria"></a>
-
-```python
-def reset_success_criteria() -> None
-```
-
-##### `reset_unit` <a name="reset_unit" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.resetUnit"></a>
-
-```python
-def reset_unit() -> None
-```
-
-##### `reset_urls` <a name="reset_urls" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.resetUrls"></a>
-
-```python
-def reset_urls() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -742,7 +501,7 @@ The construct id used in the generated config for the DataLaunchdarklyMetric to 
 
 The id of the existing DataLaunchdarklyMetric that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/metric#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -770,37 +529,25 @@ Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchd
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.tags">tags</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.urls">urls</a></code> | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsList">DataLaunchdarklyMetricUrlsList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.eventKeyInput">event_key_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.isActiveInput">is_active_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.isNumericInput">is_numeric_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.kindInput">kind_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.maintainerIdInput">maintainer_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.projectKeyInput">project_key_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.randomizationUnitsInput">randomization_units_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.selectorInput">selector_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.successCriteriaInput">success_criteria_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.unitInput">unit_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.urlsInput">urls_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrls">DataLaunchdarklyMetricUrls</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.eventKey">event_key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.isActive">is_active</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.isNumeric">is_numeric</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.isActive">is_active</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.isNumeric">is_numeric</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.kind">kind</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.maintainerId">maintainer_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.projectKey">project_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.randomizationUnits">randomization_units</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.selector">selector</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.successCriteria">success_criteria</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.tags">tags</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.unit">unit</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.urls">urls</a></code> | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsList">DataLaunchdarklyMetricUrlsList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.projectKeyInput">project_key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.projectKey">project_key</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -926,176 +673,6 @@ provider: TerraformProvider
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.tags"></a>
-
-```python
-tags: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
----
-
-##### `urls`<sup>Required</sup> <a name="urls" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.urls"></a>
-
-```python
-urls: DataLaunchdarklyMetricUrlsList
-```
-
-- *Type:* <a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsList">DataLaunchdarklyMetricUrlsList</a>
-
----
-
-##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.descriptionInput"></a>
-
-```python
-description_input: str
-```
-
-- *Type:* str
-
----
-
-##### `event_key_input`<sup>Optional</sup> <a name="event_key_input" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.eventKeyInput"></a>
-
-```python
-event_key_input: str
-```
-
-- *Type:* str
-
----
-
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.idInput"></a>
-
-```python
-id_input: str
-```
-
-- *Type:* str
-
----
-
-##### `is_active_input`<sup>Optional</sup> <a name="is_active_input" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.isActiveInput"></a>
-
-```python
-is_active_input: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `is_numeric_input`<sup>Optional</sup> <a name="is_numeric_input" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.isNumericInput"></a>
-
-```python
-is_numeric_input: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.keyInput"></a>
-
-```python
-key_input: str
-```
-
-- *Type:* str
-
----
-
-##### `kind_input`<sup>Optional</sup> <a name="kind_input" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.kindInput"></a>
-
-```python
-kind_input: str
-```
-
-- *Type:* str
-
----
-
-##### `maintainer_id_input`<sup>Optional</sup> <a name="maintainer_id_input" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.maintainerIdInput"></a>
-
-```python
-maintainer_id_input: str
-```
-
-- *Type:* str
-
----
-
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.nameInput"></a>
-
-```python
-name_input: str
-```
-
-- *Type:* str
-
----
-
-##### `project_key_input`<sup>Optional</sup> <a name="project_key_input" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.projectKeyInput"></a>
-
-```python
-project_key_input: str
-```
-
-- *Type:* str
-
----
-
-##### `randomization_units_input`<sup>Optional</sup> <a name="randomization_units_input" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.randomizationUnitsInput"></a>
-
-```python
-randomization_units_input: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
----
-
-##### `selector_input`<sup>Optional</sup> <a name="selector_input" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.selectorInput"></a>
-
-```python
-selector_input: str
-```
-
-- *Type:* str
-
----
-
-##### `success_criteria_input`<sup>Optional</sup> <a name="success_criteria_input" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.successCriteriaInput"></a>
-
-```python
-success_criteria_input: str
-```
-
-- *Type:* str
-
----
-
-##### `unit_input`<sup>Optional</sup> <a name="unit_input" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.unitInput"></a>
-
-```python
-unit_input: str
-```
-
-- *Type:* str
-
----
-
-##### `urls_input`<sup>Optional</sup> <a name="urls_input" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.urlsInput"></a>
-
-```python
-urls_input: typing.Union[IResolvable, typing.List[DataLaunchdarklyMetricUrls]]
-```
-
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrls">DataLaunchdarklyMetricUrls</a>]]
-
----
-
 ##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.description"></a>
 
 ```python
@@ -1116,43 +693,23 @@ event_key: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
----
-
 ##### `is_active`<sup>Required</sup> <a name="is_active" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.isActive"></a>
 
 ```python
-is_active: typing.Union[bool, IResolvable]
+is_active: IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* cdktf.IResolvable
 
 ---
 
 ##### `is_numeric`<sup>Required</sup> <a name="is_numeric" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.isNumeric"></a>
 
 ```python
-is_numeric: typing.Union[bool, IResolvable]
+is_numeric: IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.key"></a>
-
-```python
-key: str
-```
-
-- *Type:* str
+- *Type:* cdktf.IResolvable
 
 ---
 
@@ -1180,16 +737,6 @@ maintainer_id: str
 
 ```python
 name: str
-```
-
-- *Type:* str
-
----
-
-##### `project_key`<sup>Required</sup> <a name="project_key" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.projectKey"></a>
-
-```python
-project_key: str
 ```
 
 - *Type:* str
@@ -1226,10 +773,90 @@ success_criteria: str
 
 ---
 
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.tags"></a>
+
+```python
+tags: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `unit`<sup>Required</sup> <a name="unit" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.unit"></a>
 
 ```python
 unit: str
+```
+
+- *Type:* str
+
+---
+
+##### `urls`<sup>Required</sup> <a name="urls" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.urls"></a>
+
+```python
+urls: DataLaunchdarklyMetricUrlsList
+```
+
+- *Type:* <a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsList">DataLaunchdarklyMetricUrlsList</a>
+
+---
+
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.idInput"></a>
+
+```python
+id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.keyInput"></a>
+
+```python
+key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `project_key_input`<sup>Optional</sup> <a name="project_key_input" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.projectKeyInput"></a>
+
+```python
+project_key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `project_key`<sup>Required</sup> <a name="project_key" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.property.projectKey"></a>
+
+```python
+project_key: str
 ```
 
 - *Type:* str
@@ -1273,19 +900,7 @@ dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   key: str,
   project_key: str,
-  description: str = None,
-  event_key: str = None,
-  id: str = None,
-  is_active: typing.Union[bool, IResolvable] = None,
-  is_numeric: typing.Union[bool, IResolvable] = None,
-  kind: str = None,
-  maintainer_id: str = None,
-  name: str = None,
-  randomization_units: typing.List[str] = None,
-  selector: str = None,
-  success_criteria: str = None,
-  unit: str = None,
-  urls: typing.Union[IResolvable, typing.List[DataLaunchdarklyMetricUrls]] = None
+  id: str = None
 )
 ```
 
@@ -1300,21 +915,9 @@ dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig(
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig.property.key">key</a></code> | <code>str</code> | A unique key that will be used to reference the metric in your code. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig.property.projectKey">project_key</a></code> | <code>str</code> | The LaunchDarkly project key. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig.property.description">description</a></code> | <code>str</code> | A short description of what the metric will be used for. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig.property.eventKey">event_key</a></code> | <code>str</code> | The event key for your metric (if custom metric). |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#id DataLaunchdarklyMetric#id}. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig.property.isActive">is_active</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the metric is active. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig.property.isNumeric">is_numeric</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the metric is numeric. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig.property.kind">kind</a></code> | <code>str</code> | The metric type -available choices are 'pageview', 'click', and 'custom'. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig.property.maintainerId">maintainer_id</a></code> | <code>str</code> | The LaunchDarkly ID of the user who will maintain the metric. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig.property.name">name</a></code> | <code>str</code> | A human-readable name for your metric. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig.property.randomizationUnits">randomization_units</a></code> | <code>typing.List[str]</code> | A set of one or more context kinds that this metric can measure events from. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig.property.selector">selector</a></code> | <code>str</code> | The CSS selector for your metric (if click metric). |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig.property.successCriteria">success_criteria</a></code> | <code>str</code> | The success criteria for your metric (if numeric metric). |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig.property.unit">unit</a></code> | <code>str</code> | The unit for your metric (if numeric metric). |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig.property.urls">urls</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrls">DataLaunchdarklyMetricUrls</a>]]</code> | urls block. |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig.property.key">key</a></code> | <code>str</code> | The unique key that references the metric. |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig.property.projectKey">project_key</a></code> | <code>str</code> | The metrics's project key. |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/metric#id DataLaunchdarklyMetric#id}. |
 
 ---
 
@@ -1396,9 +999,11 @@ key: str
 
 - *Type:* str
 
-A unique key that will be used to reference the metric in your code.
+The unique key that references the metric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#key DataLaunchdarklyMetric#key}
+A change in this field will force the destruction of the existing resource and the creation of a new one.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/metric#key DataLaunchdarklyMetric#key}
 
 ---
 
@@ -1410,37 +1015,11 @@ project_key: str
 
 - *Type:* str
 
-The LaunchDarkly project key.
+The metrics's project key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#project_key DataLaunchdarklyMetric#project_key}
+A change in this field will force the destruction of the existing resource and the creation of a new one.
 
----
-
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig.property.description"></a>
-
-```python
-description: str
-```
-
-- *Type:* str
-
-A short description of what the metric will be used for.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#description DataLaunchdarklyMetric#description}
-
----
-
-##### `event_key`<sup>Optional</sup> <a name="event_key" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig.property.eventKey"></a>
-
-```python
-event_key: str
-```
-
-- *Type:* str
-
-The event key for your metric (if custom metric).
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#event_key DataLaunchdarklyMetric#event_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/metric#project_key DataLaunchdarklyMetric#project_key}
 
 ---
 
@@ -1452,152 +1031,10 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#id DataLaunchdarklyMetric#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/metric#id DataLaunchdarklyMetric#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `is_active`<sup>Optional</sup> <a name="is_active" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig.property.isActive"></a>
-
-```python
-is_active: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Whether the metric is active.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#is_active DataLaunchdarklyMetric#is_active}
-
----
-
-##### `is_numeric`<sup>Optional</sup> <a name="is_numeric" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig.property.isNumeric"></a>
-
-```python
-is_numeric: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Whether the metric is numeric.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#is_numeric DataLaunchdarklyMetric#is_numeric}
-
----
-
-##### `kind`<sup>Optional</sup> <a name="kind" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig.property.kind"></a>
-
-```python
-kind: str
-```
-
-- *Type:* str
-
-The metric type -available choices are 'pageview', 'click', and 'custom'.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#kind DataLaunchdarklyMetric#kind}
-
----
-
-##### `maintainer_id`<sup>Optional</sup> <a name="maintainer_id" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig.property.maintainerId"></a>
-
-```python
-maintainer_id: str
-```
-
-- *Type:* str
-
-The LaunchDarkly ID of the user who will maintain the metric.
-
-If not set, the API will automatically apply the member associated with your Terraform API key or the most recently-set maintainer
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#maintainer_id DataLaunchdarklyMetric#maintainer_id}
-
----
-
-##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig.property.name"></a>
-
-```python
-name: str
-```
-
-- *Type:* str
-
-A human-readable name for your metric.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#name DataLaunchdarklyMetric#name}
-
----
-
-##### `randomization_units`<sup>Optional</sup> <a name="randomization_units" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig.property.randomizationUnits"></a>
-
-```python
-randomization_units: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-A set of one or more context kinds that this metric can measure events from.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#randomization_units DataLaunchdarklyMetric#randomization_units}
-
----
-
-##### `selector`<sup>Optional</sup> <a name="selector" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig.property.selector"></a>
-
-```python
-selector: str
-```
-
-- *Type:* str
-
-The CSS selector for your metric (if click metric).
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#selector DataLaunchdarklyMetric#selector}
-
----
-
-##### `success_criteria`<sup>Optional</sup> <a name="success_criteria" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig.property.successCriteria"></a>
-
-```python
-success_criteria: str
-```
-
-- *Type:* str
-
-The success criteria for your metric (if numeric metric).
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#success_criteria DataLaunchdarklyMetric#success_criteria}
-
----
-
-##### `unit`<sup>Optional</sup> <a name="unit" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig.property.unit"></a>
-
-```python
-unit: str
-```
-
-- *Type:* str
-
-The unit for your metric (if numeric metric).
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#unit DataLaunchdarklyMetric#unit}
-
----
-
-##### `urls`<sup>Optional</sup> <a name="urls" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig.property.urls"></a>
-
-```python
-urls: typing.Union[IResolvable, typing.List[DataLaunchdarklyMetricUrls]]
-```
-
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrls">DataLaunchdarklyMetricUrls</a>]]
-
-urls block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#urls DataLaunchdarklyMetric#urls}
 
 ---
 
@@ -1608,80 +1045,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 ```python
 from cdktf_cdktf_provider_launchdarkly import data_launchdarkly_metric
 
-dataLaunchdarklyMetric.DataLaunchdarklyMetricUrls(
-  kind: str,
-  pattern: str = None,
-  substring: str = None,
-  url: str = None
-)
+dataLaunchdarklyMetric.DataLaunchdarklyMetricUrls()
 ```
 
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrls.property.kind">kind</a></code> | <code>str</code> | The url type - available choices are 'exact', 'canonical', 'substring' and 'regex'. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrls.property.pattern">pattern</a></code> | <code>str</code> | The URL-matching regex. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrls.property.substring">substring</a></code> | <code>str</code> | The URL substring. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrls.property.url">url</a></code> | <code>str</code> | The exact or canonical URL. |
-
----
-
-##### `kind`<sup>Required</sup> <a name="kind" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrls.property.kind"></a>
-
-```python
-kind: str
-```
-
-- *Type:* str
-
-The url type - available choices are 'exact', 'canonical', 'substring' and 'regex'.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#kind DataLaunchdarklyMetric#kind}
-
----
-
-##### `pattern`<sup>Optional</sup> <a name="pattern" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrls.property.pattern"></a>
-
-```python
-pattern: str
-```
-
-- *Type:* str
-
-The URL-matching regex.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#pattern DataLaunchdarklyMetric#pattern}
-
----
-
-##### `substring`<sup>Optional</sup> <a name="substring" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrls.property.substring"></a>
-
-```python
-substring: str
-```
-
-- *Type:* str
-
-The URL substring.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#substring DataLaunchdarklyMetric#substring}
-
----
-
-##### `url`<sup>Optional</sup> <a name="url" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrls.property.url"></a>
-
-```python
-url: str
-```
-
-- *Type:* str
-
-The exact or canonical URL.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#url DataLaunchdarklyMetric#url}
-
----
 
 ## Classes <a name="Classes" id="Classes"></a>
 
@@ -1816,7 +1182,6 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrls">DataLaunchdarklyMetricUrls</a>]]</code> | *No description.* |
 
 ---
 
@@ -1841,16 +1206,6 @@ fqn: str
 ```
 
 - *Type:* str
-
----
-
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsList.property.internalValue"></a>
-
-```python
-internal_value: typing.Union[IResolvable, typing.List[DataLaunchdarklyMetricUrls]]
-```
-
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrls">DataLaunchdarklyMetricUrls</a>]]
 
 ---
 
@@ -1928,9 +1283,6 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsOutputReference.resetPattern">reset_pattern</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsOutputReference.resetSubstring">reset_substring</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsOutputReference.resetUrl">reset_url</a></code> | *No description.* |
 
 ---
 
@@ -2106,24 +1458,6 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_pattern` <a name="reset_pattern" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsOutputReference.resetPattern"></a>
-
-```python
-def reset_pattern() -> None
-```
-
-##### `reset_substring` <a name="reset_substring" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsOutputReference.resetSubstring"></a>
-
-```python
-def reset_substring() -> None
-```
-
-##### `reset_url` <a name="reset_url" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsOutputReference.resetUrl"></a>
-
-```python
-def reset_url() -> None
-```
-
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -2131,15 +1465,11 @@ def reset_url() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsOutputReference.property.kindInput">kind_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsOutputReference.property.patternInput">pattern_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsOutputReference.property.substringInput">substring_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsOutputReference.property.urlInput">url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsOutputReference.property.kind">kind</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsOutputReference.property.pattern">pattern</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsOutputReference.property.substring">substring</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsOutputReference.property.url">url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrls">DataLaunchdarklyMetricUrls</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrls">DataLaunchdarklyMetricUrls</a></code> | *No description.* |
 
 ---
 
@@ -2161,46 +1491,6 @@ If this returns an empty array the stack will not be attached.
 
 ```python
 fqn: str
-```
-
-- *Type:* str
-
----
-
-##### `kind_input`<sup>Optional</sup> <a name="kind_input" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsOutputReference.property.kindInput"></a>
-
-```python
-kind_input: str
-```
-
-- *Type:* str
-
----
-
-##### `pattern_input`<sup>Optional</sup> <a name="pattern_input" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsOutputReference.property.patternInput"></a>
-
-```python
-pattern_input: str
-```
-
-- *Type:* str
-
----
-
-##### `substring_input`<sup>Optional</sup> <a name="substring_input" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsOutputReference.property.substringInput"></a>
-
-```python
-substring_input: str
-```
-
-- *Type:* str
-
----
-
-##### `url_input`<sup>Optional</sup> <a name="url_input" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsOutputReference.property.urlInput"></a>
-
-```python
-url_input: str
 ```
 
 - *Type:* str
@@ -2250,10 +1540,10 @@ url: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, DataLaunchdarklyMetricUrls]
+internal_value: DataLaunchdarklyMetricUrls
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrls">DataLaunchdarklyMetricUrls</a>]
+- *Type:* <a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrls">DataLaunchdarklyMetricUrls</a>
 
 ---
 

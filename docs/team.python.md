@@ -4,7 +4,7 @@
 
 ### Team <a name="Team" id="@cdktf/provider-launchdarkly.team.Team"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team launchdarkly_team}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team launchdarkly_team}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.team.Team.Initializer"></a>
 
@@ -42,13 +42,13 @@ team.Team(
 | <code><a href="#@cdktf/provider-launchdarkly.team.Team.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.team.Team.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.team.Team.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.team.Team.Initializer.parameter.key">key</a></code> | <code>str</code> | The team's unique key. |
-| <code><a href="#@cdktf/provider-launchdarkly.team.Team.Initializer.parameter.name">name</a></code> | <code>str</code> | The team's human-readable name. |
-| <code><a href="#@cdktf/provider-launchdarkly.team.Team.Initializer.parameter.customRoleKeys">custom_role_keys</a></code> | <code>typing.List[str]</code> | A list of custom role keys for the team. |
-| <code><a href="#@cdktf/provider-launchdarkly.team.Team.Initializer.parameter.description">description</a></code> | <code>str</code> | The team's description. |
-| <code><a href="#@cdktf/provider-launchdarkly.team.Team.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team#id Team#id}. |
-| <code><a href="#@cdktf/provider-launchdarkly.team.Team.Initializer.parameter.maintainers">maintainers</a></code> | <code>typing.List[str]</code> | A list of team maintainer IDs as strings. |
-| <code><a href="#@cdktf/provider-launchdarkly.team.Team.Initializer.parameter.memberIds">member_ids</a></code> | <code>typing.List[str]</code> | A list of team member IDs as strings. |
+| <code><a href="#@cdktf/provider-launchdarkly.team.Team.Initializer.parameter.key">key</a></code> | <code>str</code> | The team key. |
+| <code><a href="#@cdktf/provider-launchdarkly.team.Team.Initializer.parameter.name">name</a></code> | <code>str</code> | A human-friendly name for the team. |
+| <code><a href="#@cdktf/provider-launchdarkly.team.Team.Initializer.parameter.customRoleKeys">custom_role_keys</a></code> | <code>typing.List[str]</code> | List of custom role keys the team will access. |
+| <code><a href="#@cdktf/provider-launchdarkly.team.Team.Initializer.parameter.description">description</a></code> | <code>str</code> | The team description. |
+| <code><a href="#@cdktf/provider-launchdarkly.team.Team.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team#id Team#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.team.Team.Initializer.parameter.maintainers">maintainers</a></code> | <code>typing.List[str]</code> | List of member IDs for users who maintain the team. |
+| <code><a href="#@cdktf/provider-launchdarkly.team.Team.Initializer.parameter.memberIds">member_ids</a></code> | <code>typing.List[str]</code> | List of member IDs who belong to the team. |
 
 ---
 
@@ -116,9 +116,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-The team's unique key.
+The team key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team#key Team#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team#key Team#key}
 
 ---
 
@@ -126,9 +126,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 - *Type:* str
 
-The team's human-readable name.
+A human-friendly name for the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team#name Team#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team#name Team#name}
 
 ---
 
@@ -136,9 +136,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 - *Type:* typing.List[str]
 
-A list of custom role keys for the team.
+List of custom role keys the team will access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team#custom_role_keys Team#custom_role_keys}
+The referenced custom roles must already exist in LaunchDarkly. If they don't, the provider may behave unexpectedly.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team#custom_role_keys Team#custom_role_keys}
 
 ---
 
@@ -146,9 +148,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 - *Type:* str
 
-The team's description.
+The team description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team#description Team#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team#description Team#description}
 
 ---
 
@@ -156,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team#id Team#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team#id Team#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -167,9 +169,9 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.List[str]
 
-A list of team maintainer IDs as strings.
+List of member IDs for users who maintain the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team#maintainers Team#maintainers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team#maintainers Team#maintainers}
 
 ---
 
@@ -177,9 +179,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 - *Type:* typing.List[str]
 
-A list of team member IDs as strings.
+List of member IDs who belong to the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team#member_ids Team#member_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team#member_ids Team#member_ids}
 
 ---
 
@@ -687,7 +689,7 @@ The construct id used in the generated config for the Team to import.
 
 The id of the existing Team that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1072,13 +1074,13 @@ team.TeamConfig(
 | <code><a href="#@cdktf/provider-launchdarkly.team.TeamConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.team.TeamConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.team.TeamConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.team.TeamConfig.property.key">key</a></code> | <code>str</code> | The team's unique key. |
-| <code><a href="#@cdktf/provider-launchdarkly.team.TeamConfig.property.name">name</a></code> | <code>str</code> | The team's human-readable name. |
-| <code><a href="#@cdktf/provider-launchdarkly.team.TeamConfig.property.customRoleKeys">custom_role_keys</a></code> | <code>typing.List[str]</code> | A list of custom role keys for the team. |
-| <code><a href="#@cdktf/provider-launchdarkly.team.TeamConfig.property.description">description</a></code> | <code>str</code> | The team's description. |
-| <code><a href="#@cdktf/provider-launchdarkly.team.TeamConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team#id Team#id}. |
-| <code><a href="#@cdktf/provider-launchdarkly.team.TeamConfig.property.maintainers">maintainers</a></code> | <code>typing.List[str]</code> | A list of team maintainer IDs as strings. |
-| <code><a href="#@cdktf/provider-launchdarkly.team.TeamConfig.property.memberIds">member_ids</a></code> | <code>typing.List[str]</code> | A list of team member IDs as strings. |
+| <code><a href="#@cdktf/provider-launchdarkly.team.TeamConfig.property.key">key</a></code> | <code>str</code> | The team key. |
+| <code><a href="#@cdktf/provider-launchdarkly.team.TeamConfig.property.name">name</a></code> | <code>str</code> | A human-friendly name for the team. |
+| <code><a href="#@cdktf/provider-launchdarkly.team.TeamConfig.property.customRoleKeys">custom_role_keys</a></code> | <code>typing.List[str]</code> | List of custom role keys the team will access. |
+| <code><a href="#@cdktf/provider-launchdarkly.team.TeamConfig.property.description">description</a></code> | <code>str</code> | The team description. |
+| <code><a href="#@cdktf/provider-launchdarkly.team.TeamConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team#id Team#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.team.TeamConfig.property.maintainers">maintainers</a></code> | <code>typing.List[str]</code> | List of member IDs for users who maintain the team. |
+| <code><a href="#@cdktf/provider-launchdarkly.team.TeamConfig.property.memberIds">member_ids</a></code> | <code>typing.List[str]</code> | List of member IDs who belong to the team. |
 
 ---
 
@@ -1160,9 +1162,9 @@ key: str
 
 - *Type:* str
 
-The team's unique key.
+The team key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team#key Team#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team#key Team#key}
 
 ---
 
@@ -1174,9 +1176,9 @@ name: str
 
 - *Type:* str
 
-The team's human-readable name.
+A human-friendly name for the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team#name Team#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team#name Team#name}
 
 ---
 
@@ -1188,9 +1190,11 @@ custom_role_keys: typing.List[str]
 
 - *Type:* typing.List[str]
 
-A list of custom role keys for the team.
+List of custom role keys the team will access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team#custom_role_keys Team#custom_role_keys}
+The referenced custom roles must already exist in LaunchDarkly. If they don't, the provider may behave unexpectedly.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team#custom_role_keys Team#custom_role_keys}
 
 ---
 
@@ -1202,9 +1206,9 @@ description: str
 
 - *Type:* str
 
-The team's description.
+The team description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team#description Team#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team#description Team#description}
 
 ---
 
@@ -1216,7 +1220,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team#id Team#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team#id Team#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1231,9 +1235,9 @@ maintainers: typing.List[str]
 
 - *Type:* typing.List[str]
 
-A list of team maintainer IDs as strings.
+List of member IDs for users who maintain the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team#maintainers Team#maintainers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team#maintainers Team#maintainers}
 
 ---
 
@@ -1245,9 +1249,9 @@ member_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-A list of team member IDs as strings.
+List of member IDs who belong to the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team#member_ids Team#member_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team#member_ids Team#member_ids}
 
 ---
 

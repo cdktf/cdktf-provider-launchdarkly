@@ -4,7 +4,7 @@
 
 ### TeamMember <a name="TeamMember" id="@cdktf/provider-launchdarkly.teamMember.TeamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team_member launchdarkly_team_member}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team_member launchdarkly_team_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.teamMember.TeamMember.Initializer"></a>
 
@@ -75,7 +75,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.resetCustomRoles">resetCustomRoles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.resetFirstName">resetFirstName</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.resetLastName">resetLastName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.resetRole">resetRole</a></code> | *No description.* |
 
@@ -381,12 +380,6 @@ public resetCustomRoles(): void
 public resetFirstName(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-launchdarkly.teamMember.TeamMember.resetId"></a>
-
-```typescript
-public resetId(): void
-```
-
 ##### `resetLastName` <a name="resetLastName" id="@cdktf/provider-launchdarkly.teamMember.TeamMember.resetLastName"></a>
 
 ```typescript
@@ -502,7 +495,7 @@ The construct id used in the generated config for the TeamMember to import.
 
 The id of the existing TeamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -532,16 +525,15 @@ Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchd
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.property.customRolesInput">customRolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.property.emailInput">emailInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.property.firstNameInput">firstNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.property.lastNameInput">lastNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.property.roleInput">roleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.property.customRoles">customRoles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.property.email">email</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.property.firstName">firstName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.property.lastName">lastName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.property.role">role</a></code> | <code>string</code> | *No description.* |
 
@@ -689,6 +681,16 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-launchdarkly.teamMember.TeamMember.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `customRolesInput`<sup>Optional</sup> <a name="customRolesInput" id="@cdktf/provider-launchdarkly.teamMember.TeamMember.property.customRolesInput"></a>
 
 ```typescript
@@ -713,16 +715,6 @@ public readonly emailInput: string;
 
 ```typescript
 public readonly firstNameInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-launchdarkly.teamMember.TeamMember.property.idInput"></a>
-
-```typescript
-public readonly idInput: string;
 ```
 
 - *Type:* string
@@ -773,16 +765,6 @@ public readonly email: string;
 
 ```typescript
 public readonly firstName: string;
-```
-
-- *Type:* string
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-launchdarkly.teamMember.TeamMember.property.id"></a>
-
-```typescript
-public readonly id: string;
 ```
 
 - *Type:* string
@@ -850,12 +832,11 @@ const teamMemberConfig: teamMember.TeamMemberConfig = { ... }
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberConfig.property.email">email</a></code> | <code>string</code> | The team member's email address. |
-| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberConfig.property.customRoles">customRoles</a></code> | <code>string[]</code> | IDs or keys of custom roles. Team members must have either a role or custom role. |
-| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberConfig.property.firstName">firstName</a></code> | <code>string</code> | The team member's first name. |
-| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team_member#id TeamMember#id}. |
-| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberConfig.property.lastName">lastName</a></code> | <code>string</code> | The team member's last name. |
-| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberConfig.property.role">role</a></code> | <code>string</code> | The team member's role. |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberConfig.property.email">email</a></code> | <code>string</code> | The unique email address associated with the team member. |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberConfig.property.customRoles">customRoles</a></code> | <code>string[]</code> | The list of custom roles keys associated with the team member. |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberConfig.property.firstName">firstName</a></code> | <code>string</code> | The team member's given name. Once created, this cannot be updated except by the team member. |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberConfig.property.lastName">lastName</a></code> | <code>string</code> | TThe team member's family name. Once created, this cannot be updated except by the team member. |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberConfig.property.role">role</a></code> | <code>string</code> | The role associated with team member. |
 
 ---
 
@@ -937,9 +918,11 @@ public readonly email: string;
 
 - *Type:* string
 
-The team member's email address.
+The unique email address associated with the team member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team_member#email TeamMember#email}
+A change in this field will force the destruction of the existing resource and the creation of a new one.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team_member#email TeamMember#email}
 
 ---
 
@@ -951,9 +934,13 @@ public readonly customRoles: string[];
 
 - *Type:* string[]
 
-IDs or keys of custom roles. Team members must have either a role or custom role.
+The list of custom roles keys associated with the team member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team_member#custom_roles TeamMember#custom_roles}
+Custom roles are only available to customers on an Enterprise plan. To learn more, [read about our pricing](https://launchdarkly.com/pricing/). To upgrade your plan, [contact LaunchDarkly Sales](https://launchdarkly.com/contact-sales/).
+
+-> **Note:** each `launchdarkly_team_member` must have either a `role` or `custom_roles` argument.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team_member#custom_roles TeamMember#custom_roles}
 
 ---
 
@@ -965,24 +952,9 @@ public readonly firstName: string;
 
 - *Type:* string
 
-The team member's first name.
+The team member's given name. Once created, this cannot be updated except by the team member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team_member#first_name TeamMember#first_name}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberConfig.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team_member#id TeamMember#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team_member#first_name TeamMember#first_name}
 
 ---
 
@@ -994,9 +966,9 @@ public readonly lastName: string;
 
 - *Type:* string
 
-The team member's last name.
+TThe team member's family name. Once created, this cannot be updated except by the team member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team_member#last_name TeamMember#last_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team_member#last_name TeamMember#last_name}
 
 ---
 
@@ -1008,11 +980,11 @@ public readonly role: string;
 
 - *Type:* string
 
-The team member's role.
+The role associated with team member.
 
-This must be reader, writer, admin, or no_access. Team members must have either a role or custom role
+Supported roles are `reader`, `writer`, `no_access`, or `admin`. If you don't specify a role, `reader` is assigned by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team_member#role TeamMember#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team_member#role TeamMember#role}
 
 ---
 

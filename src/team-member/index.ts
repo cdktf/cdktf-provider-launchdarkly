@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team_member
+// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team_member
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +13,41 @@ import * as cdktf from 'cdktf';
 
 export interface TeamMemberConfig extends cdktf.TerraformMetaArguments {
   /**
-  * IDs or keys of custom roles. Team members must have either a role or custom role
+  * The list of custom roles keys associated with the team member. Custom roles are only available to customers on an Enterprise plan. To learn more, [read about our pricing](https://launchdarkly.com/pricing/). To upgrade your plan, [contact LaunchDarkly Sales](https://launchdarkly.com/contact-sales/).
+  * 
+  * -> **Note:** each `launchdarkly_team_member` must have either a `role` or `custom_roles` argument.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team_member#custom_roles TeamMember#custom_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team_member#custom_roles TeamMember#custom_roles}
   */
   readonly customRoles?: string[];
   /**
-  * The team member's email address
+  * The unique email address associated with the team member. A change in this field will force the destruction of the existing resource and the creation of a new one.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team_member#email TeamMember#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team_member#email TeamMember#email}
   */
   readonly email: string;
   /**
-  * The team member's first name
+  * The team member's given name. Once created, this cannot be updated except by the team member.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team_member#first_name TeamMember#first_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team_member#first_name TeamMember#first_name}
   */
   readonly firstName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team_member#id TeamMember#id}
+  * TThe team member's family name. Once created, this cannot be updated except by the team member.
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * The team member's last name
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team_member#last_name TeamMember#last_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team_member#last_name TeamMember#last_name}
   */
   readonly lastName?: string;
   /**
-  * The team member's role. This must be reader, writer, admin, or no_access. Team members must have either a role or custom role
+  * The role associated with team member. Supported roles are `reader`, `writer`, `no_access`, or `admin`. If you don't specify a role, `reader` is assigned by default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team_member#role TeamMember#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team_member#role TeamMember#role}
   */
   readonly role?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team_member launchdarkly_team_member}
+* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team_member launchdarkly_team_member}
 */
 export class TeamMember extends cdktf.TerraformResource {
 
@@ -68,7 +63,7 @@ export class TeamMember extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a TeamMember resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TeamMember to import
-  * @param importFromId The id of the existing TeamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team_member#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TeamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team_member#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TeamMember to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -80,7 +75,7 @@ export class TeamMember extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/team_member launchdarkly_team_member} Resource
+  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/team_member launchdarkly_team_member} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,7 +86,7 @@ export class TeamMember extends cdktf.TerraformResource {
       terraformResourceType: 'launchdarkly_team_member',
       terraformGeneratorMetadata: {
         providerName: 'launchdarkly',
-        providerVersion: '2.18.4',
+        providerVersion: '2.19.0',
         providerVersionConstraint: '~> 2.13'
       },
       provider: config.provider,
@@ -105,7 +100,6 @@ export class TeamMember extends cdktf.TerraformResource {
     this._customRoles = config.customRoles;
     this._email = config.email;
     this._firstName = config.firstName;
-    this._id = config.id;
     this._lastName = config.lastName;
     this._role = config.role;
   }
@@ -159,20 +153,9 @@ export class TeamMember extends cdktf.TerraformResource {
     return this._firstName;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // last_name - computed: false, optional: true, required: false
@@ -216,7 +199,6 @@ export class TeamMember extends cdktf.TerraformResource {
       custom_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._customRoles),
       email: cdktf.stringToTerraform(this._email),
       first_name: cdktf.stringToTerraform(this._firstName),
-      id: cdktf.stringToTerraform(this._id),
       last_name: cdktf.stringToTerraform(this._lastName),
       role: cdktf.stringToTerraform(this._role),
     };
@@ -238,12 +220,6 @@ export class TeamMember extends cdktf.TerraformResource {
       },
       first_name: {
         value: cdktf.stringToHclTerraform(this._firstName),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

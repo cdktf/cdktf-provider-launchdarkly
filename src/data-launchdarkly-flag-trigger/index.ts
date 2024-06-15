@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/flag_trigger
+// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/flag_trigger
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,87 +13,60 @@ import * as cdktf from 'cdktf';
 
 export interface DataLaunchdarklyFlagTriggerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Whether the trigger is currently active or not. This property defaults to true upon creation
+  * The unique key of the environment the flag trigger will work in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/flag_trigger#enabled DataLaunchdarklyFlagTrigger#enabled}
-  */
-  readonly enabled?: boolean | cdktf.IResolvable;
-  /**
-  * The LaunchDarkly environment key
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/flag_trigger#env_key DataLaunchdarklyFlagTrigger#env_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/flag_trigger#env_key DataLaunchdarklyFlagTrigger#env_key}
   */
   readonly envKey: string;
   /**
-  * The key of the feature flag the trigger acts upon
+  * The unique key of the associated flag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/flag_trigger#flag_key DataLaunchdarklyFlagTrigger#flag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/flag_trigger#flag_key DataLaunchdarklyFlagTrigger#flag_key}
   */
   readonly flagKey: string;
   /**
-  * The flag trigger resource ID. This can be found on your trigger URL - please see docs for more info
+  * The Terraform trigger ID. The unique trigger ID can be found in your saved trigger URL:
+  * 
+  * ```
+  * https://app.launchdarkly.com/webhook/triggers/THIS_IS_YOUR_TRIGGER_ID/aff25a53-17d9-4112-a9b8-12718d1a2e79
+  * ```
+  * 
+  * Please note that if you did not save this upon creation of the resource, you will have to reset it to get a new value, which can cause breaking changes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/flag_trigger#id DataLaunchdarklyFlagTrigger#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/flag_trigger#id DataLaunchdarklyFlagTrigger#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * The unique identifier of the integration you intend to set your trigger up with. "generic-trigger" should be used for integrations not explicitly supported.
+  * The unique key of the project encompassing the associated flag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/flag_trigger#integration_key DataLaunchdarklyFlagTrigger#integration_key}
-  */
-  readonly integrationKey?: string;
-  /**
-  * The LaunchDarkly project key
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/flag_trigger#project_key DataLaunchdarklyFlagTrigger#project_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/flag_trigger#project_key DataLaunchdarklyFlagTrigger#project_key}
   */
   readonly projectKey: string;
-  /**
-  * instructions block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/flag_trigger#instructions DataLaunchdarklyFlagTrigger#instructions}
-  */
-  readonly instructions?: DataLaunchdarklyFlagTriggerInstructions;
 }
 export interface DataLaunchdarklyFlagTriggerInstructions {
-  /**
-  * The action to perform when triggering. Currently supported flag actions are "turnFlagOn" and "turnFlagOff".
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/flag_trigger#kind DataLaunchdarklyFlagTrigger#kind}
-  */
-  readonly kind: string;
 }
 
-export function dataLaunchdarklyFlagTriggerInstructionsToTerraform(struct?: DataLaunchdarklyFlagTriggerInstructionsOutputReference | DataLaunchdarklyFlagTriggerInstructions): any {
+export function dataLaunchdarklyFlagTriggerInstructionsToTerraform(struct?: DataLaunchdarklyFlagTriggerInstructions): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kind: cdktf.stringToTerraform(struct!.kind),
   }
 }
 
 
-export function dataLaunchdarklyFlagTriggerInstructionsToHclTerraform(struct?: DataLaunchdarklyFlagTriggerInstructionsOutputReference | DataLaunchdarklyFlagTriggerInstructions): any {
+export function dataLaunchdarklyFlagTriggerInstructionsToHclTerraform(struct?: DataLaunchdarklyFlagTriggerInstructions): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    kind: {
-      value: cdktf.stringToHclTerraform(struct!.kind),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
   };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+  return attrs;
 }
 
 export class DataLaunchdarklyFlagTriggerInstructionsOutputReference extends cdktf.ComplexObject {
@@ -102,48 +75,55 @@ export class DataLaunchdarklyFlagTriggerInstructionsOutputReference extends cdkt
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
   public get internalValue(): DataLaunchdarklyFlagTriggerInstructions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._kind !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.kind = this._kind;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: DataLaunchdarklyFlagTriggerInstructions | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._kind = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._kind = value.kind;
     }
   }
 
-  // kind - computed: false, optional: false, required: true
-  private _kind?: string; 
+  // kind - computed: true, optional: false, required: false
   public get kind() {
     return this.getStringAttribute('kind');
   }
-  public set kind(value: string) {
-    this._kind = value;
+}
+
+export class DataLaunchdarklyFlagTriggerInstructionsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
   }
-  // Temporarily expose input value. Use with caution.
-  public get kindInput() {
-    return this._kind;
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataLaunchdarklyFlagTriggerInstructionsOutputReference {
+    return new DataLaunchdarklyFlagTriggerInstructionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/flag_trigger launchdarkly_flag_trigger}
+* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/flag_trigger launchdarkly_flag_trigger}
 */
 export class DataLaunchdarklyFlagTrigger extends cdktf.TerraformDataSource {
 
@@ -159,7 +139,7 @@ export class DataLaunchdarklyFlagTrigger extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataLaunchdarklyFlagTrigger resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataLaunchdarklyFlagTrigger to import
-  * @param importFromId The id of the existing DataLaunchdarklyFlagTrigger that should be imported. Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/flag_trigger#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataLaunchdarklyFlagTrigger that should be imported. Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/flag_trigger#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataLaunchdarklyFlagTrigger to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -171,7 +151,7 @@ export class DataLaunchdarklyFlagTrigger extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/flag_trigger launchdarkly_flag_trigger} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/flag_trigger launchdarkly_flag_trigger} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -182,7 +162,7 @@ export class DataLaunchdarklyFlagTrigger extends cdktf.TerraformDataSource {
       terraformResourceType: 'launchdarkly_flag_trigger',
       terraformGeneratorMetadata: {
         providerName: 'launchdarkly',
-        providerVersion: '2.18.4',
+        providerVersion: '2.19.0',
         providerVersionConstraint: '~> 2.13'
       },
       provider: config.provider,
@@ -193,33 +173,19 @@ export class DataLaunchdarklyFlagTrigger extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._enabled = config.enabled;
     this._envKey = config.envKey;
     this._flagKey = config.flagKey;
     this._id = config.id;
-    this._integrationKey = config.integrationKey;
     this._projectKey = config.projectKey;
-    this._instructions.internalValue = config.instructions;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  // enabled - computed: true, optional: false, required: false
   public get enabled() {
     return this.getBooleanAttribute('enabled');
-  }
-  public set enabled(value: boolean | cdktf.IResolvable) {
-    this._enabled = value;
-  }
-  public resetEnabled() {
-    this._enabled = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enabledInput() {
-    return this._enabled;
   }
 
   // env_key - computed: false, optional: false, required: true
@@ -261,20 +227,15 @@ export class DataLaunchdarklyFlagTrigger extends cdktf.TerraformDataSource {
     return this._id;
   }
 
-  // integration_key - computed: false, optional: true, required: false
-  private _integrationKey?: string; 
+  // instructions - computed: true, optional: false, required: false
+  private _instructions = new DataLaunchdarklyFlagTriggerInstructionsList(this, "instructions", false);
+  public get instructions() {
+    return this._instructions;
+  }
+
+  // integration_key - computed: true, optional: false, required: false
   public get integrationKey() {
     return this.getStringAttribute('integration_key');
-  }
-  public set integrationKey(value: string) {
-    this._integrationKey = value;
-  }
-  public resetIntegrationKey() {
-    this._integrationKey = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get integrationKeyInput() {
-    return this._integrationKey;
   }
 
   // maintainer_id - computed: true, optional: false, required: false
@@ -300,46 +261,21 @@ export class DataLaunchdarklyFlagTrigger extends cdktf.TerraformDataSource {
     return this.getStringAttribute('trigger_url');
   }
 
-  // instructions - computed: false, optional: true, required: false
-  private _instructions = new DataLaunchdarklyFlagTriggerInstructionsOutputReference(this, "instructions");
-  public get instructions() {
-    return this._instructions;
-  }
-  public putInstructions(value: DataLaunchdarklyFlagTriggerInstructions) {
-    this._instructions.internalValue = value;
-  }
-  public resetInstructions() {
-    this._instructions.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get instructionsInput() {
-    return this._instructions.internalValue;
-  }
-
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enabled: cdktf.booleanToTerraform(this._enabled),
       env_key: cdktf.stringToTerraform(this._envKey),
       flag_key: cdktf.stringToTerraform(this._flagKey),
       id: cdktf.stringToTerraform(this._id),
-      integration_key: cdktf.stringToTerraform(this._integrationKey),
       project_key: cdktf.stringToTerraform(this._projectKey),
-      instructions: dataLaunchdarklyFlagTriggerInstructionsToTerraform(this._instructions.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "boolean",
-      },
       env_key: {
         value: cdktf.stringToHclTerraform(this._envKey),
         isBlock: false,
@@ -358,23 +294,11 @@ export class DataLaunchdarklyFlagTrigger extends cdktf.TerraformDataSource {
         type: "simple",
         storageClassType: "string",
       },
-      integration_key: {
-        value: cdktf.stringToHclTerraform(this._integrationKey),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       project_key: {
         value: cdktf.stringToHclTerraform(this._projectKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      instructions: {
-        value: dataLaunchdarklyFlagTriggerInstructionsToHclTerraform(this._instructions.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "DataLaunchdarklyFlagTriggerInstructionsList",
       },
     };
 

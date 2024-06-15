@@ -4,7 +4,7 @@
 
 ### Metric <a name="Metric" id="@cdktf/provider-launchdarkly.metric.Metric"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric launchdarkly_metric}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric launchdarkly_metric}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.metric.Metric.Initializer"></a>
 
@@ -56,21 +56,21 @@ Metric.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.key">key</a></code> | <code>java.lang.String</code> | A unique key that will be used to reference the metric in your code. |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.kind">kind</a></code> | <code>java.lang.String</code> | The metric type -available choices are 'pageview', 'click', and 'custom'. |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | A human-readable name for your metric. |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.projectKey">projectKey</a></code> | <code>java.lang.String</code> | The LaunchDarkly project key. |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | A short description of what the metric will be used for. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.key">key</a></code> | <code>java.lang.String</code> | The unique key that references the metric. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.kind">kind</a></code> | <code>java.lang.String</code> | The metric type. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The human-friendly name for the metric. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.projectKey">projectKey</a></code> | <code>java.lang.String</code> | The metrics's project key. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | The description of the metric's purpose. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.eventKey">eventKey</a></code> | <code>java.lang.String</code> | The event key for your metric (if custom metric). |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#id Metric#id}. |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.isActive">isActive</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the metric is active. |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.isNumeric">isNumeric</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the metric is numeric. |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.maintainerId">maintainerId</a></code> | <code>java.lang.String</code> | The LaunchDarkly ID of the user who will maintain the metric. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#id Metric#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.isActive">isActive</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether a metric is a active. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.isNumeric">isNumeric</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether a `custom` metric is a numeric metric or not. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.maintainerId">maintainerId</a></code> | <code>java.lang.String</code> | The LaunchDarkly member ID of the member who will maintain the metric. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.randomizationUnits">randomizationUnits</a></code> | <code>java.util.List<java.lang.String></code> | A set of one or more context kinds that this metric can measure events from. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.selector">selector</a></code> | <code>java.lang.String</code> | The CSS selector for your metric (if click metric). |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.successCriteria">successCriteria</a></code> | <code>java.lang.String</code> | The success criteria for your metric (if numeric metric). |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Tags associated with your resource. |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.unit">unit</a></code> | <code>java.lang.String</code> | The unit for your metric (if numeric metric). |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.unit">unit</a></code> | <code>java.lang.String</code> | (Required for kind `custom`) The unit for numeric `custom` metrics. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.urls">urls</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.metric.MetricUrls">MetricUrls</a>></code> | urls block. |
 
 ---
@@ -139,9 +139,11 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-A unique key that will be used to reference the metric in your code.
+The unique key that references the metric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#key Metric#key}
+A change in this field will force the destruction of the existing resource and the creation of a new one. A change in this field will force the destruction of the existing resource and the creation of a new one.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#key Metric#key}
 
 ---
 
@@ -149,9 +151,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 - *Type:* java.lang.String
 
-The metric type -available choices are 'pageview', 'click', and 'custom'.
+The metric type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#kind Metric#kind}
+Available choices are `click`, `custom`, and `pageview`. A change in this field will force the destruction of the existing resource and the creation of a new one.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#kind Metric#kind}
 
 ---
 
@@ -159,9 +163,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 - *Type:* java.lang.String
 
-A human-readable name for your metric.
+The human-friendly name for the metric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#name Metric#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#name Metric#name}
 
 ---
 
@@ -169,9 +173,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 - *Type:* java.lang.String
 
-The LaunchDarkly project key.
+The metrics's project key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#project_key Metric#project_key}
+A change in this field will force the destruction of the existing resource and the creation of a new one. A change in this field will force the destruction of the existing resource and the creation of a new one.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#project_key Metric#project_key}
 
 ---
 
@@ -179,9 +185,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 - *Type:* java.lang.String
 
-A short description of what the metric will be used for.
+The description of the metric's purpose.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#description Metric#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#description Metric#description}
 
 ---
 
@@ -191,7 +197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 The event key for your metric (if custom metric).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#event_key Metric#event_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#event_key Metric#event_key}
 
 ---
 
@@ -199,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#id Metric#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#id Metric#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -210,9 +216,9 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Whether the metric is active.
+Whether a metric is a active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#is_active Metric#is_active}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#is_active Metric#is_active}
 
 ---
 
@@ -220,9 +226,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Whether the metric is numeric.
+Whether a `custom` metric is a numeric metric or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#is_numeric Metric#is_numeric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#is_numeric Metric#is_numeric}
 
 ---
 
@@ -230,11 +236,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 - *Type:* java.lang.String
 
-The LaunchDarkly ID of the user who will maintain the metric.
+The LaunchDarkly member ID of the member who will maintain the metric.
 
 If not set, the API will automatically apply the member associated with your Terraform API key or the most recently-set maintainer
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#maintainer_id Metric#maintainer_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#maintainer_id Metric#maintainer_id}
 
 ---
 
@@ -244,7 +250,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 A set of one or more context kinds that this metric can measure events from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#randomization_units Metric#randomization_units}
+Metrics can only use context kinds marked as "Available for experiments." For more information, read [Allocating experiment audiences](https://docs.launchdarkly.com/home/creating-experiments/allocation).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#randomization_units Metric#randomization_units}
 
 ---
 
@@ -254,7 +262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 The CSS selector for your metric (if click metric).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#selector Metric#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#selector Metric#selector}
 
 ---
 
@@ -264,7 +272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 The success criteria for your metric (if numeric metric).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#success_criteria Metric#success_criteria}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#success_criteria Metric#success_criteria}
 
 ---
 
@@ -274,7 +282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 Tags associated with your resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#tags Metric#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#tags Metric#tags}
 
 ---
 
@@ -282,9 +290,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 - *Type:* java.lang.String
 
-The unit for your metric (if numeric metric).
+(Required for kind `custom`) The unit for numeric `custom` metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#unit Metric#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#unit Metric#unit}
 
 ---
 
@@ -294,7 +302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 urls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#urls Metric#urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#urls Metric#urls}
 
 ---
 
@@ -818,7 +826,7 @@ The construct id used in the generated config for the Metric to import.
 
 The id of the existing Metric that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1417,21 +1425,21 @@ MetricConfig.builder()
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.key">key</a></code> | <code>java.lang.String</code> | A unique key that will be used to reference the metric in your code. |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.kind">kind</a></code> | <code>java.lang.String</code> | The metric type -available choices are 'pageview', 'click', and 'custom'. |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.name">name</a></code> | <code>java.lang.String</code> | A human-readable name for your metric. |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.projectKey">projectKey</a></code> | <code>java.lang.String</code> | The LaunchDarkly project key. |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.description">description</a></code> | <code>java.lang.String</code> | A short description of what the metric will be used for. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.key">key</a></code> | <code>java.lang.String</code> | The unique key that references the metric. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.kind">kind</a></code> | <code>java.lang.String</code> | The metric type. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.name">name</a></code> | <code>java.lang.String</code> | The human-friendly name for the metric. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.projectKey">projectKey</a></code> | <code>java.lang.String</code> | The metrics's project key. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.description">description</a></code> | <code>java.lang.String</code> | The description of the metric's purpose. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.eventKey">eventKey</a></code> | <code>java.lang.String</code> | The event key for your metric (if custom metric). |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#id Metric#id}. |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.isActive">isActive</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the metric is active. |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.isNumeric">isNumeric</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the metric is numeric. |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.maintainerId">maintainerId</a></code> | <code>java.lang.String</code> | The LaunchDarkly ID of the user who will maintain the metric. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#id Metric#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.isActive">isActive</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether a metric is a active. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.isNumeric">isNumeric</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether a `custom` metric is a numeric metric or not. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.maintainerId">maintainerId</a></code> | <code>java.lang.String</code> | The LaunchDarkly member ID of the member who will maintain the metric. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.randomizationUnits">randomizationUnits</a></code> | <code>java.util.List<java.lang.String></code> | A set of one or more context kinds that this metric can measure events from. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.selector">selector</a></code> | <code>java.lang.String</code> | The CSS selector for your metric (if click metric). |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.successCriteria">successCriteria</a></code> | <code>java.lang.String</code> | The success criteria for your metric (if numeric metric). |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Tags associated with your resource. |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.unit">unit</a></code> | <code>java.lang.String</code> | The unit for your metric (if numeric metric). |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.unit">unit</a></code> | <code>java.lang.String</code> | (Required for kind `custom`) The unit for numeric `custom` metrics. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.urls">urls</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.metric.MetricUrls">MetricUrls</a>></code> | urls block. |
 
 ---
@@ -1514,9 +1522,11 @@ public java.lang.String getKey();
 
 - *Type:* java.lang.String
 
-A unique key that will be used to reference the metric in your code.
+The unique key that references the metric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#key Metric#key}
+A change in this field will force the destruction of the existing resource and the creation of a new one. A change in this field will force the destruction of the existing resource and the creation of a new one.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#key Metric#key}
 
 ---
 
@@ -1528,9 +1538,11 @@ public java.lang.String getKind();
 
 - *Type:* java.lang.String
 
-The metric type -available choices are 'pageview', 'click', and 'custom'.
+The metric type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#kind Metric#kind}
+Available choices are `click`, `custom`, and `pageview`. A change in this field will force the destruction of the existing resource and the creation of a new one.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#kind Metric#kind}
 
 ---
 
@@ -1542,9 +1554,9 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-A human-readable name for your metric.
+The human-friendly name for the metric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#name Metric#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#name Metric#name}
 
 ---
 
@@ -1556,9 +1568,11 @@ public java.lang.String getProjectKey();
 
 - *Type:* java.lang.String
 
-The LaunchDarkly project key.
+The metrics's project key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#project_key Metric#project_key}
+A change in this field will force the destruction of the existing resource and the creation of a new one. A change in this field will force the destruction of the existing resource and the creation of a new one.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#project_key Metric#project_key}
 
 ---
 
@@ -1570,9 +1584,9 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-A short description of what the metric will be used for.
+The description of the metric's purpose.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#description Metric#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#description Metric#description}
 
 ---
 
@@ -1586,7 +1600,7 @@ public java.lang.String getEventKey();
 
 The event key for your metric (if custom metric).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#event_key Metric#event_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#event_key Metric#event_key}
 
 ---
 
@@ -1598,7 +1612,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#id Metric#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#id Metric#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1613,9 +1627,9 @@ public java.lang.Object getIsActive();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Whether the metric is active.
+Whether a metric is a active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#is_active Metric#is_active}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#is_active Metric#is_active}
 
 ---
 
@@ -1627,9 +1641,9 @@ public java.lang.Object getIsNumeric();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Whether the metric is numeric.
+Whether a `custom` metric is a numeric metric or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#is_numeric Metric#is_numeric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#is_numeric Metric#is_numeric}
 
 ---
 
@@ -1641,11 +1655,11 @@ public java.lang.String getMaintainerId();
 
 - *Type:* java.lang.String
 
-The LaunchDarkly ID of the user who will maintain the metric.
+The LaunchDarkly member ID of the member who will maintain the metric.
 
 If not set, the API will automatically apply the member associated with your Terraform API key or the most recently-set maintainer
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#maintainer_id Metric#maintainer_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#maintainer_id Metric#maintainer_id}
 
 ---
 
@@ -1659,7 +1673,9 @@ public java.util.List<java.lang.String> getRandomizationUnits();
 
 A set of one or more context kinds that this metric can measure events from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#randomization_units Metric#randomization_units}
+Metrics can only use context kinds marked as "Available for experiments." For more information, read [Allocating experiment audiences](https://docs.launchdarkly.com/home/creating-experiments/allocation).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#randomization_units Metric#randomization_units}
 
 ---
 
@@ -1673,7 +1689,7 @@ public java.lang.String getSelector();
 
 The CSS selector for your metric (if click metric).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#selector Metric#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#selector Metric#selector}
 
 ---
 
@@ -1687,7 +1703,7 @@ public java.lang.String getSuccessCriteria();
 
 The success criteria for your metric (if numeric metric).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#success_criteria Metric#success_criteria}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#success_criteria Metric#success_criteria}
 
 ---
 
@@ -1701,7 +1717,7 @@ public java.util.List<java.lang.String> getTags();
 
 Tags associated with your resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#tags Metric#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#tags Metric#tags}
 
 ---
 
@@ -1713,9 +1729,9 @@ public java.lang.String getUnit();
 
 - *Type:* java.lang.String
 
-The unit for your metric (if numeric metric).
+(Required for kind `custom`) The unit for numeric `custom` metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#unit Metric#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#unit Metric#unit}
 
 ---
 
@@ -1729,7 +1745,7 @@ public java.lang.Object getUrls();
 
 urls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#urls Metric#urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#urls Metric#urls}
 
 ---
 
@@ -1752,10 +1768,10 @@ MetricUrls.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricUrls.property.kind">kind</a></code> | <code>java.lang.String</code> | The url type - available choices are 'exact', 'canonical', 'substring' and 'regex'. |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricUrls.property.pattern">pattern</a></code> | <code>java.lang.String</code> | The URL-matching regex. |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricUrls.property.substring">substring</a></code> | <code>java.lang.String</code> | The URL substring. |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricUrls.property.url">url</a></code> | <code>java.lang.String</code> | The exact or canonical URL. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricUrls.property.kind">kind</a></code> | <code>java.lang.String</code> | The URL type. Available choices are `exact`, `canonical`, `substring` and `regex`. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricUrls.property.pattern">pattern</a></code> | <code>java.lang.String</code> | (Required for kind `regex`) The regex pattern to match by. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricUrls.property.substring">substring</a></code> | <code>java.lang.String</code> | (Required for kind `substring`) The URL substring to match by. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricUrls.property.url">url</a></code> | <code>java.lang.String</code> | (Required for kind `exact` and `canonical`) The exact or canonical URL. |
 
 ---
 
@@ -1767,9 +1783,9 @@ public java.lang.String getKind();
 
 - *Type:* java.lang.String
 
-The url type - available choices are 'exact', 'canonical', 'substring' and 'regex'.
+The URL type. Available choices are `exact`, `canonical`, `substring` and `regex`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#kind Metric#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#kind Metric#kind}
 
 ---
 
@@ -1781,9 +1797,9 @@ public java.lang.String getPattern();
 
 - *Type:* java.lang.String
 
-The URL-matching regex.
+(Required for kind `regex`) The regex pattern to match by.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#pattern Metric#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#pattern Metric#pattern}
 
 ---
 
@@ -1795,9 +1811,9 @@ public java.lang.String getSubstring();
 
 - *Type:* java.lang.String
 
-The URL substring.
+(Required for kind `substring`) The URL substring to match by.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#substring Metric#substring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#substring Metric#substring}
 
 ---
 
@@ -1809,9 +1825,9 @@ public java.lang.String getUrl();
 
 - *Type:* java.lang.String
 
-The exact or canonical URL.
+(Required for kind `exact` and `canonical`) The exact or canonical URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/metric#url Metric#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/metric#url Metric#url}
 
 ---
 

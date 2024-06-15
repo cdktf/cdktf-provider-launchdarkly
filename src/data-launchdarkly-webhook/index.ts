@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/webhook
+// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/webhook
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,26 +13,14 @@ import * as cdktf from 'cdktf';
 
 export interface DataLaunchdarklyWebhookConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The ID of the webhook
+  * The unique webhook ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/webhook#id DataLaunchdarklyWebhook#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/webhook#id DataLaunchdarklyWebhook#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
-  /**
-  * A human-readable name for your webhook
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/webhook#name DataLaunchdarklyWebhook#name}
-  */
-  readonly name?: string;
-  /**
-  * If sign is true, and the secret attribute is omitted, LaunchDarkly will automatically generate a secret for you
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/webhook#secret DataLaunchdarklyWebhook#secret}
-  */
-  readonly secret?: string;
 }
 export interface DataLaunchdarklyWebhookStatements {
 }
@@ -131,7 +119,7 @@ export class DataLaunchdarklyWebhookStatementsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/webhook launchdarkly_webhook}
+* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/webhook launchdarkly_webhook}
 */
 export class DataLaunchdarklyWebhook extends cdktf.TerraformDataSource {
 
@@ -147,7 +135,7 @@ export class DataLaunchdarklyWebhook extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataLaunchdarklyWebhook resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataLaunchdarklyWebhook to import
-  * @param importFromId The id of the existing DataLaunchdarklyWebhook that should be imported. Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/webhook#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataLaunchdarklyWebhook that should be imported. Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/webhook#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataLaunchdarklyWebhook to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -159,7 +147,7 @@ export class DataLaunchdarklyWebhook extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/webhook launchdarkly_webhook} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/webhook launchdarkly_webhook} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -170,7 +158,7 @@ export class DataLaunchdarklyWebhook extends cdktf.TerraformDataSource {
       terraformResourceType: 'launchdarkly_webhook',
       terraformGeneratorMetadata: {
         providerName: 'launchdarkly',
-        providerVersion: '2.18.4',
+        providerVersion: '2.19.0',
         providerVersionConstraint: '~> 2.13'
       },
       provider: config.provider,
@@ -182,8 +170,6 @@ export class DataLaunchdarklyWebhook extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._id = config.id;
-    this._name = config.name;
-    this._secret = config.secret;
   }
 
   // ==========
@@ -203,20 +189,9 @@ export class DataLaunchdarklyWebhook extends cdktf.TerraformDataSource {
     return this._id;
   }
 
-  // name - computed: false, optional: true, required: false
-  private _name?: string; 
+  // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
-  }
-  public set name(value: string) {
-    this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name;
   }
 
   // on - computed: true, optional: false, required: false
@@ -224,20 +199,9 @@ export class DataLaunchdarklyWebhook extends cdktf.TerraformDataSource {
     return this.getBooleanAttribute('on');
   }
 
-  // secret - computed: false, optional: true, required: false
-  private _secret?: string; 
+  // secret - computed: true, optional: false, required: false
   public get secret() {
     return this.getStringAttribute('secret');
-  }
-  public set secret(value: string) {
-    this._secret = value;
-  }
-  public resetSecret() {
-    this._secret = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get secretInput() {
-    return this._secret;
   }
 
   // statements - computed: true, optional: false, required: false
@@ -263,8 +227,6 @@ export class DataLaunchdarklyWebhook extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      secret: cdktf.stringToTerraform(this._secret),
     };
   }
 
@@ -272,18 +234,6 @@ export class DataLaunchdarklyWebhook extends cdktf.TerraformDataSource {
     const attrs = {
       id: {
         value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      name: {
-        value: cdktf.stringToHclTerraform(this._name),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      secret: {
-        value: cdktf.stringToHclTerraform(this._secret),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
