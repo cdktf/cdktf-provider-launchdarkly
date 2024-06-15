@@ -1,7 +1,7 @@
 
-# CDKTF prebuilt bindings for launchdarkly/launchdarkly provider version 2.18.4
+# CDKTF prebuilt bindings for launchdarkly/launchdarkly provider version 2.19.0
 
-This repo builds and publishes the [Terraform launchdarkly provider](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform launchdarkly provider](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Available Packages
 
@@ -63,7 +63,7 @@ This project is explicitly not tracking the Terraform launchdarkly provider vers
 These are the upstream dependencies:
 
 - [CDK for Terraform](https://cdk.tf)
-- [Terraform launchdarkly provider](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4)
+- [Terraform launchdarkly provider](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0)
 - [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.

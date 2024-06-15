@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/team
+// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/team
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,36 +8,18 @@ import * as cdktf from 'cdktf';
 
 export interface DataLaunchdarklyTeamConfig extends cdktf.TerraformMetaArguments {
   /**
-  * A list of keys for custom roles the team has
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/team#custom_role_keys DataLaunchdarklyTeam#custom_role_keys}
-  */
-  readonly customRoleKeys?: string[];
-  /**
-  * The team's description
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/team#description DataLaunchdarklyTeam#description}
-  */
-  readonly description?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/team#id DataLaunchdarklyTeam#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/team#id DataLaunchdarklyTeam#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * The team's unique key
+  * The team key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/team#key DataLaunchdarklyTeam#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/team#key DataLaunchdarklyTeam#key}
   */
   readonly key: string;
-  /**
-  * The team's human-readable name
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/team#name DataLaunchdarklyTeam#name}
-  */
-  readonly name?: string;
 }
 export interface DataLaunchdarklyTeamMaintainers {
 }
@@ -141,7 +118,7 @@ export class DataLaunchdarklyTeamMaintainersList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/team launchdarkly_team}
+* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/team launchdarkly_team}
 */
 export class DataLaunchdarklyTeam extends cdktf.TerraformDataSource {
 
@@ -157,7 +134,7 @@ export class DataLaunchdarklyTeam extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataLaunchdarklyTeam resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataLaunchdarklyTeam to import
-  * @param importFromId The id of the existing DataLaunchdarklyTeam that should be imported. Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/team#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataLaunchdarklyTeam that should be imported. Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/team#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataLaunchdarklyTeam to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -169,7 +146,7 @@ export class DataLaunchdarklyTeam extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/team launchdarkly_team} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/team launchdarkly_team} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -180,7 +157,7 @@ export class DataLaunchdarklyTeam extends cdktf.TerraformDataSource {
       terraformResourceType: 'launchdarkly_team',
       terraformGeneratorMetadata: {
         providerName: 'launchdarkly',
-        providerVersion: '2.18.4',
+        providerVersion: '2.19.0',
         providerVersionConstraint: '~> 2.13'
       },
       provider: config.provider,
@@ -191,47 +168,22 @@ export class DataLaunchdarklyTeam extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._customRoleKeys = config.customRoleKeys;
-    this._description = config.description;
     this._id = config.id;
     this._key = config.key;
-    this._name = config.name;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // custom_role_keys - computed: false, optional: true, required: false
-  private _customRoleKeys?: string[]; 
+  // custom_role_keys - computed: true, optional: false, required: false
   public get customRoleKeys() {
     return cdktf.Fn.tolist(this.getListAttribute('custom_role_keys'));
   }
-  public set customRoleKeys(value: string[]) {
-    this._customRoleKeys = value;
-  }
-  public resetCustomRoleKeys() {
-    this._customRoleKeys = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get customRoleKeysInput() {
-    return this._customRoleKeys;
-  }
 
-  // description - computed: false, optional: true, required: false
-  private _description?: string; 
+  // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
-  }
-  public set description(value: string) {
-    this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description;
   }
 
   // id - computed: true, optional: true, required: false
@@ -269,20 +221,9 @@ export class DataLaunchdarklyTeam extends cdktf.TerraformDataSource {
     return this._maintainers;
   }
 
-  // name - computed: false, optional: true, required: false
-  private _name?: string; 
+  // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
-  }
-  public set name(value: string) {
-    this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name;
   }
 
   // project_keys - computed: true, optional: false, required: false
@@ -296,28 +237,13 @@ export class DataLaunchdarklyTeam extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      custom_role_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._customRoleKeys),
-      description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
       key: cdktf.stringToTerraform(this._key),
-      name: cdktf.stringToTerraform(this._name),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      custom_role_keys: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._customRoleKeys),
-        isBlock: false,
-        type: "set",
-        storageClassType: "stringList",
-      },
-      description: {
-        value: cdktf.stringToHclTerraform(this._description),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
@@ -326,12 +252,6 @@ export class DataLaunchdarklyTeam extends cdktf.TerraformDataSource {
       },
       key: {
         value: cdktf.stringToHclTerraform(this._key),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      name: {
-        value: cdktf.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

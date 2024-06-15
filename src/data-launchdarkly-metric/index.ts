@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric
+// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/metric
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,177 +8,50 @@ import * as cdktf from 'cdktf';
 
 export interface DataLaunchdarklyMetricConfig extends cdktf.TerraformMetaArguments {
   /**
-  * A short description of what the metric will be used for
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#description DataLaunchdarklyMetric#description}
-  */
-  readonly description?: string;
-  /**
-  * The event key for your metric (if custom metric)
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#event_key DataLaunchdarklyMetric#event_key}
-  */
-  readonly eventKey?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#id DataLaunchdarklyMetric#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/metric#id DataLaunchdarklyMetric#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Whether the metric is active
+  * The unique key that references the metric. A change in this field will force the destruction of the existing resource and the creation of a new one.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#is_active DataLaunchdarklyMetric#is_active}
-  */
-  readonly isActive?: boolean | cdktf.IResolvable;
-  /**
-  * Whether the metric is numeric
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#is_numeric DataLaunchdarklyMetric#is_numeric}
-  */
-  readonly isNumeric?: boolean | cdktf.IResolvable;
-  /**
-  * A unique key that will be used to reference the metric in your code
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#key DataLaunchdarklyMetric#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/metric#key DataLaunchdarklyMetric#key}
   */
   readonly key: string;
   /**
-  * The metric type -available choices are 'pageview', 'click', and 'custom'
+  * The metrics's project key. A change in this field will force the destruction of the existing resource and the creation of a new one.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#kind DataLaunchdarklyMetric#kind}
-  */
-  readonly kind?: string;
-  /**
-  * The LaunchDarkly ID of the user who will maintain the metric. If not set, the API will automatically apply the member associated with your Terraform API key or the most recently-set maintainer
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#maintainer_id DataLaunchdarklyMetric#maintainer_id}
-  */
-  readonly maintainerId?: string;
-  /**
-  * A human-readable name for your metric
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#name DataLaunchdarklyMetric#name}
-  */
-  readonly name?: string;
-  /**
-  * The LaunchDarkly project key
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#project_key DataLaunchdarklyMetric#project_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/metric#project_key DataLaunchdarklyMetric#project_key}
   */
   readonly projectKey: string;
-  /**
-  * A set of one or more context kinds that this metric can measure events from.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#randomization_units DataLaunchdarklyMetric#randomization_units}
-  */
-  readonly randomizationUnits?: string[];
-  /**
-  * The CSS selector for your metric (if click metric)
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#selector DataLaunchdarklyMetric#selector}
-  */
-  readonly selector?: string;
-  /**
-  * The success criteria for your metric (if numeric metric)
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#success_criteria DataLaunchdarklyMetric#success_criteria}
-  */
-  readonly successCriteria?: string;
-  /**
-  * The unit for your metric (if numeric metric)
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#unit DataLaunchdarklyMetric#unit}
-  */
-  readonly unit?: string;
-  /**
-  * urls block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#urls DataLaunchdarklyMetric#urls}
-  */
-  readonly urls?: DataLaunchdarklyMetricUrls[] | cdktf.IResolvable;
 }
 export interface DataLaunchdarklyMetricUrls {
-  /**
-  * The url type - available choices are 'exact', 'canonical', 'substring' and 'regex'
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#kind DataLaunchdarklyMetric#kind}
-  */
-  readonly kind: string;
-  /**
-  * The URL-matching regex
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#pattern DataLaunchdarklyMetric#pattern}
-  */
-  readonly pattern?: string;
-  /**
-  * The URL substring
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#substring DataLaunchdarklyMetric#substring}
-  */
-  readonly substring?: string;
-  /**
-  * The exact or canonical URL
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#url DataLaunchdarklyMetric#url}
-  */
-  readonly url?: string;
 }
 
-export function dataLaunchdarklyMetricUrlsToTerraform(struct?: DataLaunchdarklyMetricUrls | cdktf.IResolvable): any {
+export function dataLaunchdarklyMetricUrlsToTerraform(struct?: DataLaunchdarklyMetricUrls): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kind: cdktf.stringToTerraform(struct!.kind),
-    pattern: cdktf.stringToTerraform(struct!.pattern),
-    substring: cdktf.stringToTerraform(struct!.substring),
-    url: cdktf.stringToTerraform(struct!.url),
   }
 }
 
 
-export function dataLaunchdarklyMetricUrlsToHclTerraform(struct?: DataLaunchdarklyMetricUrls | cdktf.IResolvable): any {
+export function dataLaunchdarklyMetricUrlsToHclTerraform(struct?: DataLaunchdarklyMetricUrls): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    kind: {
-      value: cdktf.stringToHclTerraform(struct!.kind),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    pattern: {
-      value: cdktf.stringToHclTerraform(struct!.pattern),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    substring: {
-      value: cdktf.stringToHclTerraform(struct!.substring),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
   };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+  return attrs;
 }
 
 export class DataLaunchdarklyMetricUrlsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -195,118 +63,43 @@ export class DataLaunchdarklyMetricUrlsOutputReference extends cdktf.ComplexObje
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataLaunchdarklyMetricUrls | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataLaunchdarklyMetricUrls | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._kind !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.kind = this._kind;
-    }
-    if (this._pattern !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.pattern = this._pattern;
-    }
-    if (this._substring !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.substring = this._substring;
-    }
-    if (this._url !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.url = this._url;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataLaunchdarklyMetricUrls | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataLaunchdarklyMetricUrls | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._kind = undefined;
-      this._pattern = undefined;
-      this._substring = undefined;
-      this._url = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._kind = value.kind;
-      this._pattern = value.pattern;
-      this._substring = value.substring;
-      this._url = value.url;
     }
   }
 
-  // kind - computed: false, optional: false, required: true
-  private _kind?: string; 
+  // kind - computed: true, optional: false, required: false
   public get kind() {
     return this.getStringAttribute('kind');
   }
-  public set kind(value: string) {
-    this._kind = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get kindInput() {
-    return this._kind;
-  }
 
-  // pattern - computed: false, optional: true, required: false
-  private _pattern?: string; 
+  // pattern - computed: true, optional: false, required: false
   public get pattern() {
     return this.getStringAttribute('pattern');
   }
-  public set pattern(value: string) {
-    this._pattern = value;
-  }
-  public resetPattern() {
-    this._pattern = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get patternInput() {
-    return this._pattern;
-  }
 
-  // substring - computed: false, optional: true, required: false
-  private _substring?: string; 
+  // substring - computed: true, optional: false, required: false
   public get substring() {
     return this.getStringAttribute('substring');
   }
-  public set substring(value: string) {
-    this._substring = value;
-  }
-  public resetSubstring() {
-    this._substring = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get substringInput() {
-    return this._substring;
-  }
 
-  // url - computed: false, optional: true, required: false
-  private _url?: string; 
+  // url - computed: true, optional: false, required: false
   public get url() {
     return this.getStringAttribute('url');
-  }
-  public set url(value: string) {
-    this._url = value;
-  }
-  public resetUrl() {
-    this._url = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get urlInput() {
-    return this._url;
   }
 }
 
 export class DataLaunchdarklyMetricUrlsList extends cdktf.ComplexList {
-  public internalValue? : DataLaunchdarklyMetricUrls[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -326,7 +119,7 @@ export class DataLaunchdarklyMetricUrlsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric launchdarkly_metric}
+* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/metric launchdarkly_metric}
 */
 export class DataLaunchdarklyMetric extends cdktf.TerraformDataSource {
 
@@ -342,7 +135,7 @@ export class DataLaunchdarklyMetric extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataLaunchdarklyMetric resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataLaunchdarklyMetric to import
-  * @param importFromId The id of the existing DataLaunchdarklyMetric that should be imported. Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataLaunchdarklyMetric that should be imported. Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/metric#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataLaunchdarklyMetric to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -354,7 +147,7 @@ export class DataLaunchdarklyMetric extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/data-sources/metric launchdarkly_metric} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/data-sources/metric launchdarkly_metric} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -365,7 +158,7 @@ export class DataLaunchdarklyMetric extends cdktf.TerraformDataSource {
       terraformResourceType: 'launchdarkly_metric',
       terraformGeneratorMetadata: {
         providerName: 'launchdarkly',
-        providerVersion: '2.18.4',
+        providerVersion: '2.19.0',
         providerVersionConstraint: '~> 2.13'
       },
       provider: config.provider,
@@ -376,57 +169,23 @@ export class DataLaunchdarklyMetric extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._description = config.description;
-    this._eventKey = config.eventKey;
     this._id = config.id;
-    this._isActive = config.isActive;
-    this._isNumeric = config.isNumeric;
     this._key = config.key;
-    this._kind = config.kind;
-    this._maintainerId = config.maintainerId;
-    this._name = config.name;
     this._projectKey = config.projectKey;
-    this._randomizationUnits = config.randomizationUnits;
-    this._selector = config.selector;
-    this._successCriteria = config.successCriteria;
-    this._unit = config.unit;
-    this._urls.internalValue = config.urls;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // description - computed: false, optional: true, required: false
-  private _description?: string; 
+  // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string) {
-    this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description;
-  }
 
-  // event_key - computed: false, optional: true, required: false
-  private _eventKey?: string; 
+  // event_key - computed: true, optional: false, required: false
   public get eventKey() {
     return this.getStringAttribute('event_key');
-  }
-  public set eventKey(value: string) {
-    this._eventKey = value;
-  }
-  public resetEventKey() {
-    this._eventKey = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get eventKeyInput() {
-    return this._eventKey;
   }
 
   // id - computed: true, optional: true, required: false
@@ -445,36 +204,14 @@ export class DataLaunchdarklyMetric extends cdktf.TerraformDataSource {
     return this._id;
   }
 
-  // is_active - computed: false, optional: true, required: false
-  private _isActive?: boolean | cdktf.IResolvable; 
+  // is_active - computed: true, optional: false, required: false
   public get isActive() {
     return this.getBooleanAttribute('is_active');
   }
-  public set isActive(value: boolean | cdktf.IResolvable) {
-    this._isActive = value;
-  }
-  public resetIsActive() {
-    this._isActive = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get isActiveInput() {
-    return this._isActive;
-  }
 
-  // is_numeric - computed: false, optional: true, required: false
-  private _isNumeric?: boolean | cdktf.IResolvable; 
+  // is_numeric - computed: true, optional: false, required: false
   public get isNumeric() {
     return this.getBooleanAttribute('is_numeric');
-  }
-  public set isNumeric(value: boolean | cdktf.IResolvable) {
-    this._isNumeric = value;
-  }
-  public resetIsNumeric() {
-    this._isNumeric = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get isNumericInput() {
-    return this._isNumeric;
   }
 
   // key - computed: false, optional: false, required: true
@@ -490,52 +227,19 @@ export class DataLaunchdarklyMetric extends cdktf.TerraformDataSource {
     return this._key;
   }
 
-  // kind - computed: false, optional: true, required: false
-  private _kind?: string; 
+  // kind - computed: true, optional: false, required: false
   public get kind() {
     return this.getStringAttribute('kind');
   }
-  public set kind(value: string) {
-    this._kind = value;
-  }
-  public resetKind() {
-    this._kind = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get kindInput() {
-    return this._kind;
-  }
 
-  // maintainer_id - computed: true, optional: true, required: false
-  private _maintainerId?: string; 
+  // maintainer_id - computed: true, optional: false, required: false
   public get maintainerId() {
     return this.getStringAttribute('maintainer_id');
   }
-  public set maintainerId(value: string) {
-    this._maintainerId = value;
-  }
-  public resetMaintainerId() {
-    this._maintainerId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get maintainerIdInput() {
-    return this._maintainerId;
-  }
 
-  // name - computed: false, optional: true, required: false
-  private _name?: string; 
+  // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
-  }
-  public set name(value: string) {
-    this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name;
   }
 
   // project_key - computed: false, optional: false, required: true
@@ -551,52 +255,19 @@ export class DataLaunchdarklyMetric extends cdktf.TerraformDataSource {
     return this._projectKey;
   }
 
-  // randomization_units - computed: true, optional: true, required: false
-  private _randomizationUnits?: string[]; 
+  // randomization_units - computed: true, optional: false, required: false
   public get randomizationUnits() {
     return cdktf.Fn.tolist(this.getListAttribute('randomization_units'));
   }
-  public set randomizationUnits(value: string[]) {
-    this._randomizationUnits = value;
-  }
-  public resetRandomizationUnits() {
-    this._randomizationUnits = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get randomizationUnitsInput() {
-    return this._randomizationUnits;
-  }
 
-  // selector - computed: false, optional: true, required: false
-  private _selector?: string; 
+  // selector - computed: true, optional: false, required: false
   public get selector() {
     return this.getStringAttribute('selector');
   }
-  public set selector(value: string) {
-    this._selector = value;
-  }
-  public resetSelector() {
-    this._selector = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get selectorInput() {
-    return this._selector;
-  }
 
-  // success_criteria - computed: true, optional: true, required: false
-  private _successCriteria?: string; 
+  // success_criteria - computed: true, optional: false, required: false
   public get successCriteria() {
     return this.getStringAttribute('success_criteria');
-  }
-  public set successCriteria(value: string) {
-    this._successCriteria = value;
-  }
-  public resetSuccessCriteria() {
-    this._successCriteria = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get successCriteriaInput() {
-    return this._successCriteria;
   }
 
   // tags - computed: true, optional: false, required: false
@@ -604,36 +275,15 @@ export class DataLaunchdarklyMetric extends cdktf.TerraformDataSource {
     return cdktf.Fn.tolist(this.getListAttribute('tags'));
   }
 
-  // unit - computed: false, optional: true, required: false
-  private _unit?: string; 
+  // unit - computed: true, optional: false, required: false
   public get unit() {
     return this.getStringAttribute('unit');
   }
-  public set unit(value: string) {
-    this._unit = value;
-  }
-  public resetUnit() {
-    this._unit = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get unitInput() {
-    return this._unit;
-  }
 
-  // urls - computed: false, optional: true, required: false
+  // urls - computed: true, optional: false, required: false
   private _urls = new DataLaunchdarklyMetricUrlsList(this, "urls", false);
   public get urls() {
     return this._urls;
-  }
-  public putUrls(value: DataLaunchdarklyMetricUrls[] | cdktf.IResolvable) {
-    this._urls.internalValue = value;
-  }
-  public resetUrls() {
-    this._urls.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get urlsInput() {
-    return this._urls.internalValue;
   }
 
   // =========
@@ -642,76 +292,22 @@ export class DataLaunchdarklyMetric extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      event_key: cdktf.stringToTerraform(this._eventKey),
       id: cdktf.stringToTerraform(this._id),
-      is_active: cdktf.booleanToTerraform(this._isActive),
-      is_numeric: cdktf.booleanToTerraform(this._isNumeric),
       key: cdktf.stringToTerraform(this._key),
-      kind: cdktf.stringToTerraform(this._kind),
-      maintainer_id: cdktf.stringToTerraform(this._maintainerId),
-      name: cdktf.stringToTerraform(this._name),
       project_key: cdktf.stringToTerraform(this._projectKey),
-      randomization_units: cdktf.listMapper(cdktf.stringToTerraform, false)(this._randomizationUnits),
-      selector: cdktf.stringToTerraform(this._selector),
-      success_criteria: cdktf.stringToTerraform(this._successCriteria),
-      unit: cdktf.stringToTerraform(this._unit),
-      urls: cdktf.listMapper(dataLaunchdarklyMetricUrlsToTerraform, true)(this._urls.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      description: {
-        value: cdktf.stringToHclTerraform(this._description),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      event_key: {
-        value: cdktf.stringToHclTerraform(this._eventKey),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
-      is_active: {
-        value: cdktf.booleanToHclTerraform(this._isActive),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "boolean",
-      },
-      is_numeric: {
-        value: cdktf.booleanToHclTerraform(this._isNumeric),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "boolean",
-      },
       key: {
         value: cdktf.stringToHclTerraform(this._key),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      kind: {
-        value: cdktf.stringToHclTerraform(this._kind),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      maintainer_id: {
-        value: cdktf.stringToHclTerraform(this._maintainerId),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      name: {
-        value: cdktf.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -721,36 +317,6 @@ export class DataLaunchdarklyMetric extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      randomization_units: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._randomizationUnits),
-        isBlock: false,
-        type: "set",
-        storageClassType: "stringList",
-      },
-      selector: {
-        value: cdktf.stringToHclTerraform(this._selector),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      success_criteria: {
-        value: cdktf.stringToHclTerraform(this._successCriteria),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      unit: {
-        value: cdktf.stringToHclTerraform(this._unit),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      urls: {
-        value: cdktf.listMapperHcl(dataLaunchdarklyMetricUrlsToHclTerraform, true)(this._urls.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "DataLaunchdarklyMetricUrlsList",
       },
     };
 

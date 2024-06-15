@@ -4,7 +4,7 @@
 
 ### FlagTrigger <a name="FlagTrigger" id="@cdktf/provider-launchdarkly.flagTrigger.FlagTrigger"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/flag_trigger launchdarkly_flag_trigger}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/flag_trigger launchdarkly_flag_trigger}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.flagTrigger.FlagTrigger.Initializer"></a>
 
@@ -487,7 +487,7 @@ The construct id used in the generated config for the FlagTrigger to import.
 
 The id of the existing FlagTrigger that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/flag_trigger#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/flag_trigger#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -879,13 +879,13 @@ const flagTriggerConfig: flagTrigger.FlagTriggerConfig = { ... }
 | <code><a href="#@cdktf/provider-launchdarkly.flagTrigger.FlagTriggerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.flagTrigger.FlagTriggerConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.flagTrigger.FlagTriggerConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.flagTrigger.FlagTriggerConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the trigger is currently active or not. This property defaults to true upon creation. |
-| <code><a href="#@cdktf/provider-launchdarkly.flagTrigger.FlagTriggerConfig.property.envKey">envKey</a></code> | <code>string</code> | The LaunchDarkly environment key. |
-| <code><a href="#@cdktf/provider-launchdarkly.flagTrigger.FlagTriggerConfig.property.flagKey">flagKey</a></code> | <code>string</code> | The key of the feature flag the trigger acts upon. |
+| <code><a href="#@cdktf/provider-launchdarkly.flagTrigger.FlagTriggerConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the trigger is currently active or not. |
+| <code><a href="#@cdktf/provider-launchdarkly.flagTrigger.FlagTriggerConfig.property.envKey">envKey</a></code> | <code>string</code> | The unique key of the environment the flag trigger will work in. |
+| <code><a href="#@cdktf/provider-launchdarkly.flagTrigger.FlagTriggerConfig.property.flagKey">flagKey</a></code> | <code>string</code> | The unique key of the associated flag. |
 | <code><a href="#@cdktf/provider-launchdarkly.flagTrigger.FlagTriggerConfig.property.instructions">instructions</a></code> | <code><a href="#@cdktf/provider-launchdarkly.flagTrigger.FlagTriggerInstructions">FlagTriggerInstructions</a></code> | instructions block. |
 | <code><a href="#@cdktf/provider-launchdarkly.flagTrigger.FlagTriggerConfig.property.integrationKey">integrationKey</a></code> | <code>string</code> | The unique identifier of the integration you intend to set your trigger up with. |
-| <code><a href="#@cdktf/provider-launchdarkly.flagTrigger.FlagTriggerConfig.property.projectKey">projectKey</a></code> | <code>string</code> | The LaunchDarkly project key. |
-| <code><a href="#@cdktf/provider-launchdarkly.flagTrigger.FlagTriggerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/flag_trigger#id FlagTrigger#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.flagTrigger.FlagTriggerConfig.property.projectKey">projectKey</a></code> | <code>string</code> | The unique key of the project encompassing the associated flag. |
+| <code><a href="#@cdktf/provider-launchdarkly.flagTrigger.FlagTriggerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/flag_trigger#id FlagTrigger#id}. |
 
 ---
 
@@ -967,9 +967,9 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Whether the trigger is currently active or not. This property defaults to true upon creation.
+Whether the trigger is currently active or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/flag_trigger#enabled FlagTrigger#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/flag_trigger#enabled FlagTrigger#enabled}
 
 ---
 
@@ -981,9 +981,11 @@ public readonly envKey: string;
 
 - *Type:* string
 
-The LaunchDarkly environment key.
+The unique key of the environment the flag trigger will work in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/flag_trigger#env_key FlagTrigger#env_key}
+A change in this field will force the destruction of the existing resource and the creation of a new one.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/flag_trigger#env_key FlagTrigger#env_key}
 
 ---
 
@@ -995,9 +997,11 @@ public readonly flagKey: string;
 
 - *Type:* string
 
-The key of the feature flag the trigger acts upon.
+The unique key of the associated flag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/flag_trigger#flag_key FlagTrigger#flag_key}
+A change in this field will force the destruction of the existing resource and the creation of a new one.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/flag_trigger#flag_key FlagTrigger#flag_key}
 
 ---
 
@@ -1011,7 +1015,7 @@ public readonly instructions: FlagTriggerInstructions;
 
 instructions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/flag_trigger#instructions FlagTrigger#instructions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/flag_trigger#instructions FlagTrigger#instructions}
 
 ---
 
@@ -1025,9 +1029,9 @@ public readonly integrationKey: string;
 
 The unique identifier of the integration you intend to set your trigger up with.
 
-"generic-trigger" should be used for integrations not explicitly supported.
+Currently supported are `generic-trigger`, `datadog`, `dynatrace`, `dynatrace-cloud-automation`, `honeycomb`, `new-relic-apm`, and `signalfx`. `generic-trigger` should be used for integrations not explicitly supported. A change in this field will force the destruction of the existing resource and the creation of a new one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/flag_trigger#integration_key FlagTrigger#integration_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/flag_trigger#integration_key FlagTrigger#integration_key}
 
 ---
 
@@ -1039,9 +1043,11 @@ public readonly projectKey: string;
 
 - *Type:* string
 
-The LaunchDarkly project key.
+The unique key of the project encompassing the associated flag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/flag_trigger#project_key FlagTrigger#project_key}
+A change in this field will force the destruction of the existing resource and the creation of a new one.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/flag_trigger#project_key FlagTrigger#project_key}
 
 ---
 
@@ -1053,7 +1059,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/flag_trigger#id FlagTrigger#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/flag_trigger#id FlagTrigger#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1074,7 +1080,7 @@ const flagTriggerInstructions: flagTrigger.FlagTriggerInstructions = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-launchdarkly.flagTrigger.FlagTriggerInstructions.property.kind">kind</a></code> | <code>string</code> | The action to perform when triggering. Currently supported flag actions are "turnFlagOn" and "turnFlagOff". |
+| <code><a href="#@cdktf/provider-launchdarkly.flagTrigger.FlagTriggerInstructions.property.kind">kind</a></code> | <code>string</code> | The action to perform when triggering. Currently supported flag actions are `turnFlagOn` and `turnFlagOff`. |
 
 ---
 
@@ -1086,9 +1092,9 @@ public readonly kind: string;
 
 - *Type:* string
 
-The action to perform when triggering. Currently supported flag actions are "turnFlagOn" and "turnFlagOff".
+The action to perform when triggering. Currently supported flag actions are `turnFlagOn` and `turnFlagOff`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.18.4/docs/resources/flag_trigger#kind FlagTrigger#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.19.0/docs/resources/flag_trigger#kind FlagTrigger#kind}
 
 ---
 
