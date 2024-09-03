@@ -1,3 +1,3 @@
 # `data_launchdarkly_webhook`
 
-Refer to the Terraform Registry for docs: [`data_launchdarkly_webhook`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/data-sources/webhook).
+Refer to the Terraform Registry for docs: [`data_launchdarkly_webhook`](https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/data-sources/webhook).

@@ -4,7 +4,7 @@
 
 ### Environment <a name="Environment" id="@cdktf/provider-launchdarkly.environment.Environment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment launchdarkly_environment}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment launchdarkly_environment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.environment.Environment.Initializer"></a>
 
@@ -57,7 +57,7 @@ environment.Environment(
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.critical">critical</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Denotes whether the environment is critical. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.defaultTrackEvents">default_track_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to `true` to enable data export for every flag created in this environment after you configure this argument. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.defaultTtl">default_ttl</a></code> | <code>typing.Union[int, float]</code> | The TTL for the environment. |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#id Environment#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#id Environment#id}. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.requireComments">require_comments</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to `true` if this environment requires comments for flag and segment changes. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.secureMode">secure_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to `true` to ensure a user of the client-side SDK cannot impersonate another user. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.tags">tags</a></code> | <code>typing.List[str]</code> | Tags associated with your resource. |
@@ -130,7 +130,7 @@ Must be unique amongst siblings in the same scope
 
 The color swatch as an RGB hex value with no leading `#`. For example: `000000`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#color Environment#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#color Environment#color}
 
 ---
 
@@ -142,7 +142,7 @@ The project-unique key for the environment.
 
 A change in this field will force the destruction of the existing resource and the creation of a new one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#key Environment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#key Environment#key}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 The name of the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#name Environment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#name Environment#name}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 The LaunchDarkly project key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#project_key Environment#project_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#project_key Environment#project_key}
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 approval_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#approval_settings Environment#approval_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#approval_settings Environment#approval_settings}
 
 ---
 
@@ -184,7 +184,7 @@ Set to `true` if this environment requires confirmation for flag and segment cha
 
 This field will default to `false` when not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#confirm_changes Environment#confirm_changes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#confirm_changes Environment#confirm_changes}
 
 ---
 
@@ -194,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 Denotes whether the environment is critical.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#critical Environment#critical}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#critical Environment#critical}
 
 ---
 
@@ -206,7 +206,7 @@ Set to `true` to enable data export for every flag created in this environment a
 
 This field will default to `false` when not set. To learn more, read [Data Export](https://docs.launchdarkly.com/home/data-export).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#default_track_events Environment#default_track_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#default_track_events Environment#default_track_events}
 
 ---
 
@@ -218,7 +218,7 @@ The TTL for the environment.
 
 This must be between 0 and 60 minutes. The TTL setting only applies to environments using the PHP SDK. This field will default to `0` when not set. To learn more, read [TTL settings](https://docs.launchdarkly.com/home/organize/environments#ttl-settings).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#default_ttl Environment#default_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#default_ttl Environment#default_ttl}
 
 ---
 
@@ -226,7 +226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#id Environment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#id Environment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -241,7 +241,7 @@ Set to `true` if this environment requires comments for flag and segment changes
 
 This field will default to `false` when not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#require_comments Environment#require_comments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#require_comments Environment#require_comments}
 
 ---
 
@@ -253,7 +253,7 @@ Set to `true` to ensure a user of the client-side SDK cannot impersonate another
 
 This field will default to `false` when not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#secure_mode Environment#secure_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#secure_mode Environment#secure_mode}
 
 ---
 
@@ -263,7 +263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 Tags associated with your resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#tags Environment#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#tags Environment#tags}
 
 ---
 
@@ -814,7 +814,7 @@ The construct id used in the generated config for the Environment to import.
 
 The id of the existing Environment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1372,7 +1372,7 @@ Set to `true` if changes can be applied as long as the `min_num_approvals` is me
 
 Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#can_apply_declined_changes Environment#can_apply_declined_changes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#can_apply_declined_changes Environment#can_apply_declined_changes}
 
 ---
 
@@ -1386,7 +1386,7 @@ can_review_own_request: typing.Union[bool, IResolvable]
 
 Set to `true` if requesters can approve or decline their own request. They may always comment. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#can_review_own_request Environment#can_review_own_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#can_review_own_request Environment#can_review_own_request}
 
 ---
 
@@ -1402,7 +1402,7 @@ The number of approvals required before an approval request can be applied.
 
 This number must be between 1 and 5. Defaults to 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#min_num_approvals Environment#min_num_approvals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#min_num_approvals Environment#min_num_approvals}
 
 ---
 
@@ -1418,7 +1418,7 @@ Set to `true` for changes to flags in this environment to require approval.
 
 You may only set `required` to true if `required_approval_tags` is not set and vice versa. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#required Environment#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#required Environment#required}
 
 ---
 
@@ -1434,7 +1434,7 @@ An array of tags used to specify which flags with those tags require approval.
 
 You may only set `required_approval_tags` if `required` is not set to `true` and vice versa.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#required_approval_tags Environment#required_approval_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#required_approval_tags Environment#required_approval_tags}
 
 ---
 
@@ -1455,7 +1455,7 @@ This is specific to each approval service. For a `service_kind` of `servicenow`,
  - `detail_column` (String) The name of the ServiceNow Change Request column LaunchDarkly uses to populate detailed approval request information.
 ```
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#service_config Environment#service_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#service_config Environment#service_config}
 
 ---
 
@@ -1471,7 +1471,7 @@ The kind of service associated with this approval.
 
 This determines which platform is used for requesting approval. Valid values are `servicenow`, `launchdarkly`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#service_kind Environment#service_kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#service_kind Environment#service_kind}
 
 ---
 
@@ -1526,7 +1526,7 @@ environment.EnvironmentConfig(
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.critical">critical</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Denotes whether the environment is critical. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.defaultTrackEvents">default_track_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to `true` to enable data export for every flag created in this environment after you configure this argument. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.defaultTtl">default_ttl</a></code> | <code>typing.Union[int, float]</code> | The TTL for the environment. |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#id Environment#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#id Environment#id}. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.requireComments">require_comments</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to `true` if this environment requires comments for flag and segment changes. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.secureMode">secure_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to `true` to ensure a user of the client-side SDK cannot impersonate another user. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.tags">tags</a></code> | <code>typing.List[str]</code> | Tags associated with your resource. |
@@ -1613,7 +1613,7 @@ color: str
 
 The color swatch as an RGB hex value with no leading `#`. For example: `000000`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#color Environment#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#color Environment#color}
 
 ---
 
@@ -1629,7 +1629,7 @@ The project-unique key for the environment.
 
 A change in this field will force the destruction of the existing resource and the creation of a new one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#key Environment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#key Environment#key}
 
 ---
 
@@ -1643,7 +1643,7 @@ name: str
 
 The name of the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#name Environment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#name Environment#name}
 
 ---
 
@@ -1657,7 +1657,7 @@ project_key: str
 
 The LaunchDarkly project key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#project_key Environment#project_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#project_key Environment#project_key}
 
 ---
 
@@ -1671,7 +1671,7 @@ approval_settings: typing.Union[IResolvable, typing.List[EnvironmentApprovalSett
 
 approval_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#approval_settings Environment#approval_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#approval_settings Environment#approval_settings}
 
 ---
 
@@ -1687,7 +1687,7 @@ Set to `true` if this environment requires confirmation for flag and segment cha
 
 This field will default to `false` when not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#confirm_changes Environment#confirm_changes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#confirm_changes Environment#confirm_changes}
 
 ---
 
@@ -1701,7 +1701,7 @@ critical: typing.Union[bool, IResolvable]
 
 Denotes whether the environment is critical.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#critical Environment#critical}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#critical Environment#critical}
 
 ---
 
@@ -1717,7 +1717,7 @@ Set to `true` to enable data export for every flag created in this environment a
 
 This field will default to `false` when not set. To learn more, read [Data Export](https://docs.launchdarkly.com/home/data-export).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#default_track_events Environment#default_track_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#default_track_events Environment#default_track_events}
 
 ---
 
@@ -1733,7 +1733,7 @@ The TTL for the environment.
 
 This must be between 0 and 60 minutes. The TTL setting only applies to environments using the PHP SDK. This field will default to `0` when not set. To learn more, read [TTL settings](https://docs.launchdarkly.com/home/organize/environments#ttl-settings).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#default_ttl Environment#default_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#default_ttl Environment#default_ttl}
 
 ---
 
@@ -1745,7 +1745,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#id Environment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#id Environment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1764,7 +1764,7 @@ Set to `true` if this environment requires comments for flag and segment changes
 
 This field will default to `false` when not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#require_comments Environment#require_comments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#require_comments Environment#require_comments}
 
 ---
 
@@ -1780,7 +1780,7 @@ Set to `true` to ensure a user of the client-side SDK cannot impersonate another
 
 This field will default to `false` when not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#secure_mode Environment#secure_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#secure_mode Environment#secure_mode}
 
 ---
 
@@ -1794,7 +1794,7 @@ tags: typing.List[str]
 
 Tags associated with your resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/resources/environment#tags Environment#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/environment#tags Environment#tags}
 
 ---
 

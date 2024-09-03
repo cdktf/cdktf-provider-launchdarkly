@@ -4,7 +4,7 @@
 
 ### DataLaunchdarklyTeamMember <a name="DataLaunchdarklyTeamMember" id="@cdktf/provider-launchdarkly.dataLaunchdarklyTeamMember.DataLaunchdarklyTeamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/data-sources/team_member launchdarkly_team_member}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/data-sources/team_member launchdarkly_team_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklyTeamMember.DataLaunchdarklyTeamMember.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 The unique email address associated with the team member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/data-sources/team_member#email DataLaunchdarklyTeamMember#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/data-sources/team_member#email DataLaunchdarklyTeamMember#email}
 
 ---
 
@@ -465,7 +465,7 @@ The construct id used in the generated config for the DataLaunchdarklyTeamMember
 
 The id of the existing DataLaunchdarklyTeamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/data-sources/team_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/data-sources/team_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -829,7 +829,7 @@ email: str
 
 The unique email address associated with the team member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.0/docs/data-sources/team_member#email DataLaunchdarklyTeamMember#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/data-sources/team_member#email DataLaunchdarklyTeamMember#email}
 
 ---
 
