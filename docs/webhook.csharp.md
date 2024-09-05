@@ -4,7 +4,7 @@
 
 ### Webhook <a name="Webhook" id="@cdktf/provider-launchdarkly.webhook.Webhook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/webhook launchdarkly_webhook}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/webhook launchdarkly_webhook}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.webhook.Webhook.Initializer"></a>
 
@@ -522,7 +522,7 @@ The construct id used in the generated config for the Webhook to import.
 
 The id of the existing Webhook that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/webhook#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/webhook#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -908,7 +908,7 @@ new WebhookConfig {
 | <code><a href="#@cdktf/provider-launchdarkly.webhook.WebhookConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.webhook.WebhookConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.webhook.WebhookConfig.property.url">Url</a></code> | <code>string</code> | The URL of the remote webhook. |
-| <code><a href="#@cdktf/provider-launchdarkly.webhook.WebhookConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/webhook#id Webhook#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.webhook.WebhookConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/webhook#id Webhook#id}. |
 | <code><a href="#@cdktf/provider-launchdarkly.webhook.WebhookConfig.property.name">Name</a></code> | <code>string</code> | The webhook's human-readable name. |
 | <code><a href="#@cdktf/provider-launchdarkly.webhook.WebhookConfig.property.on">On</a></code> | <code>object</code> | Specifies whether the webhook is enabled. |
 | <code><a href="#@cdktf/provider-launchdarkly.webhook.WebhookConfig.property.secret">Secret</a></code> | <code>string</code> | The secret used to sign the webhook. |
@@ -997,7 +997,7 @@ public string Url { get; set; }
 
 The URL of the remote webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/webhook#url Webhook#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/webhook#url Webhook#url}
 
 ---
 
@@ -1009,7 +1009,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/webhook#id Webhook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/webhook#id Webhook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1026,7 +1026,7 @@ public string Name { get; set; }
 
 The webhook's human-readable name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/webhook#name Webhook#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/webhook#name Webhook#name}
 
 ---
 
@@ -1040,7 +1040,7 @@ public object On { get; set; }
 
 Specifies whether the webhook is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/webhook#on Webhook#on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/webhook#on Webhook#on}
 
 ---
 
@@ -1054,7 +1054,7 @@ public string Secret { get; set; }
 
 The secret used to sign the webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/webhook#secret Webhook#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/webhook#secret Webhook#secret}
 
 ---
 
@@ -1068,7 +1068,7 @@ public object Statements { get; set; }
 
 statements block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/webhook#statements Webhook#statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/webhook#statements Webhook#statements}
 
 ---
 
@@ -1082,7 +1082,7 @@ public string[] Tags { get; set; }
 
 Tags associated with your resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/webhook#tags Webhook#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/webhook#tags Webhook#tags}
 
 ---
 
@@ -1126,7 +1126,7 @@ Either `allow` or `deny`.
 
 This argument defines whether the statement allows or denies access to the named resources and actions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/webhook#effect Webhook#effect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/webhook#effect Webhook#effect}
 
 ---
 
@@ -1142,7 +1142,7 @@ The list of action specifiers defining the actions to which the statement applie
 
 Either `actions` or `not_actions` must be specified. For a list of available actions read [Actions reference](https://docs.launchdarkly.com/home/account-security/custom-roles/actions#actions-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/webhook#actions Webhook#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/webhook#actions Webhook#actions}
 
 ---
 
@@ -1156,7 +1156,7 @@ public string[] NotActions { get; set; }
 
 The list of action specifiers defining the actions to which the statement does not apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/webhook#not_actions Webhook#not_actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/webhook#not_actions Webhook#not_actions}
 
 ---
 
@@ -1170,7 +1170,7 @@ public string[] NotResources { get; set; }
 
 The list of resource specifiers defining the resources to which the statement does not apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/webhook#not_resources Webhook#not_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/webhook#not_resources Webhook#not_resources}
 
 ---
 
@@ -1184,7 +1184,7 @@ public string[] Resources { get; set; }
 
 The list of resource specifiers defining the resources to which the statement applies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/webhook#resources Webhook#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/webhook#resources Webhook#resources}
 
 ---
 
