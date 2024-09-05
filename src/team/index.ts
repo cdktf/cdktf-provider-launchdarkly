@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/team
+// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/team
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,50 +10,50 @@ export interface TeamConfig extends cdktf.TerraformMetaArguments {
   /**
   * List of custom role keys the team will access. The referenced custom roles must already exist in LaunchDarkly. If they don't, the provider may behave unexpectedly.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/team#custom_role_keys Team#custom_role_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/team#custom_role_keys Team#custom_role_keys}
   */
   readonly customRoleKeys?: string[];
   /**
   * The team description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/team#description Team#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/team#description Team#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/team#id Team#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/team#id Team#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * The team key.
+  * The team key. A change in this field will force the destruction of the existing resource and the creation of a new one.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/team#key Team#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/team#key Team#key}
   */
   readonly key: string;
   /**
   * List of member IDs for users who maintain the team.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/team#maintainers Team#maintainers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/team#maintainers Team#maintainers}
   */
   readonly maintainers?: string[];
   /**
   * List of member IDs who belong to the team.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/team#member_ids Team#member_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/team#member_ids Team#member_ids}
   */
   readonly memberIds?: string[];
   /**
   * A human-friendly name for the team.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/team#name Team#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/team#name Team#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/team launchdarkly_team}
+* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/team launchdarkly_team}
 */
 export class Team extends cdktf.TerraformResource {
 
@@ -74,7 +69,7 @@ export class Team extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Team resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Team to import
-  * @param importFromId The id of the existing Team that should be imported. Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/team#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Team that should be imported. Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/team#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Team to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -86,7 +81,7 @@ export class Team extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.1/docs/resources/team launchdarkly_team} Resource
+  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/team launchdarkly_team} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +92,7 @@ export class Team extends cdktf.TerraformResource {
       terraformResourceType: 'launchdarkly_team',
       terraformGeneratorMetadata: {
         providerName: 'launchdarkly',
-        providerVersion: '2.20.1',
+        providerVersion: '2.20.2',
         providerVersionConstraint: '~> 2.13'
       },
       provider: config.provider,
