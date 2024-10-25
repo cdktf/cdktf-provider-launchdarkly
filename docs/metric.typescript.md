@@ -4,7 +4,7 @@
 
 ### Metric <a name="Metric" id="@cdktf/provider-launchdarkly.metric.Metric"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/metric launchdarkly_metric}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs/resources/metric launchdarkly_metric}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.metric.Metric.Initializer"></a>
 
@@ -74,17 +74,21 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.putUrls">putUrls</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.resetAnalysisType">resetAnalysisType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.resetEventKey">resetEventKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.resetIncludeUnitsWithoutEvents">resetIncludeUnitsWithoutEvents</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.resetIsActive">resetIsActive</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.resetIsNumeric">resetIsNumeric</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.resetMaintainerId">resetMaintainerId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.resetPercentileValue">resetPercentileValue</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.resetRandomizationUnits">resetRandomizationUnits</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.resetSelector">resetSelector</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.resetSuccessCriteria">resetSuccessCriteria</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.resetTags">resetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.resetUnit">resetUnit</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.resetUnitAggregationType">resetUnitAggregationType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.resetUrls">resetUrls</a></code> | *No description.* |
 
 ---
@@ -389,6 +393,12 @@ public putUrls(value: IResolvable | MetricUrls[]): void
 
 ---
 
+##### `resetAnalysisType` <a name="resetAnalysisType" id="@cdktf/provider-launchdarkly.metric.Metric.resetAnalysisType"></a>
+
+```typescript
+public resetAnalysisType(): void
+```
+
 ##### `resetDescription` <a name="resetDescription" id="@cdktf/provider-launchdarkly.metric.Metric.resetDescription"></a>
 
 ```typescript
@@ -407,6 +417,12 @@ public resetEventKey(): void
 public resetId(): void
 ```
 
+##### `resetIncludeUnitsWithoutEvents` <a name="resetIncludeUnitsWithoutEvents" id="@cdktf/provider-launchdarkly.metric.Metric.resetIncludeUnitsWithoutEvents"></a>
+
+```typescript
+public resetIncludeUnitsWithoutEvents(): void
+```
+
 ##### `resetIsActive` <a name="resetIsActive" id="@cdktf/provider-launchdarkly.metric.Metric.resetIsActive"></a>
 
 ```typescript
@@ -423,6 +439,12 @@ public resetIsNumeric(): void
 
 ```typescript
 public resetMaintainerId(): void
+```
+
+##### `resetPercentileValue` <a name="resetPercentileValue" id="@cdktf/provider-launchdarkly.metric.Metric.resetPercentileValue"></a>
+
+```typescript
+public resetPercentileValue(): void
 ```
 
 ##### `resetRandomizationUnits` <a name="resetRandomizationUnits" id="@cdktf/provider-launchdarkly.metric.Metric.resetRandomizationUnits"></a>
@@ -453,6 +475,12 @@ public resetTags(): void
 
 ```typescript
 public resetUnit(): void
+```
+
+##### `resetUnitAggregationType` <a name="resetUnitAggregationType" id="@cdktf/provider-launchdarkly.metric.Metric.resetUnitAggregationType"></a>
+
+```typescript
+public resetUnitAggregationType(): void
 ```
 
 ##### `resetUrls` <a name="resetUrls" id="@cdktf/provider-launchdarkly.metric.Metric.resetUrls"></a>
@@ -564,7 +592,7 @@ The construct id used in the generated config for the Metric to import.
 
 The id of the existing Metric that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/metric#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs/resources/metric#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -595,37 +623,46 @@ Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchd
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.urls">urls</a></code> | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricUrlsList">MetricUrlsList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.version">version</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.analysisTypeInput">analysisTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.eventKeyInput">eventKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.includeUnitsWithoutEventsInput">includeUnitsWithoutEventsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.isActiveInput">isActiveInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.isNumericInput">isNumericInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.keyInput">keyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.kindInput">kindInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.maintainerIdInput">maintainerIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.percentileValueInput">percentileValueInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.projectKeyInput">projectKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.randomizationUnitsInput">randomizationUnitsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.selectorInput">selectorInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.successCriteriaInput">successCriteriaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.tagsInput">tagsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.unitAggregationTypeInput">unitAggregationTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.unitInput">unitInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.urlsInput">urlsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-launchdarkly.metric.MetricUrls">MetricUrls</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.analysisType">analysisType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.eventKey">eventKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.includeUnitsWithoutEvents">includeUnitsWithoutEvents</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.isActive">isActive</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.isNumeric">isNumeric</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.key">key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.kind">kind</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.maintainerId">maintainerId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.percentileValue">percentileValue</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.projectKey">projectKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.randomizationUnits">randomizationUnits</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.selector">selector</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.successCriteria">successCriteria</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.tags">tags</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.unit">unit</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.unitAggregationType">unitAggregationType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -781,6 +818,26 @@ public readonly urls: MetricUrlsList;
 
 ---
 
+##### `version`<sup>Required</sup> <a name="version" id="@cdktf/provider-launchdarkly.metric.Metric.property.version"></a>
+
+```typescript
+public readonly version: number;
+```
+
+- *Type:* number
+
+---
+
+##### `analysisTypeInput`<sup>Optional</sup> <a name="analysisTypeInput" id="@cdktf/provider-launchdarkly.metric.Metric.property.analysisTypeInput"></a>
+
+```typescript
+public readonly analysisTypeInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktf/provider-launchdarkly.metric.Metric.property.descriptionInput"></a>
 
 ```typescript
@@ -808,6 +865,16 @@ public readonly idInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `includeUnitsWithoutEventsInput`<sup>Optional</sup> <a name="includeUnitsWithoutEventsInput" id="@cdktf/provider-launchdarkly.metric.Metric.property.includeUnitsWithoutEventsInput"></a>
+
+```typescript
+public readonly includeUnitsWithoutEventsInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -871,6 +938,16 @@ public readonly nameInput: string;
 
 ---
 
+##### `percentileValueInput`<sup>Optional</sup> <a name="percentileValueInput" id="@cdktf/provider-launchdarkly.metric.Metric.property.percentileValueInput"></a>
+
+```typescript
+public readonly percentileValueInput: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `projectKeyInput`<sup>Optional</sup> <a name="projectKeyInput" id="@cdktf/provider-launchdarkly.metric.Metric.property.projectKeyInput"></a>
 
 ```typescript
@@ -921,6 +998,16 @@ public readonly tagsInput: string[];
 
 ---
 
+##### `unitAggregationTypeInput`<sup>Optional</sup> <a name="unitAggregationTypeInput" id="@cdktf/provider-launchdarkly.metric.Metric.property.unitAggregationTypeInput"></a>
+
+```typescript
+public readonly unitAggregationTypeInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `unitInput`<sup>Optional</sup> <a name="unitInput" id="@cdktf/provider-launchdarkly.metric.Metric.property.unitInput"></a>
 
 ```typescript
@@ -938,6 +1025,16 @@ public readonly urlsInput: IResolvable | MetricUrls[];
 ```
 
 - *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-launchdarkly.metric.MetricUrls">MetricUrls</a>[]
+
+---
+
+##### `analysisType`<sup>Required</sup> <a name="analysisType" id="@cdktf/provider-launchdarkly.metric.Metric.property.analysisType"></a>
+
+```typescript
+public readonly analysisType: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -968,6 +1065,16 @@ public readonly id: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `includeUnitsWithoutEvents`<sup>Required</sup> <a name="includeUnitsWithoutEvents" id="@cdktf/provider-launchdarkly.metric.Metric.property.includeUnitsWithoutEvents"></a>
+
+```typescript
+public readonly includeUnitsWithoutEvents: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -1031,6 +1138,16 @@ public readonly name: string;
 
 ---
 
+##### `percentileValue`<sup>Required</sup> <a name="percentileValue" id="@cdktf/provider-launchdarkly.metric.Metric.property.percentileValue"></a>
+
+```typescript
+public readonly percentileValue: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `projectKey`<sup>Required</sup> <a name="projectKey" id="@cdktf/provider-launchdarkly.metric.Metric.property.projectKey"></a>
 
 ```typescript
@@ -1091,6 +1208,16 @@ public readonly unit: string;
 
 ---
 
+##### `unitAggregationType`<sup>Required</sup> <a name="unitAggregationType" id="@cdktf/provider-launchdarkly.metric.Metric.property.unitAggregationType"></a>
+
+```typescript
+public readonly unitAggregationType: string;
+```
+
+- *Type:* string
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1136,17 +1263,21 @@ const metricConfig: metric.MetricConfig = { ... }
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.kind">kind</a></code> | <code>string</code> | The metric type. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.name">name</a></code> | <code>string</code> | The human-friendly name for the metric. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.projectKey">projectKey</a></code> | <code>string</code> | The metrics's project key. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.analysisType">analysisType</a></code> | <code>string</code> | The method for analyzing metric events. Available choices are `mean` and `percentile`. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.description">description</a></code> | <code>string</code> | The description of the metric's purpose. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.eventKey">eventKey</a></code> | <code>string</code> | The event key for your metric (if custom metric). |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/metric#id Metric#id}. |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.isActive">isActive</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether a metric is a active. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs/resources/metric#id Metric#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.includeUnitsWithoutEvents">includeUnitsWithoutEvents</a></code> | <code>boolean \| cdktf.IResolvable</code> | Include units that did not send any events and set their value to 0. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.isActive">isActive</a></code> | <code>boolean \| cdktf.IResolvable</code> | Ignored. All metrics are considered active. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.isNumeric">isNumeric</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether a `custom` metric is a numeric metric or not. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.maintainerId">maintainerId</a></code> | <code>string</code> | The LaunchDarkly member ID of the member who will maintain the metric. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.percentileValue">percentileValue</a></code> | <code>number</code> | The percentile for the analysis method. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.randomizationUnits">randomizationUnits</a></code> | <code>string[]</code> | A set of one or more context kinds that this metric can measure events from. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.selector">selector</a></code> | <code>string</code> | The CSS selector for your metric (if click metric). |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.successCriteria">successCriteria</a></code> | <code>string</code> | The success criteria for your metric (if numeric metric). |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.successCriteria">successCriteria</a></code> | <code>string</code> | The success criteria for your metric (if numeric metric). Available choices are `HigherThanBaseline` and `LowerThanBaseline`. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.tags">tags</a></code> | <code>string[]</code> | Tags associated with your resource. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.unit">unit</a></code> | <code>string</code> | (Required for kind `custom`) The unit for numeric `custom` metrics. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.unitAggregationType">unitAggregationType</a></code> | <code>string</code> | The method by which multiple unit event values are aggregated. Available choices are `average` and `sum`. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.urls">urls</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-launchdarkly.metric.MetricUrls">MetricUrls</a>[]</code> | urls block. |
 
 ---
@@ -1233,7 +1364,7 @@ The unique key that references the metric.
 
 A change in this field will force the destruction of the existing resource and the creation of a new one. A change in this field will force the destruction of the existing resource and the creation of a new one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/metric#key Metric#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs/resources/metric#key Metric#key}
 
 ---
 
@@ -1249,7 +1380,7 @@ The metric type.
 
 Available choices are `click`, `custom`, and `pageview`. A change in this field will force the destruction of the existing resource and the creation of a new one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/metric#kind Metric#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs/resources/metric#kind Metric#kind}
 
 ---
 
@@ -1263,7 +1394,7 @@ public readonly name: string;
 
 The human-friendly name for the metric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/metric#name Metric#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs/resources/metric#name Metric#name}
 
 ---
 
@@ -1279,7 +1410,21 @@ The metrics's project key.
 
 A change in this field will force the destruction of the existing resource and the creation of a new one. A change in this field will force the destruction of the existing resource and the creation of a new one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/metric#project_key Metric#project_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs/resources/metric#project_key Metric#project_key}
+
+---
+
+##### `analysisType`<sup>Optional</sup> <a name="analysisType" id="@cdktf/provider-launchdarkly.metric.MetricConfig.property.analysisType"></a>
+
+```typescript
+public readonly analysisType: string;
+```
+
+- *Type:* string
+
+The method for analyzing metric events. Available choices are `mean` and `percentile`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs/resources/metric#analysis_type Metric#analysis_type}
 
 ---
 
@@ -1293,7 +1438,7 @@ public readonly description: string;
 
 The description of the metric's purpose.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/metric#description Metric#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs/resources/metric#description Metric#description}
 
 ---
 
@@ -1307,7 +1452,7 @@ public readonly eventKey: string;
 
 The event key for your metric (if custom metric).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/metric#event_key Metric#event_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs/resources/metric#event_key Metric#event_key}
 
 ---
 
@@ -1319,10 +1464,24 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/metric#id Metric#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs/resources/metric#id Metric#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `includeUnitsWithoutEvents`<sup>Optional</sup> <a name="includeUnitsWithoutEvents" id="@cdktf/provider-launchdarkly.metric.MetricConfig.property.includeUnitsWithoutEvents"></a>
+
+```typescript
+public readonly includeUnitsWithoutEvents: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Include units that did not send any events and set their value to 0.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs/resources/metric#include_units_without_events Metric#include_units_without_events}
 
 ---
 
@@ -1334,9 +1493,9 @@ public readonly isActive: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Whether a metric is a active.
+Ignored. All metrics are considered active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/metric#is_active Metric#is_active}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs/resources/metric#is_active Metric#is_active}
 
 ---
 
@@ -1350,7 +1509,7 @@ public readonly isNumeric: boolean | IResolvable;
 
 Whether a `custom` metric is a numeric metric or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/metric#is_numeric Metric#is_numeric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs/resources/metric#is_numeric Metric#is_numeric}
 
 ---
 
@@ -1366,7 +1525,23 @@ The LaunchDarkly member ID of the member who will maintain the metric.
 
 If not set, the API will automatically apply the member associated with your Terraform API key or the most recently-set maintainer
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/metric#maintainer_id Metric#maintainer_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs/resources/metric#maintainer_id Metric#maintainer_id}
+
+---
+
+##### `percentileValue`<sup>Optional</sup> <a name="percentileValue" id="@cdktf/provider-launchdarkly.metric.MetricConfig.property.percentileValue"></a>
+
+```typescript
+public readonly percentileValue: number;
+```
+
+- *Type:* number
+
+The percentile for the analysis method.
+
+An integer denoting the target percentile between 0 and 100. Required when analysis_type is percentile.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs/resources/metric#percentile_value Metric#percentile_value}
 
 ---
 
@@ -1382,7 +1557,7 @@ A set of one or more context kinds that this metric can measure events from.
 
 Metrics can only use context kinds marked as "Available for experiments." For more information, read [Allocating experiment audiences](https://docs.launchdarkly.com/home/creating-experiments/allocation).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/metric#randomization_units Metric#randomization_units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs/resources/metric#randomization_units Metric#randomization_units}
 
 ---
 
@@ -1396,7 +1571,7 @@ public readonly selector: string;
 
 The CSS selector for your metric (if click metric).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/metric#selector Metric#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs/resources/metric#selector Metric#selector}
 
 ---
 
@@ -1408,9 +1583,9 @@ public readonly successCriteria: string;
 
 - *Type:* string
 
-The success criteria for your metric (if numeric metric).
+The success criteria for your metric (if numeric metric). Available choices are `HigherThanBaseline` and `LowerThanBaseline`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/metric#success_criteria Metric#success_criteria}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs/resources/metric#success_criteria Metric#success_criteria}
 
 ---
 
@@ -1424,7 +1599,7 @@ public readonly tags: string[];
 
 Tags associated with your resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/metric#tags Metric#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs/resources/metric#tags Metric#tags}
 
 ---
 
@@ -1438,7 +1613,21 @@ public readonly unit: string;
 
 (Required for kind `custom`) The unit for numeric `custom` metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/metric#unit Metric#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs/resources/metric#unit Metric#unit}
+
+---
+
+##### `unitAggregationType`<sup>Optional</sup> <a name="unitAggregationType" id="@cdktf/provider-launchdarkly.metric.MetricConfig.property.unitAggregationType"></a>
+
+```typescript
+public readonly unitAggregationType: string;
+```
+
+- *Type:* string
+
+The method by which multiple unit event values are aggregated. Available choices are `average` and `sum`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs/resources/metric#unit_aggregation_type Metric#unit_aggregation_type}
 
 ---
 
@@ -1452,7 +1641,7 @@ public readonly urls: IResolvable | MetricUrls[];
 
 urls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/metric#urls Metric#urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs/resources/metric#urls Metric#urls}
 
 ---
 
@@ -1487,7 +1676,7 @@ public readonly kind: string;
 
 The URL type. Available choices are `exact`, `canonical`, `substring` and `regex`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/metric#kind Metric#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs/resources/metric#kind Metric#kind}
 
 ---
 
@@ -1501,7 +1690,7 @@ public readonly pattern: string;
 
 (Required for kind `regex`) The regex pattern to match by.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/metric#pattern Metric#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs/resources/metric#pattern Metric#pattern}
 
 ---
 
@@ -1515,7 +1704,7 @@ public readonly substring: string;
 
 (Required for kind `substring`) The URL substring to match by.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/metric#substring Metric#substring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs/resources/metric#substring Metric#substring}
 
 ---
 
@@ -1529,7 +1718,7 @@ public readonly url: string;
 
 (Required for kind `exact` and `canonical`) The exact or canonical URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.20.2/docs/resources/metric#url Metric#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.0/docs/resources/metric#url Metric#url}
 
 ---
 
