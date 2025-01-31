@@ -4,7 +4,7 @@
 
 ### TeamRoleMapping <a name="TeamRoleMapping" id="@cdktf/provider-launchdarkly.teamRoleMapping.TeamRoleMapping"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.2/docs/resources/team_role_mapping launchdarkly_team_role_mapping}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/resources/team_role_mapping launchdarkly_team_role_mapping}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.teamRoleMapping.TeamRoleMapping.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 A set of custom role keys to assign to the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.2/docs/resources/team_role_mapping#custom_role_keys TeamRoleMapping#custom_role_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/resources/team_role_mapping#custom_role_keys TeamRoleMapping#custom_role_keys}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 The LaunchDarkly team key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.2/docs/resources/team_role_mapping#team_key TeamRoleMapping#team_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/resources/team_role_mapping#team_key TeamRoleMapping#team_key}
 
 ---
 
@@ -591,7 +591,7 @@ The construct id used in the generated config for the TeamRoleMapping to import.
 
 The id of the existing TeamRoleMapping that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.2/docs/resources/team_role_mapping#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/resources/team_role_mapping#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -957,7 +957,7 @@ custom_role_keys: typing.List[str]
 
 A set of custom role keys to assign to the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.2/docs/resources/team_role_mapping#custom_role_keys TeamRoleMapping#custom_role_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/resources/team_role_mapping#custom_role_keys TeamRoleMapping#custom_role_keys}
 
 ---
 
@@ -971,7 +971,7 @@ team_key: str
 
 The LaunchDarkly team key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.2/docs/resources/team_role_mapping#team_key TeamRoleMapping#team_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/resources/team_role_mapping#team_key TeamRoleMapping#team_key}
 
 ---
 
