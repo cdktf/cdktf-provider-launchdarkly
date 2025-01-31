@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.2/docs/data-sources/metric
+// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/data-sources/metric
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataLaunchdarklyMetricConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.2/docs/data-sources/metric#id DataLaunchdarklyMetric#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/data-sources/metric#id DataLaunchdarklyMetric#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +17,13 @@ export interface DataLaunchdarklyMetricConfig extends cdktf.TerraformMetaArgumen
   /**
   * The unique key that references the metric. A change in this field will force the destruction of the existing resource and the creation of a new one.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.2/docs/data-sources/metric#key DataLaunchdarklyMetric#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/data-sources/metric#key DataLaunchdarklyMetric#key}
   */
   readonly key: string;
   /**
   * The metrics's project key. A change in this field will force the destruction of the existing resource and the creation of a new one.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.2/docs/data-sources/metric#project_key DataLaunchdarklyMetric#project_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/data-sources/metric#project_key DataLaunchdarklyMetric#project_key}
   */
   readonly projectKey: string;
 }
@@ -124,7 +119,7 @@ export class DataLaunchdarklyMetricUrlsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.2/docs/data-sources/metric launchdarkly_metric}
+* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/data-sources/metric launchdarkly_metric}
 */
 export class DataLaunchdarklyMetric extends cdktf.TerraformDataSource {
 
@@ -140,7 +135,7 @@ export class DataLaunchdarklyMetric extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataLaunchdarklyMetric resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataLaunchdarklyMetric to import
-  * @param importFromId The id of the existing DataLaunchdarklyMetric that should be imported. Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.2/docs/data-sources/metric#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataLaunchdarklyMetric that should be imported. Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/data-sources/metric#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataLaunchdarklyMetric to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -152,7 +147,7 @@ export class DataLaunchdarklyMetric extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.2/docs/data-sources/metric launchdarkly_metric} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/data-sources/metric launchdarkly_metric} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -163,7 +158,7 @@ export class DataLaunchdarklyMetric extends cdktf.TerraformDataSource {
       terraformResourceType: 'launchdarkly_metric',
       terraformGeneratorMetadata: {
         providerName: 'launchdarkly',
-        providerVersion: '2.21.2',
+        providerVersion: '2.21.5',
         providerVersionConstraint: '~> 2.13'
       },
       provider: config.provider,
