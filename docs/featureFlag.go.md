@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchd
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/featureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflag"
 
 featureflag.NewFeatureFlag(scope Construct, id *string, config FeatureFlagConfig) FeatureFlag
 ```
@@ -514,7 +514,7 @@ func ResetVariations()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/featureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflag"
 
 featureflag.FeatureFlag_IsConstruct(x interface{}) *bool
 ```
@@ -546,7 +546,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/featureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflag"
 
 featureflag.FeatureFlag_IsTerraformElement(x interface{}) *bool
 ```
@@ -560,7 +560,7 @@ featureflag.FeatureFlag_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/featureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflag"
 
 featureflag.FeatureFlag_IsTerraformResource(x interface{}) *bool
 ```
@@ -574,7 +574,7 @@ featureflag.FeatureFlag_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/featureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflag"
 
 featureflag.FeatureFlag_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1155,7 +1155,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailability.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/featureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflag"
 
 &featureflag.FeatureFlagClientSideAvailability {
 	UsingEnvironmentId: interface{},
@@ -1205,7 +1205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/featureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflag"
 
 &featureflag.FeatureFlagConfig {
 	Connection: interface{},
@@ -1222,7 +1222,7 @@ import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/featuref
 	Archived: interface{},
 	ClientSideAvailability: interface{},
 	CustomProperties: interface{},
-	Defaults: github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4.featureFlag.FeatureFlagDefaults,
+	Defaults: github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly.featureFlag.FeatureFlagDefaults,
 	Description: *string,
 	Id: *string,
 	IncludeInSnippet: interface{},
@@ -1576,7 +1576,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/featureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflag"
 
 &featureflag.FeatureFlagCustomProperties {
 	Key: *string,
@@ -1642,7 +1642,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlagDefaults.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/featureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflag"
 
 &featureflag.FeatureFlagDefaults {
 	OffVariation: *f64,
@@ -1692,7 +1692,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/featureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflag"
 
 &featureflag.FeatureFlagVariations {
 	Value: *string,
@@ -1772,7 +1772,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailabilityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/featureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflag"
 
 featureflag.NewFeatureFlagClientSideAvailabilityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FeatureFlagClientSideAvailabilityList
 ```
@@ -1932,7 +1932,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailabilityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/featureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflag"
 
 featureflag.NewFeatureFlagClientSideAvailabilityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FeatureFlagClientSideAvailabilityOutputReference
 ```
@@ -2257,7 +2257,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomPropertiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/featureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflag"
 
 featureflag.NewFeatureFlagCustomPropertiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FeatureFlagCustomPropertiesList
 ```
@@ -2417,7 +2417,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/featureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflag"
 
 featureflag.NewFeatureFlagCustomPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FeatureFlagCustomPropertiesOutputReference
 ```
@@ -2750,7 +2750,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlagDefaultsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/featureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflag"
 
 featureflag.NewFeatureFlagDefaultsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureFlagDefaultsOutputReference
 ```
@@ -3043,7 +3043,7 @@ func InternalValue() FeatureFlagDefaults
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/featureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflag"
 
 featureflag.NewFeatureFlagVariationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FeatureFlagVariationsList
 ```
@@ -3203,7 +3203,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/featureflag"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/featureflag"
 
 featureflag.NewFeatureFlagVariationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FeatureFlagVariationsOutputReference
 ```
