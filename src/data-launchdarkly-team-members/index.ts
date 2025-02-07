@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/data-sources/team_members
+// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/data-sources/team_members
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface DataLaunchdarklyTeamMembersConfig extends cdktf.TerraformMetaAr
   /**
   * An array of unique email addresses associated with the team members.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/data-sources/team_members#emails DataLaunchdarklyTeamMembers#emails}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/data-sources/team_members#emails DataLaunchdarklyTeamMembers#emails}
   */
   readonly emails: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/data-sources/team_members#id DataLaunchdarklyTeamMembers#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/data-sources/team_members#id DataLaunchdarklyTeamMembers#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,9 +23,89 @@ export interface DataLaunchdarklyTeamMembersConfig extends cdktf.TerraformMetaAr
   /**
   * A boolean to determine whether to ignore members that weren't found.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/data-sources/team_members#ignore_missing DataLaunchdarklyTeamMembers#ignore_missing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/data-sources/team_members#ignore_missing DataLaunchdarklyTeamMembers#ignore_missing}
   */
   readonly ignoreMissing?: boolean | cdktf.IResolvable;
+}
+export interface DataLaunchdarklyTeamMembersTeamMembersRoleAttributes {
+}
+
+export function dataLaunchdarklyTeamMembersTeamMembersRoleAttributesToTerraform(struct?: DataLaunchdarklyTeamMembersTeamMembersRoleAttributes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataLaunchdarklyTeamMembersTeamMembersRoleAttributesToHclTerraform(struct?: DataLaunchdarklyTeamMembersTeamMembersRoleAttributes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataLaunchdarklyTeamMembersTeamMembersRoleAttributesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataLaunchdarklyTeamMembersTeamMembersRoleAttributes | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataLaunchdarklyTeamMembersTeamMembersRoleAttributes | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // values - computed: true, optional: false, required: false
+  public get values() {
+    return this.getListAttribute('values');
+  }
+}
+
+export class DataLaunchdarklyTeamMembersTeamMembersRoleAttributesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataLaunchdarklyTeamMembersTeamMembersRoleAttributesOutputReference {
+    return new DataLaunchdarklyTeamMembersTeamMembersRoleAttributesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface DataLaunchdarklyTeamMembersTeamMembers {
 }
@@ -112,6 +187,12 @@ export class DataLaunchdarklyTeamMembersTeamMembersOutputReference extends cdktf
   public get role() {
     return this.getStringAttribute('role');
   }
+
+  // role_attributes - computed: true, optional: false, required: false
+  private _roleAttributes = new DataLaunchdarklyTeamMembersTeamMembersRoleAttributesList(this, "role_attributes", true);
+  public get roleAttributes() {
+    return this._roleAttributes;
+  }
 }
 
 export class DataLaunchdarklyTeamMembersTeamMembersList extends cdktf.ComplexList {
@@ -134,7 +215,7 @@ export class DataLaunchdarklyTeamMembersTeamMembersList extends cdktf.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/data-sources/team_members launchdarkly_team_members}
+* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/data-sources/team_members launchdarkly_team_members}
 */
 export class DataLaunchdarklyTeamMembers extends cdktf.TerraformDataSource {
 
@@ -150,7 +231,7 @@ export class DataLaunchdarklyTeamMembers extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataLaunchdarklyTeamMembers resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataLaunchdarklyTeamMembers to import
-  * @param importFromId The id of the existing DataLaunchdarklyTeamMembers that should be imported. Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/data-sources/team_members#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataLaunchdarklyTeamMembers that should be imported. Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/data-sources/team_members#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataLaunchdarklyTeamMembers to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -162,7 +243,7 @@ export class DataLaunchdarklyTeamMembers extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/data-sources/team_members launchdarkly_team_members} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/data-sources/team_members launchdarkly_team_members} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -173,7 +254,7 @@ export class DataLaunchdarklyTeamMembers extends cdktf.TerraformDataSource {
       terraformResourceType: 'launchdarkly_team_members',
       terraformGeneratorMetadata: {
         providerName: 'launchdarkly',
-        providerVersion: '2.21.5',
+        providerVersion: '2.22.0',
         providerVersionConstraint: '~> 2.13'
       },
       provider: config.provider,

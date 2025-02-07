@@ -4,7 +4,7 @@
 
 ### TeamMember <a name="TeamMember" id="@cdktf/provider-launchdarkly.teamMember.TeamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/resources/team_member launchdarkly_team_member}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/resources/team_member launchdarkly_team_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.teamMember.TeamMember.Initializer"></a>
 
@@ -25,7 +25,8 @@ teamMember.TeamMember(
   custom_roles: typing.List[str] = None,
   first_name: str = None,
   last_name: str = None,
-  role: str = None
+  role: str = None,
+  role_attributes: typing.Union[IResolvable, typing.List[TeamMemberRoleAttributes]] = None
 )
 ```
 
@@ -45,6 +46,7 @@ teamMember.TeamMember(
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.Initializer.parameter.firstName">first_name</a></code> | <code>str</code> | The team member's given name. Once created, this cannot be updated except by the team member. |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.Initializer.parameter.lastName">last_name</a></code> | <code>str</code> | TThe team member's family name. Once created, this cannot be updated except by the team member. |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.Initializer.parameter.role">role</a></code> | <code>str</code> | The role associated with team member. |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.Initializer.parameter.roleAttributes">role_attributes</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributes">TeamMemberRoleAttributes</a>]]</code> | role_attributes block. |
 
 ---
 
@@ -116,7 +118,7 @@ The unique email address associated with the team member.
 
 A change in this field will force the destruction of the existing resource and the creation of a new one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/resources/team_member#email TeamMember#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/resources/team_member#email TeamMember#email}
 
 ---
 
@@ -130,7 +132,7 @@ Custom roles are only available to customers on an Enterprise plan. To learn mor
 
 -> **Note:** each `launchdarkly_team_member` must have either a `role` or `custom_roles` argument.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/resources/team_member#custom_roles TeamMember#custom_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/resources/team_member#custom_roles TeamMember#custom_roles}
 
 ---
 
@@ -140,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 The team member's given name. Once created, this cannot be updated except by the team member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/resources/team_member#first_name TeamMember#first_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/resources/team_member#first_name TeamMember#first_name}
 
 ---
 
@@ -150,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 TThe team member's family name. Once created, this cannot be updated except by the team member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/resources/team_member#last_name TeamMember#last_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/resources/team_member#last_name TeamMember#last_name}
 
 ---
 
@@ -162,7 +164,17 @@ The role associated with team member.
 
 Supported roles are `reader`, `writer`, `no_access`, or `admin`. If you don't specify a role, `reader` is assigned by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/resources/team_member#role TeamMember#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/resources/team_member#role TeamMember#role}
+
+---
+
+##### `role_attributes`<sup>Optional</sup> <a name="role_attributes" id="@cdktf/provider-launchdarkly.teamMember.TeamMember.Initializer.parameter.roleAttributes"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributes">TeamMemberRoleAttributes</a>]]
+
+role_attributes block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/resources/team_member#role_attributes TeamMember#role_attributes}
 
 ---
 
@@ -193,10 +205,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.putRoleAttributes">put_role_attributes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.resetCustomRoles">reset_custom_roles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.resetFirstName">reset_first_name</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.resetLastName">reset_last_name</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.resetRole">reset_role</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.resetRoleAttributes">reset_role_attributes</a></code> | *No description.* |
 
 ---
 
@@ -525,6 +539,20 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_role_attributes` <a name="put_role_attributes" id="@cdktf/provider-launchdarkly.teamMember.TeamMember.putRoleAttributes"></a>
+
+```python
+def put_role_attributes(
+  value: typing.Union[IResolvable, typing.List[TeamMemberRoleAttributes]]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-launchdarkly.teamMember.TeamMember.putRoleAttributes.parameter.value"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributes">TeamMemberRoleAttributes</a>]]
+
+---
+
 ##### `reset_custom_roles` <a name="reset_custom_roles" id="@cdktf/provider-launchdarkly.teamMember.TeamMember.resetCustomRoles"></a>
 
 ```python
@@ -547,6 +575,12 @@ def reset_last_name() -> None
 
 ```python
 def reset_role() -> None
+```
+
+##### `reset_role_attributes` <a name="reset_role_attributes" id="@cdktf/provider-launchdarkly.teamMember.TeamMember.resetRoleAttributes"></a>
+
+```python
+def reset_role_attributes() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -663,7 +697,7 @@ The construct id used in the generated config for the TeamMember to import.
 
 The id of the existing TeamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/resources/team_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/resources/team_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -694,10 +728,12 @@ Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchd
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.property.roleAttributes">role_attributes</a></code> | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesList">TeamMemberRoleAttributesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.property.customRolesInput">custom_roles_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.property.emailInput">email_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.property.firstNameInput">first_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.property.lastNameInput">last_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.property.roleAttributesInput">role_attributes_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributes">TeamMemberRoleAttributes</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.property.roleInput">role_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.property.customRoles">custom_roles</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMember.property.email">email</a></code> | <code>str</code> | *No description.* |
@@ -859,6 +895,16 @@ id: str
 
 ---
 
+##### `role_attributes`<sup>Required</sup> <a name="role_attributes" id="@cdktf/provider-launchdarkly.teamMember.TeamMember.property.roleAttributes"></a>
+
+```python
+role_attributes: TeamMemberRoleAttributesList
+```
+
+- *Type:* <a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesList">TeamMemberRoleAttributesList</a>
+
+---
+
 ##### `custom_roles_input`<sup>Optional</sup> <a name="custom_roles_input" id="@cdktf/provider-launchdarkly.teamMember.TeamMember.property.customRolesInput"></a>
 
 ```python
@@ -896,6 +942,16 @@ last_name_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `role_attributes_input`<sup>Optional</sup> <a name="role_attributes_input" id="@cdktf/provider-launchdarkly.teamMember.TeamMember.property.roleAttributesInput"></a>
+
+```python
+role_attributes_input: typing.Union[IResolvable, typing.List[TeamMemberRoleAttributes]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributes">TeamMemberRoleAttributes</a>]]
 
 ---
 
@@ -998,7 +1054,8 @@ teamMember.TeamMemberConfig(
   custom_roles: typing.List[str] = None,
   first_name: str = None,
   last_name: str = None,
-  role: str = None
+  role: str = None,
+  role_attributes: typing.Union[IResolvable, typing.List[TeamMemberRoleAttributes]] = None
 )
 ```
 
@@ -1018,6 +1075,7 @@ teamMember.TeamMemberConfig(
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberConfig.property.firstName">first_name</a></code> | <code>str</code> | The team member's given name. Once created, this cannot be updated except by the team member. |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberConfig.property.lastName">last_name</a></code> | <code>str</code> | TThe team member's family name. Once created, this cannot be updated except by the team member. |
 | <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberConfig.property.role">role</a></code> | <code>str</code> | The role associated with team member. |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberConfig.property.roleAttributes">role_attributes</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributes">TeamMemberRoleAttributes</a>]]</code> | role_attributes block. |
 
 ---
 
@@ -1103,7 +1161,7 @@ The unique email address associated with the team member.
 
 A change in this field will force the destruction of the existing resource and the creation of a new one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/resources/team_member#email TeamMember#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/resources/team_member#email TeamMember#email}
 
 ---
 
@@ -1121,7 +1179,7 @@ Custom roles are only available to customers on an Enterprise plan. To learn mor
 
 -> **Note:** each `launchdarkly_team_member` must have either a `role` or `custom_roles` argument.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/resources/team_member#custom_roles TeamMember#custom_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/resources/team_member#custom_roles TeamMember#custom_roles}
 
 ---
 
@@ -1135,7 +1193,7 @@ first_name: str
 
 The team member's given name. Once created, this cannot be updated except by the team member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/resources/team_member#first_name TeamMember#first_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/resources/team_member#first_name TeamMember#first_name}
 
 ---
 
@@ -1149,7 +1207,7 @@ last_name: str
 
 TThe team member's family name. Once created, this cannot be updated except by the team member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/resources/team_member#last_name TeamMember#last_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/resources/team_member#last_name TeamMember#last_name}
 
 ---
 
@@ -1165,7 +1223,582 @@ The role associated with team member.
 
 Supported roles are `reader`, `writer`, `no_access`, or `admin`. If you don't specify a role, `reader` is assigned by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.21.5/docs/resources/team_member#role TeamMember#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/resources/team_member#role TeamMember#role}
+
+---
+
+##### `role_attributes`<sup>Optional</sup> <a name="role_attributes" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberConfig.property.roleAttributes"></a>
+
+```python
+role_attributes: typing.Union[IResolvable, typing.List[TeamMemberRoleAttributes]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributes">TeamMemberRoleAttributes</a>]]
+
+role_attributes block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/resources/team_member#role_attributes TeamMember#role_attributes}
+
+---
+
+### TeamMemberRoleAttributes <a name="TeamMemberRoleAttributes" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributes"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributes.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_launchdarkly import team_member
+
+teamMember.TeamMemberRoleAttributes(
+  key: str,
+  values: typing.List[str]
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributes.property.key">key</a></code> | <code>str</code> | The key / name of your role attribute. In the example `$${roleAttribute/testAttribute}`, the key is `testAttribute`. |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributes.property.values">values</a></code> | <code>typing.List[str]</code> | A list of values for your role attribute. |
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributes.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+The key / name of your role attribute. In the example `$${roleAttribute/testAttribute}`, the key is `testAttribute`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/resources/team_member#key TeamMember#key}
+
+---
+
+##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributes.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+A list of values for your role attribute.
+
+For example, if your policy statement defines the resource `"proj/$${roleAttribute/testAttribute}"`, the values would be the keys of the projects you wanted to assign access to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/resources/team_member#values TeamMember#values}
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### TeamMemberRoleAttributesList <a name="TeamMemberRoleAttributesList" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesList.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_launchdarkly import team_member
+
+teamMember.TeamMemberRoleAttributesList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> TeamMemberRoleAttributesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributes">TeamMemberRoleAttributes</a>]]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesList.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, typing.List[TeamMemberRoleAttributes]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributes">TeamMemberRoleAttributes</a>]]
+
+---
+
+
+### TeamMemberRoleAttributesOutputReference <a name="TeamMemberRoleAttributesOutputReference" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_launchdarkly import team_member
+
+teamMember.TeamMemberRoleAttributesOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributes">TeamMemberRoleAttributes</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.property.keyInput"></a>
+
+```python
+key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `values_input`<sup>Optional</sup> <a name="values_input" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.property.valuesInput"></a>
+
+```python
+values_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributesOutputReference.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, TeamMemberRoleAttributes]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-launchdarkly.teamMember.TeamMemberRoleAttributes">TeamMemberRoleAttributes</a>]
 
 ---
 
