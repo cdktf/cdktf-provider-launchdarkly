@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.22.0/docs/data-sources/feature_flag
 // generated from terraform resource schema
 
