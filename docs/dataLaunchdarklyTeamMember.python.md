@@ -4,7 +4,7 @@
 
 ### DataLaunchdarklyTeamMember <a name="DataLaunchdarklyTeamMember" id="@cdktf/provider-launchdarkly.dataLaunchdarklyTeamMember.DataLaunchdarklyTeamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.0/docs/data-sources/team_member launchdarkly_team_member}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/data-sources/team_member launchdarkly_team_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklyTeamMember.DataLaunchdarklyTeamMember.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The unique email address associated with the team member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.0/docs/data-sources/team_member#email DataLaunchdarklyTeamMember#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/data-sources/team_member#email DataLaunchdarklyTeamMember#email}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 role_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.0/docs/data-sources/team_member#role_attributes DataLaunchdarklyTeamMember#role_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/data-sources/team_member#role_attributes DataLaunchdarklyTeamMember#role_attributes}
 
 ---
 
@@ -499,7 +499,7 @@ The construct id used in the generated config for the DataLaunchdarklyTeamMember
 
 The id of the existing DataLaunchdarklyTeamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.0/docs/data-sources/team_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/data-sources/team_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -887,7 +887,7 @@ email: str
 
 The unique email address associated with the team member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.0/docs/data-sources/team_member#email DataLaunchdarklyTeamMember#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/data-sources/team_member#email DataLaunchdarklyTeamMember#email}
 
 ---
 
@@ -901,7 +901,7 @@ role_attributes: typing.Union[IResolvable, typing.List[DataLaunchdarklyTeamMembe
 
 role_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.0/docs/data-sources/team_member#role_attributes DataLaunchdarklyTeamMember#role_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/data-sources/team_member#role_attributes DataLaunchdarklyTeamMember#role_attributes}
 
 ---
 
@@ -937,7 +937,7 @@ key: str
 
 The key / name of your role attribute. In the example `$${roleAttribute/testAttribute}`, the key is `testAttribute`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.0/docs/data-sources/team_member#key DataLaunchdarklyTeamMember#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/data-sources/team_member#key DataLaunchdarklyTeamMember#key}
 
 ---
 
@@ -953,7 +953,7 @@ A list of values for your role attribute.
 
 For example, if your policy statement defines the resource `"proj/$${roleAttribute/testAttribute}"`, the values would be the keys of the projects you wanted to assign access to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.0/docs/data-sources/team_member#values DataLaunchdarklyTeamMember#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/data-sources/team_member#values DataLaunchdarklyTeamMember#values}
 
 ---
 

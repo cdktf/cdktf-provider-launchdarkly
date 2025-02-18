@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.0/docs/resources/team_member
+// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/team_member
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -17,37 +17,37 @@ export interface TeamMemberConfig extends cdktf.TerraformMetaArguments {
   * 
   * -> **Note:** each `launchdarkly_team_member` must have either a `role` or `custom_roles` argument.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.0/docs/resources/team_member#custom_roles TeamMember#custom_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/team_member#custom_roles TeamMember#custom_roles}
   */
   readonly customRoles?: string[];
   /**
   * The unique email address associated with the team member. A change in this field will force the destruction of the existing resource and the creation of a new one.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.0/docs/resources/team_member#email TeamMember#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/team_member#email TeamMember#email}
   */
   readonly email: string;
   /**
   * The team member's given name. Once created, this cannot be updated except by the team member.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.0/docs/resources/team_member#first_name TeamMember#first_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/team_member#first_name TeamMember#first_name}
   */
   readonly firstName?: string;
   /**
   * TThe team member's family name. Once created, this cannot be updated except by the team member.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.0/docs/resources/team_member#last_name TeamMember#last_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/team_member#last_name TeamMember#last_name}
   */
   readonly lastName?: string;
   /**
   * The role associated with team member. Supported roles are `reader`, `writer`, `no_access`, or `admin`. If you don't specify a role, `reader` is assigned by default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.0/docs/resources/team_member#role TeamMember#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/team_member#role TeamMember#role}
   */
   readonly role?: string;
   /**
   * role_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.0/docs/resources/team_member#role_attributes TeamMember#role_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/team_member#role_attributes TeamMember#role_attributes}
   */
   readonly roleAttributes?: TeamMemberRoleAttributes[] | cdktf.IResolvable;
 }
@@ -55,13 +55,13 @@ export interface TeamMemberRoleAttributes {
   /**
   * The key / name of your role attribute. In the example `$${roleAttribute/testAttribute}`, the key is `testAttribute`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.0/docs/resources/team_member#key TeamMember#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/team_member#key TeamMember#key}
   */
   readonly key: string;
   /**
   * A list of values for your role attribute. For example, if your policy statement defines the resource `"proj/$${roleAttribute/testAttribute}"`, the values would be the keys of the projects you wanted to assign access to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.0/docs/resources/team_member#values TeamMember#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/team_member#values TeamMember#values}
   */
   readonly values: string[];
 }
@@ -200,7 +200,7 @@ export class TeamMemberRoleAttributesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.0/docs/resources/team_member launchdarkly_team_member}
+* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/team_member launchdarkly_team_member}
 */
 export class TeamMember extends cdktf.TerraformResource {
 
@@ -216,7 +216,7 @@ export class TeamMember extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a TeamMember resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TeamMember to import
-  * @param importFromId The id of the existing TeamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.0/docs/resources/team_member#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TeamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/team_member#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TeamMember to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -228,7 +228,7 @@ export class TeamMember extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.0/docs/resources/team_member launchdarkly_team_member} Resource
+  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/team_member launchdarkly_team_member} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -239,7 +239,7 @@ export class TeamMember extends cdktf.TerraformResource {
       terraformResourceType: 'launchdarkly_team_member',
       terraformGeneratorMetadata: {
         providerName: 'launchdarkly',
-        providerVersion: '2.23.0',
+        providerVersion: '2.23.1',
         providerVersionConstraint: '~> 2.13'
       },
       provider: config.provider,
