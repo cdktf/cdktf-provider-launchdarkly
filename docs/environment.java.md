@@ -4,7 +4,7 @@
 
 ### Environment <a name="Environment" id="@cdktf/provider-launchdarkly.environment.Environment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment launchdarkly_environment}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment launchdarkly_environment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.environment.Environment.Initializer"></a>
 
@@ -65,7 +65,7 @@ Environment.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.critical">critical</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Denotes whether the environment is critical. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.defaultTrackEvents">defaultTrackEvents</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to `true` to enable data export for every flag created in this environment after you configure this argument. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.defaultTtl">defaultTtl</a></code> | <code>java.lang.Number</code> | The TTL for the environment. |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#id Environment#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#id Environment#id}. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.requireComments">requireComments</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to `true` if this environment requires comments for flag and segment changes. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.secureMode">secureMode</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to `true` to ensure a user of the client-side SDK cannot impersonate another user. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Tags associated with your resource. |
@@ -138,7 +138,7 @@ Must be unique amongst siblings in the same scope
 
 The color swatch as an RGB hex value with no leading `#`. For example: `000000`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#color Environment#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#color Environment#color}
 
 ---
 
@@ -150,7 +150,7 @@ The project-unique key for the environment.
 
 A change in this field will force the destruction of the existing resource and the creation of a new one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#key Environment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#key Environment#key}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 The name of the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#name Environment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#name Environment#name}
 
 ---
 
@@ -172,7 +172,7 @@ The LaunchDarkly project key.
 
 A change in this field will force the destruction of the existing resource and the creation of a new one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#project_key Environment#project_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#project_key Environment#project_key}
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 approval_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#approval_settings Environment#approval_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#approval_settings Environment#approval_settings}
 
 ---
 
@@ -194,7 +194,7 @@ Set to `true` if this environment requires confirmation for flag and segment cha
 
 This field will default to `false` when not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#confirm_changes Environment#confirm_changes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#confirm_changes Environment#confirm_changes}
 
 ---
 
@@ -204,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 Denotes whether the environment is critical.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#critical Environment#critical}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#critical Environment#critical}
 
 ---
 
@@ -216,7 +216,7 @@ Set to `true` to enable data export for every flag created in this environment a
 
 This field will default to `false` when not set. To learn more, read [Data Export](https://docs.launchdarkly.com/home/data-export).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#default_track_events Environment#default_track_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#default_track_events Environment#default_track_events}
 
 ---
 
@@ -228,7 +228,7 @@ The TTL for the environment.
 
 This must be between 0 and 60 minutes. The TTL setting only applies to environments using the PHP SDK. This field will default to `0` when not set. To learn more, read [TTL settings](https://docs.launchdarkly.com/home/organize/environments#ttl-settings).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#default_ttl Environment#default_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#default_ttl Environment#default_ttl}
 
 ---
 
@@ -236,7 +236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#id Environment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#id Environment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -251,7 +251,7 @@ Set to `true` if this environment requires comments for flag and segment changes
 
 This field will default to `false` when not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#require_comments Environment#require_comments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#require_comments Environment#require_comments}
 
 ---
 
@@ -263,7 +263,7 @@ Set to `true` to ensure a user of the client-side SDK cannot impersonate another
 
 This field will default to `false` when not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#secure_mode Environment#secure_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#secure_mode Environment#secure_mode}
 
 ---
 
@@ -273,7 +273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 Tags associated with your resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#tags Environment#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#tags Environment#tags}
 
 ---
 
@@ -776,7 +776,7 @@ The construct id used in the generated config for the Environment to import.
 
 The id of the existing Environment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1298,6 +1298,8 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.launchdarkly.environment.EnvironmentApprovalSettings;
 
 EnvironmentApprovalSettings.builder()
+//  .autoApplyApprovedChanges(java.lang.Boolean)
+//  .autoApplyApprovedChanges(IResolvable)
 //  .canApplyDeclinedChanges(java.lang.Boolean)
 //  .canApplyDeclinedChanges(IResolvable)
 //  .canReviewOwnRequest(java.lang.Boolean)
@@ -1315,6 +1317,7 @@ EnvironmentApprovalSettings.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.autoApplyApprovedChanges">autoApplyApprovedChanges</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Automatically apply changes that have been approved by all reviewers. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.canApplyDeclinedChanges">canApplyDeclinedChanges</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to `true` if changes can be applied as long as the `min_num_approvals` is met, regardless of whether any reviewers have declined a request. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.canReviewOwnRequest">canReviewOwnRequest</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to `true` if requesters can approve or decline their own request. They may always comment. Defaults to `false`. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.minNumApprovals">minNumApprovals</a></code> | <code>java.lang.Number</code> | The number of approvals required before an approval request can be applied. |
@@ -1322,6 +1325,22 @@ EnvironmentApprovalSettings.builder()
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.requiredApprovalTags">requiredApprovalTags</a></code> | <code>java.util.List<java.lang.String></code> | An array of tags used to specify which flags with those tags require approval. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.serviceConfig">serviceConfig</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | The configuration for the service associated with this approval. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.serviceKind">serviceKind</a></code> | <code>java.lang.String</code> | The kind of service associated with this approval. |
+
+---
+
+##### `autoApplyApprovedChanges`<sup>Optional</sup> <a name="autoApplyApprovedChanges" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.autoApplyApprovedChanges"></a>
+
+```java
+public java.lang.Object getAutoApplyApprovedChanges();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Automatically apply changes that have been approved by all reviewers.
+
+This field is only applicable for approval service kinds other than `launchdarkly`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#auto_apply_approved_changes Environment#auto_apply_approved_changes}
 
 ---
 
@@ -1337,7 +1356,7 @@ Set to `true` if changes can be applied as long as the `min_num_approvals` is me
 
 Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#can_apply_declined_changes Environment#can_apply_declined_changes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#can_apply_declined_changes Environment#can_apply_declined_changes}
 
 ---
 
@@ -1351,7 +1370,7 @@ public java.lang.Object getCanReviewOwnRequest();
 
 Set to `true` if requesters can approve or decline their own request. They may always comment. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#can_review_own_request Environment#can_review_own_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#can_review_own_request Environment#can_review_own_request}
 
 ---
 
@@ -1367,7 +1386,7 @@ The number of approvals required before an approval request can be applied.
 
 This number must be between 1 and 5. Defaults to 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#min_num_approvals Environment#min_num_approvals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#min_num_approvals Environment#min_num_approvals}
 
 ---
 
@@ -1383,7 +1402,7 @@ Set to `true` for changes to flags in this environment to require approval.
 
 You may only set `required` to true if `required_approval_tags` is not set and vice versa. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#required Environment#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#required Environment#required}
 
 ---
 
@@ -1397,9 +1416,9 @@ public java.util.List<java.lang.String> getRequiredApprovalTags();
 
 An array of tags used to specify which flags with those tags require approval.
 
-You may only set `required_approval_tags` if `required` is not set to `true` and vice versa.
+You may only set `required_approval_tags` if `required` is set to `false` and vice versa.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#required_approval_tags Environment#required_approval_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#required_approval_tags Environment#required_approval_tags}
 
 ---
 
@@ -1417,10 +1436,10 @@ This is specific to each approval service. For a `service_kind` of `servicenow`,
 
 ```
  - `template` (String) The sys_id of the Standard Change Request Template in ServiceNow that LaunchDarkly will use when creating the change request.
- - `detail_column` (String) The name of the ServiceNow Change Request column LaunchDarkly uses to populate detailed approval request information.
+ - `detail_column` (String) The name of the ServiceNow Change Request column LaunchDarkly uses to populate detailed approval request information. This is most commonly "justification".
 ```
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#service_config Environment#service_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#service_config Environment#service_config}
 
 ---
 
@@ -1434,9 +1453,9 @@ public java.lang.String getServiceKind();
 
 The kind of service associated with this approval.
 
-This determines which platform is used for requesting approval. Valid values are `servicenow`, `launchdarkly`.
+This determines which platform is used for requesting approval. Valid values are `servicenow`, `launchdarkly`. If you use a value other than `launchdarkly`, you must have already configured the integration in the LaunchDarkly UI or your apply will fail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#service_kind Environment#service_kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#service_kind Environment#service_kind}
 
 ---
 
@@ -1501,7 +1520,7 @@ EnvironmentConfig.builder()
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.critical">critical</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Denotes whether the environment is critical. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.defaultTrackEvents">defaultTrackEvents</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to `true` to enable data export for every flag created in this environment after you configure this argument. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.defaultTtl">defaultTtl</a></code> | <code>java.lang.Number</code> | The TTL for the environment. |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#id Environment#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#id Environment#id}. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.requireComments">requireComments</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to `true` if this environment requires comments for flag and segment changes. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.secureMode">secureMode</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to `true` to ensure a user of the client-side SDK cannot impersonate another user. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Tags associated with your resource. |
@@ -1588,7 +1607,7 @@ public java.lang.String getColor();
 
 The color swatch as an RGB hex value with no leading `#`. For example: `000000`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#color Environment#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#color Environment#color}
 
 ---
 
@@ -1604,7 +1623,7 @@ The project-unique key for the environment.
 
 A change in this field will force the destruction of the existing resource and the creation of a new one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#key Environment#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#key Environment#key}
 
 ---
 
@@ -1618,7 +1637,7 @@ public java.lang.String getName();
 
 The name of the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#name Environment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#name Environment#name}
 
 ---
 
@@ -1634,7 +1653,7 @@ The LaunchDarkly project key.
 
 A change in this field will force the destruction of the existing resource and the creation of a new one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#project_key Environment#project_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#project_key Environment#project_key}
 
 ---
 
@@ -1648,7 +1667,7 @@ public java.lang.Object getApprovalSettings();
 
 approval_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#approval_settings Environment#approval_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#approval_settings Environment#approval_settings}
 
 ---
 
@@ -1664,7 +1683,7 @@ Set to `true` if this environment requires confirmation for flag and segment cha
 
 This field will default to `false` when not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#confirm_changes Environment#confirm_changes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#confirm_changes Environment#confirm_changes}
 
 ---
 
@@ -1678,7 +1697,7 @@ public java.lang.Object getCritical();
 
 Denotes whether the environment is critical.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#critical Environment#critical}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#critical Environment#critical}
 
 ---
 
@@ -1694,7 +1713,7 @@ Set to `true` to enable data export for every flag created in this environment a
 
 This field will default to `false` when not set. To learn more, read [Data Export](https://docs.launchdarkly.com/home/data-export).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#default_track_events Environment#default_track_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#default_track_events Environment#default_track_events}
 
 ---
 
@@ -1710,7 +1729,7 @@ The TTL for the environment.
 
 This must be between 0 and 60 minutes. The TTL setting only applies to environments using the PHP SDK. This field will default to `0` when not set. To learn more, read [TTL settings](https://docs.launchdarkly.com/home/organize/environments#ttl-settings).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#default_ttl Environment#default_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#default_ttl Environment#default_ttl}
 
 ---
 
@@ -1722,7 +1741,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#id Environment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#id Environment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1741,7 +1760,7 @@ Set to `true` if this environment requires comments for flag and segment changes
 
 This field will default to `false` when not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#require_comments Environment#require_comments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#require_comments Environment#require_comments}
 
 ---
 
@@ -1757,7 +1776,7 @@ Set to `true` to ensure a user of the client-side SDK cannot impersonate another
 
 This field will default to `false` when not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#secure_mode Environment#secure_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#secure_mode Environment#secure_mode}
 
 ---
 
@@ -1771,7 +1790,7 @@ public java.util.List<java.lang.String> getTags();
 
 Tags associated with your resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/environment#tags Environment#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/environment#tags Environment#tags}
 
 ---
 
@@ -2005,6 +2024,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.resetAutoApplyApprovedChanges">resetAutoApplyApprovedChanges</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.resetCanApplyDeclinedChanges">resetCanApplyDeclinedChanges</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.resetCanReviewOwnRequest">resetCanReviewOwnRequest</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.resetMinNumApprovals">resetMinNumApprovals</a></code> | *No description.* |
@@ -2165,6 +2185,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetAutoApplyApprovedChanges` <a name="resetAutoApplyApprovedChanges" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.resetAutoApplyApprovedChanges"></a>
+
+```java
+public void resetAutoApplyApprovedChanges()
+```
+
 ##### `resetCanApplyDeclinedChanges` <a name="resetCanApplyDeclinedChanges" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.resetCanApplyDeclinedChanges"></a>
 
 ```java
@@ -2214,6 +2240,7 @@ public void resetServiceKind()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.autoApplyApprovedChangesInput">autoApplyApprovedChangesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.canApplyDeclinedChangesInput">canApplyDeclinedChangesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.canReviewOwnRequestInput">canReviewOwnRequestInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.minNumApprovalsInput">minNumApprovalsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -2221,6 +2248,7 @@ public void resetServiceKind()
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.requiredInput">requiredInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.serviceConfigInput">serviceConfigInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.serviceKindInput">serviceKindInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.autoApplyApprovedChanges">autoApplyApprovedChanges</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.canApplyDeclinedChanges">canApplyDeclinedChanges</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.canReviewOwnRequest">canReviewOwnRequest</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.minNumApprovals">minNumApprovals</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -2253,6 +2281,16 @@ public java.lang.String getFqn();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `autoApplyApprovedChangesInput`<sup>Optional</sup> <a name="autoApplyApprovedChangesInput" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.autoApplyApprovedChangesInput"></a>
+
+```java
+public java.lang.Object getAutoApplyApprovedChangesInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -2323,6 +2361,16 @@ public java.lang.String getServiceKindInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `autoApplyApprovedChanges`<sup>Required</sup> <a name="autoApplyApprovedChanges" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.autoApplyApprovedChanges"></a>
+
+```java
+public java.lang.Object getAutoApplyApprovedChanges();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
 ---
 
