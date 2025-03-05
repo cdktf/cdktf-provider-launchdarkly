@@ -4,12 +4,12 @@
 
 ### TeamRoleMapping <a name="TeamRoleMapping" id="@cdktf/provider-launchdarkly.teamRoleMapping.TeamRoleMapping"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/team_role_mapping launchdarkly_team_role_mapping}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/team_role_mapping launchdarkly_team_role_mapping}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.teamRoleMapping.TeamRoleMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/teamrolemapping"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/teamrolemapping"
 
 teamrolemapping.NewTeamRoleMapping(scope Construct, id *string, config TeamRoleMappingConfig) TeamRoleMapping
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-launchdarkly.teamRoleMapping.TeamRoleMapping.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/teamrolemapping"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/teamrolemapping"
 
 teamrolemapping.TeamRoleMapping_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-launchdarkly.teamRoleMapping.TeamRoleMapping.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/teamrolemapping"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/teamrolemapping"
 
 teamrolemapping.TeamRoleMapping_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ teamrolemapping.TeamRoleMapping_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-launchdarkly.teamRoleMapping.TeamRoleMapping.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/teamrolemapping"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/teamrolemapping"
 
 teamrolemapping.TeamRoleMapping_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ teamrolemapping.TeamRoleMapping_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-launchdarkly.teamRoleMapping.TeamRoleMapping.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/teamrolemapping"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/teamrolemapping"
 
 teamrolemapping.TeamRoleMapping_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the TeamRoleMapping to import.
 
 The id of the existing TeamRoleMapping that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/team_role_mapping#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/team_role_mapping#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -722,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.teamRoleMapping.TeamRoleMappingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/teamrolemapping"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/teamrolemapping"
 
 &teamrolemapping.TeamRoleMappingConfig {
 	Connection: interface{},
@@ -833,7 +833,7 @@ CustomRoleKeys *[]*string
 
 A set of custom role keys to assign to the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/team_role_mapping#custom_role_keys TeamRoleMapping#custom_role_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/team_role_mapping#custom_role_keys TeamRoleMapping#custom_role_keys}
 
 ---
 
@@ -847,7 +847,7 @@ TeamKey *string
 
 The LaunchDarkly team key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.23.1/docs/resources/team_role_mapping#team_key TeamRoleMapping#team_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/team_role_mapping#team_key TeamRoleMapping#team_key}
 
 ---
 
