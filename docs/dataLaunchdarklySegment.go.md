@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchd
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 datalaunchdarklysegment.NewDataLaunchdarklySegment(scope Construct, id *string, config DataLaunchdarklySegmentConfig) DataLaunchdarklySegment
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 datalaunchdarklysegment.DataLaunchdarklySegment_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 datalaunchdarklysegment.DataLaunchdarklySegment_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datalaunchdarklysegment.DataLaunchdarklySegment_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 datalaunchdarklysegment.DataLaunchdarklySegment_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datalaunchdarklysegment.DataLaunchdarklySegment_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 datalaunchdarklysegment.DataLaunchdarklySegment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -759,7 +759,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 &datalaunchdarklysegment.DataLaunchdarklySegmentConfig {
 	Connection: interface{},
@@ -926,7 +926,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentExcludedContexts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 &datalaunchdarklysegment.DataLaunchdarklySegmentExcludedContexts {
 
@@ -939,7 +939,7 @@ import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaun
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentIncludedContexts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 &datalaunchdarklysegment.DataLaunchdarklySegmentIncludedContexts {
 
@@ -952,7 +952,7 @@ import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaun
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 &datalaunchdarklysegment.DataLaunchdarklySegmentRules {
 
@@ -965,7 +965,7 @@ import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaun
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClauses.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 &datalaunchdarklysegment.DataLaunchdarklySegmentRulesClauses {
 
@@ -980,7 +980,7 @@ import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaun
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentExcludedContextsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 datalaunchdarklysegment.NewDataLaunchdarklySegmentExcludedContextsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLaunchdarklySegmentExcludedContextsList
 ```
@@ -1129,7 +1129,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentExcludedContextsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 datalaunchdarklysegment.NewDataLaunchdarklySegmentExcludedContextsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLaunchdarklySegmentExcludedContextsOutputReference
 ```
@@ -1418,7 +1418,7 @@ func InternalValue() DataLaunchdarklySegmentExcludedContexts
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentIncludedContextsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 datalaunchdarklysegment.NewDataLaunchdarklySegmentIncludedContextsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLaunchdarklySegmentIncludedContextsList
 ```
@@ -1567,7 +1567,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentIncludedContextsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 datalaunchdarklysegment.NewDataLaunchdarklySegmentIncludedContextsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLaunchdarklySegmentIncludedContextsOutputReference
 ```
@@ -1856,7 +1856,7 @@ func InternalValue() DataLaunchdarklySegmentIncludedContexts
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 datalaunchdarklysegment.NewDataLaunchdarklySegmentRulesClausesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLaunchdarklySegmentRulesClausesList
 ```
@@ -2005,7 +2005,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesClausesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 datalaunchdarklysegment.NewDataLaunchdarklySegmentRulesClausesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLaunchdarklySegmentRulesClausesOutputReference
 ```
@@ -2338,7 +2338,7 @@ func InternalValue() DataLaunchdarklySegmentRulesClauses
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 datalaunchdarklysegment.NewDataLaunchdarklySegmentRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLaunchdarklySegmentRulesList
 ```
@@ -2487,7 +2487,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklySegment.DataLaunchdarklySegmentRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklysegment"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklysegment"
 
 datalaunchdarklysegment.NewDataLaunchdarklySegmentRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLaunchdarklySegmentRulesOutputReference
 ```
