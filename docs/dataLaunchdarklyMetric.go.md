@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchd
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklymetric"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklymetric"
 
 datalaunchdarklymetric.NewDataLaunchdarklyMetric(scope Construct, id *string, config DataLaunchdarklyMetricConfig) DataLaunchdarklyMetric
 ```
@@ -290,7 +290,7 @@ func ResetIsActive()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklymetric"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklymetric"
 
 datalaunchdarklymetric.DataLaunchdarklyMetric_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklymetric"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklymetric"
 
 datalaunchdarklymetric.DataLaunchdarklyMetric_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datalaunchdarklymetric.DataLaunchdarklyMetric_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklymetric"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklymetric"
 
 datalaunchdarklymetric.DataLaunchdarklyMetric_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datalaunchdarklymetric.DataLaunchdarklyMetric_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetric.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklymetric"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklymetric"
 
 datalaunchdarklymetric.DataLaunchdarklyMetric_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -832,7 +832,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklymetric"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklymetric"
 
 &datalaunchdarklymetric.DataLaunchdarklyMetricConfig {
 	Connection: interface{},
@@ -1003,7 +1003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrls.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklymetric"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklymetric"
 
 &datalaunchdarklymetric.DataLaunchdarklyMetricUrls {
 
@@ -1018,7 +1018,7 @@ import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaun
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklymetric"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklymetric"
 
 datalaunchdarklymetric.NewDataLaunchdarklyMetricUrlsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLaunchdarklyMetricUrlsList
 ```
@@ -1167,7 +1167,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklyMetric.DataLaunchdarklyMetricUrlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklymetric"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/datalaunchdarklymetric"
 
 datalaunchdarklymetric.NewDataLaunchdarklyMetricUrlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLaunchdarklyMetricUrlsOutputReference
 ```
