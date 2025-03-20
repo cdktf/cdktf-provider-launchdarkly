@@ -4,7 +4,7 @@
 
 ### Metric <a name="Metric" id="@cdktf/provider-launchdarkly.metric.Metric"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/metric launchdarkly_metric}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/metric launchdarkly_metric}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.metric.Metric.Initializer"></a>
 
@@ -592,7 +592,7 @@ The construct id used in the generated config for the Metric to import.
 
 The id of the existing Metric that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/metric#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/metric#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1266,7 +1266,7 @@ const metricConfig: metric.MetricConfig = { ... }
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.analysisType">analysisType</a></code> | <code>string</code> | The method for analyzing metric events. Available choices are `mean` and `percentile`. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.description">description</a></code> | <code>string</code> | The description of the metric's purpose. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.eventKey">eventKey</a></code> | <code>string</code> | The event key for your metric (if custom metric). |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/metric#id Metric#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/metric#id Metric#id}. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.includeUnitsWithoutEvents">includeUnitsWithoutEvents</a></code> | <code>boolean \| cdktf.IResolvable</code> | Include units that did not send any events and set their value to 0. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.isActive">isActive</a></code> | <code>boolean \| cdktf.IResolvable</code> | Ignored. All metrics are considered active. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.isNumeric">isNumeric</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether a `custom` metric is a numeric metric or not. |
@@ -1364,7 +1364,7 @@ The unique key that references the metric.
 
 A change in this field will force the destruction of the existing resource and the creation of a new one. A change in this field will force the destruction of the existing resource and the creation of a new one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/metric#key Metric#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/metric#key Metric#key}
 
 ---
 
@@ -1380,7 +1380,7 @@ The metric type.
 
 Available choices are `click`, `custom`, and `pageview`. A change in this field will force the destruction of the existing resource and the creation of a new one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/metric#kind Metric#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/metric#kind Metric#kind}
 
 ---
 
@@ -1394,7 +1394,7 @@ public readonly name: string;
 
 The human-friendly name for the metric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/metric#name Metric#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/metric#name Metric#name}
 
 ---
 
@@ -1410,7 +1410,7 @@ The metrics's project key.
 
 A change in this field will force the destruction of the existing resource and the creation of a new one. A change in this field will force the destruction of the existing resource and the creation of a new one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/metric#project_key Metric#project_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/metric#project_key Metric#project_key}
 
 ---
 
@@ -1424,7 +1424,7 @@ public readonly analysisType: string;
 
 The method for analyzing metric events. Available choices are `mean` and `percentile`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/metric#analysis_type Metric#analysis_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/metric#analysis_type Metric#analysis_type}
 
 ---
 
@@ -1438,7 +1438,7 @@ public readonly description: string;
 
 The description of the metric's purpose.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/metric#description Metric#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/metric#description Metric#description}
 
 ---
 
@@ -1452,7 +1452,7 @@ public readonly eventKey: string;
 
 The event key for your metric (if custom metric).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/metric#event_key Metric#event_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/metric#event_key Metric#event_key}
 
 ---
 
@@ -1464,7 +1464,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/metric#id Metric#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/metric#id Metric#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1481,7 +1481,7 @@ public readonly includeUnitsWithoutEvents: boolean | IResolvable;
 
 Include units that did not send any events and set their value to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/metric#include_units_without_events Metric#include_units_without_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/metric#include_units_without_events Metric#include_units_without_events}
 
 ---
 
@@ -1495,7 +1495,7 @@ public readonly isActive: boolean | IResolvable;
 
 Ignored. All metrics are considered active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/metric#is_active Metric#is_active}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/metric#is_active Metric#is_active}
 
 ---
 
@@ -1509,7 +1509,7 @@ public readonly isNumeric: boolean | IResolvable;
 
 Whether a `custom` metric is a numeric metric or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/metric#is_numeric Metric#is_numeric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/metric#is_numeric Metric#is_numeric}
 
 ---
 
@@ -1525,7 +1525,7 @@ The LaunchDarkly member ID of the member who will maintain the metric.
 
 If not set, the API will automatically apply the member associated with your Terraform API key or the most recently-set maintainer
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/metric#maintainer_id Metric#maintainer_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/metric#maintainer_id Metric#maintainer_id}
 
 ---
 
@@ -1541,7 +1541,7 @@ The percentile for the analysis method.
 
 An integer denoting the target percentile between 0 and 100. Required when analysis_type is percentile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/metric#percentile_value Metric#percentile_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/metric#percentile_value Metric#percentile_value}
 
 ---
 
@@ -1557,7 +1557,7 @@ A set of one or more context kinds that this metric can measure events from.
 
 Metrics can only use context kinds marked as "Available for experiments." For more information, read [Allocating experiment audiences](https://docs.launchdarkly.com/home/creating-experiments/allocation).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/metric#randomization_units Metric#randomization_units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/metric#randomization_units Metric#randomization_units}
 
 ---
 
@@ -1571,7 +1571,7 @@ public readonly selector: string;
 
 The CSS selector for your metric (if click metric).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/metric#selector Metric#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/metric#selector Metric#selector}
 
 ---
 
@@ -1585,7 +1585,7 @@ public readonly successCriteria: string;
 
 The success criteria for your metric (if numeric metric). Available choices are `HigherThanBaseline` and `LowerThanBaseline`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/metric#success_criteria Metric#success_criteria}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/metric#success_criteria Metric#success_criteria}
 
 ---
 
@@ -1599,7 +1599,7 @@ public readonly tags: string[];
 
 Tags associated with your resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/metric#tags Metric#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/metric#tags Metric#tags}
 
 ---
 
@@ -1613,7 +1613,7 @@ public readonly unit: string;
 
 (Required for kind `custom`) The unit for numeric `custom` metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/metric#unit Metric#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/metric#unit Metric#unit}
 
 ---
 
@@ -1627,7 +1627,7 @@ public readonly unitAggregationType: string;
 
 The method by which multiple unit event values are aggregated. Available choices are `average` and `sum`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/metric#unit_aggregation_type Metric#unit_aggregation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/metric#unit_aggregation_type Metric#unit_aggregation_type}
 
 ---
 
@@ -1641,7 +1641,7 @@ public readonly urls: IResolvable | MetricUrls[];
 
 urls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/metric#urls Metric#urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/metric#urls Metric#urls}
 
 ---
 
@@ -1676,7 +1676,7 @@ public readonly kind: string;
 
 The URL type. Available choices are `exact`, `canonical`, `substring` and `regex`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/metric#kind Metric#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/metric#kind Metric#kind}
 
 ---
 
@@ -1690,7 +1690,7 @@ public readonly pattern: string;
 
 (Required for kind `regex`) The regex pattern to match by.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/metric#pattern Metric#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/metric#pattern Metric#pattern}
 
 ---
 
@@ -1704,7 +1704,7 @@ public readonly substring: string;
 
 (Required for kind `substring`) The URL substring to match by.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/metric#substring Metric#substring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/metric#substring Metric#substring}
 
 ---
 
@@ -1718,7 +1718,7 @@ public readonly url: string;
 
 (Required for kind `exact` and `canonical`) The exact or canonical URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.24.0/docs/resources/metric#url Metric#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/metric#url Metric#url}
 
 ---
 
