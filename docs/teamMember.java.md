@@ -4,7 +4,7 @@
 
 ### TeamMember <a name="TeamMember" id="@cdktf/provider-launchdarkly.teamMember.TeamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/team_member launchdarkly_team_member}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.1/docs/resources/team_member launchdarkly_team_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.teamMember.TeamMember.Initializer"></a>
 
@@ -121,7 +121,7 @@ The unique email address associated with the team member.
 
 A change in this field will force the destruction of the existing resource and the creation of a new one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/team_member#email TeamMember#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.1/docs/resources/team_member#email TeamMember#email}
 
 ---
 
@@ -135,7 +135,7 @@ Custom roles are only available to customers on an Enterprise plan. To learn mor
 
 -> **Note:** each `launchdarkly_team_member` must have either a `role` or `custom_roles` argument.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/team_member#custom_roles TeamMember#custom_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.1/docs/resources/team_member#custom_roles TeamMember#custom_roles}
 
 ---
 
@@ -145,7 +145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 The team member's given name. Once created, this cannot be updated except by the team member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/team_member#first_name TeamMember#first_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.1/docs/resources/team_member#first_name TeamMember#first_name}
 
 ---
 
@@ -155,7 +155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 TThe team member's family name. Once created, this cannot be updated except by the team member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/team_member#last_name TeamMember#last_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.1/docs/resources/team_member#last_name TeamMember#last_name}
 
 ---
 
@@ -167,7 +167,7 @@ The role associated with team member.
 
 Supported roles are `reader`, `writer`, `no_access`, or `admin`. If you don't specify a role, `reader` is assigned by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/team_member#role TeamMember#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.1/docs/resources/team_member#role TeamMember#role}
 
 ---
 
@@ -177,7 +177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 role_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/team_member#role_attributes TeamMember#role_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.1/docs/resources/team_member#role_attributes TeamMember#role_attributes}
 
 ---
 
@@ -652,7 +652,7 @@ The construct id used in the generated config for the TeamMember to import.
 
 The id of the existing TeamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/team_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.1/docs/resources/team_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1121,7 +1121,7 @@ The unique email address associated with the team member.
 
 A change in this field will force the destruction of the existing resource and the creation of a new one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/team_member#email TeamMember#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.1/docs/resources/team_member#email TeamMember#email}
 
 ---
 
@@ -1139,7 +1139,7 @@ Custom roles are only available to customers on an Enterprise plan. To learn mor
 
 -> **Note:** each `launchdarkly_team_member` must have either a `role` or `custom_roles` argument.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/team_member#custom_roles TeamMember#custom_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.1/docs/resources/team_member#custom_roles TeamMember#custom_roles}
 
 ---
 
@@ -1153,7 +1153,7 @@ public java.lang.String getFirstName();
 
 The team member's given name. Once created, this cannot be updated except by the team member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/team_member#first_name TeamMember#first_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.1/docs/resources/team_member#first_name TeamMember#first_name}
 
 ---
 
@@ -1167,7 +1167,7 @@ public java.lang.String getLastName();
 
 TThe team member's family name. Once created, this cannot be updated except by the team member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/team_member#last_name TeamMember#last_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.1/docs/resources/team_member#last_name TeamMember#last_name}
 
 ---
 
@@ -1183,7 +1183,7 @@ The role associated with team member.
 
 Supported roles are `reader`, `writer`, `no_access`, or `admin`. If you don't specify a role, `reader` is assigned by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/team_member#role TeamMember#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.1/docs/resources/team_member#role TeamMember#role}
 
 ---
 
@@ -1197,7 +1197,7 @@ public java.lang.Object getRoleAttributes();
 
 role_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/team_member#role_attributes TeamMember#role_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.1/docs/resources/team_member#role_attributes TeamMember#role_attributes}
 
 ---
 
@@ -1233,7 +1233,7 @@ public java.lang.String getKey();
 
 The key / name of your role attribute. In the example `$${roleAttribute/testAttribute}`, the key is `testAttribute`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/team_member#key TeamMember#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.1/docs/resources/team_member#key TeamMember#key}
 
 ---
 
@@ -1249,7 +1249,7 @@ A list of values for your role attribute.
 
 For example, if your policy statement defines the resource `"proj/$${roleAttribute/testAttribute}"`, the values would be the keys of the projects you wanted to assign access to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.0/docs/resources/team_member#values TeamMember#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.1/docs/resources/team_member#values TeamMember#values}
 
 ---
 
