@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchd
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklyTeamMembers.DataLaunchdarklyTeamMembers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklyteammembers"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v5/datalaunchdarklyteammembers"
 
 datalaunchdarklyteammembers.NewDataLaunchdarklyTeamMembers(scope Construct, id *string, config DataLaunchdarklyTeamMembersConfig) DataLaunchdarklyTeamMembers
 ```
@@ -290,7 +290,7 @@ func ResetIgnoreMissing()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-launchdarkly.dataLaunchdarklyTeamMembers.DataLaunchdarklyTeamMembers.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklyteammembers"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v5/datalaunchdarklyteammembers"
 
 datalaunchdarklyteammembers.DataLaunchdarklyTeamMembers_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-launchdarkly.dataLaunchdarklyTeamMembers.DataLaunchdarklyTeamMembers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklyteammembers"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v5/datalaunchdarklyteammembers"
 
 datalaunchdarklyteammembers.DataLaunchdarklyTeamMembers_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datalaunchdarklyteammembers.DataLaunchdarklyTeamMembers_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-launchdarkly.dataLaunchdarklyTeamMembers.DataLaunchdarklyTeamMembers.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklyteammembers"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v5/datalaunchdarklyteammembers"
 
 datalaunchdarklyteammembers.DataLaunchdarklyTeamMembers_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datalaunchdarklyteammembers.DataLaunchdarklyTeamMembers_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-launchdarkly.dataLaunchdarklyTeamMembers.DataLaunchdarklyTeamMembers.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklyteammembers"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v5/datalaunchdarklyteammembers"
 
 datalaunchdarklyteammembers.DataLaunchdarklyTeamMembers_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.dataLaunchdarklyTeamMembers.DataLaunchdarklyTeamMembersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklyteammembers"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v5/datalaunchdarklyteammembers"
 
 &datalaunchdarklyteammembers.DataLaunchdarklyTeamMembersConfig {
 	Connection: interface{},
@@ -785,7 +785,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.dataLaunchdarklyTeamMembers.DataLaunchdarklyTeamMembersTeamMembers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklyteammembers"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v5/datalaunchdarklyteammembers"
 
 &datalaunchdarklyteammembers.DataLaunchdarklyTeamMembersTeamMembers {
 
@@ -798,7 +798,7 @@ import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaun
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.dataLaunchdarklyTeamMembers.DataLaunchdarklyTeamMembersTeamMembersRoleAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklyteammembers"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v5/datalaunchdarklyteammembers"
 
 &datalaunchdarklyteammembers.DataLaunchdarklyTeamMembersTeamMembersRoleAttributes {
 
@@ -813,7 +813,7 @@ import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaun
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklyTeamMembers.DataLaunchdarklyTeamMembersTeamMembersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklyteammembers"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v5/datalaunchdarklyteammembers"
 
 datalaunchdarklyteammembers.NewDataLaunchdarklyTeamMembersTeamMembersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLaunchdarklyTeamMembersTeamMembersList
 ```
@@ -962,7 +962,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklyTeamMembers.DataLaunchdarklyTeamMembersTeamMembersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklyteammembers"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v5/datalaunchdarklyteammembers"
 
 datalaunchdarklyteammembers.NewDataLaunchdarklyTeamMembersTeamMembersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLaunchdarklyTeamMembersTeamMembersOutputReference
 ```
@@ -1306,7 +1306,7 @@ func InternalValue() DataLaunchdarklyTeamMembersTeamMembers
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklyTeamMembers.DataLaunchdarklyTeamMembersTeamMembersRoleAttributesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklyteammembers"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v5/datalaunchdarklyteammembers"
 
 datalaunchdarklyteammembers.NewDataLaunchdarklyTeamMembersTeamMembersRoleAttributesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLaunchdarklyTeamMembersTeamMembersRoleAttributesList
 ```
@@ -1455,7 +1455,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklyTeamMembers.DataLaunchdarklyTeamMembersTeamMembersRoleAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v4/datalaunchdarklyteammembers"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v5/datalaunchdarklyteammembers"
 
 datalaunchdarklyteammembers.NewDataLaunchdarklyTeamMembersTeamMembersRoleAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLaunchdarklyTeamMembersTeamMembersRoleAttributesOutputReference
 ```
