@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.1/docs/data-sources/team_members
+// https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.2/docs/data-sources/team_members
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataLaunchdarklyTeamMembersConfig extends cdktf.TerraformMetaAr
   /**
   * An array of unique email addresses associated with the team members.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.1/docs/data-sources/team_members#emails DataLaunchdarklyTeamMembers#emails}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.2/docs/data-sources/team_members#emails DataLaunchdarklyTeamMembers#emails}
   */
   readonly emails: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.1/docs/data-sources/team_members#id DataLaunchdarklyTeamMembers#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.2/docs/data-sources/team_members#id DataLaunchdarklyTeamMembers#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,7 +28,7 @@ export interface DataLaunchdarklyTeamMembersConfig extends cdktf.TerraformMetaAr
   /**
   * A boolean to determine whether to ignore members that weren't found.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.1/docs/data-sources/team_members#ignore_missing DataLaunchdarklyTeamMembers#ignore_missing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.2/docs/data-sources/team_members#ignore_missing DataLaunchdarklyTeamMembers#ignore_missing}
   */
   readonly ignoreMissing?: boolean | cdktf.IResolvable;
 }
@@ -220,7 +220,7 @@ export class DataLaunchdarklyTeamMembersTeamMembersList extends cdktf.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.1/docs/data-sources/team_members launchdarkly_team_members}
+* Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.2/docs/data-sources/team_members launchdarkly_team_members}
 */
 export class DataLaunchdarklyTeamMembers extends cdktf.TerraformDataSource {
 
@@ -236,7 +236,7 @@ export class DataLaunchdarklyTeamMembers extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataLaunchdarklyTeamMembers resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataLaunchdarklyTeamMembers to import
-  * @param importFromId The id of the existing DataLaunchdarklyTeamMembers that should be imported. Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.1/docs/data-sources/team_members#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataLaunchdarklyTeamMembers that should be imported. Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.2/docs/data-sources/team_members#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataLaunchdarklyTeamMembers to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -248,7 +248,7 @@ export class DataLaunchdarklyTeamMembers extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.1/docs/data-sources/team_members launchdarkly_team_members} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.2/docs/data-sources/team_members launchdarkly_team_members} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -259,7 +259,7 @@ export class DataLaunchdarklyTeamMembers extends cdktf.TerraformDataSource {
       terraformResourceType: 'launchdarkly_team_members',
       terraformGeneratorMetadata: {
         providerName: 'launchdarkly',
-        providerVersion: '2.25.1',
+        providerVersion: '2.25.2',
         providerVersionConstraint: '~> 2.13'
       },
       provider: config.provider,
