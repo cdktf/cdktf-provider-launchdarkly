@@ -4,7 +4,7 @@
 
 ### DataLaunchdarklyProject <a name="DataLaunchdarklyProject" id="@cdktf/provider-launchdarkly.dataLaunchdarklyProject.DataLaunchdarklyProject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.2/docs/data-sources/project launchdarkly_project}.
+Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.3/docs/data-sources/project launchdarkly_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.dataLaunchdarklyProject.DataLaunchdarklyProject.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataLaunchdarklyProject to
 
 The id of the existing DataLaunchdarklyProject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.2/docs/data-sources/project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.3/docs/data-sources/project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -678,7 +678,7 @@ new DataLaunchdarklyProjectConfig {
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyProject.DataLaunchdarklyProjectConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyProject.DataLaunchdarklyProjectConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyProject.DataLaunchdarklyProjectConfig.property.key">Key</a></code> | <code>string</code> | The project's unique key. |
-| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyProject.DataLaunchdarklyProjectConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.2/docs/data-sources/project#id DataLaunchdarklyProject#id}. |
+| <code><a href="#@cdktf/provider-launchdarkly.dataLaunchdarklyProject.DataLaunchdarklyProjectConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.3/docs/data-sources/project#id DataLaunchdarklyProject#id}. |
 
 ---
 
@@ -762,7 +762,7 @@ public string Key { get; set; }
 
 The project's unique key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.2/docs/data-sources/project#key DataLaunchdarklyProject#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.3/docs/data-sources/project#key DataLaunchdarklyProject#key}
 
 ---
 
@@ -774,7 +774,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.2/docs/data-sources/project#id DataLaunchdarklyProject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.3/docs/data-sources/project#id DataLaunchdarklyProject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
