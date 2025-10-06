@@ -14,29 +14,29 @@ from cdktf_cdktf_provider_launchdarkly import feature_flag
 featureFlag.FeatureFlag(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   key: str,
   name: str,
   project_key: str,
   variation_type: str,
-  archived: typing.Union[bool, IResolvable] = None,
-  client_side_availability: typing.Union[IResolvable, typing.List[FeatureFlagClientSideAvailability]] = None,
-  custom_properties: typing.Union[IResolvable, typing.List[FeatureFlagCustomProperties]] = None,
+  archived: bool | IResolvable = None,
+  client_side_availability: IResolvable | typing.List[FeatureFlagClientSideAvailability] = None,
+  custom_properties: IResolvable | typing.List[FeatureFlagCustomProperties] = None,
   defaults: FeatureFlagDefaults = None,
   description: str = None,
   id: str = None,
-  include_in_snippet: typing.Union[bool, IResolvable] = None,
+  include_in_snippet: bool | IResolvable = None,
   maintainer_id: str = None,
   maintainer_team_key: str = None,
   tags: typing.List[str] = None,
-  temporary: typing.Union[bool, IResolvable] = None,
-  variations: typing.Union[IResolvable, typing.List[FeatureFlagVariations]] = None
+  temporary: bool | IResolvable = None,
+  variations: IResolvable | typing.List[FeatureFlagVariations] = None
 )
 ```
 
@@ -44,29 +44,29 @@ featureFlag.FeatureFlag(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.key">key</a></code> | <code>str</code> | The unique feature flag key that references the flag in your application code. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.name">name</a></code> | <code>str</code> | The human-readable name of the feature flag. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.projectKey">project_key</a></code> | <code>str</code> | The feature flag's project key. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.variationType">variation_type</a></code> | <code>str</code> | The feature flag's variation type: `boolean`, `string`, `number` or `json`. |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.archived">archived</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether the flag is archived or not. |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.clientSideAvailability">client_side_availability</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailability">FeatureFlagClientSideAvailability</a>]]</code> | client_side_availability block. |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.customProperties">custom_properties</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomProperties">FeatureFlagCustomProperties</a>]]</code> | custom_properties block. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.archived">archived</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether the flag is archived or not. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.clientSideAvailability">client_side_availability</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailability">FeatureFlagClientSideAvailability</a>]</code> | client_side_availability block. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.customProperties">custom_properties</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomProperties">FeatureFlagCustomProperties</a>]</code> | custom_properties block. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.defaults">defaults</a></code> | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagDefaults">FeatureFlagDefaults</a></code> | defaults block. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.description">description</a></code> | <code>str</code> | The feature flag's description. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.3/docs/resources/feature_flag#id FeatureFlag#id}. |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.includeInSnippet">include_in_snippet</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether this flag should be made available to the client-side JavaScript SDK using the client-side Id. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.includeInSnippet">include_in_snippet</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether this flag should be made available to the client-side JavaScript SDK using the client-side Id. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.maintainerId">maintainer_id</a></code> | <code>str</code> | The feature flag maintainer's 24 character alphanumeric team member ID. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.maintainerTeamKey">maintainer_team_key</a></code> | <code>str</code> | The key of the associated team that maintains this feature flag. `maintainer_id` cannot be set if `maintainer_team_key` is set. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.tags">tags</a></code> | <code>typing.List[str]</code> | Tags associated with your resource. |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.temporary">temporary</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether the flag is a temporary flag. |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.variations">variations</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariations">FeatureFlagVariations</a>]]</code> | variations block. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.temporary">temporary</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether the flag is a temporary flag. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.variations">variations</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariations">FeatureFlagVariations</a>]</code> | variations block. |
 
 ---
 
@@ -90,13 +90,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 ##### `archived`<sup>Optional</sup> <a name="archived" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.archived"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether the flag is archived or not.
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 ##### `client_side_availability`<sup>Optional</sup> <a name="client_side_availability" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.clientSideAvailability"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailability">FeatureFlagClientSideAvailability</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailability">FeatureFlagClientSideAvailability</a>]
 
 client_side_availability block.
 
@@ -200,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 ##### `custom_properties`<sup>Optional</sup> <a name="custom_properties" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.customProperties"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomProperties">FeatureFlagCustomProperties</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomProperties">FeatureFlagCustomProperties</a>]
 
 custom_properties block.
 
@@ -241,7 +241,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `include_in_snippet`<sup>Optional</sup> <a name="include_in_snippet" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.includeInSnippet"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether this flag should be made available to the client-side JavaScript SDK using the client-side Id.
 
@@ -285,7 +285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 ##### `temporary`<sup>Optional</sup> <a name="temporary" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.temporary"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether the flag is a temporary flag.
 
@@ -295,7 +295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 ##### `variations`<sup>Optional</sup> <a name="variations" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.Initializer.parameter.variations"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariations">FeatureFlagVariations</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariations">FeatureFlagVariations</a>]
 
 variations block.
 
@@ -571,7 +571,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.importFrom"></a>
@@ -634,7 +634,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -650,7 +650,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -678,13 +678,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_client_side_availability(
-  value: typing.Union[IResolvable, typing.List[FeatureFlagClientSideAvailability]]
+  value: IResolvable | typing.List[FeatureFlagClientSideAvailability]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.putClientSideAvailability.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailability">FeatureFlagClientSideAvailability</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailability">FeatureFlagClientSideAvailability</a>]
 
 ---
 
@@ -692,13 +692,13 @@ def put_client_side_availability(
 
 ```python
 def put_custom_properties(
-  value: typing.Union[IResolvable, typing.List[FeatureFlagCustomProperties]]
+  value: IResolvable | typing.List[FeatureFlagCustomProperties]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.putCustomProperties.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomProperties">FeatureFlagCustomProperties</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomProperties">FeatureFlagCustomProperties</a>]
 
 ---
 
@@ -735,13 +735,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 ```python
 def put_variations(
-  value: typing.Union[IResolvable, typing.List[FeatureFlagVariations]]
+  value: IResolvable | typing.List[FeatureFlagVariations]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.putVariations.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariations">FeatureFlagVariations</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariations">FeatureFlagVariations</a>]
 
 ---
 
@@ -954,44 +954,44 @@ Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchd
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.clientSideAvailability">client_side_availability</a></code> | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailabilityList">FeatureFlagClientSideAvailabilityList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.customProperties">custom_properties</a></code> | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomPropertiesList">FeatureFlagCustomPropertiesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.defaults">defaults</a></code> | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagDefaultsOutputReference">FeatureFlagDefaultsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.variations">variations</a></code> | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariationsList">FeatureFlagVariationsList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.archivedInput">archived_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.clientSideAvailabilityInput">client_side_availability_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailability">FeatureFlagClientSideAvailability</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.customPropertiesInput">custom_properties_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomProperties">FeatureFlagCustomProperties</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.archivedInput">archived_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.clientSideAvailabilityInput">client_side_availability_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailability">FeatureFlagClientSideAvailability</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.customPropertiesInput">custom_properties_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomProperties">FeatureFlagCustomProperties</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.defaultsInput">defaults_input</a></code> | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagDefaults">FeatureFlagDefaults</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.includeInSnippetInput">include_in_snippet_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.includeInSnippetInput">include_in_snippet_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.maintainerIdInput">maintainer_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.maintainerTeamKeyInput">maintainer_team_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.projectKeyInput">project_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.tagsInput">tags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.temporaryInput">temporary_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.variationsInput">variations_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariations">FeatureFlagVariations</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.temporaryInput">temporary_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.variationsInput">variations_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariations">FeatureFlagVariations</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.variationTypeInput">variation_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.archived">archived</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.archived">archived</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.includeInSnippet">include_in_snippet</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.includeInSnippet">include_in_snippet</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.maintainerId">maintainer_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.maintainerTeamKey">maintainer_team_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.projectKey">project_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.tags">tags</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.temporary">temporary</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.temporary">temporary</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.variationType">variation_type</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -1071,20 +1071,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1131,10 +1131,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1181,30 +1181,30 @@ variations: FeatureFlagVariationsList
 ##### `archived_input`<sup>Optional</sup> <a name="archived_input" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.archivedInput"></a>
 
 ```python
-archived_input: typing.Union[bool, IResolvable]
+archived_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `client_side_availability_input`<sup>Optional</sup> <a name="client_side_availability_input" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.clientSideAvailabilityInput"></a>
 
 ```python
-client_side_availability_input: typing.Union[IResolvable, typing.List[FeatureFlagClientSideAvailability]]
+client_side_availability_input: IResolvable | typing.List[FeatureFlagClientSideAvailability]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailability">FeatureFlagClientSideAvailability</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailability">FeatureFlagClientSideAvailability</a>]
 
 ---
 
 ##### `custom_properties_input`<sup>Optional</sup> <a name="custom_properties_input" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.customPropertiesInput"></a>
 
 ```python
-custom_properties_input: typing.Union[IResolvable, typing.List[FeatureFlagCustomProperties]]
+custom_properties_input: IResolvable | typing.List[FeatureFlagCustomProperties]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomProperties">FeatureFlagCustomProperties</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomProperties">FeatureFlagCustomProperties</a>]
 
 ---
 
@@ -1241,10 +1241,10 @@ id_input: str
 ##### `include_in_snippet_input`<sup>Optional</sup> <a name="include_in_snippet_input" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.includeInSnippetInput"></a>
 
 ```python
-include_in_snippet_input: typing.Union[bool, IResolvable]
+include_in_snippet_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1311,20 +1311,20 @@ tags_input: typing.List[str]
 ##### `temporary_input`<sup>Optional</sup> <a name="temporary_input" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.temporaryInput"></a>
 
 ```python
-temporary_input: typing.Union[bool, IResolvable]
+temporary_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `variations_input`<sup>Optional</sup> <a name="variations_input" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.variationsInput"></a>
 
 ```python
-variations_input: typing.Union[IResolvable, typing.List[FeatureFlagVariations]]
+variations_input: IResolvable | typing.List[FeatureFlagVariations]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariations">FeatureFlagVariations</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariations">FeatureFlagVariations</a>]
 
 ---
 
@@ -1341,10 +1341,10 @@ variation_type_input: str
 ##### `archived`<sup>Required</sup> <a name="archived" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.archived"></a>
 
 ```python
-archived: typing.Union[bool, IResolvable]
+archived: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1371,10 +1371,10 @@ id: str
 ##### `include_in_snippet`<sup>Required</sup> <a name="include_in_snippet" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.includeInSnippet"></a>
 
 ```python
-include_in_snippet: typing.Union[bool, IResolvable]
+include_in_snippet: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1441,10 +1441,10 @@ tags: typing.List[str]
 ##### `temporary`<sup>Required</sup> <a name="temporary" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlag.property.temporary"></a>
 
 ```python
-temporary: typing.Union[bool, IResolvable]
+temporary: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1486,8 +1486,8 @@ tfResourceType: str
 from cdktf_cdktf_provider_launchdarkly import feature_flag
 
 featureFlag.FeatureFlagClientSideAvailability(
-  using_environment_id: typing.Union[bool, IResolvable] = None,
-  using_mobile_key: typing.Union[bool, IResolvable] = None
+  using_environment_id: bool | IResolvable = None,
+  using_mobile_key: bool | IResolvable = None
 )
 ```
 
@@ -1495,18 +1495,18 @@ featureFlag.FeatureFlagClientSideAvailability(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailability.property.usingEnvironmentId">using_environment_id</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether this flag is available to SDKs using the client-side ID. |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailability.property.usingMobileKey">using_mobile_key</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether this flag is available to SDKs using a mobile key. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailability.property.usingEnvironmentId">using_environment_id</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether this flag is available to SDKs using the client-side ID. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailability.property.usingMobileKey">using_mobile_key</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether this flag is available to SDKs using a mobile key. |
 
 ---
 
 ##### `using_environment_id`<sup>Optional</sup> <a name="using_environment_id" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailability.property.usingEnvironmentId"></a>
 
 ```python
-using_environment_id: typing.Union[bool, IResolvable]
+using_environment_id: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether this flag is available to SDKs using the client-side ID.
 
@@ -1517,10 +1517,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 ##### `using_mobile_key`<sup>Optional</sup> <a name="using_mobile_key" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailability.property.usingMobileKey"></a>
 
 ```python
-using_mobile_key: typing.Union[bool, IResolvable]
+using_mobile_key: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether this flag is available to SDKs using a mobile key.
 
@@ -1536,29 +1536,29 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 from cdktf_cdktf_provider_launchdarkly import feature_flag
 
 featureFlag.FeatureFlagConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   key: str,
   name: str,
   project_key: str,
   variation_type: str,
-  archived: typing.Union[bool, IResolvable] = None,
-  client_side_availability: typing.Union[IResolvable, typing.List[FeatureFlagClientSideAvailability]] = None,
-  custom_properties: typing.Union[IResolvable, typing.List[FeatureFlagCustomProperties]] = None,
+  archived: bool | IResolvable = None,
+  client_side_availability: IResolvable | typing.List[FeatureFlagClientSideAvailability] = None,
+  custom_properties: IResolvable | typing.List[FeatureFlagCustomProperties] = None,
   defaults: FeatureFlagDefaults = None,
   description: str = None,
   id: str = None,
-  include_in_snippet: typing.Union[bool, IResolvable] = None,
+  include_in_snippet: bool | IResolvable = None,
   maintainer_id: str = None,
   maintainer_team_key: str = None,
   tags: typing.List[str] = None,
-  temporary: typing.Union[bool, IResolvable] = None,
-  variations: typing.Union[IResolvable, typing.List[FeatureFlagVariations]] = None
+  temporary: bool | IResolvable = None,
+  variations: IResolvable | typing.List[FeatureFlagVariations] = None
 )
 ```
 
@@ -1566,49 +1566,49 @@ featureFlag.FeatureFlagConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.key">key</a></code> | <code>str</code> | The unique feature flag key that references the flag in your application code. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.name">name</a></code> | <code>str</code> | The human-readable name of the feature flag. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.projectKey">project_key</a></code> | <code>str</code> | The feature flag's project key. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.variationType">variation_type</a></code> | <code>str</code> | The feature flag's variation type: `boolean`, `string`, `number` or `json`. |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.archived">archived</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether the flag is archived or not. |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.clientSideAvailability">client_side_availability</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailability">FeatureFlagClientSideAvailability</a>]]</code> | client_side_availability block. |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.customProperties">custom_properties</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomProperties">FeatureFlagCustomProperties</a>]]</code> | custom_properties block. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.archived">archived</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether the flag is archived or not. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.clientSideAvailability">client_side_availability</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailability">FeatureFlagClientSideAvailability</a>]</code> | client_side_availability block. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.customProperties">custom_properties</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomProperties">FeatureFlagCustomProperties</a>]</code> | custom_properties block. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.defaults">defaults</a></code> | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagDefaults">FeatureFlagDefaults</a></code> | defaults block. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.description">description</a></code> | <code>str</code> | The feature flag's description. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.3/docs/resources/feature_flag#id FeatureFlag#id}. |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.includeInSnippet">include_in_snippet</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether this flag should be made available to the client-side JavaScript SDK using the client-side Id. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.includeInSnippet">include_in_snippet</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether this flag should be made available to the client-side JavaScript SDK using the client-side Id. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.maintainerId">maintainer_id</a></code> | <code>str</code> | The feature flag maintainer's 24 character alphanumeric team member ID. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.maintainerTeamKey">maintainer_team_key</a></code> | <code>str</code> | The key of the associated team that maintains this feature flag. `maintainer_id` cannot be set if `maintainer_team_key` is set. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.tags">tags</a></code> | <code>typing.List[str]</code> | Tags associated with your resource. |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.temporary">temporary</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether the flag is a temporary flag. |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.variations">variations</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariations">FeatureFlagVariations</a>]]</code> | variations block. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.temporary">temporary</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether the flag is a temporary flag. |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.variations">variations</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariations">FeatureFlagVariations</a>]</code> | variations block. |
 
 ---
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1655,10 +1655,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1727,10 +1727,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 ##### `archived`<sup>Optional</sup> <a name="archived" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.archived"></a>
 
 ```python
-archived: typing.Union[bool, IResolvable]
+archived: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether the flag is archived or not.
 
@@ -1743,10 +1743,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 ##### `client_side_availability`<sup>Optional</sup> <a name="client_side_availability" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.clientSideAvailability"></a>
 
 ```python
-client_side_availability: typing.Union[IResolvable, typing.List[FeatureFlagClientSideAvailability]]
+client_side_availability: IResolvable | typing.List[FeatureFlagClientSideAvailability]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailability">FeatureFlagClientSideAvailability</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailability">FeatureFlagClientSideAvailability</a>]
 
 client_side_availability block.
 
@@ -1757,10 +1757,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 ##### `custom_properties`<sup>Optional</sup> <a name="custom_properties" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.customProperties"></a>
 
 ```python
-custom_properties: typing.Union[IResolvable, typing.List[FeatureFlagCustomProperties]]
+custom_properties: IResolvable | typing.List[FeatureFlagCustomProperties]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomProperties">FeatureFlagCustomProperties</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomProperties">FeatureFlagCustomProperties</a>]
 
 custom_properties block.
 
@@ -1814,10 +1814,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `include_in_snippet`<sup>Optional</sup> <a name="include_in_snippet" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.includeInSnippet"></a>
 
 ```python
-include_in_snippet: typing.Union[bool, IResolvable]
+include_in_snippet: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether this flag should be made available to the client-side JavaScript SDK using the client-side Id.
 
@@ -1874,10 +1874,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 ##### `temporary`<sup>Optional</sup> <a name="temporary" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.temporary"></a>
 
 ```python
-temporary: typing.Union[bool, IResolvable]
+temporary: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether the flag is a temporary flag.
 
@@ -1888,10 +1888,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 ##### `variations`<sup>Optional</sup> <a name="variations" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlagConfig.property.variations"></a>
 
 ```python
-variations: typing.Union[IResolvable, typing.List[FeatureFlagVariations]]
+variations: IResolvable | typing.List[FeatureFlagVariations]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariations">FeatureFlagVariations</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariations">FeatureFlagVariations</a>]
 
 variations block.
 
@@ -2226,7 +2226,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailabilityList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailabilityList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailabilityList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailability">FeatureFlagClientSideAvailability</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailabilityList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailability">FeatureFlagClientSideAvailability</a>]</code> | *No description.* |
 
 ---
 
@@ -2257,10 +2257,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailabilityList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[FeatureFlagClientSideAvailability]]
+internal_value: IResolvable | typing.List[FeatureFlagClientSideAvailability]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailability">FeatureFlagClientSideAvailability</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailability">FeatureFlagClientSideAvailability</a>]
 
 ---
 
@@ -2534,11 +2534,11 @@ def reset_using_mobile_key() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailabilityOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailabilityOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailabilityOutputReference.property.usingEnvironmentIdInput">using_environment_id_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailabilityOutputReference.property.usingMobileKeyInput">using_mobile_key_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailabilityOutputReference.property.usingEnvironmentId">using_environment_id</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailabilityOutputReference.property.usingMobileKey">using_mobile_key</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailabilityOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailability">FeatureFlagClientSideAvailability</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailabilityOutputReference.property.usingEnvironmentIdInput">using_environment_id_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailabilityOutputReference.property.usingMobileKeyInput">using_mobile_key_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailabilityOutputReference.property.usingEnvironmentId">using_environment_id</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailabilityOutputReference.property.usingMobileKey">using_mobile_key</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailabilityOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailability">FeatureFlagClientSideAvailability</a></code> | *No description.* |
 
 ---
 
@@ -2569,50 +2569,50 @@ fqn: str
 ##### `using_environment_id_input`<sup>Optional</sup> <a name="using_environment_id_input" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailabilityOutputReference.property.usingEnvironmentIdInput"></a>
 
 ```python
-using_environment_id_input: typing.Union[bool, IResolvable]
+using_environment_id_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `using_mobile_key_input`<sup>Optional</sup> <a name="using_mobile_key_input" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailabilityOutputReference.property.usingMobileKeyInput"></a>
 
 ```python
-using_mobile_key_input: typing.Union[bool, IResolvable]
+using_mobile_key_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `using_environment_id`<sup>Required</sup> <a name="using_environment_id" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailabilityOutputReference.property.usingEnvironmentId"></a>
 
 ```python
-using_environment_id: typing.Union[bool, IResolvable]
+using_environment_id: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `using_mobile_key`<sup>Required</sup> <a name="using_mobile_key" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailabilityOutputReference.property.usingMobileKey"></a>
 
 ```python
-using_mobile_key: typing.Union[bool, IResolvable]
+using_mobile_key: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailabilityOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, FeatureFlagClientSideAvailability]
+internal_value: IResolvable | FeatureFlagClientSideAvailability
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailability">FeatureFlagClientSideAvailability</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagClientSideAvailability">FeatureFlagClientSideAvailability</a>
 
 ---
 
@@ -2748,7 +2748,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomPropertiesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomPropertiesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomPropertiesList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomProperties">FeatureFlagCustomProperties</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomPropertiesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomProperties">FeatureFlagCustomProperties</a>]</code> | *No description.* |
 
 ---
 
@@ -2779,10 +2779,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomPropertiesList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[FeatureFlagCustomProperties]]
+internal_value: IResolvable | typing.List[FeatureFlagCustomProperties]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomProperties">FeatureFlagCustomProperties</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomProperties">FeatureFlagCustomProperties</a>]
 
 ---
 
@@ -3048,7 +3048,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomPropertiesOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomPropertiesOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomPropertiesOutputReference.property.value">value</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomPropertiesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomProperties">FeatureFlagCustomProperties</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomPropertiesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomProperties">FeatureFlagCustomProperties</a></code> | *No description.* |
 
 ---
 
@@ -3139,10 +3139,10 @@ value: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomPropertiesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, FeatureFlagCustomProperties]
+internal_value: IResolvable | FeatureFlagCustomProperties
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomProperties">FeatureFlagCustomProperties</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagCustomProperties">FeatureFlagCustomProperties</a>
 
 ---
 
@@ -3596,7 +3596,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariationsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariationsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariationsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariations">FeatureFlagVariations</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariationsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariations">FeatureFlagVariations</a>]</code> | *No description.* |
 
 ---
 
@@ -3627,10 +3627,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariationsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[FeatureFlagVariations]]
+internal_value: IResolvable | typing.List[FeatureFlagVariations]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariations">FeatureFlagVariations</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariations">FeatureFlagVariations</a>]
 
 ---
 
@@ -3910,7 +3910,7 @@ def reset_name() -> None
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariationsOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariationsOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariationsOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariationsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariations">FeatureFlagVariations</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariationsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariations">FeatureFlagVariations</a></code> | *No description.* |
 
 ---
 
@@ -4001,10 +4001,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariationsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, FeatureFlagVariations]
+internal_value: IResolvable | FeatureFlagVariations
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariations">FeatureFlagVariations</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-launchdarkly.featureFlag.FeatureFlagVariations">FeatureFlagVariations</a>
 
 ---
 

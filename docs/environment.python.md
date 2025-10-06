@@ -14,25 +14,25 @@ from cdktf_cdktf_provider_launchdarkly import environment
 environment.Environment(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   color: str,
   key: str,
   name: str,
   project_key: str,
-  approval_settings: typing.Union[IResolvable, typing.List[EnvironmentApprovalSettings]] = None,
-  confirm_changes: typing.Union[bool, IResolvable] = None,
-  critical: typing.Union[bool, IResolvable] = None,
-  default_track_events: typing.Union[bool, IResolvable] = None,
+  approval_settings: IResolvable | typing.List[EnvironmentApprovalSettings] = None,
+  confirm_changes: bool | IResolvable = None,
+  critical: bool | IResolvable = None,
+  default_track_events: bool | IResolvable = None,
   default_ttl: typing.Union[int, float] = None,
   id: str = None,
-  require_comments: typing.Union[bool, IResolvable] = None,
-  secure_mode: typing.Union[bool, IResolvable] = None,
+  require_comments: bool | IResolvable = None,
+  secure_mode: bool | IResolvable = None,
   tags: typing.List[str] = None
 )
 ```
@@ -41,25 +41,25 @@ environment.Environment(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.color">color</a></code> | <code>str</code> | The color swatch as an RGB hex value with no leading `#`. For example: `000000`. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.key">key</a></code> | <code>str</code> | The project-unique key for the environment. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the environment. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.projectKey">project_key</a></code> | <code>str</code> | The LaunchDarkly project key. |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.approvalSettings">approval_settings</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings">EnvironmentApprovalSettings</a>]]</code> | approval_settings block. |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.confirmChanges">confirm_changes</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to `true` if this environment requires confirmation for flag and segment changes. |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.critical">critical</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Denotes whether the environment is critical. |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.defaultTrackEvents">default_track_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to `true` to enable data export for every flag created in this environment after you configure this argument. |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.approvalSettings">approval_settings</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings">EnvironmentApprovalSettings</a>]</code> | approval_settings block. |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.confirmChanges">confirm_changes</a></code> | <code>bool \| cdktf.IResolvable</code> | Set to `true` if this environment requires confirmation for flag and segment changes. |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.critical">critical</a></code> | <code>bool \| cdktf.IResolvable</code> | Denotes whether the environment is critical. |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.defaultTrackEvents">default_track_events</a></code> | <code>bool \| cdktf.IResolvable</code> | Set to `true` to enable data export for every flag created in this environment after you configure this argument. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.defaultTtl">default_ttl</a></code> | <code>typing.Union[int, float]</code> | The TTL for the environment. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.3/docs/resources/environment#id Environment#id}. |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.requireComments">require_comments</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to `true` if this environment requires comments for flag and segment changes. |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.secureMode">secure_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to `true` to ensure a user of the client-side SDK cannot impersonate another user. |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.requireComments">require_comments</a></code> | <code>bool \| cdktf.IResolvable</code> | Set to `true` if this environment requires comments for flag and segment changes. |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.secureMode">secure_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | Set to `true` to ensure a user of the client-side SDK cannot impersonate another user. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.tags">tags</a></code> | <code>typing.List[str]</code> | Tags associated with your resource. |
 
 ---
@@ -84,13 +84,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 ##### `approval_settings`<sup>Optional</sup> <a name="approval_settings" id="@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.approvalSettings"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings">EnvironmentApprovalSettings</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings">EnvironmentApprovalSettings</a>]
 
 approval_settings block.
 
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 ##### `confirm_changes`<sup>Optional</sup> <a name="confirm_changes" id="@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.confirmChanges"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set to `true` if this environment requires confirmation for flag and segment changes.
 
@@ -192,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 ##### `critical`<sup>Optional</sup> <a name="critical" id="@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.critical"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Denotes whether the environment is critical.
 
@@ -202,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 ##### `default_track_events`<sup>Optional</sup> <a name="default_track_events" id="@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.defaultTrackEvents"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set to `true` to enable data export for every flag created in this environment after you configure this argument.
 
@@ -237,7 +237,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `require_comments`<sup>Optional</sup> <a name="require_comments" id="@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.requireComments"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set to `true` if this environment requires comments for flag and segment changes.
 
@@ -249,7 +249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 ##### `secure_mode`<sup>Optional</sup> <a name="secure_mode" id="@cdktf/provider-launchdarkly.environment.Environment.Initializer.parameter.secureMode"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set to `true` to ensure a user of the client-side SDK cannot impersonate another user.
 
@@ -531,7 +531,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-launchdarkly.environment.Environment.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-launchdarkly.environment.Environment.importFrom"></a>
@@ -594,7 +594,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -610,7 +610,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-launchdarkly.environment.Environment.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -638,13 +638,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_approval_settings(
-  value: typing.Union[IResolvable, typing.List[EnvironmentApprovalSettings]]
+  value: IResolvable | typing.List[EnvironmentApprovalSettings]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-launchdarkly.environment.Environment.putApprovalSettings.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings">EnvironmentApprovalSettings</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings">EnvironmentApprovalSettings</a>]
 
 ---
 
@@ -839,41 +839,41 @@ Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchd
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.apiKey">api_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.approvalSettings">approval_settings</a></code> | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsList">EnvironmentApprovalSettingsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.clientSideId">client_side_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.mobileKey">mobile_key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.approvalSettingsInput">approval_settings_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings">EnvironmentApprovalSettings</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.approvalSettingsInput">approval_settings_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings">EnvironmentApprovalSettings</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.colorInput">color_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.confirmChangesInput">confirm_changes_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.criticalInput">critical_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.defaultTrackEventsInput">default_track_events_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.confirmChangesInput">confirm_changes_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.criticalInput">critical_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.defaultTrackEventsInput">default_track_events_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.defaultTtlInput">default_ttl_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.projectKeyInput">project_key_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.requireCommentsInput">require_comments_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.secureModeInput">secure_mode_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.requireCommentsInput">require_comments_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.secureModeInput">secure_mode_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.tagsInput">tags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.color">color</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.confirmChanges">confirm_changes</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.critical">critical</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.defaultTrackEvents">default_track_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.confirmChanges">confirm_changes</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.critical">critical</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.defaultTrackEvents">default_track_events</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.defaultTtl">default_ttl</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.projectKey">project_key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.requireComments">require_comments</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.secureMode">secure_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.requireComments">require_comments</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.secureMode">secure_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.tags">tags</a></code> | <code>typing.List[str]</code> | *No description.* |
 
 ---
@@ -953,20 +953,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-launchdarkly.environment.Environment.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-launchdarkly.environment.Environment.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1013,10 +1013,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-launchdarkly.environment.Environment.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1063,10 +1063,10 @@ mobile_key: str
 ##### `approval_settings_input`<sup>Optional</sup> <a name="approval_settings_input" id="@cdktf/provider-launchdarkly.environment.Environment.property.approvalSettingsInput"></a>
 
 ```python
-approval_settings_input: typing.Union[IResolvable, typing.List[EnvironmentApprovalSettings]]
+approval_settings_input: IResolvable | typing.List[EnvironmentApprovalSettings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings">EnvironmentApprovalSettings</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings">EnvironmentApprovalSettings</a>]
 
 ---
 
@@ -1083,30 +1083,30 @@ color_input: str
 ##### `confirm_changes_input`<sup>Optional</sup> <a name="confirm_changes_input" id="@cdktf/provider-launchdarkly.environment.Environment.property.confirmChangesInput"></a>
 
 ```python
-confirm_changes_input: typing.Union[bool, IResolvable]
+confirm_changes_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `critical_input`<sup>Optional</sup> <a name="critical_input" id="@cdktf/provider-launchdarkly.environment.Environment.property.criticalInput"></a>
 
 ```python
-critical_input: typing.Union[bool, IResolvable]
+critical_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `default_track_events_input`<sup>Optional</sup> <a name="default_track_events_input" id="@cdktf/provider-launchdarkly.environment.Environment.property.defaultTrackEventsInput"></a>
 
 ```python
-default_track_events_input: typing.Union[bool, IResolvable]
+default_track_events_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1163,20 +1163,20 @@ project_key_input: str
 ##### `require_comments_input`<sup>Optional</sup> <a name="require_comments_input" id="@cdktf/provider-launchdarkly.environment.Environment.property.requireCommentsInput"></a>
 
 ```python
-require_comments_input: typing.Union[bool, IResolvable]
+require_comments_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `secure_mode_input`<sup>Optional</sup> <a name="secure_mode_input" id="@cdktf/provider-launchdarkly.environment.Environment.property.secureModeInput"></a>
 
 ```python
-secure_mode_input: typing.Union[bool, IResolvable]
+secure_mode_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1203,30 +1203,30 @@ color: str
 ##### `confirm_changes`<sup>Required</sup> <a name="confirm_changes" id="@cdktf/provider-launchdarkly.environment.Environment.property.confirmChanges"></a>
 
 ```python
-confirm_changes: typing.Union[bool, IResolvable]
+confirm_changes: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `critical`<sup>Required</sup> <a name="critical" id="@cdktf/provider-launchdarkly.environment.Environment.property.critical"></a>
 
 ```python
-critical: typing.Union[bool, IResolvable]
+critical: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `default_track_events`<sup>Required</sup> <a name="default_track_events" id="@cdktf/provider-launchdarkly.environment.Environment.property.defaultTrackEvents"></a>
 
 ```python
-default_track_events: typing.Union[bool, IResolvable]
+default_track_events: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1283,20 +1283,20 @@ project_key: str
 ##### `require_comments`<sup>Required</sup> <a name="require_comments" id="@cdktf/provider-launchdarkly.environment.Environment.property.requireComments"></a>
 
 ```python
-require_comments: typing.Union[bool, IResolvable]
+require_comments: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `secure_mode`<sup>Required</sup> <a name="secure_mode" id="@cdktf/provider-launchdarkly.environment.Environment.property.secureMode"></a>
 
 ```python
-secure_mode: typing.Union[bool, IResolvable]
+secure_mode: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1338,11 +1338,11 @@ tfResourceType: str
 from cdktf_cdktf_provider_launchdarkly import environment
 
 environment.EnvironmentApprovalSettings(
-  auto_apply_approved_changes: typing.Union[bool, IResolvable] = None,
-  can_apply_declined_changes: typing.Union[bool, IResolvable] = None,
-  can_review_own_request: typing.Union[bool, IResolvable] = None,
+  auto_apply_approved_changes: bool | IResolvable = None,
+  can_apply_declined_changes: bool | IResolvable = None,
+  can_review_own_request: bool | IResolvable = None,
   min_num_approvals: typing.Union[int, float] = None,
-  required: typing.Union[bool, IResolvable] = None,
+  required: bool | IResolvable = None,
   required_approval_tags: typing.List[str] = None,
   service_config: typing.Mapping[str] = None,
   service_kind: str = None
@@ -1353,11 +1353,11 @@ environment.EnvironmentApprovalSettings(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.autoApplyApprovedChanges">auto_apply_approved_changes</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Automatically apply changes that have been approved by all reviewers. |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.canApplyDeclinedChanges">can_apply_declined_changes</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to `true` if changes can be applied as long as the `min_num_approvals` is met, regardless of whether any reviewers have declined a request. |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.canReviewOwnRequest">can_review_own_request</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to `true` if requesters can approve or decline their own request. They may always comment. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.autoApplyApprovedChanges">auto_apply_approved_changes</a></code> | <code>bool \| cdktf.IResolvable</code> | Automatically apply changes that have been approved by all reviewers. |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.canApplyDeclinedChanges">can_apply_declined_changes</a></code> | <code>bool \| cdktf.IResolvable</code> | Set to `true` if changes can be applied as long as the `min_num_approvals` is met, regardless of whether any reviewers have declined a request. |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.canReviewOwnRequest">can_review_own_request</a></code> | <code>bool \| cdktf.IResolvable</code> | Set to `true` if requesters can approve or decline their own request. They may always comment. Defaults to `false`. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.minNumApprovals">min_num_approvals</a></code> | <code>typing.Union[int, float]</code> | The number of approvals required before an approval request can be applied. |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.required">required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to `true` for changes to flags in this environment to require approval. |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.required">required</a></code> | <code>bool \| cdktf.IResolvable</code> | Set to `true` for changes to flags in this environment to require approval. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.requiredApprovalTags">required_approval_tags</a></code> | <code>typing.List[str]</code> | An array of tags used to specify which flags with those tags require approval. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.serviceConfig">service_config</a></code> | <code>typing.Mapping[str]</code> | The configuration for the service associated with this approval. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.serviceKind">service_kind</a></code> | <code>str</code> | The kind of service associated with this approval. |
@@ -1367,10 +1367,10 @@ environment.EnvironmentApprovalSettings(
 ##### `auto_apply_approved_changes`<sup>Optional</sup> <a name="auto_apply_approved_changes" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.autoApplyApprovedChanges"></a>
 
 ```python
-auto_apply_approved_changes: typing.Union[bool, IResolvable]
+auto_apply_approved_changes: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Automatically apply changes that have been approved by all reviewers.
 
@@ -1383,10 +1383,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 ##### `can_apply_declined_changes`<sup>Optional</sup> <a name="can_apply_declined_changes" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.canApplyDeclinedChanges"></a>
 
 ```python
-can_apply_declined_changes: typing.Union[bool, IResolvable]
+can_apply_declined_changes: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set to `true` if changes can be applied as long as the `min_num_approvals` is met, regardless of whether any reviewers have declined a request.
 
@@ -1399,10 +1399,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 ##### `can_review_own_request`<sup>Optional</sup> <a name="can_review_own_request" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.canReviewOwnRequest"></a>
 
 ```python
-can_review_own_request: typing.Union[bool, IResolvable]
+can_review_own_request: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set to `true` if requesters can approve or decline their own request. They may always comment. Defaults to `false`.
 
@@ -1429,10 +1429,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 ##### `required`<sup>Optional</sup> <a name="required" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.required"></a>
 
 ```python
-required: typing.Union[bool, IResolvable]
+required: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set to `true` for changes to flags in this environment to require approval.
 
@@ -1503,25 +1503,25 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 from cdktf_cdktf_provider_launchdarkly import environment
 
 environment.EnvironmentConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   color: str,
   key: str,
   name: str,
   project_key: str,
-  approval_settings: typing.Union[IResolvable, typing.List[EnvironmentApprovalSettings]] = None,
-  confirm_changes: typing.Union[bool, IResolvable] = None,
-  critical: typing.Union[bool, IResolvable] = None,
-  default_track_events: typing.Union[bool, IResolvable] = None,
+  approval_settings: IResolvable | typing.List[EnvironmentApprovalSettings] = None,
+  confirm_changes: bool | IResolvable = None,
+  critical: bool | IResolvable = None,
+  default_track_events: bool | IResolvable = None,
   default_ttl: typing.Union[int, float] = None,
   id: str = None,
-  require_comments: typing.Union[bool, IResolvable] = None,
-  secure_mode: typing.Union[bool, IResolvable] = None,
+  require_comments: bool | IResolvable = None,
+  secure_mode: bool | IResolvable = None,
   tags: typing.List[str] = None
 )
 ```
@@ -1530,25 +1530,25 @@ environment.EnvironmentConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.color">color</a></code> | <code>str</code> | The color swatch as an RGB hex value with no leading `#`. For example: `000000`. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.key">key</a></code> | <code>str</code> | The project-unique key for the environment. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.name">name</a></code> | <code>str</code> | The name of the environment. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.projectKey">project_key</a></code> | <code>str</code> | The LaunchDarkly project key. |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.approvalSettings">approval_settings</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings">EnvironmentApprovalSettings</a>]]</code> | approval_settings block. |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.confirmChanges">confirm_changes</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to `true` if this environment requires confirmation for flag and segment changes. |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.critical">critical</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Denotes whether the environment is critical. |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.defaultTrackEvents">default_track_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to `true` to enable data export for every flag created in this environment after you configure this argument. |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.approvalSettings">approval_settings</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings">EnvironmentApprovalSettings</a>]</code> | approval_settings block. |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.confirmChanges">confirm_changes</a></code> | <code>bool \| cdktf.IResolvable</code> | Set to `true` if this environment requires confirmation for flag and segment changes. |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.critical">critical</a></code> | <code>bool \| cdktf.IResolvable</code> | Denotes whether the environment is critical. |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.defaultTrackEvents">default_track_events</a></code> | <code>bool \| cdktf.IResolvable</code> | Set to `true` to enable data export for every flag created in this environment after you configure this argument. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.defaultTtl">default_ttl</a></code> | <code>typing.Union[int, float]</code> | The TTL for the environment. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.3/docs/resources/environment#id Environment#id}. |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.requireComments">require_comments</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to `true` if this environment requires comments for flag and segment changes. |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.secureMode">secure_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to `true` to ensure a user of the client-side SDK cannot impersonate another user. |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.requireComments">require_comments</a></code> | <code>bool \| cdktf.IResolvable</code> | Set to `true` if this environment requires comments for flag and segment changes. |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.secureMode">secure_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | Set to `true` to ensure a user of the client-side SDK cannot impersonate another user. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.tags">tags</a></code> | <code>typing.List[str]</code> | Tags associated with your resource. |
 
 ---
@@ -1556,20 +1556,20 @@ environment.EnvironmentConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1616,10 +1616,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1686,10 +1686,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 ##### `approval_settings`<sup>Optional</sup> <a name="approval_settings" id="@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.approvalSettings"></a>
 
 ```python
-approval_settings: typing.Union[IResolvable, typing.List[EnvironmentApprovalSettings]]
+approval_settings: IResolvable | typing.List[EnvironmentApprovalSettings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings">EnvironmentApprovalSettings</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings">EnvironmentApprovalSettings</a>]
 
 approval_settings block.
 
@@ -1700,10 +1700,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 ##### `confirm_changes`<sup>Optional</sup> <a name="confirm_changes" id="@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.confirmChanges"></a>
 
 ```python
-confirm_changes: typing.Union[bool, IResolvable]
+confirm_changes: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set to `true` if this environment requires confirmation for flag and segment changes.
 
@@ -1716,10 +1716,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 ##### `critical`<sup>Optional</sup> <a name="critical" id="@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.critical"></a>
 
 ```python
-critical: typing.Union[bool, IResolvable]
+critical: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Denotes whether the environment is critical.
 
@@ -1730,10 +1730,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 ##### `default_track_events`<sup>Optional</sup> <a name="default_track_events" id="@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.defaultTrackEvents"></a>
 
 ```python
-default_track_events: typing.Union[bool, IResolvable]
+default_track_events: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set to `true` to enable data export for every flag created in this environment after you configure this argument.
 
@@ -1777,10 +1777,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `require_comments`<sup>Optional</sup> <a name="require_comments" id="@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.requireComments"></a>
 
 ```python
-require_comments: typing.Union[bool, IResolvable]
+require_comments: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set to `true` if this environment requires comments for flag and segment changes.
 
@@ -1793,10 +1793,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 ##### `secure_mode`<sup>Optional</sup> <a name="secure_mode" id="@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.secureMode"></a>
 
 ```python
-secure_mode: typing.Union[bool, IResolvable]
+secure_mode: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set to `true` to ensure a user of the client-side SDK cannot impersonate another user.
 
@@ -1953,7 +1953,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings">EnvironmentApprovalSettings</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings">EnvironmentApprovalSettings</a>]</code> | *No description.* |
 
 ---
 
@@ -1984,10 +1984,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[EnvironmentApprovalSettings]]
+internal_value: IResolvable | typing.List[EnvironmentApprovalSettings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings">EnvironmentApprovalSettings</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings">EnvironmentApprovalSettings</a>]
 
 ---
 
@@ -2303,23 +2303,23 @@ def reset_service_kind() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.autoApplyApprovedChangesInput">auto_apply_approved_changes_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.canApplyDeclinedChangesInput">can_apply_declined_changes_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.canReviewOwnRequestInput">can_review_own_request_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.autoApplyApprovedChangesInput">auto_apply_approved_changes_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.canApplyDeclinedChangesInput">can_apply_declined_changes_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.canReviewOwnRequestInput">can_review_own_request_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.minNumApprovalsInput">min_num_approvals_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.requiredApprovalTagsInput">required_approval_tags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.requiredInput">required_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.requiredInput">required_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.serviceConfigInput">service_config_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.serviceKindInput">service_kind_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.autoApplyApprovedChanges">auto_apply_approved_changes</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.canApplyDeclinedChanges">can_apply_declined_changes</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.canReviewOwnRequest">can_review_own_request</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.autoApplyApprovedChanges">auto_apply_approved_changes</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.canApplyDeclinedChanges">can_apply_declined_changes</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.canReviewOwnRequest">can_review_own_request</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.minNumApprovals">min_num_approvals</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.required">required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.required">required</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.requiredApprovalTags">required_approval_tags</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.serviceConfig">service_config</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.serviceKind">service_kind</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings">EnvironmentApprovalSettings</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings">EnvironmentApprovalSettings</a></code> | *No description.* |
 
 ---
 
@@ -2350,30 +2350,30 @@ fqn: str
 ##### `auto_apply_approved_changes_input`<sup>Optional</sup> <a name="auto_apply_approved_changes_input" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.autoApplyApprovedChangesInput"></a>
 
 ```python
-auto_apply_approved_changes_input: typing.Union[bool, IResolvable]
+auto_apply_approved_changes_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `can_apply_declined_changes_input`<sup>Optional</sup> <a name="can_apply_declined_changes_input" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.canApplyDeclinedChangesInput"></a>
 
 ```python
-can_apply_declined_changes_input: typing.Union[bool, IResolvable]
+can_apply_declined_changes_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `can_review_own_request_input`<sup>Optional</sup> <a name="can_review_own_request_input" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.canReviewOwnRequestInput"></a>
 
 ```python
-can_review_own_request_input: typing.Union[bool, IResolvable]
+can_review_own_request_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2400,10 +2400,10 @@ required_approval_tags_input: typing.List[str]
 ##### `required_input`<sup>Optional</sup> <a name="required_input" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.requiredInput"></a>
 
 ```python
-required_input: typing.Union[bool, IResolvable]
+required_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2430,30 +2430,30 @@ service_kind_input: str
 ##### `auto_apply_approved_changes`<sup>Required</sup> <a name="auto_apply_approved_changes" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.autoApplyApprovedChanges"></a>
 
 ```python
-auto_apply_approved_changes: typing.Union[bool, IResolvable]
+auto_apply_approved_changes: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `can_apply_declined_changes`<sup>Required</sup> <a name="can_apply_declined_changes" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.canApplyDeclinedChanges"></a>
 
 ```python
-can_apply_declined_changes: typing.Union[bool, IResolvable]
+can_apply_declined_changes: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `can_review_own_request`<sup>Required</sup> <a name="can_review_own_request" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.canReviewOwnRequest"></a>
 
 ```python
-can_review_own_request: typing.Union[bool, IResolvable]
+can_review_own_request: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2470,10 +2470,10 @@ min_num_approvals: typing.Union[int, float]
 ##### `required`<sup>Required</sup> <a name="required" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.required"></a>
 
 ```python
-required: typing.Union[bool, IResolvable]
+required: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2510,10 +2510,10 @@ service_kind: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, EnvironmentApprovalSettings]
+internal_value: IResolvable | EnvironmentApprovalSettings
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings">EnvironmentApprovalSettings</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings">EnvironmentApprovalSettings</a>
 
 ---
 

@@ -12,34 +12,26 @@ Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchd
 import com.hashicorp.cdktf.providers.launchdarkly.segment.Segment;
 
 Segment.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .envKey(java.lang.String)
     .key(java.lang.String)
     .name(java.lang.String)
     .projectKey(java.lang.String)
 //  .description(java.lang.String)
 //  .excluded(java.util.List<java.lang.String>)
-//  .excludedContexts(IResolvable)
-//  .excludedContexts(java.util.List<SegmentExcludedContexts>)
+//  .excludedContexts(IResolvable|java.util.List<SegmentExcludedContexts>)
 //  .id(java.lang.String)
 //  .included(java.util.List<java.lang.String>)
-//  .includedContexts(IResolvable)
-//  .includedContexts(java.util.List<SegmentIncludedContexts>)
-//  .rules(IResolvable)
-//  .rules(java.util.List<SegmentRules>)
+//  .includedContexts(IResolvable|java.util.List<SegmentIncludedContexts>)
+//  .rules(IResolvable|java.util.List<SegmentRules>)
 //  .tags(java.util.List<java.lang.String>)
-//  .unbounded(java.lang.Boolean)
-//  .unbounded(IResolvable)
+//  .unbounded(java.lang.Boolean|IResolvable)
 //  .unboundedContextKind(java.lang.String)
     .build();
 ```
@@ -48,26 +40,26 @@ Segment.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.envKey">envKey</a></code> | <code>java.lang.String</code> | The segment's environment key. |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.key">key</a></code> | <code>java.lang.String</code> | The unique key that references the segment. |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The human-friendly name for the segment. |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.projectKey">projectKey</a></code> | <code>java.lang.String</code> | The segment's project key. |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | The description of the segment's purpose. |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.excluded">excluded</a></code> | <code>java.util.List<java.lang.String></code> | List of user keys excluded from the segment. |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.excludedContexts">excludedContexts</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentExcludedContexts">SegmentExcludedContexts</a>></code> | excluded_contexts block. |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.excludedContexts">excludedContexts</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentExcludedContexts">SegmentExcludedContexts</a>></code> | excluded_contexts block. |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.3/docs/resources/segment#id Segment#id}. |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.included">included</a></code> | <code>java.util.List<java.lang.String></code> | List of user keys included in the segment. |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.includedContexts">includedContexts</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentIncludedContexts">SegmentIncludedContexts</a>></code> | included_contexts block. |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.rules">rules</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentRules">SegmentRules</a>></code> | rules block. |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.includedContexts">includedContexts</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentIncludedContexts">SegmentIncludedContexts</a>></code> | included_contexts block. |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.rules">rules</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentRules">SegmentRules</a>></code> | rules block. |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Tags associated with your resource. |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.unbounded">unbounded</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to create a standard segment (`false`) or a Big Segment (`true`). |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.unbounded">unbounded</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether to create a standard segment (`false`) or a Big Segment (`true`). |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.unboundedContextKind">unboundedContextKind</a></code> | <code>java.lang.String</code> | For Big Segments, the targeted context kind. |
 
 ---
@@ -92,13 +84,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -128,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -202,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 ##### `excludedContexts`<sup>Optional</sup> <a name="excludedContexts" id="@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.excludedContexts"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentExcludedContexts">SegmentExcludedContexts</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentExcludedContexts">SegmentExcludedContexts</a>>
 
 excluded_contexts block.
 
@@ -235,7 +227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 ##### `includedContexts`<sup>Optional</sup> <a name="includedContexts" id="@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.includedContexts"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentIncludedContexts">SegmentIncludedContexts</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentIncludedContexts">SegmentIncludedContexts</a>>
 
 included_contexts block.
 
@@ -245,7 +237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 ##### `rules`<sup>Optional</sup> <a name="rules" id="@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.rules"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentRules">SegmentRules</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentRules">SegmentRules</a>>
 
 rules block.
 
@@ -265,7 +257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 ##### `unbounded`<sup>Optional</sup> <a name="unbounded" id="@cdktf/provider-launchdarkly.segment.Segment.Initializer.parameter.unbounded"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether to create a standard segment (`false`) or a Big Segment (`true`).
 
@@ -527,7 +519,7 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 ##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-launchdarkly.segment.Segment.hasResourceMove"></a>
 
 ```java
-public TerraformResourceMoveByTarget OR TerraformResourceMoveById hasResourceMove()
+public TerraformResourceMoveByTarget|TerraformResourceMoveById hasResourceMove()
 ```
 
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-launchdarkly.segment.Segment.importFrom"></a>
@@ -583,7 +575,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ```java
 public void moveTo(java.lang.String moveTarget)
-public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+public void moveTo(java.lang.String moveTarget, java.lang.String|java.lang.Number index)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -598,7 +590,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-launchdarkly.segment.Segment.moveTo.parameter.index"></a>
 
-- *Type:* java.lang.String OR java.lang.Number
+- *Type:* java.lang.String|java.lang.Number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -623,36 +615,36 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `putExcludedContexts` <a name="putExcludedContexts" id="@cdktf/provider-launchdarkly.segment.Segment.putExcludedContexts"></a>
 
 ```java
-public void putExcludedContexts(IResolvable OR java.util.List<SegmentExcludedContexts> value)
+public void putExcludedContexts(IResolvable|java.util.List<SegmentExcludedContexts> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-launchdarkly.segment.Segment.putExcludedContexts.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentExcludedContexts">SegmentExcludedContexts</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentExcludedContexts">SegmentExcludedContexts</a>>
 
 ---
 
 ##### `putIncludedContexts` <a name="putIncludedContexts" id="@cdktf/provider-launchdarkly.segment.Segment.putIncludedContexts"></a>
 
 ```java
-public void putIncludedContexts(IResolvable OR java.util.List<SegmentIncludedContexts> value)
+public void putIncludedContexts(IResolvable|java.util.List<SegmentIncludedContexts> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-launchdarkly.segment.Segment.putIncludedContexts.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentIncludedContexts">SegmentIncludedContexts</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentIncludedContexts">SegmentIncludedContexts</a>>
 
 ---
 
 ##### `putRules` <a name="putRules" id="@cdktf/provider-launchdarkly.segment.Segment.putRules"></a>
 
 ```java
-public void putRules(IResolvable OR java.util.List<SegmentRules> value)
+public void putRules(IResolvable|java.util.List<SegmentRules> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-launchdarkly.segment.Segment.putRules.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentRules">SegmentRules</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentRules">SegmentRules</a>>
 
 ---
 
@@ -842,31 +834,31 @@ Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchd
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.creationDate">creationDate</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.excludedContexts">excludedContexts</a></code> | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentExcludedContextsList">SegmentExcludedContextsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.includedContexts">includedContexts</a></code> | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentIncludedContextsList">SegmentIncludedContextsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.rules">rules</a></code> | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesList">SegmentRulesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.envKeyInput">envKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.excludedContextsInput">excludedContextsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentExcludedContexts">SegmentExcludedContexts</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.excludedContextsInput">excludedContextsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentExcludedContexts">SegmentExcludedContexts</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.excludedInput">excludedInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.includedContextsInput">includedContextsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentIncludedContexts">SegmentIncludedContexts</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.includedContextsInput">includedContextsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentIncludedContexts">SegmentIncludedContexts</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.includedInput">includedInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.keyInput">keyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.projectKeyInput">projectKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.rulesInput">rulesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentRules">SegmentRules</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.rulesInput">rulesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentRules">SegmentRules</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.tagsInput">tagsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.unboundedContextKindInput">unboundedContextKindInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.unboundedInput">unboundedInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.unboundedInput">unboundedInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.envKey">envKey</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.excluded">excluded</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -876,7 +868,7 @@ Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchd
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.projectKey">projectKey</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.unbounded">unbounded</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.unbounded">unbounded</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.Segment.property.unboundedContextKind">unboundedContextKind</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -956,20 +948,20 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-launchdarkly.segment.Segment.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-launchdarkly.segment.Segment.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1016,10 +1008,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-launchdarkly.segment.Segment.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1086,10 +1078,10 @@ public java.lang.String getEnvKeyInput();
 ##### `excludedContextsInput`<sup>Optional</sup> <a name="excludedContextsInput" id="@cdktf/provider-launchdarkly.segment.Segment.property.excludedContextsInput"></a>
 
 ```java
-public java.lang.Object getExcludedContextsInput();
+public IResolvable|java.util.List<SegmentExcludedContexts> getExcludedContextsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentExcludedContexts">SegmentExcludedContexts</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentExcludedContexts">SegmentExcludedContexts</a>>
 
 ---
 
@@ -1116,10 +1108,10 @@ public java.lang.String getIdInput();
 ##### `includedContextsInput`<sup>Optional</sup> <a name="includedContextsInput" id="@cdktf/provider-launchdarkly.segment.Segment.property.includedContextsInput"></a>
 
 ```java
-public java.lang.Object getIncludedContextsInput();
+public IResolvable|java.util.List<SegmentIncludedContexts> getIncludedContextsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentIncludedContexts">SegmentIncludedContexts</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentIncludedContexts">SegmentIncludedContexts</a>>
 
 ---
 
@@ -1166,10 +1158,10 @@ public java.lang.String getProjectKeyInput();
 ##### `rulesInput`<sup>Optional</sup> <a name="rulesInput" id="@cdktf/provider-launchdarkly.segment.Segment.property.rulesInput"></a>
 
 ```java
-public java.lang.Object getRulesInput();
+public IResolvable|java.util.List<SegmentRules> getRulesInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentRules">SegmentRules</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentRules">SegmentRules</a>>
 
 ---
 
@@ -1196,10 +1188,10 @@ public java.lang.String getUnboundedContextKindInput();
 ##### `unboundedInput`<sup>Optional</sup> <a name="unboundedInput" id="@cdktf/provider-launchdarkly.segment.Segment.property.unboundedInput"></a>
 
 ```java
-public java.lang.Object getUnboundedInput();
+public java.lang.Boolean|IResolvable getUnboundedInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1296,10 +1288,10 @@ public java.util.List<java.lang.String> getTags();
 ##### `unbounded`<sup>Required</sup> <a name="unbounded" id="@cdktf/provider-launchdarkly.segment.Segment.property.unbounded"></a>
 
 ```java
-public java.lang.Object getUnbounded();
+public java.lang.Boolean|IResolvable getUnbounded();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1341,34 +1333,26 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.launchdarkly.segment.SegmentConfig;
 
 SegmentConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .envKey(java.lang.String)
     .key(java.lang.String)
     .name(java.lang.String)
     .projectKey(java.lang.String)
 //  .description(java.lang.String)
 //  .excluded(java.util.List<java.lang.String>)
-//  .excludedContexts(IResolvable)
-//  .excludedContexts(java.util.List<SegmentExcludedContexts>)
+//  .excludedContexts(IResolvable|java.util.List<SegmentExcludedContexts>)
 //  .id(java.lang.String)
 //  .included(java.util.List<java.lang.String>)
-//  .includedContexts(IResolvable)
-//  .includedContexts(java.util.List<SegmentIncludedContexts>)
-//  .rules(IResolvable)
-//  .rules(java.util.List<SegmentRules>)
+//  .includedContexts(IResolvable|java.util.List<SegmentIncludedContexts>)
+//  .rules(IResolvable|java.util.List<SegmentRules>)
 //  .tags(java.util.List<java.lang.String>)
-//  .unbounded(java.lang.Boolean)
-//  .unbounded(IResolvable)
+//  .unbounded(java.lang.Boolean|IResolvable)
 //  .unboundedContextKind(java.lang.String)
     .build();
 ```
@@ -1377,26 +1361,26 @@ SegmentConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.envKey">envKey</a></code> | <code>java.lang.String</code> | The segment's environment key. |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.key">key</a></code> | <code>java.lang.String</code> | The unique key that references the segment. |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.name">name</a></code> | <code>java.lang.String</code> | The human-friendly name for the segment. |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.projectKey">projectKey</a></code> | <code>java.lang.String</code> | The segment's project key. |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.description">description</a></code> | <code>java.lang.String</code> | The description of the segment's purpose. |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.excluded">excluded</a></code> | <code>java.util.List<java.lang.String></code> | List of user keys excluded from the segment. |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.excludedContexts">excludedContexts</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentExcludedContexts">SegmentExcludedContexts</a>></code> | excluded_contexts block. |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.excludedContexts">excludedContexts</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentExcludedContexts">SegmentExcludedContexts</a>></code> | excluded_contexts block. |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.3/docs/resources/segment#id Segment#id}. |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.included">included</a></code> | <code>java.util.List<java.lang.String></code> | List of user keys included in the segment. |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.includedContexts">includedContexts</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentIncludedContexts">SegmentIncludedContexts</a>></code> | included_contexts block. |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.rules">rules</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentRules">SegmentRules</a>></code> | rules block. |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.includedContexts">includedContexts</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentIncludedContexts">SegmentIncludedContexts</a>></code> | included_contexts block. |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.rules">rules</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentRules">SegmentRules</a>></code> | rules block. |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Tags associated with your resource. |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.unbounded">unbounded</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to create a standard segment (`false`) or a Big Segment (`true`). |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.unbounded">unbounded</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether to create a standard segment (`false`) or a Big Segment (`true`). |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentConfig.property.unboundedContextKind">unboundedContextKind</a></code> | <code>java.lang.String</code> | For Big Segments, the targeted context kind. |
 
 ---
@@ -1404,20 +1388,20 @@ SegmentConfig.builder()
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-launchdarkly.segment.SegmentConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-launchdarkly.segment.SegmentConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1464,10 +1448,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-launchdarkly.segment.SegmentConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1566,10 +1550,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 ##### `excludedContexts`<sup>Optional</sup> <a name="excludedContexts" id="@cdktf/provider-launchdarkly.segment.SegmentConfig.property.excludedContexts"></a>
 
 ```java
-public java.lang.Object getExcludedContexts();
+public IResolvable|java.util.List<SegmentExcludedContexts> getExcludedContexts();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentExcludedContexts">SegmentExcludedContexts</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentExcludedContexts">SegmentExcludedContexts</a>>
 
 excluded_contexts block.
 
@@ -1611,10 +1595,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 ##### `includedContexts`<sup>Optional</sup> <a name="includedContexts" id="@cdktf/provider-launchdarkly.segment.SegmentConfig.property.includedContexts"></a>
 
 ```java
-public java.lang.Object getIncludedContexts();
+public IResolvable|java.util.List<SegmentIncludedContexts> getIncludedContexts();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentIncludedContexts">SegmentIncludedContexts</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentIncludedContexts">SegmentIncludedContexts</a>>
 
 included_contexts block.
 
@@ -1625,10 +1609,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 ##### `rules`<sup>Optional</sup> <a name="rules" id="@cdktf/provider-launchdarkly.segment.SegmentConfig.property.rules"></a>
 
 ```java
-public java.lang.Object getRules();
+public IResolvable|java.util.List<SegmentRules> getRules();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentRules">SegmentRules</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentRules">SegmentRules</a>>
 
 rules block.
 
@@ -1653,10 +1637,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 ##### `unbounded`<sup>Optional</sup> <a name="unbounded" id="@cdktf/provider-launchdarkly.segment.SegmentConfig.property.unbounded"></a>
 
 ```java
-public java.lang.Object getUnbounded();
+public java.lang.Boolean|IResolvable getUnbounded();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether to create a standard segment (`false`) or a Big Segment (`true`).
 
@@ -1791,8 +1775,7 @@ import com.hashicorp.cdktf.providers.launchdarkly.segment.SegmentRules;
 
 SegmentRules.builder()
 //  .bucketBy(java.lang.String)
-//  .clauses(IResolvable)
-//  .clauses(java.util.List<SegmentRulesClauses>)
+//  .clauses(IResolvable|java.util.List<SegmentRulesClauses>)
 //  .rolloutContextKind(java.lang.String)
 //  .weight(java.lang.Number)
     .build();
@@ -1803,7 +1786,7 @@ SegmentRules.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRules.property.bucketBy">bucketBy</a></code> | <code>java.lang.String</code> | The attribute by which to group contexts together. |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRules.property.clauses">clauses</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClauses">SegmentRulesClauses</a>></code> | clauses block. |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRules.property.clauses">clauses</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClauses">SegmentRulesClauses</a>></code> | clauses block. |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRules.property.rolloutContextKind">rolloutContextKind</a></code> | <code>java.lang.String</code> | The context kind associated with this segment rule. |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRules.property.weight">weight</a></code> | <code>java.lang.Number</code> | The integer weight of the rule (between 1 and 100000). |
 
@@ -1826,10 +1809,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 ##### `clauses`<sup>Optional</sup> <a name="clauses" id="@cdktf/provider-launchdarkly.segment.SegmentRules.property.clauses"></a>
 
 ```java
-public java.lang.Object getClauses();
+public IResolvable|java.util.List<SegmentRulesClauses> getClauses();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClauses">SegmentRulesClauses</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClauses">SegmentRulesClauses</a>>
 
 clauses block.
 
@@ -1879,8 +1862,7 @@ SegmentRulesClauses.builder()
     .op(java.lang.String)
     .values(java.util.List<java.lang.String>)
 //  .contextKind(java.lang.String)
-//  .negate(java.lang.Boolean)
-//  .negate(IResolvable)
+//  .negate(java.lang.Boolean|IResolvable)
 //  .valueType(java.lang.String)
     .build();
 ```
@@ -1893,7 +1875,7 @@ SegmentRulesClauses.builder()
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClauses.property.op">op</a></code> | <code>java.lang.String</code> | The operator associated with the rule clause. |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClauses.property.values">values</a></code> | <code>java.util.List<java.lang.String></code> | The list of values associated with the rule clause. |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClauses.property.contextKind">contextKind</a></code> | <code>java.lang.String</code> | The context kind associated with this rule clause. If omitted, defaults to `user`. |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClauses.property.negate">negate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to negate the rule clause. |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClauses.property.negate">negate</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether to negate the rule clause. |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClauses.property.valueType">valueType</a></code> | <code>java.lang.String</code> | The type for each of the clause's values. |
 
 ---
@@ -1959,10 +1941,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 ##### `negate`<sup>Optional</sup> <a name="negate" id="@cdktf/provider-launchdarkly.segment.SegmentRulesClauses.property.negate"></a>
 
 ```java
-public java.lang.Object getNegate();
+public java.lang.Boolean|IResolvable getNegate();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether to negate the rule clause.
 
@@ -2109,7 +2091,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentExcludedContextsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentExcludedContextsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentExcludedContextsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentExcludedContexts">SegmentExcludedContexts</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentExcludedContextsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentExcludedContexts">SegmentExcludedContexts</a>></code> | *No description.* |
 
 ---
 
@@ -2140,10 +2122,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-launchdarkly.segment.SegmentExcludedContextsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SegmentExcludedContexts> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentExcludedContexts">SegmentExcludedContexts</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentExcludedContexts">SegmentExcludedContexts</a>>
 
 ---
 
@@ -2380,7 +2362,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentExcludedContextsOutputReference.property.valuesInput">valuesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentExcludedContextsOutputReference.property.contextKind">contextKind</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentExcludedContextsOutputReference.property.values">values</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentExcludedContextsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-launchdarkly.segment.SegmentExcludedContexts">SegmentExcludedContexts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentExcludedContextsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-launchdarkly.segment.SegmentExcludedContexts">SegmentExcludedContexts</a></code> | *No description.* |
 
 ---
 
@@ -2451,10 +2433,10 @@ public java.util.List<java.lang.String> getValues();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-launchdarkly.segment.SegmentExcludedContextsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SegmentExcludedContexts getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-launchdarkly.segment.SegmentExcludedContexts">SegmentExcludedContexts</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-launchdarkly.segment.SegmentExcludedContexts">SegmentExcludedContexts</a>
 
 ---
 
@@ -2580,7 +2562,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentIncludedContextsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentIncludedContextsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentIncludedContextsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentIncludedContexts">SegmentIncludedContexts</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentIncludedContextsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentIncludedContexts">SegmentIncludedContexts</a>></code> | *No description.* |
 
 ---
 
@@ -2611,10 +2593,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-launchdarkly.segment.SegmentIncludedContextsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SegmentIncludedContexts> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentIncludedContexts">SegmentIncludedContexts</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentIncludedContexts">SegmentIncludedContexts</a>>
 
 ---
 
@@ -2851,7 +2833,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentIncludedContextsOutputReference.property.valuesInput">valuesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentIncludedContextsOutputReference.property.contextKind">contextKind</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentIncludedContextsOutputReference.property.values">values</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentIncludedContextsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-launchdarkly.segment.SegmentIncludedContexts">SegmentIncludedContexts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentIncludedContextsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-launchdarkly.segment.SegmentIncludedContexts">SegmentIncludedContexts</a></code> | *No description.* |
 
 ---
 
@@ -2922,10 +2904,10 @@ public java.util.List<java.lang.String> getValues();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-launchdarkly.segment.SegmentIncludedContextsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SegmentIncludedContexts getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-launchdarkly.segment.SegmentIncludedContexts">SegmentIncludedContexts</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-launchdarkly.segment.SegmentIncludedContexts">SegmentIncludedContexts</a>
 
 ---
 
@@ -3051,7 +3033,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClausesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClausesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClausesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClauses">SegmentRulesClauses</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClausesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClauses">SegmentRulesClauses</a>></code> | *No description.* |
 
 ---
 
@@ -3082,10 +3064,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-launchdarkly.segment.SegmentRulesClausesList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SegmentRulesClauses> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClauses">SegmentRulesClauses</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClauses">SegmentRulesClauses</a>>
 
 ---
 
@@ -3341,17 +3323,17 @@ public void resetValueType()
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClausesOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClausesOutputReference.property.attributeInput">attributeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClausesOutputReference.property.contextKindInput">contextKindInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClausesOutputReference.property.negateInput">negateInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClausesOutputReference.property.negateInput">negateInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClausesOutputReference.property.opInput">opInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClausesOutputReference.property.valuesInput">valuesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClausesOutputReference.property.valueTypeInput">valueTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClausesOutputReference.property.attribute">attribute</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClausesOutputReference.property.contextKind">contextKind</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClausesOutputReference.property.negate">negate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClausesOutputReference.property.negate">negate</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClausesOutputReference.property.op">op</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClausesOutputReference.property.values">values</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClausesOutputReference.property.valueType">valueType</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClausesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClauses">SegmentRulesClauses</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClausesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClauses">SegmentRulesClauses</a></code> | *No description.* |
 
 ---
 
@@ -3402,10 +3384,10 @@ public java.lang.String getContextKindInput();
 ##### `negateInput`<sup>Optional</sup> <a name="negateInput" id="@cdktf/provider-launchdarkly.segment.SegmentRulesClausesOutputReference.property.negateInput"></a>
 
 ```java
-public java.lang.Object getNegateInput();
+public java.lang.Boolean|IResolvable getNegateInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -3462,10 +3444,10 @@ public java.lang.String getContextKind();
 ##### `negate`<sup>Required</sup> <a name="negate" id="@cdktf/provider-launchdarkly.segment.SegmentRulesClausesOutputReference.property.negate"></a>
 
 ```java
-public java.lang.Object getNegate();
+public java.lang.Boolean|IResolvable getNegate();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -3502,10 +3484,10 @@ public java.lang.String getValueType();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-launchdarkly.segment.SegmentRulesClausesOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SegmentRulesClauses getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClauses">SegmentRulesClauses</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClauses">SegmentRulesClauses</a>
 
 ---
 
@@ -3631,7 +3613,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentRules">SegmentRules</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentRules">SegmentRules</a>></code> | *No description.* |
 
 ---
 
@@ -3662,10 +3644,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-launchdarkly.segment.SegmentRulesList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SegmentRules> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentRules">SegmentRules</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentRules">SegmentRules</a>>
 
 ---
 
@@ -3899,12 +3881,12 @@ Returns a reversible string representation.
 ##### `putClauses` <a name="putClauses" id="@cdktf/provider-launchdarkly.segment.SegmentRulesOutputReference.putClauses"></a>
 
 ```java
-public void putClauses(IResolvable OR java.util.List<SegmentRulesClauses> value)
+public void putClauses(IResolvable|java.util.List<SegmentRulesClauses> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-launchdarkly.segment.SegmentRulesOutputReference.putClauses.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClauses">SegmentRulesClauses</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClauses">SegmentRulesClauses</a>>
 
 ---
 
@@ -3941,13 +3923,13 @@ public void resetWeight()
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesOutputReference.property.clauses">clauses</a></code> | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClausesList">SegmentRulesClausesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesOutputReference.property.bucketByInput">bucketByInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesOutputReference.property.clausesInput">clausesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClauses">SegmentRulesClauses</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesOutputReference.property.clausesInput">clausesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClauses">SegmentRulesClauses</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesOutputReference.property.rolloutContextKindInput">rolloutContextKindInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesOutputReference.property.weightInput">weightInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesOutputReference.property.bucketBy">bucketBy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesOutputReference.property.rolloutContextKind">rolloutContextKind</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesOutputReference.property.weight">weight</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-launchdarkly.segment.SegmentRules">SegmentRules</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-launchdarkly.segment.SegmentRules">SegmentRules</a></code> | *No description.* |
 
 ---
 
@@ -3998,10 +3980,10 @@ public java.lang.String getBucketByInput();
 ##### `clausesInput`<sup>Optional</sup> <a name="clausesInput" id="@cdktf/provider-launchdarkly.segment.SegmentRulesOutputReference.property.clausesInput"></a>
 
 ```java
-public java.lang.Object getClausesInput();
+public IResolvable|java.util.List<SegmentRulesClauses> getClausesInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClauses">SegmentRulesClauses</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-launchdarkly.segment.SegmentRulesClauses">SegmentRulesClauses</a>>
 
 ---
 
@@ -4058,10 +4040,10 @@ public java.lang.Number getWeight();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-launchdarkly.segment.SegmentRulesOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SegmentRules getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-launchdarkly.segment.SegmentRules">SegmentRules</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-launchdarkly.segment.SegmentRules">SegmentRules</a>
 
 ---
 

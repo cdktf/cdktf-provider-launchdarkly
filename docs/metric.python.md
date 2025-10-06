@@ -14,13 +14,13 @@ from cdktf_cdktf_provider_launchdarkly import metric
 metric.Metric(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   key: str,
   kind: str,
   name: str,
@@ -29,9 +29,9 @@ metric.Metric(
   description: str = None,
   event_key: str = None,
   id: str = None,
-  include_units_without_events: typing.Union[bool, IResolvable] = None,
-  is_active: typing.Union[bool, IResolvable] = None,
-  is_numeric: typing.Union[bool, IResolvable] = None,
+  include_units_without_events: bool | IResolvable = None,
+  is_active: bool | IResolvable = None,
+  is_numeric: bool | IResolvable = None,
   maintainer_id: str = None,
   percentile_value: typing.Union[int, float] = None,
   randomization_units: typing.List[str] = None,
@@ -40,7 +40,7 @@ metric.Metric(
   tags: typing.List[str] = None,
   unit: str = None,
   unit_aggregation_type: str = None,
-  urls: typing.Union[IResolvable, typing.List[MetricUrls]] = None
+  urls: IResolvable | typing.List[MetricUrls] = None
 )
 ```
 
@@ -48,13 +48,13 @@ metric.Metric(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.key">key</a></code> | <code>str</code> | The unique key that references the metric. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.kind">kind</a></code> | <code>str</code> | The metric type. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.name">name</a></code> | <code>str</code> | The human-friendly name for the metric. |
@@ -63,9 +63,9 @@ metric.Metric(
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.description">description</a></code> | <code>str</code> | The description of the metric's purpose. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.eventKey">event_key</a></code> | <code>str</code> | The event key for your metric (if custom metric). |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.3/docs/resources/metric#id Metric#id}. |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.includeUnitsWithoutEvents">include_units_without_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Include units that did not send any events and set their value to 0. |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.isActive">is_active</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Ignored. All metrics are considered active. |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.isNumeric">is_numeric</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether a `custom` metric is a numeric metric or not. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.includeUnitsWithoutEvents">include_units_without_events</a></code> | <code>bool \| cdktf.IResolvable</code> | Include units that did not send any events and set their value to 0. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.isActive">is_active</a></code> | <code>bool \| cdktf.IResolvable</code> | Ignored. All metrics are considered active. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.isNumeric">is_numeric</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether a `custom` metric is a numeric metric or not. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.maintainerId">maintainer_id</a></code> | <code>str</code> | The LaunchDarkly member ID of the member who will maintain the metric. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.percentileValue">percentile_value</a></code> | <code>typing.Union[int, float]</code> | The percentile for the analysis method. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.randomizationUnits">randomization_units</a></code> | <code>typing.List[str]</code> | A set of one or more context kinds that this metric can measure events from. |
@@ -74,7 +74,7 @@ metric.Metric(
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.tags">tags</a></code> | <code>typing.List[str]</code> | Tags associated with your resource. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.unit">unit</a></code> | <code>str</code> | (Required for kind `custom`) The unit for numeric `custom` metrics. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.unitAggregationType">unit_aggregation_type</a></code> | <code>str</code> | The method by which multiple unit event values are aggregated. Available choices are `average` and `sum`. |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.urls">urls</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.metric.MetricUrls">MetricUrls</a>]]</code> | urls block. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.urls">urls</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-launchdarkly.metric.MetricUrls">MetricUrls</a>]</code> | urls block. |
 
 ---
 
@@ -98,13 +98,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -134,7 +134,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -227,7 +227,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `include_units_without_events`<sup>Optional</sup> <a name="include_units_without_events" id="@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.includeUnitsWithoutEvents"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Include units that did not send any events and set their value to 0.
 
@@ -237,7 +237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 ##### `is_active`<sup>Optional</sup> <a name="is_active" id="@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.isActive"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Ignored. All metrics are considered active.
 
@@ -247,7 +247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 ##### `is_numeric`<sup>Optional</sup> <a name="is_numeric" id="@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.isNumeric"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether a `custom` metric is a numeric metric or not.
 
@@ -343,7 +343,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 ##### `urls`<sup>Optional</sup> <a name="urls" id="@cdktf/provider-launchdarkly.metric.Metric.Initializer.parameter.urls"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.metric.MetricUrls">MetricUrls</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-launchdarkly.metric.MetricUrls">MetricUrls</a>]
 
 urls block.
 
@@ -620,7 +620,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-launchdarkly.metric.Metric.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-launchdarkly.metric.Metric.importFrom"></a>
@@ -683,7 +683,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -699,7 +699,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-launchdarkly.metric.Metric.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -727,13 +727,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_urls(
-  value: typing.Union[IResolvable, typing.List[MetricUrls]]
+  value: IResolvable | typing.List[MetricUrls]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-launchdarkly.metric.Metric.putUrls.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.metric.MetricUrls">MetricUrls</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-launchdarkly.metric.MetricUrls">MetricUrls</a>]
 
 ---
 
@@ -970,22 +970,22 @@ Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchd
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.urls">urls</a></code> | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricUrlsList">MetricUrlsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.version">version</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.analysisTypeInput">analysis_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.eventKeyInput">event_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.includeUnitsWithoutEventsInput">include_units_without_events_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.isActiveInput">is_active_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.isNumericInput">is_numeric_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.includeUnitsWithoutEventsInput">include_units_without_events_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.isActiveInput">is_active_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.isNumericInput">is_numeric_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.kindInput">kind_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.maintainerIdInput">maintainer_id_input</a></code> | <code>str</code> | *No description.* |
@@ -998,14 +998,14 @@ Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchd
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.tagsInput">tags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.unitAggregationTypeInput">unit_aggregation_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.unitInput">unit_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.urlsInput">urls_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.metric.MetricUrls">MetricUrls</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.urlsInput">urls_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-launchdarkly.metric.MetricUrls">MetricUrls</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.analysisType">analysis_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.eventKey">event_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.includeUnitsWithoutEvents">include_units_without_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.isActive">is_active</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.isNumeric">is_numeric</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.includeUnitsWithoutEvents">include_units_without_events</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.isActive">is_active</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.isNumeric">is_numeric</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.kind">kind</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.Metric.property.maintainerId">maintainer_id</a></code> | <code>str</code> | *No description.* |
@@ -1096,20 +1096,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-launchdarkly.metric.Metric.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-launchdarkly.metric.Metric.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1156,10 +1156,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-launchdarkly.metric.Metric.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1226,30 +1226,30 @@ id_input: str
 ##### `include_units_without_events_input`<sup>Optional</sup> <a name="include_units_without_events_input" id="@cdktf/provider-launchdarkly.metric.Metric.property.includeUnitsWithoutEventsInput"></a>
 
 ```python
-include_units_without_events_input: typing.Union[bool, IResolvable]
+include_units_without_events_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `is_active_input`<sup>Optional</sup> <a name="is_active_input" id="@cdktf/provider-launchdarkly.metric.Metric.property.isActiveInput"></a>
 
 ```python
-is_active_input: typing.Union[bool, IResolvable]
+is_active_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `is_numeric_input`<sup>Optional</sup> <a name="is_numeric_input" id="@cdktf/provider-launchdarkly.metric.Metric.property.isNumericInput"></a>
 
 ```python
-is_numeric_input: typing.Union[bool, IResolvable]
+is_numeric_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1376,10 +1376,10 @@ unit_input: str
 ##### `urls_input`<sup>Optional</sup> <a name="urls_input" id="@cdktf/provider-launchdarkly.metric.Metric.property.urlsInput"></a>
 
 ```python
-urls_input: typing.Union[IResolvable, typing.List[MetricUrls]]
+urls_input: IResolvable | typing.List[MetricUrls]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.metric.MetricUrls">MetricUrls</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-launchdarkly.metric.MetricUrls">MetricUrls</a>]
 
 ---
 
@@ -1426,30 +1426,30 @@ id: str
 ##### `include_units_without_events`<sup>Required</sup> <a name="include_units_without_events" id="@cdktf/provider-launchdarkly.metric.Metric.property.includeUnitsWithoutEvents"></a>
 
 ```python
-include_units_without_events: typing.Union[bool, IResolvable]
+include_units_without_events: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `is_active`<sup>Required</sup> <a name="is_active" id="@cdktf/provider-launchdarkly.metric.Metric.property.isActive"></a>
 
 ```python
-is_active: typing.Union[bool, IResolvable]
+is_active: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `is_numeric`<sup>Required</sup> <a name="is_numeric" id="@cdktf/provider-launchdarkly.metric.Metric.property.isNumeric"></a>
 
 ```python
-is_numeric: typing.Union[bool, IResolvable]
+is_numeric: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1601,13 +1601,13 @@ tfResourceType: str
 from cdktf_cdktf_provider_launchdarkly import metric
 
 metric.MetricConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   key: str,
   kind: str,
   name: str,
@@ -1616,9 +1616,9 @@ metric.MetricConfig(
   description: str = None,
   event_key: str = None,
   id: str = None,
-  include_units_without_events: typing.Union[bool, IResolvable] = None,
-  is_active: typing.Union[bool, IResolvable] = None,
-  is_numeric: typing.Union[bool, IResolvable] = None,
+  include_units_without_events: bool | IResolvable = None,
+  is_active: bool | IResolvable = None,
+  is_numeric: bool | IResolvable = None,
   maintainer_id: str = None,
   percentile_value: typing.Union[int, float] = None,
   randomization_units: typing.List[str] = None,
@@ -1627,7 +1627,7 @@ metric.MetricConfig(
   tags: typing.List[str] = None,
   unit: str = None,
   unit_aggregation_type: str = None,
-  urls: typing.Union[IResolvable, typing.List[MetricUrls]] = None
+  urls: IResolvable | typing.List[MetricUrls] = None
 )
 ```
 
@@ -1635,13 +1635,13 @@ metric.MetricConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.key">key</a></code> | <code>str</code> | The unique key that references the metric. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.kind">kind</a></code> | <code>str</code> | The metric type. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.name">name</a></code> | <code>str</code> | The human-friendly name for the metric. |
@@ -1650,9 +1650,9 @@ metric.MetricConfig(
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.description">description</a></code> | <code>str</code> | The description of the metric's purpose. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.eventKey">event_key</a></code> | <code>str</code> | The event key for your metric (if custom metric). |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.3/docs/resources/metric#id Metric#id}. |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.includeUnitsWithoutEvents">include_units_without_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Include units that did not send any events and set their value to 0. |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.isActive">is_active</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Ignored. All metrics are considered active. |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.isNumeric">is_numeric</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether a `custom` metric is a numeric metric or not. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.includeUnitsWithoutEvents">include_units_without_events</a></code> | <code>bool \| cdktf.IResolvable</code> | Include units that did not send any events and set their value to 0. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.isActive">is_active</a></code> | <code>bool \| cdktf.IResolvable</code> | Ignored. All metrics are considered active. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.isNumeric">is_numeric</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether a `custom` metric is a numeric metric or not. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.maintainerId">maintainer_id</a></code> | <code>str</code> | The LaunchDarkly member ID of the member who will maintain the metric. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.percentileValue">percentile_value</a></code> | <code>typing.Union[int, float]</code> | The percentile for the analysis method. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.randomizationUnits">randomization_units</a></code> | <code>typing.List[str]</code> | A set of one or more context kinds that this metric can measure events from. |
@@ -1661,27 +1661,27 @@ metric.MetricConfig(
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.tags">tags</a></code> | <code>typing.List[str]</code> | Tags associated with your resource. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.unit">unit</a></code> | <code>str</code> | (Required for kind `custom`) The unit for numeric `custom` metrics. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.unitAggregationType">unit_aggregation_type</a></code> | <code>str</code> | The method by which multiple unit event values are aggregated. Available choices are `average` and `sum`. |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.urls">urls</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.metric.MetricUrls">MetricUrls</a>]]</code> | urls block. |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricConfig.property.urls">urls</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-launchdarkly.metric.MetricUrls">MetricUrls</a>]</code> | urls block. |
 
 ---
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-launchdarkly.metric.MetricConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-launchdarkly.metric.MetricConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1728,10 +1728,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-launchdarkly.metric.MetricConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1857,10 +1857,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `include_units_without_events`<sup>Optional</sup> <a name="include_units_without_events" id="@cdktf/provider-launchdarkly.metric.MetricConfig.property.includeUnitsWithoutEvents"></a>
 
 ```python
-include_units_without_events: typing.Union[bool, IResolvable]
+include_units_without_events: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Include units that did not send any events and set their value to 0.
 
@@ -1871,10 +1871,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 ##### `is_active`<sup>Optional</sup> <a name="is_active" id="@cdktf/provider-launchdarkly.metric.MetricConfig.property.isActive"></a>
 
 ```python
-is_active: typing.Union[bool, IResolvable]
+is_active: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Ignored. All metrics are considered active.
 
@@ -1885,10 +1885,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 ##### `is_numeric`<sup>Optional</sup> <a name="is_numeric" id="@cdktf/provider-launchdarkly.metric.MetricConfig.property.isNumeric"></a>
 
 ```python
-is_numeric: typing.Union[bool, IResolvable]
+is_numeric: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether a `custom` metric is a numeric metric or not.
 
@@ -2017,10 +2017,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 ##### `urls`<sup>Optional</sup> <a name="urls" id="@cdktf/provider-launchdarkly.metric.MetricConfig.property.urls"></a>
 
 ```python
-urls: typing.Union[IResolvable, typing.List[MetricUrls]]
+urls: IResolvable | typing.List[MetricUrls]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.metric.MetricUrls">MetricUrls</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-launchdarkly.metric.MetricUrls">MetricUrls</a>]
 
 urls block.
 
@@ -2243,7 +2243,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricUrlsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricUrlsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricUrlsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.metric.MetricUrls">MetricUrls</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricUrlsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-launchdarkly.metric.MetricUrls">MetricUrls</a>]</code> | *No description.* |
 
 ---
 
@@ -2274,10 +2274,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-launchdarkly.metric.MetricUrlsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[MetricUrls]]
+internal_value: IResolvable | typing.List[MetricUrls]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-launchdarkly.metric.MetricUrls">MetricUrls</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-launchdarkly.metric.MetricUrls">MetricUrls</a>]
 
 ---
 
@@ -2566,7 +2566,7 @@ def reset_url() -> None
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricUrlsOutputReference.property.pattern">pattern</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricUrlsOutputReference.property.substring">substring</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.metric.MetricUrlsOutputReference.property.url">url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricUrlsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-launchdarkly.metric.MetricUrls">MetricUrls</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.metric.MetricUrlsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-launchdarkly.metric.MetricUrls">MetricUrls</a></code> | *No description.* |
 
 ---
 
@@ -2677,10 +2677,10 @@ url: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-launchdarkly.metric.MetricUrlsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, MetricUrls]
+internal_value: IResolvable | MetricUrls
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-launchdarkly.metric.MetricUrls">MetricUrls</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-launchdarkly.metric.MetricUrls">MetricUrls</a>
 
 ---
 

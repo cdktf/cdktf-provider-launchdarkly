@@ -12,29 +12,22 @@ Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchd
 import com.hashicorp.cdktf.providers.launchdarkly.access_token.AccessToken;
 
 AccessToken.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
 //  .customRoles(java.util.List<java.lang.String>)
 //  .defaultApiVersion(java.lang.Number)
 //  .expire(java.lang.Number)
 //  .id(java.lang.String)
-//  .inlineRoles(IResolvable)
-//  .inlineRoles(java.util.List<AccessTokenInlineRoles>)
+//  .inlineRoles(IResolvable|java.util.List<AccessTokenInlineRoles>)
 //  .name(java.lang.String)
-//  .policyStatements(IResolvable)
-//  .policyStatements(java.util.List<AccessTokenPolicyStatements>)
+//  .policyStatements(IResolvable|java.util.List<AccessTokenPolicyStatements>)
 //  .role(java.lang.String)
-//  .serviceToken(java.lang.Boolean)
-//  .serviceToken(IResolvable)
+//  .serviceToken(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -42,22 +35,22 @@ AccessToken.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.customRoles">customRoles</a></code> | <code>java.util.List<java.lang.String></code> | A list of custom role IDs to use as access limits for the access token. |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.defaultApiVersion">defaultApiVersion</a></code> | <code>java.lang.Number</code> | The default API version for this token. |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.expire">expire</a></code> | <code>java.lang.Number</code> | An expiration time for the current token secret, expressed as a Unix epoch time. |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.3/docs/resources/access_token#id AccessToken#id}. |
-| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.inlineRoles">inlineRoles</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRoles">AccessTokenInlineRoles</a>></code> | inline_roles block. |
+| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.inlineRoles">inlineRoles</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRoles">AccessTokenInlineRoles</a>></code> | inline_roles block. |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | A human-friendly name for the access token. |
-| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.policyStatements">policyStatements</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatements">AccessTokenPolicyStatements</a>></code> | policy_statements block. |
+| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.policyStatements">policyStatements</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatements">AccessTokenPolicyStatements</a>></code> | policy_statements block. |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | A built-in LaunchDarkly role. Can be `reader`, `writer`, or `admin`. |
-| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.serviceToken">serviceToken</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the token will be a [service token](https://docs.launchdarkly.com/home/account-security/api-access-tokens#service-tokens). A change in this field will force the destruction of the existing resource and the creation of a new one. |
+| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.serviceToken">serviceToken</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether the token will be a [service token](https://docs.launchdarkly.com/home/account-security/api-access-tokens#service-tokens). A change in this field will force the destruction of the existing resource and the creation of a new one. |
 
 ---
 
@@ -81,13 +74,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -117,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -168,7 +161,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `inlineRoles`<sup>Optional</sup> <a name="inlineRoles" id="@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.inlineRoles"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRoles">AccessTokenInlineRoles</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRoles">AccessTokenInlineRoles</a>>
 
 inline_roles block.
 
@@ -188,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 ##### `policyStatements`<sup>Optional</sup> <a name="policyStatements" id="@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.policyStatements"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatements">AccessTokenPolicyStatements</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatements">AccessTokenPolicyStatements</a>>
 
 policy_statements block.
 
@@ -208,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 
 ##### `serviceToken`<sup>Optional</sup> <a name="serviceToken" id="@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer.parameter.serviceToken"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether the token will be a [service token](https://docs.launchdarkly.com/home/account-security/api-access-tokens#service-tokens). A change in this field will force the destruction of the existing resource and the creation of a new one.
 
@@ -454,7 +447,7 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 ##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-launchdarkly.accessToken.AccessToken.hasResourceMove"></a>
 
 ```java
-public TerraformResourceMoveByTarget OR TerraformResourceMoveById hasResourceMove()
+public TerraformResourceMoveByTarget|TerraformResourceMoveById hasResourceMove()
 ```
 
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-launchdarkly.accessToken.AccessToken.importFrom"></a>
@@ -510,7 +503,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ```java
 public void moveTo(java.lang.String moveTarget)
-public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+public void moveTo(java.lang.String moveTarget, java.lang.String|java.lang.Number index)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -525,7 +518,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-launchdarkly.accessToken.AccessToken.moveTo.parameter.index"></a>
 
-- *Type:* java.lang.String OR java.lang.Number
+- *Type:* java.lang.String|java.lang.Number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -550,24 +543,24 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `putInlineRoles` <a name="putInlineRoles" id="@cdktf/provider-launchdarkly.accessToken.AccessToken.putInlineRoles"></a>
 
 ```java
-public void putInlineRoles(IResolvable OR java.util.List<AccessTokenInlineRoles> value)
+public void putInlineRoles(IResolvable|java.util.List<AccessTokenInlineRoles> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-launchdarkly.accessToken.AccessToken.putInlineRoles.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRoles">AccessTokenInlineRoles</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRoles">AccessTokenInlineRoles</a>>
 
 ---
 
 ##### `putPolicyStatements` <a name="putPolicyStatements" id="@cdktf/provider-launchdarkly.accessToken.AccessToken.putPolicyStatements"></a>
 
 ```java
-public void putPolicyStatements(IResolvable OR java.util.List<AccessTokenPolicyStatements> value)
+public void putPolicyStatements(IResolvable|java.util.List<AccessTokenPolicyStatements> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-launchdarkly.accessToken.AccessToken.putPolicyStatements.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatements">AccessTokenPolicyStatements</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatements">AccessTokenPolicyStatements</a>>
 
 ---
 
@@ -751,13 +744,13 @@ Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchd
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.inlineRoles">inlineRoles</a></code> | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRolesList">AccessTokenInlineRolesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.policyStatements">policyStatements</a></code> | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatementsList">AccessTokenPolicyStatementsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.token">token</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -765,18 +758,18 @@ Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchd
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.defaultApiVersionInput">defaultApiVersionInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.expireInput">expireInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.inlineRolesInput">inlineRolesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRoles">AccessTokenInlineRoles</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.inlineRolesInput">inlineRolesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRoles">AccessTokenInlineRoles</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.policyStatementsInput">policyStatementsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatements">AccessTokenPolicyStatements</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.policyStatementsInput">policyStatementsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatements">AccessTokenPolicyStatements</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.roleInput">roleInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.serviceTokenInput">serviceTokenInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.serviceTokenInput">serviceTokenInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.customRoles">customRoles</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.defaultApiVersion">defaultApiVersion</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.expire">expire</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.role">role</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.serviceToken">serviceToken</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessToken.property.serviceToken">serviceToken</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -855,20 +848,20 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-launchdarkly.accessToken.AccessToken.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-launchdarkly.accessToken.AccessToken.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -915,10 +908,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-launchdarkly.accessToken.AccessToken.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -995,10 +988,10 @@ public java.lang.String getIdInput();
 ##### `inlineRolesInput`<sup>Optional</sup> <a name="inlineRolesInput" id="@cdktf/provider-launchdarkly.accessToken.AccessToken.property.inlineRolesInput"></a>
 
 ```java
-public java.lang.Object getInlineRolesInput();
+public IResolvable|java.util.List<AccessTokenInlineRoles> getInlineRolesInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRoles">AccessTokenInlineRoles</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRoles">AccessTokenInlineRoles</a>>
 
 ---
 
@@ -1015,10 +1008,10 @@ public java.lang.String getNameInput();
 ##### `policyStatementsInput`<sup>Optional</sup> <a name="policyStatementsInput" id="@cdktf/provider-launchdarkly.accessToken.AccessToken.property.policyStatementsInput"></a>
 
 ```java
-public java.lang.Object getPolicyStatementsInput();
+public IResolvable|java.util.List<AccessTokenPolicyStatements> getPolicyStatementsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatements">AccessTokenPolicyStatements</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatements">AccessTokenPolicyStatements</a>>
 
 ---
 
@@ -1035,10 +1028,10 @@ public java.lang.String getRoleInput();
 ##### `serviceTokenInput`<sup>Optional</sup> <a name="serviceTokenInput" id="@cdktf/provider-launchdarkly.accessToken.AccessToken.property.serviceTokenInput"></a>
 
 ```java
-public java.lang.Object getServiceTokenInput();
+public java.lang.Boolean|IResolvable getServiceTokenInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1105,10 +1098,10 @@ public java.lang.String getRole();
 ##### `serviceToken`<sup>Required</sup> <a name="serviceToken" id="@cdktf/provider-launchdarkly.accessToken.AccessToken.property.serviceToken"></a>
 
 ```java
-public java.lang.Object getServiceToken();
+public java.lang.Boolean|IResolvable getServiceToken();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1140,29 +1133,22 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.launchdarkly.access_token.AccessTokenConfig;
 
 AccessTokenConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
 //  .customRoles(java.util.List<java.lang.String>)
 //  .defaultApiVersion(java.lang.Number)
 //  .expire(java.lang.Number)
 //  .id(java.lang.String)
-//  .inlineRoles(IResolvable)
-//  .inlineRoles(java.util.List<AccessTokenInlineRoles>)
+//  .inlineRoles(IResolvable|java.util.List<AccessTokenInlineRoles>)
 //  .name(java.lang.String)
-//  .policyStatements(IResolvable)
-//  .policyStatements(java.util.List<AccessTokenPolicyStatements>)
+//  .policyStatements(IResolvable|java.util.List<AccessTokenPolicyStatements>)
 //  .role(java.lang.String)
-//  .serviceToken(java.lang.Boolean)
-//  .serviceToken(IResolvable)
+//  .serviceToken(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -1170,42 +1156,42 @@ AccessTokenConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.customRoles">customRoles</a></code> | <code>java.util.List<java.lang.String></code> | A list of custom role IDs to use as access limits for the access token. |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.defaultApiVersion">defaultApiVersion</a></code> | <code>java.lang.Number</code> | The default API version for this token. |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.expire">expire</a></code> | <code>java.lang.Number</code> | An expiration time for the current token secret, expressed as a Unix epoch time. |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.3/docs/resources/access_token#id AccessToken#id}. |
-| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.inlineRoles">inlineRoles</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRoles">AccessTokenInlineRoles</a>></code> | inline_roles block. |
+| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.inlineRoles">inlineRoles</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRoles">AccessTokenInlineRoles</a>></code> | inline_roles block. |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.name">name</a></code> | <code>java.lang.String</code> | A human-friendly name for the access token. |
-| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.policyStatements">policyStatements</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatements">AccessTokenPolicyStatements</a>></code> | policy_statements block. |
+| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.policyStatements">policyStatements</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatements">AccessTokenPolicyStatements</a>></code> | policy_statements block. |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.role">role</a></code> | <code>java.lang.String</code> | A built-in LaunchDarkly role. Can be `reader`, `writer`, or `admin`. |
-| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.serviceToken">serviceToken</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the token will be a [service token](https://docs.launchdarkly.com/home/account-security/api-access-tokens#service-tokens). A change in this field will force the destruction of the existing resource and the creation of a new one. |
+| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.serviceToken">serviceToken</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether the token will be a [service token](https://docs.launchdarkly.com/home/account-security/api-access-tokens#service-tokens). A change in this field will force the destruction of the existing resource and the creation of a new one. |
 
 ---
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1252,10 +1238,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1323,10 +1309,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `inlineRoles`<sup>Optional</sup> <a name="inlineRoles" id="@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.inlineRoles"></a>
 
 ```java
-public java.lang.Object getInlineRoles();
+public IResolvable|java.util.List<AccessTokenInlineRoles> getInlineRoles();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRoles">AccessTokenInlineRoles</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRoles">AccessTokenInlineRoles</a>>
 
 inline_roles block.
 
@@ -1351,10 +1337,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 ##### `policyStatements`<sup>Optional</sup> <a name="policyStatements" id="@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.policyStatements"></a>
 
 ```java
-public java.lang.Object getPolicyStatements();
+public IResolvable|java.util.List<AccessTokenPolicyStatements> getPolicyStatements();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatements">AccessTokenPolicyStatements</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatements">AccessTokenPolicyStatements</a>>
 
 policy_statements block.
 
@@ -1379,10 +1365,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 ##### `serviceToken`<sup>Optional</sup> <a name="serviceToken" id="@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.property.serviceToken"></a>
 
 ```java
-public java.lang.Object getServiceToken();
+public java.lang.Boolean|IResolvable getServiceToken();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether the token will be a [service token](https://docs.launchdarkly.com/home/account-security/api-access-tokens#service-tokens). A change in this field will force the destruction of the existing resource and the creation of a new one.
 
@@ -1717,7 +1703,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRolesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRolesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRolesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRoles">AccessTokenInlineRoles</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRolesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRoles">AccessTokenInlineRoles</a>></code> | *No description.* |
 
 ---
 
@@ -1748,10 +1734,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRolesList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AccessTokenInlineRoles> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRoles">AccessTokenInlineRoles</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRoles">AccessTokenInlineRoles</a>>
 
 ---
 
@@ -2022,7 +2008,7 @@ public void resetResources()
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRolesOutputReference.property.notActions">notActions</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRolesOutputReference.property.notResources">notResources</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRolesOutputReference.property.resources">resources</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRolesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRoles">AccessTokenInlineRoles</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRolesOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRoles">AccessTokenInlineRoles</a></code> | *No description.* |
 
 ---
 
@@ -2153,10 +2139,10 @@ public java.util.List<java.lang.String> getResources();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRolesOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AccessTokenInlineRoles getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRoles">AccessTokenInlineRoles</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRoles">AccessTokenInlineRoles</a>
 
 ---
 
@@ -2282,7 +2268,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatementsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatementsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatementsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatements">AccessTokenPolicyStatements</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatementsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatements">AccessTokenPolicyStatements</a>></code> | *No description.* |
 
 ---
 
@@ -2313,10 +2299,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatementsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<AccessTokenPolicyStatements> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatements">AccessTokenPolicyStatements</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatements">AccessTokenPolicyStatements</a>>
 
 ---
 
@@ -2587,7 +2573,7 @@ public void resetResources()
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatementsOutputReference.property.notActions">notActions</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatementsOutputReference.property.notResources">notResources</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatementsOutputReference.property.resources">resources</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatementsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatements">AccessTokenPolicyStatements</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatementsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatements">AccessTokenPolicyStatements</a></code> | *No description.* |
 
 ---
 
@@ -2718,10 +2704,10 @@ public java.util.List<java.lang.String> getResources();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatementsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|AccessTokenPolicyStatements getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatements">AccessTokenPolicyStatements</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatements">AccessTokenPolicyStatements</a>
 
 ---
 

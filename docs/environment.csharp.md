@@ -283,7 +283,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-launchdarkly.environment.Environment.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-launchdarkly.environment.Environment.importFrom"></a>
@@ -337,7 +337,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-launchdarkly.environment.Environment.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -352,7 +352,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-launchdarkly.environment.Environment.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -377,12 +377,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `PutApprovalSettings` <a name="PutApprovalSettings" id="@cdktf/provider-launchdarkly.environment.Environment.putApprovalSettings"></a>
 
 ```csharp
-private void PutApprovalSettings(object Value)
+private void PutApprovalSettings(IResolvable|EnvironmentApprovalSettings[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-launchdarkly.environment.Environment.putApprovalSettings.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings">EnvironmentApprovalSettings</a>[]
 
 ---
 
@@ -566,41 +566,41 @@ Refer to the {@link https://registry.terraform.io/providers/launchdarkly/launchd
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.apiKey">ApiKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.approvalSettings">ApprovalSettings</a></code> | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsList">EnvironmentApprovalSettingsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.clientSideId">ClientSideId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.mobileKey">MobileKey</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.approvalSettingsInput">ApprovalSettingsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.approvalSettingsInput">ApprovalSettingsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings">EnvironmentApprovalSettings</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.colorInput">ColorInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.confirmChangesInput">ConfirmChangesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.criticalInput">CriticalInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.defaultTrackEventsInput">DefaultTrackEventsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.confirmChangesInput">ConfirmChangesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.criticalInput">CriticalInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.defaultTrackEventsInput">DefaultTrackEventsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.defaultTtlInput">DefaultTtlInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.keyInput">KeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.projectKeyInput">ProjectKeyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.requireCommentsInput">RequireCommentsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.secureModeInput">SecureModeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.requireCommentsInput">RequireCommentsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.secureModeInput">SecureModeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.tagsInput">TagsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.color">Color</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.confirmChanges">ConfirmChanges</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.critical">Critical</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.defaultTrackEvents">DefaultTrackEvents</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.confirmChanges">ConfirmChanges</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.critical">Critical</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.defaultTrackEvents">DefaultTrackEvents</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.defaultTtl">DefaultTtl</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.key">Key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.projectKey">ProjectKey</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.requireComments">RequireComments</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.secureMode">SecureMode</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.requireComments">RequireComments</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.secureMode">SecureMode</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.Environment.property.tags">Tags</a></code> | <code>string[]</code> | *No description.* |
 
 ---
@@ -680,20 +680,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-launchdarkly.environment.Environment.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-launchdarkly.environment.Environment.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -740,10 +740,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-launchdarkly.environment.Environment.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -790,10 +790,10 @@ public string MobileKey { get; }
 ##### `ApprovalSettingsInput`<sup>Optional</sup> <a name="ApprovalSettingsInput" id="@cdktf/provider-launchdarkly.environment.Environment.property.approvalSettingsInput"></a>
 
 ```csharp
-public object ApprovalSettingsInput { get; }
+public IResolvable|EnvironmentApprovalSettings[] ApprovalSettingsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings">EnvironmentApprovalSettings</a>[]
 
 ---
 
@@ -810,30 +810,30 @@ public string ColorInput { get; }
 ##### `ConfirmChangesInput`<sup>Optional</sup> <a name="ConfirmChangesInput" id="@cdktf/provider-launchdarkly.environment.Environment.property.confirmChangesInput"></a>
 
 ```csharp
-public object ConfirmChangesInput { get; }
+public bool|IResolvable ConfirmChangesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `CriticalInput`<sup>Optional</sup> <a name="CriticalInput" id="@cdktf/provider-launchdarkly.environment.Environment.property.criticalInput"></a>
 
 ```csharp
-public object CriticalInput { get; }
+public bool|IResolvable CriticalInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DefaultTrackEventsInput`<sup>Optional</sup> <a name="DefaultTrackEventsInput" id="@cdktf/provider-launchdarkly.environment.Environment.property.defaultTrackEventsInput"></a>
 
 ```csharp
-public object DefaultTrackEventsInput { get; }
+public bool|IResolvable DefaultTrackEventsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -890,20 +890,20 @@ public string ProjectKeyInput { get; }
 ##### `RequireCommentsInput`<sup>Optional</sup> <a name="RequireCommentsInput" id="@cdktf/provider-launchdarkly.environment.Environment.property.requireCommentsInput"></a>
 
 ```csharp
-public object RequireCommentsInput { get; }
+public bool|IResolvable RequireCommentsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `SecureModeInput`<sup>Optional</sup> <a name="SecureModeInput" id="@cdktf/provider-launchdarkly.environment.Environment.property.secureModeInput"></a>
 
 ```csharp
-public object SecureModeInput { get; }
+public bool|IResolvable SecureModeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -930,30 +930,30 @@ public string Color { get; }
 ##### `ConfirmChanges`<sup>Required</sup> <a name="ConfirmChanges" id="@cdktf/provider-launchdarkly.environment.Environment.property.confirmChanges"></a>
 
 ```csharp
-public object ConfirmChanges { get; }
+public bool|IResolvable ConfirmChanges { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Critical`<sup>Required</sup> <a name="Critical" id="@cdktf/provider-launchdarkly.environment.Environment.property.critical"></a>
 
 ```csharp
-public object Critical { get; }
+public bool|IResolvable Critical { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DefaultTrackEvents`<sup>Required</sup> <a name="DefaultTrackEvents" id="@cdktf/provider-launchdarkly.environment.Environment.property.defaultTrackEvents"></a>
 
 ```csharp
-public object DefaultTrackEvents { get; }
+public bool|IResolvable DefaultTrackEvents { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1010,20 +1010,20 @@ public string ProjectKey { get; }
 ##### `RequireComments`<sup>Required</sup> <a name="RequireComments" id="@cdktf/provider-launchdarkly.environment.Environment.property.requireComments"></a>
 
 ```csharp
-public object RequireComments { get; }
+public bool|IResolvable RequireComments { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `SecureMode`<sup>Required</sup> <a name="SecureMode" id="@cdktf/provider-launchdarkly.environment.Environment.property.secureMode"></a>
 
 ```csharp
-public object SecureMode { get; }
+public bool|IResolvable SecureMode { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1065,11 +1065,11 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Launchdarkly;
 
 new EnvironmentApprovalSettings {
-    object AutoApplyApprovedChanges = null,
-    object CanApplyDeclinedChanges = null,
-    object CanReviewOwnRequest = null,
+    bool|IResolvable AutoApplyApprovedChanges = null,
+    bool|IResolvable CanApplyDeclinedChanges = null,
+    bool|IResolvable CanReviewOwnRequest = null,
     double MinNumApprovals = null,
-    object Required = null,
+    bool|IResolvable Required = null,
     string[] RequiredApprovalTags = null,
     System.Collections.Generic.IDictionary<string, string> ServiceConfig = null,
     string ServiceKind = null
@@ -1080,11 +1080,11 @@ new EnvironmentApprovalSettings {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.autoApplyApprovedChanges">AutoApplyApprovedChanges</a></code> | <code>object</code> | Automatically apply changes that have been approved by all reviewers. |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.canApplyDeclinedChanges">CanApplyDeclinedChanges</a></code> | <code>object</code> | Set to `true` if changes can be applied as long as the `min_num_approvals` is met, regardless of whether any reviewers have declined a request. |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.canReviewOwnRequest">CanReviewOwnRequest</a></code> | <code>object</code> | Set to `true` if requesters can approve or decline their own request. They may always comment. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.autoApplyApprovedChanges">AutoApplyApprovedChanges</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Automatically apply changes that have been approved by all reviewers. |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.canApplyDeclinedChanges">CanApplyDeclinedChanges</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to `true` if changes can be applied as long as the `min_num_approvals` is met, regardless of whether any reviewers have declined a request. |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.canReviewOwnRequest">CanReviewOwnRequest</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to `true` if requesters can approve or decline their own request. They may always comment. Defaults to `false`. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.minNumApprovals">MinNumApprovals</a></code> | <code>double</code> | The number of approvals required before an approval request can be applied. |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.required">Required</a></code> | <code>object</code> | Set to `true` for changes to flags in this environment to require approval. |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.required">Required</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to `true` for changes to flags in this environment to require approval. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.requiredApprovalTags">RequiredApprovalTags</a></code> | <code>string[]</code> | An array of tags used to specify which flags with those tags require approval. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.serviceConfig">ServiceConfig</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | The configuration for the service associated with this approval. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.serviceKind">ServiceKind</a></code> | <code>string</code> | The kind of service associated with this approval. |
@@ -1094,10 +1094,10 @@ new EnvironmentApprovalSettings {
 ##### `AutoApplyApprovedChanges`<sup>Optional</sup> <a name="AutoApplyApprovedChanges" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.autoApplyApprovedChanges"></a>
 
 ```csharp
-public object AutoApplyApprovedChanges { get; set; }
+public bool|IResolvable AutoApplyApprovedChanges { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Automatically apply changes that have been approved by all reviewers.
 
@@ -1110,10 +1110,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 ##### `CanApplyDeclinedChanges`<sup>Optional</sup> <a name="CanApplyDeclinedChanges" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.canApplyDeclinedChanges"></a>
 
 ```csharp
-public object CanApplyDeclinedChanges { get; set; }
+public bool|IResolvable CanApplyDeclinedChanges { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to `true` if changes can be applied as long as the `min_num_approvals` is met, regardless of whether any reviewers have declined a request.
 
@@ -1126,10 +1126,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 ##### `CanReviewOwnRequest`<sup>Optional</sup> <a name="CanReviewOwnRequest" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.canReviewOwnRequest"></a>
 
 ```csharp
-public object CanReviewOwnRequest { get; set; }
+public bool|IResolvable CanReviewOwnRequest { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to `true` if requesters can approve or decline their own request. They may always comment. Defaults to `false`.
 
@@ -1156,10 +1156,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 ##### `Required`<sup>Optional</sup> <a name="Required" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings.property.required"></a>
 
 ```csharp
-public object Required { get; set; }
+public bool|IResolvable Required { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to `true` for changes to flags in this environment to require approval.
 
@@ -1230,25 +1230,25 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 using HashiCorp.Cdktf.Providers.Launchdarkly;
 
 new EnvironmentConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Color,
     string Key,
     string Name,
     string ProjectKey,
-    object ApprovalSettings = null,
-    object ConfirmChanges = null,
-    object Critical = null,
-    object DefaultTrackEvents = null,
+    IResolvable|EnvironmentApprovalSettings[] ApprovalSettings = null,
+    bool|IResolvable ConfirmChanges = null,
+    bool|IResolvable Critical = null,
+    bool|IResolvable DefaultTrackEvents = null,
     double DefaultTtl = null,
     string Id = null,
-    object RequireComments = null,
-    object SecureMode = null,
+    bool|IResolvable RequireComments = null,
+    bool|IResolvable SecureMode = null,
     string[] Tags = null
 };
 ```
@@ -1257,25 +1257,25 @@ new EnvironmentConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.color">Color</a></code> | <code>string</code> | The color swatch as an RGB hex value with no leading `#`. For example: `000000`. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.key">Key</a></code> | <code>string</code> | The project-unique key for the environment. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.name">Name</a></code> | <code>string</code> | The name of the environment. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.projectKey">ProjectKey</a></code> | <code>string</code> | The LaunchDarkly project key. |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.approvalSettings">ApprovalSettings</a></code> | <code>object</code> | approval_settings block. |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.confirmChanges">ConfirmChanges</a></code> | <code>object</code> | Set to `true` if this environment requires confirmation for flag and segment changes. |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.critical">Critical</a></code> | <code>object</code> | Denotes whether the environment is critical. |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.defaultTrackEvents">DefaultTrackEvents</a></code> | <code>object</code> | Set to `true` to enable data export for every flag created in this environment after you configure this argument. |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.approvalSettings">ApprovalSettings</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings">EnvironmentApprovalSettings</a>[]</code> | approval_settings block. |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.confirmChanges">ConfirmChanges</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to `true` if this environment requires confirmation for flag and segment changes. |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.critical">Critical</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Denotes whether the environment is critical. |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.defaultTrackEvents">DefaultTrackEvents</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to `true` to enable data export for every flag created in this environment after you configure this argument. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.defaultTtl">DefaultTtl</a></code> | <code>double</code> | The TTL for the environment. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launchdarkly/launchdarkly/2.25.3/docs/resources/environment#id Environment#id}. |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.requireComments">RequireComments</a></code> | <code>object</code> | Set to `true` if this environment requires comments for flag and segment changes. |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.secureMode">SecureMode</a></code> | <code>object</code> | Set to `true` to ensure a user of the client-side SDK cannot impersonate another user. |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.requireComments">RequireComments</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to `true` if this environment requires comments for flag and segment changes. |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.secureMode">SecureMode</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to `true` to ensure a user of the client-side SDK cannot impersonate another user. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.tags">Tags</a></code> | <code>string[]</code> | Tags associated with your resource. |
 
 ---
@@ -1283,20 +1283,20 @@ new EnvironmentConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1343,10 +1343,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1413,10 +1413,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 ##### `ApprovalSettings`<sup>Optional</sup> <a name="ApprovalSettings" id="@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.approvalSettings"></a>
 
 ```csharp
-public object ApprovalSettings { get; set; }
+public IResolvable|EnvironmentApprovalSettings[] ApprovalSettings { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings">EnvironmentApprovalSettings</a>[]
 
 approval_settings block.
 
@@ -1427,10 +1427,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 ##### `ConfirmChanges`<sup>Optional</sup> <a name="ConfirmChanges" id="@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.confirmChanges"></a>
 
 ```csharp
-public object ConfirmChanges { get; set; }
+public bool|IResolvable ConfirmChanges { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to `true` if this environment requires confirmation for flag and segment changes.
 
@@ -1443,10 +1443,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 ##### `Critical`<sup>Optional</sup> <a name="Critical" id="@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.critical"></a>
 
 ```csharp
-public object Critical { get; set; }
+public bool|IResolvable Critical { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Denotes whether the environment is critical.
 
@@ -1457,10 +1457,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 ##### `DefaultTrackEvents`<sup>Optional</sup> <a name="DefaultTrackEvents" id="@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.defaultTrackEvents"></a>
 
 ```csharp
-public object DefaultTrackEvents { get; set; }
+public bool|IResolvable DefaultTrackEvents { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to `true` to enable data export for every flag created in this environment after you configure this argument.
 
@@ -1504,10 +1504,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `RequireComments`<sup>Optional</sup> <a name="RequireComments" id="@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.requireComments"></a>
 
 ```csharp
-public object RequireComments { get; set; }
+public bool|IResolvable RequireComments { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to `true` if this environment requires comments for flag and segment changes.
 
@@ -1520,10 +1520,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 ##### `SecureMode`<sup>Optional</sup> <a name="SecureMode" id="@cdktf/provider-launchdarkly.environment.EnvironmentConfig.property.secureMode"></a>
 
 ```csharp
-public object SecureMode { get; set; }
+public bool|IResolvable SecureMode { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to `true` to ensure a user of the client-side SDK cannot impersonate another user.
 
@@ -1670,7 +1670,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings">EnvironmentApprovalSettings</a>[]</code> | *No description.* |
 
 ---
 
@@ -1701,10 +1701,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|EnvironmentApprovalSettings[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings">EnvironmentApprovalSettings</a>[]
 
 ---
 
@@ -1993,23 +1993,23 @@ private void ResetServiceKind()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.autoApplyApprovedChangesInput">AutoApplyApprovedChangesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.canApplyDeclinedChangesInput">CanApplyDeclinedChangesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.canReviewOwnRequestInput">CanReviewOwnRequestInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.autoApplyApprovedChangesInput">AutoApplyApprovedChangesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.canApplyDeclinedChangesInput">CanApplyDeclinedChangesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.canReviewOwnRequestInput">CanReviewOwnRequestInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.minNumApprovalsInput">MinNumApprovalsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.requiredApprovalTagsInput">RequiredApprovalTagsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.requiredInput">RequiredInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.requiredInput">RequiredInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.serviceConfigInput">ServiceConfigInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.serviceKindInput">ServiceKindInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.autoApplyApprovedChanges">AutoApplyApprovedChanges</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.canApplyDeclinedChanges">CanApplyDeclinedChanges</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.canReviewOwnRequest">CanReviewOwnRequest</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.autoApplyApprovedChanges">AutoApplyApprovedChanges</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.canApplyDeclinedChanges">CanApplyDeclinedChanges</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.canReviewOwnRequest">CanReviewOwnRequest</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.minNumApprovals">MinNumApprovals</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.required">Required</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.required">Required</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.requiredApprovalTags">RequiredApprovalTags</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.serviceConfig">ServiceConfig</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.serviceKind">ServiceKind</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings">EnvironmentApprovalSettings</a></code> | *No description.* |
 
 ---
 
@@ -2040,30 +2040,30 @@ public string Fqn { get; }
 ##### `AutoApplyApprovedChangesInput`<sup>Optional</sup> <a name="AutoApplyApprovedChangesInput" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.autoApplyApprovedChangesInput"></a>
 
 ```csharp
-public object AutoApplyApprovedChangesInput { get; }
+public bool|IResolvable AutoApplyApprovedChangesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `CanApplyDeclinedChangesInput`<sup>Optional</sup> <a name="CanApplyDeclinedChangesInput" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.canApplyDeclinedChangesInput"></a>
 
 ```csharp
-public object CanApplyDeclinedChangesInput { get; }
+public bool|IResolvable CanApplyDeclinedChangesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `CanReviewOwnRequestInput`<sup>Optional</sup> <a name="CanReviewOwnRequestInput" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.canReviewOwnRequestInput"></a>
 
 ```csharp
-public object CanReviewOwnRequestInput { get; }
+public bool|IResolvable CanReviewOwnRequestInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2090,10 +2090,10 @@ public string[] RequiredApprovalTagsInput { get; }
 ##### `RequiredInput`<sup>Optional</sup> <a name="RequiredInput" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.requiredInput"></a>
 
 ```csharp
-public object RequiredInput { get; }
+public bool|IResolvable RequiredInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2120,30 +2120,30 @@ public string ServiceKindInput { get; }
 ##### `AutoApplyApprovedChanges`<sup>Required</sup> <a name="AutoApplyApprovedChanges" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.autoApplyApprovedChanges"></a>
 
 ```csharp
-public object AutoApplyApprovedChanges { get; }
+public bool|IResolvable AutoApplyApprovedChanges { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `CanApplyDeclinedChanges`<sup>Required</sup> <a name="CanApplyDeclinedChanges" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.canApplyDeclinedChanges"></a>
 
 ```csharp
-public object CanApplyDeclinedChanges { get; }
+public bool|IResolvable CanApplyDeclinedChanges { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `CanReviewOwnRequest`<sup>Required</sup> <a name="CanReviewOwnRequest" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.canReviewOwnRequest"></a>
 
 ```csharp
-public object CanReviewOwnRequest { get; }
+public bool|IResolvable CanReviewOwnRequest { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2160,10 +2160,10 @@ public double MinNumApprovals { get; }
 ##### `Required`<sup>Required</sup> <a name="Required" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.required"></a>
 
 ```csharp
-public object Required { get; }
+public bool|IResolvable Required { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2200,10 +2200,10 @@ public string ServiceKind { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettingsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|EnvironmentApprovalSettings InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-launchdarkly.environment.EnvironmentApprovalSettings">EnvironmentApprovalSettings</a>
 
 ---
 
