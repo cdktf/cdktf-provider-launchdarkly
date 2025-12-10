@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/launchdarkly/launchd
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.accessToken.AccessToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/accesstoken"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v5/accesstoken"
 
 accesstoken.NewAccessToken(scope Construct, id *string, config AccessTokenConfig) AccessToken
 ```
@@ -467,7 +467,7 @@ func ResetServiceToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-launchdarkly.accessToken.AccessToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/accesstoken"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v5/accesstoken"
 
 accesstoken.AccessToken_IsConstruct(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-launchdarkly.accessToken.AccessToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/accesstoken"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v5/accesstoken"
 
 accesstoken.AccessToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ accesstoken.AccessToken_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-launchdarkly.accessToken.AccessToken.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/accesstoken"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v5/accesstoken"
 
 accesstoken.AccessToken_IsTerraformResource(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ accesstoken.AccessToken_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-launchdarkly.accessToken.AccessToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/accesstoken"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v5/accesstoken"
 
 accesstoken.AccessToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -965,7 +965,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.accessToken.AccessTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/accesstoken"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v5/accesstoken"
 
 &accesstoken.AccessTokenConfig {
 	Connection: interface{},
@@ -1216,7 +1216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/accesstoken"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v5/accesstoken"
 
 &accesstoken.AccessTokenInlineRoles {
 	Effect: *string,
@@ -1318,7 +1318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializer <a name="Initializer" id="@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatements.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/accesstoken"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v5/accesstoken"
 
 &accesstoken.AccessTokenPolicyStatements {
 	Effect: *string,
@@ -1422,7 +1422,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/launc
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRolesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/accesstoken"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v5/accesstoken"
 
 accesstoken.NewAccessTokenInlineRolesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessTokenInlineRolesList
 ```
@@ -1582,7 +1582,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.accessToken.AccessTokenInlineRolesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/accesstoken"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v5/accesstoken"
 
 accesstoken.NewAccessTokenInlineRolesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessTokenInlineRolesOutputReference
 ```
@@ -1987,7 +1987,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/accesstoken"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v5/accesstoken"
 
 accesstoken.NewAccessTokenPolicyStatementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessTokenPolicyStatementsList
 ```
@@ -2147,7 +2147,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-launchdarkly.accessToken.AccessTokenPolicyStatementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/accesstoken"
+import "github.com/cdktf/cdktf-provider-launchdarkly-go/launchdarkly/v5/accesstoken"
 
 accesstoken.NewAccessTokenPolicyStatementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessTokenPolicyStatementsOutputReference
 ```
